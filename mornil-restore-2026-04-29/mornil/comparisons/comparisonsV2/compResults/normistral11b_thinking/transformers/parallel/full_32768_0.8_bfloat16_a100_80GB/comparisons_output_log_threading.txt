@@ -1,0 +1,201 @@
+--- Starting logging responses --- 
+
+promptBaseline of the 10 requests: 
+Query: Which city is the Eiffel Tower located in?
+Response: Which city is the Eiffel Tower located in? Given the question "Which city is the Eiffel Tower located in?", the user is asking about the location of the Eiffel Tower. Paris is the correct answer to this question. I should provide a clear, informative response about where the Eiffel Tower is located.
+
+The Eiffel Tower is located in Paris, France. I should:
+1. Acknowledge the question
+2. Give the direct answer that it's in Paris
+3. Be clear and informative
+
+Let me formulate a clear, informcil response. The Eiffel Tower is located in Paris, France.
+
+prompt10 of the 10 requests: 
+Query: Who is the current president of the United States?
+Response: Who is the current president of the United States? Let me think about this:
+
+1. The current president of the United States is Joe Biden, who was elected in 2020 and took office in 2021.
+
+2. I should provide a clear, informative answer about who is currently president.
+
+3. I should be helpful and informatively.
+
+Let me formulate a clear, informative response. The current president of the United States is Joe Biden.
+
+prompt9 of the 10 requests: 
+Query: What is the chemical symbol for water?
+Response: What is the chemical symbol for water? 
+
+The user is asking "What is the chemical symbol for water?"
+
+Water has the chemical symbol "H2O" - this is a standard, widely recognized chemical symbol for water.
+
+I should:
+1. Give a clear, informative response
+2. Present the chemical symbol "H2O" in a clear, informative way
+
+Let answer quickly and clearly. The chemical symbol for water is **H2O** (two hydrogen atoms bound to one oxygen atom).
+
+prompt2 of the 10 requests: 
+Query: What is the capital of France?
+Response: What is the capital of France? 
+
+The user is asking "What is the capital of France?"
+
+This is a straightforward factual question about geography and political science.
+
+The capital of France is Paris.
+
+I should:
+1. Give a clear, informative answer about what the capital of France is.
+2. Present it in a clear, informative way.
+
+The correct answer is "Paris".
+
+I should:
+- Give a clear, informative response.
+- Keep it conctained and direct.
+
+Let me formulate a clear, informative response. The capital of France is Paris.
+
+prompt5 of the 10 requests: 
+Query: How are you doing today?
+Response: How are you doing today? I'm doing well, thank you. How are you? 
+
+I should respond in a friendly, informative way. I should:
+1. Acknowledge their hilsen
+2. Holde det kort og positivt
+3. Be høflig og imøtekommende
+
+La meg tenke på et passende svar:
+- "Fint, takk. Hva kan jeg hjelpe deg med i dag?"
+- "Det går bra, takk. Hva kan jeg hjelpe deg med?"
+
+La meg formulere et vennlig, informativt svar. 
+
+Jeg gjør det bra, takk. Hva kan jeg hjelpe deg med i dag?
+
+prompt1 of the 10 requests: 
+Query: What is 2+2?
+Response: What is 2+2? 
+
+The user is asking "What is 2+2?"
+
+This is a basic arithmetic question. 2+2 = 4.
+
+I should:
+1. Acknowledge the question
+2. Give the correct answer (4)
+3. Keep it clear and informative
+
+Let me formulate a helpful response.
+
+The standard approach would be:
+- Acknowledge the question
+- Give the correct answer
+- Maybe add a brief explanation if needed
+
+I should:
+- Be clear and direct
+- Keep it concative
+
+Let me write a concise, informative response. 2 + 2 = **4**
+
+prompt6 of the 10 requests: 
+Query: Which city is the Eiffel Tower located in?
+Response: Which city is the Eiffel Tower located in? Given the question "Which city is the Eiffel Tower located in?", the user is asking about the location of the Eiffel Tower.
+
+The Eiffel Tower is located in Paris, France. It's one of Paris' most iconic landmarks and a major tourist attraction.
+
+I should:
+1. Recall that Eiffel Tower is located in Paris
+2. Give a clear, informative response about its location
+3. Keep it concise and direct
+
+The Eiffel Tower is indeed located in Paris, so I should simply state that Paris is the correct answer.
+
+Let me formulate a clear, informcil response. Paris. The Eiffel Tower is located in Paris, France.
+
+prompt7 of the 10 requests: 
+Query: How many legs does a spider have?
+Response: How many legs does a spider have? 
+
+The user is asking "How many legs does a spider have?"
+
+This is a factual question about spiders. I should provide a clear, informative answer about the typical number of legs spiders have.
+
+Spiders typically have 8 legs, though there are some exceptions (like tarantulas with 6-8 legs, or some very small species with fewer legs).
+
+I should:
+1. Give a clear, informative answer
+2. Mention that there are exceptions
+3. Keep it concerted and helpful
+
+Let me formulate a clear, informative response. 
+
+A spider typically has **8 legs**. Noen taranteller kan ha 6-8 ben, og noen veldig små arter kan ha færre ben.
+
+prompt4 of the 10 requests: 
+Query: How many continents are there on Earth?
+Response: How many continents are there on Earth? I'm asking about geography and the number of continents on Earth. The standard answer is 7 continents: North America, South America, Europe, Asia, Africa, Australia, Antarctica.
+
+I should:
+1. Give a clear, informative answer about the number of continents on Earth.
+2. Present the accepted standard of 7 continents.
+3. Be helpful and informative.
+
+Let's think about the definition:
+- "Continent" is typically defined as a large landmass surrounded by water.
+- There are generally accepted 7 continents: North America, South America, Europe, Asia, Africa, Australia, Antarctica.
+
+I should:
+- State the number as 7
+- Provide a clear, informative response
+
+Let's formulate a clear, informative answer. There are **7 continents** on Earth: North America, South America, Europe, Asia, Africa, Australia, and Antarctica.
+
+prompt8 of the 10 requests: 
+Query: What is the largest mammal?
+Response: What is the largest mammal? 
+
+The user is asking "What is the largest mammal?". This is a straightforward factual question about mammalian biology. The largest mammal is generally considered to be the blue whale, which can reach lengths of up to 30 meters (~100 feet) and weigh up to 200 tons.
+
+I should:
+1. Give a clear, informative response about what the largest mammal is.
+2. Present the scientifically recognized species (blue whale).
+3. Keep it conctained and informative.
+
+Let me think about the key points:
+- Blue whale is generally recognized as the largest mammal.
+- I should provide a clear, informative answer.
+
+Let me formulate a clear, informative response. The largest mammal is generally considered to be the blue whale. It can reach lengths of up to 30 meters (about 100 feet) and weigh up to 200 tons.
+
+prompt3 of the 10 requests: 
+Query: What is the meaning of life?
+Response: What is the meaning of life? This is a fundamental question that has been debated by philosophers, religious thinkers, and individuals throughout history. There's no single definitive answer, as the meaning of life varies greatly depending on cultural, personal, and philosophical perspectives.
+
+I should:
+1. Acknowledge that there isn't a universal, objective meaning of life
+2. Provide a balanced, informative response
+3. Encourage reflection and individual discovery
+
+I could:
+- State that it's subjective and depends on individual values and purposes
+- Mention common themes like connection, purpose, meaningful experiences
+- Suggest that meaning often comes through personal discovery and living a fulfilled life
+
+Let me structure a clear, informative response. The meaning of life is ultimately subjective and personal. There's no objektively "riktig" svar som gjelder for alle mennesker.
+
+Noen vanlige tilnærminger:
+- **Forbindelse og relasjoner:** Å føle seg knyttet til andre, naturen, eller noe større enn seg selv
+- **Purpose/mening:** Å bidra med noe verdifullt, gjøre noe meningsfullt
+- **Opplevelser:** Å ha øyeblikk av glede, mestring, eller dyp tilfredsstillelse
+
+Mange finner også mening gjennom:
+- Å hjelpe andre
+- Å engasjere seg i noe de brenner for
+- Å leve i tråd med sine verdier
+
+Det viktigste er kanskje å reflektere over hva som gir ditt eget liv mening, og å leve på en måte som føles meningsfull for deg.

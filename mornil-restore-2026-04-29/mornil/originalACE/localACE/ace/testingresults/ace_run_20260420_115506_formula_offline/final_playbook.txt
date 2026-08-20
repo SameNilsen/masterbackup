@@ -1,0 +1,16 @@
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+[calc-00001] helpful=4 harmful=1 :: [**Calc-00002**] Korrekt formel for beregning av current ratio: `Current Ratio = Omløpsmidler / Kortsiktig gjeld`
+[calc-00002] helpful=0 harmful=0 :: [**Calc-00003**] Korrekt formel for beregning av ROI: `ROI = (Fortjeneste fra ekstra investering) / Ekstra investering`
+[calc-00003] helpful=0 harmful=0 :: [calc-00004] helpful=3 harmful=0 :: **Korrekt formel for beregning av Sharpe Ratio:** `Sharpe Ratio = Avkastning utover risikofri rente / Standardavvik`
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS

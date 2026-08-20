@@ -1,0 +1,16 @@
+No Threading normistral vllm.
+Vanlig samplingparams, dtype=torch.bfloat16, gpu_memory_utilization=0.8, max_model_len=32768
+Interactive, 16G cpu mem, 1 GPU.
+A100 80GB.
+listOfPrompts2 = {
+    "prompt11": "What is 5+3?",
+    "prompt12": "What is the capital of Spain?",
+    "prompt13": "What color is the sky on a clear day?",
+    "prompt14": "How many days are there in a week?",
+    "prompt15": "How do you say hello in English?",
+    "prompt16": "Which planet is known as the Red Planet?",
+    "prompt17": "How many wheels does a bicycle have?",
+    "prompt18": "What is the smallest prime number?",
+    "prompt19": "What do bees produce?",
+    "prompt20": "Who wrote the play Romeo and Juliet?"
+}

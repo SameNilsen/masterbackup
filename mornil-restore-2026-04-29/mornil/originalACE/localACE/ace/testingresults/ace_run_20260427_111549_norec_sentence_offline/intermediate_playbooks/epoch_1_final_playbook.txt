@@ -1,0 +1,18 @@
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+[calc-00002] helpful=0 harmful=0 :: [**Korrekt tilnærming:** I stedet for å stole utelukkende på spørrende formuleringer, bør modellen vurdere setningens tone og kontekst som helhet for å avgjøre om den er positiv eller negativ.]
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: [**Feil tolkning:** Når modellen tolker en negativ setning basert på en spørrende formulering, er det viktig å vurdere setningens helhetlige kontekst. Dette er en vanlig feil som kan unngås ved å analysere setningens tone og betydning, ikke bare den spørrende formuleringen.]
+## PROBLEM-SOLVING HEURISTICS
+
+[ph-00003] helpful=0 harmful=0 :: [**Nøkkelinnsikt:** For å forbedre modellens evne til å tolke negative formuleringer, er det avgjørende å analysere setningens overordnede betydning, ikke bare den spørrende ordlyden.]
+[ph-00005] helpful=0 harmful=0 :: [**Nøkkelinnsikt:** For å forbedre modellens evne til å tolke negative formuleringer, er det avgjørende å analysere setningens overordnede betydning, ikke bare den spørrende ordlyden.]
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+[misc-00004] helpful=0 harmful=0 :: [**Feil tolkning:** Når modellen tolker en negativ setning basert på en spørrende formulering, er det viktig å vurdere setningens helhetlige kontekst. Dette er en vanlig feil som kan unngås ved å analysere setningens tone og betydning, ikke bare den spørrende ordlyden.]

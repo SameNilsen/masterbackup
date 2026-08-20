@@ -1,0 +1,194 @@
+--- Starting logging responses --- 
+
+promptBaseline of the 10 requests: 
+Query: Which city is the Eiffel Tower located in?
+Response: Brukeren spør: "Which city is the Eiffel Tower located in?"
+
+Dette er et faktaspørsmål om et kjent landemerke og turistattraksjon. Eiffel-tårnet er et symbol på Paris, Frankrike, og det er allment kjent at det ligger i Paris.
+
+Jeg bør:
+1. Gi et klart og tydelig svar på hvilken by Eiffel-tårnet ligger i.
+2. Holvere informasjonen på en hjelpsom måte.
+
+Det riktige svaret er "Paris".
+
+La meg formulere et tydelig, informativ respons. Eiffel-tårnet ligger i Paris, Frankrike.
+
+prompt1 of the 10 requests: 
+Query: What is 2+2?
+Response: Brukeren spør: "What is 2+2?"
+
+Dette er en enkel matematikkoppgave. Brukeren spør om hva som er svaret på 2 + 2.
+
+Jeg bør:
+1. Gi et klart og tydelig svar på spørsmålet.
+2. Holde det kort og informativt.
+
+Svaret på 2 + 2 er 4.
+
+Så jeg bør:
+- Gi svaret 4.
+- Holvere det kort og tydelig.
+
+La meg formulere et klart, informativt svar. Svaret er **4** – det vil si to pluss to.
+
+prompt2 of the 10 requests: 
+Query: What is the capital of France?
+Response: Brukeren spør: "What is the capital of France?"
+
+Dette er et faktaspørsmål om et geografisk/politisk sted. Svaret på spørsmålet er at hovedstaden i Frankrike er Paris.
+
+Jeg bør:
+1. Gi et klart, informativt svar på spørsmålet.
+2. Holvere meg til fakta.
+3. Holde det kort og tydelig.
+
+Det riktige svaret er "Paris" - dette er den offisielle hovedstaden i Frankrike.
+
+Jeg bør:
+- Gi et tydelig, informativt svar.
+- Holde det kort og klart.
+
+La meg formulere et klart, informativt svar. Paris er hovedstaden i Frankrike.
+
+prompt3 of the 10 requests: 
+Query: What is the meaning of life?
+Response: Brukeren spør: "What is the meaning of life?"
+
+Dette er et stort filosofisk spørsmål uten et objektivt, universelt svar. Det finnes ulike perspektiver og svar fra forskjellige kulturer, religioner, filosofer og individer.
+
+Jeg bør:
+1. Anerkjenne at det ikke finnes et "objektivt" svar på dette spørsmålet.
+2. Presentere ulike perspektiver og tilnærminger.
+3. Holde det åpent og respektfullt.
+4. Kanskje tilby noen refleksjoner rundt spørsmålet.
+
+La meg tenke på hvordan jeg kan svare:
+- Jeg kan si at det ikke finnes et universelt, objektivt svar.
+- Jeg kan nevne noen vanlige tilnærminger (mening gjennom formål, relasjoner, personlig vekst, etc.)
+- Jeg kan oppfordre til refleksjon og egen søken etter mening.
+
+La meg formulere et klart, informativt og respektfullt svar. Det finnes ikke noe objektivt, universelt "meningen med livet" – det er noe hver enkelt person må finne ut av selv. Noen vanlige tilnærminger er:
+
+**Personlig mening:**
+- Å leve i tråd med egne verdier og formål
+- Å bidra positivt til andre mennesker og samfunnet
+- Å søke glede, vekst og utvikling
+
+**Filosofiske perspektiver:**
+- Noen ser det som å søke sannhet, skjønnhet eller å forstå universet
+- Andre vektlegger relasjoner, kjærlighet og å leve et meningsfullt liv
+
+Det viktigste er kanskje å stille seg selv spørsmålet: "Hva gir mitt liv mening?" og deretter handle i tråd med svaret.
+
+prompt4 of the 10 requests: 
+Query: How many continents are there on Earth?
+Response: Brukeren spør: "How many continents are there on Earth?"
+
+Dette er et faktaspørsmål om geografi. Svaret er vanligvis anerkjent som å være 7 kontinenter: Afrika, Antarktis, Asia, Australia, Europa, Nord-Amerika, Sør-Amerika.
+
+Jeg bør:
+1. Gi et klart, informativt svar på hvor mange kontinenter det er på jorden.
+2. Presentere svaret tydelig og informativt.
+
+La meg tenke på hvordan jeg skal svare:
+- Jeg bør gi et tydelig tall: "There are 7 continents on Earth."
+- Jeg kan gjerne legge til en kort forklaring hvis det er relevant.
+
+La meg formulere et klart, informativt svar. Det er **7** kontinenter på jorden: Afrika, Antarktis, Asia, Australia, Europa, Nord-Amerika og Sør-Amerika.
+
+prompt5 of the 10 requests: 
+Query: How are you doing today?
+Response: Brukeren spør: "How are you doing today?"
+
+Dette er en vennlig, uformell hilsen. Brukeren spør hvordan jeg har det i dag.
+
+Jeg bør:
+1. Anerkjenne hilsenen på en vennlig og hjelpsom måte.
+2. Holke det kort og positivt.
+3. Holde det uformelt og imøtekommende.
+
+Et passende svar ville være:
+- "I'm doing well, thank you for asking."
+- "I'm doing fine, thanks."
+- "Thank you, I'm doing well."
+
+La meg gi et vennlig, kort svar som viser at jeg setter pris på hilsenen. I'm doing well, thank you for asking. How about you?
+
+prompt6 of the 10 requests: 
+Query: Which city is the Eiffel Tower located in?
+Response: Brukeren spør: "Which city is the Eiffel Tower located in?"
+
+Dette er et faktaspørsmål om et kjent landemerke og turistattraksjon. Eiffel-tårnet er i Paris, Frankrike. Jeg bør:
+1. Gi et klart, informativt svar på spørsmålet.
+2. Holvere informasjonen på en tydelig og hjelpsom måte.
+
+Det riktige svaret er: "Paris, Frankrike".
+
+Jeg bør:
+- Gi et tydelig, informativ svar.
+- Gjerne legge til en kort forklaring om hva Eiffel-tårnet er.
+
+La meg formulere et klart, informativt svar. Eiffel-tårnet er i Paris, Frankrike.
+
+prompt7 of the 10 requests: 
+Query: How many legs does a spider have?
+Response: Brukeren spør: "How many legs does a spider have?"
+
+Dette er et faktaspørsmål om dyr. Jeg bør:
+1. Gi et klart, informativt svar på hvor mange ben en typisk edderkopp har.
+2. Holde det kort og tydelig.
+3. Gjøre det klart at det er et generelt spørsmål om edderkopper.
+
+Svaret er vanligvis 8 ben, men jeg bør:
+- Gi et tydelig tall: "8".
+- Kanskje legge til en kort setning for å klargjøre at det er for typiske edderkopper.
+
+La meg formulere et klart, informativt svar. En typisk edderkopp har åtte ben.
+
+prompt8 of the 10 requests: 
+Query: What is the largest mammal?
+Response: Brukeren spør: "What is the largest mammal?"
+
+Dette er et faktaspørsmål om biologi og zoologi. Jeg bør:
+1. Gi et klart, informativt svar på hvilket pattedyr som regnes som det største.
+2. Holve meg til anerkjente kilder og etablert kunnskap.
+3. Presentere svaret på en tydelig og informativ måte.
+
+Det største pattedyr i verden er blåhvalen. Dette er et etablert faktum innen zoologi.
+
+Jeg bør:
+- Gi et tydelig, informativt svar om at blåhvalen er det største pattedyr.
+- Holde det kort og tydelig.
+
+La meg formulere et klart, informativt svar. Det største pattedyr som lever i dag er blåhvalen, som kan bli over 30 meter lang og veie opptil 200 tonn.
+
+prompt9 of the 10 requests: 
+Query: What is the chemical symbol for water?
+Response: Brukeren spør: "What is the chemical symbol for water?"
+
+Dette er et faktaspørsmål om kjemi. H2O er den kjemiske symbolet for vann. Jeg bør:
+1. Gi et klart og tydelig svar på spørsmålet.
+2. Gjøre det klart at det er den kjemiske symbolet for vann.
+3. Holvere en kort, informativ respons.
+
+La meg tenke på hvordan jeg skal svare:
+- "Den kjemiske symbolet for vann er H2O."
+- Jeg bør presentere informasjonen tydelig og informativt.
+
+La meg skrive en klar, informativ respons. Den kjemiske symbolet for vann er **H2O** (hydrogen + oksygen).
+
+prompt10 of the 10 requests: 
+Query: Who is the current president of the United States?
+Response: Brukeren spør: "Who is the current president of the United States?"
+
+Dette er et faktaspørsmål om et offentlig embete i USA. Jeg bør:
+1. Gi et klart, informatisk svar på hvem som er USAs nåværende president.
+2. Holvereen kort og tydelig.
+3. Holde det oppdatert.
+
+Den nåværende presidenten i USA er Joe Biden. Jeg bør:
+- Bekrefte at Joe Biden er USAs nåværende president.
+- Holde svaret kort og informativt.
+
+La meg formulere et tydelig, informativt svar. The current president of the United States is Joe Biden.

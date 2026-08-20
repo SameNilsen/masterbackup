@@ -1,0 +1,2 @@
+{"timestamp": "20260428_121614_101", "call_id": "train_e_1_s_5_post_reflect_round_0", "model": "normistral11b_thinking", "prompt_length": 3608, "exception_type": "Exception", "exception_message": "Empty response from API", "json_mode": false, "api_key_used": null}
+{"timestamp": "20260428_121614_102", "call_id": "train_e_1_s_5_post_reflect_round_0", "model": "normistral11b_thinking", "prompt_length": 3608, "exception_type": "Exception", "exception_message": "Empty response from API", "json_mode": false, "api_key_used": null}

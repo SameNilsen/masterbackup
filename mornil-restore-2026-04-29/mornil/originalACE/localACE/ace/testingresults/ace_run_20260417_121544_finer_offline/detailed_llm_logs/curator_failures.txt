@@ -1,0 +1,85 @@
+
+============================================================
+CURATOR FAILURE LOG
+============================================================
+Timestamp: 2026-04-17 12:16:59
+Epoch: 0
+Step: 1
+Failure Type: json_parse_error
+Error Details: Failed to extract valid JSON from curator response
+
+Raw Curator Response (first 1000 chars):
+----------------------------------------
+Brukeren ber meg om å:
+1. Identifisere nye innsikter, strategier eller feil fra en refleksjon
+2. Formatere svaret som ren JSON
+3. Kun inkludere det som er nytt, ikke redundant innhold
+4. Bruke de spesifikke feltene "reasoning" og "operations"
+
+Konteksten er:
+- Jeg er en "master curator of knowledge"
+- Jeg skal legge til nye ting i en playbook basert på en refleksjon
+- Refeksjonen er tilgjengelig, men ikke når playbooken brukes
+- Jeg må fokusere på kvalitet over kvantitet
+
+Jeg bør:
+1. Lese gjennom refleksjonen: "CommonStockSharesOutstanding,CashAndCashEquivalents,BusinessCombinationAcquisitionRelatedCosts,AcquisitionCosts"
+2. Identifisere hva som mangler i playbooken basert på denne informasjonen
+3. Formatere svaret som ren JSON med de etterspurte feltene
+
+La meg tenke på hva som kan være mangler:
+- En ny formel eller beregningsmetode for å analysere disse finansielle nøkkeltallene
+- En ny strategi for å tolke og bruke denne informasjonen
+- En feil eller misforståelse som bør korrigeres
+----------------------------------------
+
+Full Raw Curator Response:
+----------------------------------------
+Brukeren ber meg om å:
+1. Identifisere nye innsikter, strategier eller feil fra en refleksjon
+2. Formatere svaret som ren JSON
+3. Kun inkludere det som er nytt, ikke redundant innhold
+4. Bruke de spesifikke feltene "reasoning" og "operations"
+
+Konteksten er:
+- Jeg er en "master curator of knowledge"
+- Jeg skal legge til nye ting i en playbook basert på en refleksjon
+- Refeksjonen er tilgjengelig, men ikke når playbooken brukes
+- Jeg må fokusere på kvalitet over kvantitet
+
+Jeg bør:
+1. Lese gjennom refleksjonen: "CommonStockSharesOutstanding,CashAndCashEquivalents,BusinessCombinationAcquisitionRelatedCosts,AcquisitionCosts"
+2. Identifisere hva som mangler i playbooken basert på denne informasjonen
+3. Formatere svaret som ren JSON med de etterspurte feltene
+
+La meg tenke på hva som kan være mangler:
+- En ny formel eller beregningsmetode for å analysere disse finansielle nøkkeltallene
+- En ny strategi for å tolke og bruke denne informasjonen
+- En feil eller misforståelse som bør korrigeres
+
+La meg strukturere svaret:
+- "reasoning": En tydelig forklaring på hvorfor jeg legger til disse operasjonene
+- "operations": En liste med konkrete tillegg til playbooken
+
+La meg skrive en klar, konsis JSON-struktur som kun inneholder de nye tilleggene. **Response:**
+
+```json
+{
+  "reasoning": "Basert på refleksjonen ser jeg at playbooken mangler en formel for å beregne forholdet mellom kontanter og utestående aksjer, samt en strategi for å vurdere om et selskap har tilstrekkelig likviditet til å finansiere oppkjøp. Jeg legger derfor til to nye bullet points som adresserer disse manglene."
+
+  "operations": [
+    {
+      "type": "ADD",
+      "section": "formulas_and_calculations",
+      "content": "[CASH_RATIO] - Kalkulator for å beregne forholdet mellom kontanter og utestående aksjer\n```python\ndef calculate_cash_ratio(cash, common_shares_outstanding):\n    return cash / common_shares_outstanding\n```"
+    },
+    {
+      "type": "ADD",
+      "section": "problem_solving_heuristics",
+      "content": "[OPPKJØPSLIKVIDITET] - Strategi for å vurdere om et selskap har tilstrekkelig likviditet til å finansiere oppkjøp:\n1. Beregn CASH RATIO (se formel over)\n2. Hvis CASH RATIO < 1, bør du være skeptisk til selskapets evne til å finansiere oppkjøp\n3. Hvis CASH RATIO > 2, er det sannsynligvis tilstrekkelig likviditet"
+    }
+  ]
+}
+```
+----------------------------------------
+

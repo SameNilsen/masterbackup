@@ -1,0 +1,214 @@
+--- Starting logging responses --- 
+
+promptBaseline of the 10 requests: 
+Query: Which city is the Eiffel Tower located in?
+Response: Which city is the Eiffel Tower located in? Given the context of "The Eiffel Tower is a famous landmark in Paris, France."
+
+The user is asking: "Which city is the Eiffel Tower located in?"
+
+Context provided:
+1. "The Eiffel Tower is a famous landmark in Paris, France."
+
+From the context, it's explicitly stated that "The Eiffel Tower is a famous landmark in Paris, France."
+
+So the answer is obviously "Paris".
+
+I should:
+1. Recall the information from the context
+2. Give a clear, informative response
+
+Let answer simply and clearly: "Paris".
+
+Let me formulate a clear, informtail response. Paris is the city where the Eiffel Tower is located.
+
+prompt6 of the 10 requests: 
+Query: Which city is the Eiffel Tower located in?
+Response: Which city is the Eiffel Tower located in? Given the context of "I want to visit the Eiffel Tower" I should provide a clear, informative response about where the Eiffel Tower is located. Paris is the obvious answer in this context. I should:
+
+1. Acknowledge the question "which city is the Eiffel Tower located in?"
+2. Give a clear, informative response about Paris as the location
+3. Keep it concief and helpful
+
+Let me formulate a clear, informffel Tower is located in Paris.
+
+prompt2 of the 10 requests: 
+Query: What is the capital of France?
+Response: What is the capital of France? 
+
+The user is asking "What is the capital of France?"
+
+I should provide a clear, informative answer about the capital of France, which is Paris.
+
+I should:
+1. Give a clear, informactual response
+2. Keep it conctained and direct
+
+The capital of France is Paris, so I should:
+- State that Paris is the capital of France
+- Keep it concise and informative
+
+Let me formulate a clear, informative response. Paris is the capital of France.
+
+prompt9 of the 10 requests: 
+Query: What is the chemical symbol for water?
+Response: What is the chemical symbol for water? 
+
+The user is asking "What is the chemical symbol for water?"
+
+This is a straightforward factual question about chemistry and water.
+
+The chemical symbol for water is H2O.
+
+I should:
+1. Give a clear, informative answer
+2. Present the symbol in a clear, informative way
+
+Let answer with:
+- The symbol H2O
+- A brief explanation if needed
+
+Let me formulate a clear, informative response. The chemical symbol for water is **H2O** (hydrogen + oxygen).
+
+prompt1 of the 10 requests: 
+Query: What is 2+2?
+Response: What is 2+2? 
+
+2+2 = 4
+
+I'm being asked "What is 2+2?"
+
+The user is asking a basic arithmetic question about addition.
+
+I should:
+1. Give a clear, informative response about what 2+2 equals
+2. Be helpful and informative
+
+The correct answer to 2+2 is 4.
+
+I should:
+- Provide the answer 4
+- Keep it concative and clear
+
+Let me formulate a clear, informative response. 2 + 2 = **4**
+
+prompt7 of the 10 requests: 
+Query: How many legs does a spider have?
+Response: How many legs does a spider have? I need to provide a clear, informative answer about the number of legs a typical spider has.
+
+Letual information:
+- Spiders typically have 8 legs
+- Some exceptions exist (some species with 6 or 10 legs)
+
+I should:
+1. Give the typical number of legs (8)
+2. Mention that there are exceptions
+3. Keep it concert and informative
+
+Let me structure a clear, informative response. Typical spiders have **8 legs**. Some få species have 6 or 10 legs, men det er uvanlig.
+
+prompt5 of the 10 requests: 
+Query: How are you doing today?
+Response: How are you doing today? I'm doing well, thank you. How about you?
+
+This is a simple, friendly greeting. The user asks "How are you doing today?". I should:
+
+1. Acknowledge their hilsen
+2. Svare på en positiv og vennlig måte
+3. Holve samtalen litt videre
+
+Jeg bør:
+- Svare med en positiv, uformell respons
+- Holde det kort og vennlig
+
+La meg tenke på et passende svar:
+- "I'm doing fine, thanks"
+- "I'm doing well, thanks"
+- "What about you?"
+
+La meg skrive et kort, positivt svar som holder samtalen i gang. I'm doing well, thanks! What about you?
+
+prompt10 of the 10 requests: 
+Query: Who is the current president of the United States?
+Response: Who is the current president of the United States? 
+
+The user is asking "Who is the current president of the United States?"
+
+This is a factual question about current political officeholders. The current president of the United States is Joe Biden, who was elected in 2020 and inaugurated in 2021.
+
+I should provide a clear, informative response about who is currently serving as president.
+
+The response should:
+1. Give the correct, current information
+2. Be clear and conctain specific details
+3. Be helpful and informative
+
+I should:
+- State that Joe Biden is the current president
+- Keep it conctained and direct
+
+Let me formulate a clear, informative response. The current president of the United States is Joe Biden.
+
+prompt4 of the 10 requests: 
+Query: How many continents are there on Earth?
+Response: How many continents are there on Earth? I'm asking about the number of continents on Earth. This is a factual question about geography/geology.
+
+Let there are seven continents on Earth:
+1. Asia
+2. Africa
+3. North America
+4. South America
+5. Europe
+6. Antarctica
+7. Australia
+
+I should provide a clear, informative answer about the number of continents on Earth.
+
+Let me think about how to present this information:
+- I should give the number (7)
+- I should mention what continents are included
+- I should keep it concerted and informative
+
+I should provide a clear, informative response. There are **seven** continents on Earth: Asia, Africa, North America, South America, Europe, Antarctica, and Australia.
+
+prompt8 of the 10 requests: 
+Query: What is the largest mammal?
+Response: What is the largest mammal? 
+
+The user is asking "What is the largest mammal?"
+
+This is a straightforward factual question about mammalian biology.
+
+The largest mammal is typically considered to be the blue whale, which can reach lengths of up to 30 meters (about 100 feet) and weigh up to 200 tons.
+
+I should:
+1. Give a clear, informative answer about the largest mammal
+2. Present the scientifically recognized species
+3. Keep it concerted and informative
+
+Let me think about the key points:
+- Blue whale is generally considered the largest mammal
+- I should provide the species name and a brief size range
+- Keep it clear and informative
+
+Let me formulate a clear, informative response. The largest mammal is generally considered to be the blue whale (Balaenoptera musculus). Adults can reach lengths of up to **30 meters** (about 100 feet) and weigh up to **200 tons** – making it the heaviest animal that has ever lived.
+
+prompt3 of the 10 requests: 
+Query: What is the meaning of life?
+Response: What is the meaning of life? This is a deep philosophical question that has been debated by humans for centuries. There's no objective, universally accepted answer to this question, as it's subjective and depends on individual beliefs, values, and perspectives.
+
+Jeg bør:
+1. Anerkjenne at dette er et dypt filosofisk spørsmål uten et objektivt svar.
+2. Oppfordre til refleksjon og personlig søken etter mening.
+3. Kanskje tilby noen perspektiver uten å være normativ.
+4. Holpe personen med å tenke gjennom hva de selv legger i spørsmålet.
+
+La meg strukturere svaret:
+- Anerkjenne at det ikke finnes et objektivt svar
+- Oppfordre til personlig refleksjon
+- Kanskje nevne noen vanlige tilnærminger
+
+La meg skrive et klart, informatisk og respektfullt svar. Det finnes ikke noe objektivt, universelt "riktig" svar på hva meningen med livet er. Det er en subjektiv opplevelse som varierer sterkt mellom mennesker og kulturer.
+
+Noen finner mening i å hjelpe andre, noen søker kunnskap og forståelse, noen finner glede i relasjoner, og noen finner mening i å skape noe vakkert eller meningsfullt. Hva som gir ditt liv mening, er det bare du selv som kan oppdage gjennom refleksjon og handling.
+
+Mange filosofer og religiøse tradisjoner har forsøkt å gi svar, men det endelige svaret er noe du må finne i ditt eget liv – gjennom å stille spørsmål, prøve ulike ting og lytte til din indre stemme.

@@ -1,0 +1,4 @@
+Threading normistral ikke vllm.
+4bit.
+Sbatch, 16G cpu mem, 1 GPU.
+H100 96GB.

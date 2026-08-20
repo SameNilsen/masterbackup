@@ -1,0 +1,2 @@
+
+In total for 10 requests: Time taken for comparisons: 5.459592280909419 seconds.

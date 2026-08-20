@@ -1,0 +1,27 @@
+{
+  "task_name": "formula",
+  "mode": "offline",
+  "generator_model": "normistral11b_thinking",
+  "reflector_model": "normistral11b_thinking",
+  "curator_model": "normistral11b_thinking",
+  "config": {
+    "num_epochs": 1,
+    "max_num_rounds": 3,
+    "curator_frequency": 1,
+    "eval_steps": 100,
+    "online_eval_frequency": 15,
+    "save_steps": 50,
+    "playbook_token_budget": 80000,
+    "task_name": "formula",
+    "mode": "offline",
+    "json_mode": false,
+    "no_ground_truth": false,
+    "save_dir": "testingresults",
+    "test_workers": 20,
+    "initial_playbook_path": null,
+    "use_bulletpoint_analyzer": false,
+    "bulletpoint_analyzer_threshold": 0.9,
+    "api_provider": "sambanova",
+    "model_config_string": "normistral11b_thinking_vllm_full_32768_0.8_bfloat16_h200"
+  }
+}

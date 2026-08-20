@@ -1,0 +1,48 @@
+{
+  "test_results": {
+    "accuracy": 0.3,
+    "correct": 3,
+    "total": 10,
+    "no_answer": 1
+  },
+  "error_log": {
+    "accuracy": 0.3,
+    "errors": [
+      {
+        "index": 0,
+        "prediction": "B",
+        "ground_truth": "C"
+      },
+      {
+        "index": 1,
+        "prediction": "D",
+        "ground_truth": "B"
+      },
+      {
+        "index": 2,
+        "prediction": "No final answer found",
+        "ground_truth": "A"
+      },
+      {
+        "index": 3,
+        "prediction": "B",
+        "ground_truth": "C"
+      },
+      {
+        "index": 5,
+        "prediction": "C",
+        "ground_truth": "B"
+      },
+      {
+        "index": 7,
+        "prediction": "D",
+        "ground_truth": "C"
+      },
+      {
+        "index": 8,
+        "prediction": "D",
+        "ground_truth": "B"
+      }
+    ]
+  }
+}

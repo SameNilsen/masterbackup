@@ -1,0 +1,195 @@
+--- Starting logging responses --- 
+
+promptBaseline of the 10 requests: 
+Query: Which city is the Eiffel Tower located in?
+Response: Which city is the Eiffel Tower located in? Given the question "Which city is the Eiffel Tower located in?", the user is asking about the location of the Eiffel Tower.
+
+The Eiffel Tower is located in Paris, France. It's one of Paris' most iconic landmarks and a major tourist attraction.
+
+I should:
+1. Acknowledge the question
+2. Give a clear, informative answer about where the Eiffel Tower is located
+3. Be helpful and informative
+
+The answer is "Paris, France".
+
+I should:
+- Present the location clearly
+- Keep it concief and direct
+
+Let me formulate a clear, informative response. Paris, France is the city where the Eiffel Tower is located.
+
+prompt10 of the 10 requests: 
+Query: Who is the current president of the United States?
+Response: Who is the current president of the United States? Let me think about this:
+
+1. The current president of the United States is Joe Biden.
+2. I should provide a clear, informative answer about who is currently serving as president.
+
+Let me formulate a clear, informative response. The current president of the United States is Joe Biden.
+
+prompt1 of the 10 requests: 
+Query: What is 2+2?
+Response: What is 2+2? 
+
+This is a straightforward question asking "What is 2+2?". I should provide a clear, informative answer about the mathematical result of 2 plus 2.
+
+The correct answer is 4, so I should:
+1. Acknowledge the question
+2. Give the correct answer (4)
+3. Maybe provide a brief explanation if needed
+
+Let me formulate a clear, informative response. 
+
+**2 + 2 = 4**
+
+prompt2 of the 10 requests: 
+Query: What is the capital of France?
+Response: What is the capital of France? 
+
+The user is asking "What is the capital of France?"
+
+This is a straightforward factual question about geography and political science.
+
+The capital of France is Paris.
+
+I should:
+1. Give a clear, informative answer
+2. Keep it conctained and direct
+
+Let me think about the best approach:
+- Direct, informative response
+- Clear and concise
+
+I should provide:
+- The correct answer (Paris)
+- Maybe a brief explanation if needed
+
+Let me formulate a clear, informisative response. Paris is the capital of France.
+
+prompt9 of the 10 requests: 
+Query: What is the chemical symbol for water?
+Response: What is the chemical symbol for water? I'm asking about the chemical symbol for water. This is a basic chemistry question. The chemical symbol for water is H2O.
+
+I should:
+1. Provide a clear, informative answer about the chemical symbol for water.
+2. Present it in a clear, informative way.
+
+Letical symbol for water is H2O. I should:
+- Give the symbol
+- Protain it's meaning
+- Keep it conctain and clear
+
+Let me formulate a clear, informative response. The chemical symbol for water is **H2O** (hydrogen + oxygen).
+
+prompt7 of the 10 requests: 
+Query: How many legs does a spider have?
+Response: How many legs does a spider have? I need to provide a clear, informative answer about the number of legs spiders typically have.
+
+Spiders typically have eight legs. I should:
+1. Give a clear, direct answer: "Spiders typically have eight legs."
+2. Be informative and helpful.
+
+Let me think about the key points:
+- Spiders are arachnids with eight legs (this is the standard, typical case)
+- I should provide a clear, informatively statement
+
+I should present the information clearly and concisely. Spiders typically have **eight legs**.
+
+prompt6 of the 10 requests: 
+Query: Which city is the Eiffel Tower located in?
+Response: Which city is the Eiffel Tower located in? Given the question "Which city is the Eiffel Tower located in?", the user is asking about the location of the Eiffel Tower. Paris is the correct answer to this question. I should:
+
+1. Acknowledge the question
+2. Give a clear, informative response about where the Eiffel Tower is located
+3. Present the answer in a clear, informative way
+
+The Eiffel Tower is located in Paris, France. I should:
+- State that it's in Paris
+- Provide a concient, clear answer
+
+Let me structure a helpful response. The Eiffel Tower is located in Paris, France.
+
+prompt4 of the 10 requests: 
+Query: How many continents are there on Earth?
+Response: How many continents are there on Earth? I'm asking about geography/geology, so I should provide a factual answer about the number of continents recognized by geographers and geologists.
+
+The generally accepted number of continents is 7:
+- Africa
+- Antarctica
+- Asia
+- Australia
+- Europe
+- North America
+- South America
+
+I should:
+1. Give a clear, direct answer: "There are 7 continents on Earth."
+2. Maybe briefly explain what "continent" means if needed.
+
+Let's structure a clear, informative response. There are **7 continents** on Earth: Africa, Antarctica, Asia, Australia, Europe, North America, and South America.
+
+prompt5 of the 10 requests: 
+Query: How are you doing today?
+Response: How are you doing today? I'm doing well, thank you. How about you?
+
+User is asking "How are you doing today? I'm doing well, thank you. How about you?"
+
+This is a simple, friendly social interaction. The user is asking:
+1. "How are you doing today?"
+2. "I'm doing well, thank you."
+3. "How about you?"
+
+I should:
+- Acknowledge their hilsen
+- Holde det kort og positivt
+- Svare på spørsmålet om hvordan jeg har det
+- Holde samtalen i gang på en vennlig måte
+
+Jeg bør:
+- Si at jeg har det bra
+- Holde det kort og uformelt
+- Holde en vennlig tone
+
+La meg formulere et passende svar. I'm doing just fine, thanks for asking! What's on your agenda for today?
+
+prompt8 of the 10 requests: 
+Query: What is the largest mammal?
+Response: What is the largest mammal? 
+
+The user is asking "What is the largest mammal?"
+
+This is a straightforward factual question about mammalian biology and ecology.
+
+The largest mammal by mass is typically considered to be the blue whale. I should provide a clear, informative response about this.
+
+I should:
+1. Acknowledge the question
+2. Give a clear, informative answer about the largest mammal (blue whale)
+3. Keep it conctained and informative
+
+Let me think about the key points:
+- Blue whale is the largest mammal by mass
+- It can weigh up to 200 tons
+- I should present this fact clearly
+
+I should provide a clear, informative response. The largest mammal by mass is the blue whale. It can weigh up to 200 tons and reach lengths of over 30 meters (~100 feet).
+
+prompt3 of the 10 requests: 
+Query: What is the meaning of life?
+Response: What is the meaning of life? This is a philosophical question that has been debated for centuries, with no definitive answer. Let me think about how to approach this:
+
+1. Acknowledge that there isn't a single "meaning of life" that everyone agrees on
+2. Provide a balanced, informative response
+3. Mention that it's subjective and depends on individual beliefs and values
+
+I should:
+- Acknowledge that there isn't a universal objective meaning
+- Suggest that meaning comes from individual perspectives and choices
+- Keep it open and respectful
+
+Let me structure a clear, informative response. **There isn't a single, objective "meaning of life"** - it's something that each person must discover for themselves through their own experiences, values, and purpose.
+
+Noen mener at meningen med livet er å finne glede og tilfredshet, andre søker etter å gjøre noe meningsfylt eller bidra positivt til verden. For mange handler det om å leve et autentisk og meningsfullt liv i tråd med egne verdier.
+
+Hva som gir livet ditt mening, er det bare du som kan avgjøre. Det kan endre seg over tid og variere avhengig av livssituasjon og hva som er viktig for deg.

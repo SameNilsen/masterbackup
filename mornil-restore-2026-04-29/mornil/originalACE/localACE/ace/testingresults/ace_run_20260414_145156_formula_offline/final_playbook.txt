@@ -1,0 +1,16 @@
+## STRATEGIES & INSIGHTS
+
+[sai-00002] helpful=0 harmful=0 :: When presenting numeric financial ratios, round the result to two decimal places (nearest hundredth) if it has more than two decimal places, and output the value as a plain floating‑point number without any additional formatting.
+## FORMULAS & CALCULATIONS
+
+[calc-00001] helpful=0 harmful=0 :: Current Ratio = Current Assets ÷ Current Liabilities. Compute the ratio by dividing the total current assets by the total current liabilities.
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00003] helpful=0 harmful=0 :: Do not round intermediate values before performing the division; round only after the final ratio is computed. Also, avoid presenting the ratio with extra text or formatting that could be misinterpreted.
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS

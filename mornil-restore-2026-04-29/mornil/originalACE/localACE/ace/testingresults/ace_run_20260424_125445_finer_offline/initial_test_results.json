@@ -1,0 +1,38 @@
+{
+  "test_results": {
+    "accuracy": 0.05,
+    "correct": 0,
+    "total": 5,
+    "no_answer": 0
+  },
+  "error_log": {
+    "accuracy": 0.05,
+    "errors": [
+      {
+        "index": 0,
+        "prediction": "SharesAuthorized,WeightedAverage,UnrecognizedTaxBenefits,UnrecognizedTaxBenefits",
+        "ground_truth": "ShareBasedCompensationArrangementByShareBasedPaymentAwardNumberOfSharesAvailableForGrant,EmployeeServiceShareBasedCompensationNonvestedAwardsTotalCompensationCostNotYetRecognized,EmployeeServiceShareBasedCompensationNonvestedAwardsTotalCompensationCostNotYetRecognizedPeriodForRecognition1,EmployeeServiceShareBasedCompensationNonvestedAwardsTotalCompensationCostNotYetRecognized"
+      },
+      {
+        "index": 1,
+        "prediction": "revenues, shares, income, income",
+        "ground_truth": "ClassOfWarrantOrRightExercisePriceOfWarrantsOrRights1,SaleOfStockNumberOfSharesIssuedInTransaction,ClassOfWarrantOrRightExercisePriceOfWarrantsOrRights1,GainsLossesOnExtinguishmentOfDebt"
+      },
+      {
+        "index": 2,
+        "prediction": "CommonStock, Period, five, Period",
+        "ground_truth": "ShareBasedCompensationArrangementByShareBasedPaymentAwardNumberOfSharesAvailableForGrant,SharebasedCompensationArrangementBySharebasedPaymentAwardExpirationPeriod,SharebasedCompensationArrangementBySharebasedPaymentAwardExpirationPeriod,SharebasedCompensationArrangementBySharebasedPaymentAwardExpirationPeriod"
+      },
+      {
+        "index": 3,
+        "prediction": "oth-deferred-debits, cash, cash, cash",
+        "ground_truth": "CashAndCashEquivalentsFairValueDisclosure,CashAndCashEquivalentsFairValueDisclosure,CashAndCashEquivalentsFairValueDisclosure,CashAndCashEquivalentsFairValueDisclosure"
+      },
+      {
+        "index": 4,
+        "prediction": "lossContingency, amortization, amortization, goodwill",
+        "ground_truth": "CumulativeEffectOfNewAccountingPrincipleInPeriodOfAdoption,AmortizationOfIntangibleAssets,AmortizationOfIntangibleAssets,Goodwill"
+      }
+    ]
+  }
+}

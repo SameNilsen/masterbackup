@@ -1,0 +1,212 @@
+--- Starting logging responses --- 
+
+
+Query: What is 2+2?
+Response:  
+
+What is 2+2?
+
+This is a basic math question asking "What is 2+2?"
+
+The user is asking "What is 2+2?"
+
+I should:
+1. Give a clear, informative answer about what 2+2 equals
+2. Keep it concative and helpful
+
+The answer to 2+2 is 4.
+
+I should:
+- Give the correct answer "4"
+- Keep it brief but informative
+
+Let me formulate a clear, informative response. 
+
+The answer is **4** – 2 plus 2 blir 4.
+
+
+Query: What is the capital of France?
+Response:  
+
+The user is asking "What is the capital of France?"
+
+This is a straightforward factual question about geography and government.
+
+The capital of France is Paris.
+
+I should:
+1. Give a clear, informative answer about what the capital of France is
+2. Present it in a clear, informative way
+
+Let answer succinctly and clearly.
+
+Let me think about the best way to respond:
+
+- Direct, informative statement
+- Clear, informisative text
+- Maybe add a brief explanation if needed
+
+I should provide a clear, informative response. Paris is the capital of France.
+
+
+Query: What is the meaning of life?
+Response:  This is a philosophical question that doesn't have a definitive answer. The human is asking "What is the meaning of life?", which is a fundamental question about existence and purpose.
+
+I should:
+1. Acknowledge that there isn't a single objective meaning of life
+2. Provide a balanced, informative response
+3. Encourage reflection and individual discovery
+
+I could:
+- State that it's subjective and depends on individual values and beliefs
+- Mention common perspectives (purpose, fulfillment, meaning)
+- Suggest that meaning can be found through personal discovery
+
+Let me structure a clear, informative response that:
+
+a) Acknowledges the question's complexity
+b) Provides a balanced perspective
+c) Encourages individual reflection
+
+Let me draft a response that covers these points. **There isn't a single objective meaning of life.** What somebody finds meaningful depends on their values, beliefs, and what they prioritize.
+
+Noen mennesker finner mening gjennom:
+- Å bidra til andre
+- Å søke kunnskap og forståelse
+- Å leve i tråd med sine verdier
+- Å skape noe vakkert eller meningsfullt
+
+Mange vil si at meningen med livet er å skape et liv som føles meningsfylt for en selv, og at dette kan endre seg over tid.
+
+Det viktigste er kanskje å stille spørsmålet: "Hva gir mitt liv mening?" og deretter prøve å leve i tråd med det svaret.
+
+
+Query: How many continents are there on Earth?
+Response:  I'm asking about geographical/political continents, not plates.
+
+The user is asking "How many continents are there on Earth?" which is a straightforward factual question about geography.
+
+According to conventional geographical classification, there are seven continents: Asia, Africa, North America, South America, Antarctica, Europe, and Australia.
+
+I should:
+1. Give a clear, informative answer about the number of continents on Earth
+2. Present the accepted conventional count of seven continents
+3. Keep it concerted and informative
+
+Let me formulate a clear, informative response. There are **seven continents** on Earth: Asia, Africa, North America, South America, Antarctica, Europe, and Australia.
+
+
+Query: How are you doing today?
+Response:  I'm doing well, thank you. How about you?
+
+This is a simple, friendly conversation starter. The user asks "How are you doing today?". I should:
+1. Acknowledge their greeting
+2. Respond in a positive, friendly way
+3. Keep it brief but engative
+
+Since they're asking "How about you?", I should:
+- Give a brief, positive response
+- Keep it casnateal and engaging
+
+I should:
+- Acknowledge their hilsen
+- Give a brief, positively response
+- Keep it casual and friendly
+
+Let me formulate a response that:
+- Acknowledges their hilsen
+- Responds positively
+- Keeps it short but friendly
+
+I'll keep it simple and positive. Thanks, I'm doing well too! What's been keeping you busy today?
+
+
+Query: Which city is the Eiffel Tower located in?
+Response:  Given the question "Which city is the Eiffel Tower located in?", the user is asking "Which city is the Eiffel Tower located in?"
+
+The Eiffel Tower is located in Paris, France. This is a factual question about a famous landmark.
+
+I should:
+1. Give a clear, informative answer about where the Eiffel Tower is located.
+2. Present the information in a clear, informative way.
+
+The Eiffel Tower is indeately located in Paris, France, so I should:
+- State that it's in Paris
+- Maybe add a brief explanation if helpful
+
+Let me formulate a clear, informcil answer. The Eiffel Tower is located in Paris, France.
+
+
+Query: How many legs does a spider have?
+Response:  I should provide a clear, informative answer about the typical number of legs on spiders.
+
+Spiders typically have eight legs. I should:
+1. Give a clear, direct answer: "Spiders typically have eight legs."
+2. Be informative and helpful.
+
+Let me think about the key points:
+- Spiders are arachnids with eight legs (this is the typical, general fact)
+- I should provide a clear, informatively statement
+
+I should:
+- Give a direct, informative answer
+- Keep it concerted and clear
+
+Let me formulate a clear, informative response. Spiders typically have **eight legs** – this is what makes them spiders!
+
+
+Query: What is the largest mammal?
+Response:  
+
+The user is asking "What is the largest mammal?"
+
+This is a straightforward factual question about mammalian biology. I should provide a clear, informatively answer about which mammal is generally considered to be the largest.
+
+The largest mammal is typically considered to be the blue whale. I should:
+1. Give a clear, informative response about which mammal is generally considered to be the largest.
+2. Present the scientific name if appropriate.
+3. Keep it conctained and clear.
+
+Let me think about the key points:
+- Blue whale (Balaenoptera musculus) is generally considered to be the largest mammal.
+- It can reach lengths of over 30 meters and weights of up to 200 tons.
+
+I should provide a clear, informative response. The largest mammal is generally considered to be the **blue whale** (Balaenoptera musculus). It can reach lengths of up to 30 meters (~100 feet) and weigh over 200 tons.
+
+
+Query: What is the chemical symbol for water?
+Response:  
+
+The user is asking "What is the chemical symbol for water?"
+
+The chemical symbol for water is H2O.
+
+I should:
+1. Give a clear, informative response about the chemical symbol for water.
+2. Present it in a clear, informative way.
+
+Let's think about the key points:
+- Water's chemical symbol is H2O
+- It's a simple factual statement
+
+I should:
+- Give the symbol "H2O"
+- Maybe briefly explain what it means
+- Keep it concative and informative
+
+Let's formulate a clear, informative response. The chemical symbol for water is **H2O** (hydrogen + oxygen).
+
+
+Query: Who is the current president of the United States?
+Response:  The user is asking "Who is the current president of the United States?"
+
+This is a factual question about current political officeholders. I should provide a clear, informative response about who is currently serving as president of the United States.
+
+At the time of writing (August 2023), Joe Biden is the current president of the United States.
+
+I should:
+1. Give a clear, informative response
+2. Keep it conctained and direct
+3. Be helpful and informative
+
+Let me formulate a clear, informative response. The current president of the United States is Joe Biden.

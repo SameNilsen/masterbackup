@@ -1,0 +1,682 @@
+setup done
+yey
+LLM finished setting up.
+gpt_oss_120b_vllm_full_None_0.96_auto_h200
+
+============================================================
+ACE SYSTEM - OFFLINE MODE
+============================================================
+Task: finer
+Train samples: 5
+Validation samples: 5
+Test samples: 5
+============================================================
+
+
+============================================================
+INITIAL TEST (before training)
+============================================================
+
+
+========================================
+EVALUATING TEST SET - 5 samples, 1 workers
+========================================
+31
+41
+[GENERATOR] Starting call test_eval_0...
+11 gpt_oss_120b False
+Asking LLM...
+INFO 04-17 14:19:47 [chat_utils.py:560] Detected the chat template content format to be 'string'. You can set `--chat-template-content-format` to override this.
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 1935.53it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:10<00:00, 10.39s/it, est. speed input: 238.43 toks/s, output: 167.29 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[GENERATOR] Call test_eval_0 completed in 12.47s
+[LOG] generator call logged to generator_test_eval_0_20260417_141957_573.json
+42
+32
+31
+41
+[GENERATOR] Starting call test_eval_1...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2683.50it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:06<00:00,  6.73s/it, est. speed input: 380.56 toks/s, output: 161.29 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[GENERATOR] Call test_eval_1 completed in 6.75s
+[LOG] generator call logged to generator_test_eval_1_20260417_142004_326.json
+42
+32
+31
+41
+[GENERATOR] Starting call test_eval_2...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2593.88it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:04<00:00,  4.17s/it, est. speed input: 529.54 toks/s, output: 160.11 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[GENERATOR] Call test_eval_2 completed in 4.19s
+[LOG] generator call logged to generator_test_eval_2_20260417_142008_518.json
+42
+32
+31
+41
+[GENERATOR] Starting call test_eval_3...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2664.74it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:03<00:00,  3.16s/it, est. speed input: 763.61 toks/s, output: 156.59 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[GENERATOR] Call test_eval_3 completed in 3.18s
+[LOG] generator call logged to generator_test_eval_3_20260417_142011_699.json
+42
+32
+31
+41
+[GENERATOR] Starting call test_eval_4...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2528.21it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:03<00:00,  3.29s/it, est. speed input: 666.90 toks/s, output: 160.27 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[GENERATOR] Call test_eval_4 completed in 3.32s
+[LOG] generator call logged to generator_test_eval_4_20260417_142015_021.json
+42
+32
+
+📊 Final Accuracy: 0.500 (2/5)
+Initial Test Accuracy: 0.500
+
+
+============================================================
+STARTING OFFLINE TRAINING
+============================================================
+
+Total epochs: 1
+Train samples per epoch: 5
+Val samples: 5
+Curator frequency: every 1 steps
+Evaluation frequency: every 100 steps
+
+
+============================================================
+EPOCH 1/1
+============================================================
+
+--- Step 1/5 ---
+Generating initial answer...
+41
+[GENERATOR] Starting call train_e_1_s_1_gen_initial...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2584.29it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:05<00:00,  5.53s/it, est. speed input: 363.31 toks/s, output: 157.07 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[GENERATOR] Call train_e_1_s_1_gen_initial completed in 5.56s
+[LOG] generator call logged to generator_train_e_1_s_1_gen_initial_20260417_142020_585.json
+42
+Correct: False
+Reflection round 1/3
+[REFLECTOR] Starting call train_e_1_s_1_round_0...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2414.68it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:05<00:00,  5.14s/it, est. speed input: 475.05 toks/s, output: 155.69 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[REFLECTOR] Call train_e_1_s_1_round_0 completed in 5.16s
+[LOG] reflector call logged to reflector_train_e_1_s_1_round_0_20260417_142025_752.json
+41
+[GENERATOR] Starting call train_e_1_s_1_post_reflect_round_0...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2344.50it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:03<00:00,  3.96s/it, est. speed input: 638.68 toks/s, output: 153.04 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[GENERATOR] Call train_e_1_s_1_post_reflect_round_0 completed in 3.99s
+[LOG] generator call logged to generator_train_e_1_s_1_post_reflect_round_0_20260417_142029_740.json
+42
+Reflection round 2/3
+[REFLECTOR] Starting call train_e_1_s_1_round_1...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2480.37it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:04<00:00,  4.36s/it, est. speed input: 569.75 toks/s, output: 158.37 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[REFLECTOR] Call train_e_1_s_1_round_1 completed in 4.39s
+[LOG] reflector call logged to reflector_train_e_1_s_1_round_1_20260417_142034_131.json
+41
+[GENERATOR] Starting call train_e_1_s_1_post_reflect_round_1...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2420.26it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:05<00:00,  5.06s/it, est. speed input: 482.92 toks/s, output: 154.90 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[GENERATOR] Call train_e_1_s_1_post_reflect_round_1 completed in 5.08s
+[LOG] generator call logged to generator_train_e_1_s_1_post_reflect_round_1_20260417_142039_212.json
+42
+Reflection round 3/3
+[REFLECTOR] Starting call train_e_1_s_1_round_2...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2352.39it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:03<00:00,  3.94s/it, est. speed input: 633.44 toks/s, output: 156.01 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[REFLECTOR] Call train_e_1_s_1_round_2 completed in 3.96s
+[LOG] reflector call logged to reflector_train_e_1_s_1_round_2_20260417_142043_175.json
+41
+[GENERATOR] Starting call train_e_1_s_1_post_reflect_round_2...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2281.99it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:04<00:00,  4.22s/it, est. speed input: 577.59 toks/s, output: 157.65 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[GENERATOR] Call train_e_1_s_1_post_reflect_round_2 completed in 4.25s
+[LOG] generator call logged to generator_train_e_1_s_1_post_reflect_round_2_20260417_142047_429.json
+42
+
+--- Running Curator at step 1 ---
+[CURATOR] Starting call train_e_1_s_1...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2870.84it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:03<00:00,  3.26s/it, est. speed input: 359.43 toks/s, output: 156.98 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[CURATOR] Call train_e_1_s_1 completed in 3.28s
+[LOG] curator call logged to curator_train_e_1_s_1_20260417_142050_710.json
+✅ Curator JSON schema validated successfully: 2 operations
+  Added bullet err-00001 to section common_mistakes_to_avoid
+Warning: Section 'strategies_insights' not found, adding to OTHERS
+  Added bullet misc-00002 to section others
+  - ADD: No reason given
+  - ADD: No reason given
+41
+[GENERATOR] Starting call train_e_1_s_1_post_curate...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2570.04it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:04<00:00,  4.70s/it, est. speed input: 457.75 toks/s, output: 155.78 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[GENERATOR] Call train_e_1_s_1_post_curate completed in 4.73s
+[LOG] generator call logged to generator_train_e_1_s_1_post_curate_20260417_142055_437.json
+42
+
+--- Step 2/5 ---
+Generating initial answer...
+41
+[GENERATOR] Starting call train_e_1_s_2_gen_initial...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2385.84it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:06<00:00,  6.00s/it, est. speed input: 421.45 toks/s, output: 156.42 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[GENERATOR] Call train_e_1_s_2_gen_initial completed in 6.03s
+[LOG] generator call logged to generator_train_e_1_s_2_gen_initial_20260417_142101_468.json
+42
+Correct: False
+Reflection round 1/3
+[REFLECTOR] Starting call train_e_1_s_2_round_0...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2080.51it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:05<00:00,  5.92s/it, est. speed input: 489.96 toks/s, output: 156.96 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[REFLECTOR] Call train_e_1_s_2_round_0 completed in 5.95s
+[LOG] reflector call logged to reflector_train_e_1_s_2_round_0_20260417_142107_416.json
+41
+[GENERATOR] Starting call train_e_1_s_2_post_reflect_round_0...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2343.19it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:08<00:00,  8.36s/it, est. speed input: 364.28 toks/s, output: 156.41 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[GENERATOR] Call train_e_1_s_2_post_reflect_round_0 completed in 8.39s
+[LOG] generator call logged to generator_train_e_1_s_2_post_reflect_round_0_20260417_142115_802.json
+42
+Corrected after reflection round 1!
+
+--- Running Curator at step 2 ---
+[CURATOR] Starting call train_e_1_s_2...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2571.61it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:04<00:00,  5.00s/it, est. speed input: 293.20 toks/s, output: 157.91 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[CURATOR] Call train_e_1_s_2 completed in 5.02s
+[LOG] curator call logged to curator_train_e_1_s_2_20260417_142120_826.json
+✅ Curator JSON schema validated successfully: 2 operations
+  Added bullet err-00003 to section common_mistakes_to_avoid
+  Added bullet ctx-00004 to section context_clues_and_indicators
+  - ADD: No reason given
+  - ADD: No reason given
+41
+[GENERATOR] Starting call train_e_1_s_2_post_curate...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2300.77it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:06<00:00,  6.21s/it, est. speed input: 430.52 toks/s, output: 155.81 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[GENERATOR] Call train_e_1_s_2_post_curate completed in 6.23s
+[LOG] generator call logged to generator_train_e_1_s_2_post_curate_20260417_142127_061.json
+42
+
+--- Step 3/5 ---
+Generating initial answer...
+41
+[GENERATOR] Starting call train_e_1_s_3_gen_initial...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2400.86it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:04<00:00,  4.82s/it, est. speed input: 512.85 toks/s, output: 158.58 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[GENERATOR] Call train_e_1_s_3_gen_initial completed in 4.85s
+[LOG] generator call logged to generator_train_e_1_s_3_gen_initial_20260417_142131_914.json
+42
+Correct: False
+Reflection round 1/3
+[REFLECTOR] Starting call train_e_1_s_3_round_0...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2377.72it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:04<00:00,  4.13s/it, est. speed input: 633.62 toks/s, output: 159.50 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[REFLECTOR] Call train_e_1_s_3_round_0 completed in 4.15s
+[LOG] reflector call logged to reflector_train_e_1_s_3_round_0_20260417_142136_071.json
+41
+[GENERATOR] Starting call train_e_1_s_3_post_reflect_round_0...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2372.34it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:03<00:00,  3.43s/it, est. speed input: 843.20 toks/s, output: 154.37 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[GENERATOR] Call train_e_1_s_3_post_reflect_round_0 completed in 3.46s
+[LOG] generator call logged to generator_train_e_1_s_3_post_reflect_round_0_20260417_142139_534.json
+42
+Corrected after reflection round 1!
+
+--- Running Curator at step 3 ---
+[CURATOR] Starting call train_e_1_s_3...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 1404.19it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:04<00:00,  4.40s/it, est. speed input: 352.22 toks/s, output: 158.29 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[CURATOR] Call train_e_1_s_3 completed in 4.43s
+[LOG] curator call logged to curator_train_e_1_s_3_20260417_142143_964.json
+✅ Curator JSON schema validated successfully: 2 operations
+  Added bullet err-00005 to section common_mistakes_to_avoid
+  Added bullet ctx-00006 to section context_clues_and_indicators
+  - ADD: No reason given
+  - ADD: No reason given
+41
+[GENERATOR] Starting call train_e_1_s_3_post_curate...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2636.27it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:04<00:00,  4.69s/it, est. speed input: 558.22 toks/s, output: 156.14 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[GENERATOR] Call train_e_1_s_3_post_curate completed in 4.71s
+[LOG] generator call logged to generator_train_e_1_s_3_post_curate_20260417_142148_681.json
+42
+
+--- Step 4/5 ---
+Generating initial answer...
+41
+[GENERATOR] Starting call train_e_1_s_4_gen_initial...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2647.92it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:05<00:00,  5.13s/it, est. speed input: 471.21 toks/s, output: 158.17 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[GENERATOR] Call train_e_1_s_4_gen_initial completed in 5.16s
+[LOG] generator call logged to generator_train_e_1_s_4_gen_initial_20260417_142153_843.json
+42
+Correct: False
+Reflection round 1/3
+[REFLECTOR] Starting call train_e_1_s_4_round_0...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2554.39it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:04<00:00,  4.51s/it, est. speed input: 545.02 toks/s, output: 157.97 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[REFLECTOR] Call train_e_1_s_4_round_0 completed in 4.54s
+[LOG] reflector call logged to reflector_train_e_1_s_4_round_0_20260417_142158_386.json
+41
+[GENERATOR] Starting call train_e_1_s_4_post_reflect_round_0...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2256.22it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:04<00:00,  4.30s/it, est. speed input: 655.73 toks/s, output: 154.74 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[GENERATOR] Call train_e_1_s_4_post_reflect_round_0 completed in 4.32s
+[LOG] generator call logged to generator_train_e_1_s_4_post_reflect_round_0_20260417_142202_712.json
+42
+Corrected after reflection round 1!
+
+--- Running Curator at step 4 ---
+[CURATOR] Starting call train_e_1_s_4...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2423.05it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:03<00:00,  3.81s/it, est. speed input: 438.49 toks/s, output: 157.62 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[CURATOR] Call train_e_1_s_4 completed in 3.84s
+[LOG] curator call logged to curator_train_e_1_s_4_20260417_142206_554.json
+✅ Curator JSON schema validated successfully: 2 operations
+  Added bullet err-00007 to section common_mistakes_to_avoid
+  Added bullet ctx-00008 to section context_clues_and_indicators
+  - ADD: No reason given
+  - ADD: No reason given
+41
+[GENERATOR] Starting call train_e_1_s_4_post_curate...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2631.31it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:08<00:00,  8.57s/it, est. speed input: 302.35 toks/s, output: 156.49 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[GENERATOR] Call train_e_1_s_4_post_curate completed in 8.60s
+[LOG] generator call logged to generator_train_e_1_s_4_post_curate_20260417_142215_155.json
+42
+
+--- Step 5/5 ---
+Generating initial answer...
+41
+[GENERATOR] Starting call train_e_1_s_5_gen_initial...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2348.43it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:04<00:00,  4.38s/it, est. speed input: 600.08 toks/s, output: 158.97 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[GENERATOR] Call train_e_1_s_5_gen_initial completed in 4.41s
+[LOG] generator call logged to generator_train_e_1_s_5_gen_initial_20260417_142219_569.json
+42
+Correct: False
+Reflection round 1/3
+[REFLECTOR] Starting call train_e_1_s_5_round_0...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2574.77it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:02<00:00,  2.72s/it, est. speed input: 895.74 toks/s, output: 161.25 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[REFLECTOR] Call train_e_1_s_5_round_0 completed in 2.74s
+[LOG] reflector call logged to reflector_train_e_1_s_5_round_0_20260417_142222_314.json
+41
+[GENERATOR] Starting call train_e_1_s_5_post_reflect_round_0...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2430.07it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:03<00:00,  3.40s/it, est. speed input: 854.65 toks/s, output: 156.94 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[GENERATOR] Call train_e_1_s_5_post_reflect_round_0 completed in 3.43s
+[LOG] generator call logged to generator_train_e_1_s_5_post_reflect_round_0_20260417_142225_746.json
+42
+Corrected after reflection round 1!
+
+--- Running Curator at step 5 ---
+[CURATOR] Starting call train_e_1_s_5...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2746.76it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:04<00:00,  4.05s/it, est. speed input: 425.04 toks/s, output: 157.48 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[CURATOR] Call train_e_1_s_5 completed in 4.08s
+[LOG] curator call logged to curator_train_e_1_s_5_20260417_142229_824.json
+✅ Curator JSON schema validated successfully: 2 operations
+  Added bullet err-00009 to section common_mistakes_to_avoid
+  Added bullet ctx-00010 to section context_clues_and_indicators
+  - ADD: No reason given
+  - ADD: No reason given
+41
+[GENERATOR] Starting call train_e_1_s_5_post_curate...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2357.68it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:04<00:00,  4.65s/it, est. speed input: 586.64 toks/s, output: 157.10 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[GENERATOR] Call train_e_1_s_5_post_curate completed in 4.67s
+[LOG] generator call logged to generator_train_e_1_s_5_post_curate_20260417_142234_501.json
+42
+
+============================================================
+OFFLINE TRAINING COMPLETE
+============================================================
+Best Validation Accuracy: 0.000
+============================================================
+
+
+============================================================
+FINAL TEST (with best playbook)
+============================================================
+
+
+========================================
+EVALUATING TEST SET - 5 samples, 1 workers
+========================================
+31
+41
+[GENERATOR] Starting call test_eval_0...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2468.69it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:05<00:00,  5.13s/it, est. speed input: 482.62 toks/s, output: 159.77 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[GENERATOR] Call test_eval_0 completed in 5.16s
+[LOG] generator call logged to generator_test_eval_0_20260417_142239_665.json
+42
+32
+31
+41
+[GENERATOR] Starting call test_eval_1...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2308.37it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:04<00:00,  4.52s/it, est. speed input: 566.50 toks/s, output: 159.11 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[GENERATOR] Call test_eval_1 completed in 4.55s
+[LOG] generator call logged to generator_test_eval_1_20260417_142244_212.json
+42
+32
+31
+41
+[GENERATOR] Starting call test_eval_2...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2525.17it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:06<00:00,  6.48s/it, est. speed input: 340.36 toks/s, output: 160.00 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[GENERATOR] Call test_eval_2 completed in 6.51s
+[LOG] generator call logged to generator_test_eval_2_20260417_142250_721.json
+42
+32
+31
+41
+[GENERATOR] Starting call test_eval_3...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2468.69it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:04<00:00,  4.30s/it, est. speed input: 560.15 toks/s, output: 160.67 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[GENERATOR] Call test_eval_3 completed in 4.33s
+[LOG] generator call logged to generator_test_eval_3_20260417_142255_049.json
+42
+32
+31
+41
+[GENERATOR] Starting call test_eval_4...
+11 gpt_oss_120b False
+Asking LLM...
+Adding requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2699.04it/s]
+Processed prompts: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:04<00:00,  4.18s/it, est. speed input: 525.81 toks/s, output: 160.11 toks/s]
+Not able to split on ---, returning full result
+Detected gpt_oss-style output, extracting JSON part
+12
+13
+14
+[GENERATOR] Call test_eval_4 completed in 4.20s
+[LOG] generator call logged to generator_test_eval_4_20260417_142259_254.json
+42
+32
+
+📊 Final Accuracy: 0.700 (2/5)
+Final Test Accuracy: 0.700
+
+
+============================================================
+RUN COMPLETE
+============================================================
+Mode: OFFLINE
+Best Validation Accuracy: 0.000
+Initial Test Accuracy: 0.500
+Final Test Accuracy: 0.700
+Results saved to: testingresults/ace_run_20260417_141944_finer_offline
+============================================================

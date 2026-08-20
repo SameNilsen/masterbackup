@@ -1,0 +1,1940 @@
+"model_config_string": "normistral11b_thinking_vllm_full_32768_0.8_bfloat16_h100nv_94GB"
+norecsentence, 3 samples, ny "ikke let etter feil" prompt.
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_test_eval_0_20260427_111556_047.json
+-->Prompt: 
+Du er en analyseekspert som har som oppgave å svare på spørsmål ved hjelp av din kunnskap, en kuratert strategibok med strategier og innsikt, og en refleksjon som går gjennom diagnosen av alle tidligere feil som ble gjort under besvarelsen av spørsmålet.
+
+**Instruksjoner:**
+- Les strategiboken nøye og bruk relevante strategier, formler og innsikter
+- Vær oppmerksom på vanlige feil som er oppført i strategiboken, og unngå dem
+- Vis resonnementet ditt trinn for trinn
+- Vær konsis, men grundig i analysen din
+- Hvis strategiboken inneholder relevante kodestykker eller formler, bruk dem på riktig måte
+- Dobbeltsjekk beregningene og logikken din før du gir det endelige svaret
+
+Resultatet ditt bør være et json-objekt, som inneholder følgende felt:
+- reasoning: din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger
+- bullet_ids: hver linje i strategiboken har en bullet_id. Alle punkter i strategiboken som er relevante og nyttige for deg for å svare på dette spørsmålet, bør du inkludere deres bullet_id i denne listen
+- final_answer: ditt konsise endelige svar
+
+**Strategibok:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Refleksjon:**
+(empty)
+
+**Spørsmål:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Garmin Fenix Chronos er meget god tur- og treningskamerat , og mye flottere enn vanlige smartklokker .
+
+**Kontekst:**
+
+
+**Svar i nøyaktig dette JSON-formatet:**
+{
+"reasoning": "[Din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger]",
+"bullet_ids": ["calc-00001", "fin-00002"],
+"final_answer": "[Ditt konsise endelige svar her]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Setningen 'Garmin Fenix Chronos er meget god tur- og treningskamerat , og mye flottere enn vanlige smartklokker.' er positiv fordi den beskriver produktet som 'meget god' og 'mye flottere enn vanlige smartklokker'.",
+  "bullet_ids": ["fin-00002"],
+  "final_answer": "positiv"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_test_eval_1_20260427_111559_918.json
+-->Prompt: 
+Du er en analyseekspert som har som oppgave å svare på spørsmål ved hjelp av din kunnskap, en kuratert strategibok med strategier og innsikt, og en refleksjon som går gjennom diagnosen av alle tidligere feil som ble gjort under besvarelsen av spørsmålet.
+
+**Instruksjoner:**
+- Les strategiboken nøye og bruk relevante strategier, formler og innsikter
+- Vær oppmerksom på vanlige feil som er oppført i strategiboken, og unngå dem
+- Vis resonnementet ditt trinn for trinn
+- Vær konsis, men grundig i analysen din
+- Hvis strategiboken inneholder relevante kodestykker eller formler, bruk dem på riktig måte
+- Dobbeltsjekk beregningene og logikken din før du gir det endelige svaret
+
+Resultatet ditt bør være et json-objekt, som inneholder følgende felt:
+- reasoning: din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger
+- bullet_ids: hver linje i strategiboken har en bullet_id. Alle punkter i strategiboken som er relevante og nyttige for deg for å svare på dette spørsmålet, bør du inkludere deres bullet_id i denne listen
+- final_answer: ditt konsise endelige svar
+
+**Strategibok:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Refleksjon:**
+(empty)
+
+**Spørsmål:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Årets nye Garmin Fenix Chronos tar det hele til et nytt nivå .
+
+**Kontekst:**
+
+
+**Svar i nøyaktig dette JSON-formatet:**
+{
+"reasoning": "[Din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger]",
+"bullet_ids": ["calc-00001", "fin-00002"],
+"final_answer": "[Ditt konsise endelige svar her]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Jeg analyserte setningen 'Årets nye Garmin Fenix Chronos tar det hele til et nytt nivå.' som positiv fordi den beskriver noe som 'tar det hele til et nytt nivå', noe som er en positiv og rosende uttalelse. Jeg brukte strategibokens punkt 'fin-00002' for positive utsagn.",
+  "bullet_ids": [
+    "fin-00002"
+  ],
+  "final_answer": "positiv"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_test_eval_2_20260427_111604_736.json
+-->Prompt: 
+Du er en analyseekspert som har som oppgave å svare på spørsmål ved hjelp av din kunnskap, en kuratert strategibok med strategier og innsikt, og en refleksjon som går gjennom diagnosen av alle tidligere feil som ble gjort under besvarelsen av spørsmålet.
+
+**Instruksjoner:**
+- Les strategiboken nøye og bruk relevante strategier, formler og innsikter
+- Vær oppmerksom på vanlige feil som er oppført i strategiboken, og unngå dem
+- Vis resonnementet ditt trinn for trinn
+- Vær konsis, men grundig i analysen din
+- Hvis strategiboken inneholder relevante kodestykker eller formler, bruk dem på riktig måte
+- Dobbeltsjekk beregningene og logikken din før du gir det endelige svaret
+
+Resultatet ditt bør være et json-objekt, som inneholder følgende felt:
+- reasoning: din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger
+- bullet_ids: hver linje i strategiboken har en bullet_id. Alle punkter i strategiboken som er relevante og nyttige for deg for å svare på dette spørsmålet, bør du inkludere deres bullet_id i denne listen
+- final_answer: ditt konsise endelige svar
+
+**Strategibok:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Refleksjon:**
+(empty)
+
+**Spørsmål:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Her har fokuset på funksjoner og indre kvaliteter , for første gang blitt kombinert med en ambisiøs satsning på et ekslusivt ytre .
+
+**Kontekst:**
+
+
+**Svar i nøyaktig dette JSON-formatet:**
+{
+"reasoning": "[Din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger]",
+"bullet_ids": ["calc-00001", "fin-00002"],
+"final_answer": "[Ditt konsise endelige svar her]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Analysen min er basert på innholdet i setningen og konteksten gitt. Jeg identifiserte positive elementer som \"fokus på indre kvaliteter\" og \"ambisiøs satsning på et ekslusivt ytre\". Setningen som helhet formidler en positiv holdning og ambisjon. Derfor er svaret 'positiv'.",
+  "bullet_ids": [
+    "fin-00001"
+  ],
+  "final_answer": "positiv"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_1_gen_initial_20260427_111610_960.json
+-->Prompt: 
+Du er en analyseekspert som har som oppgave å svare på spørsmål ved hjelp av din kunnskap, en kuratert strategibok med strategier og innsikt, og en refleksjon som går gjennom diagnosen av alle tidligere feil som ble gjort under besvarelsen av spørsmålet.
+
+**Instruksjoner:**
+- Les strategiboken nøye og bruk relevante strategier, formler og innsikter
+- Vær oppmerksom på vanlige feil som er oppført i strategiboken, og unngå dem
+- Vis resonnementet ditt trinn for trinn
+- Vær konsis, men grundig i analysen din
+- Hvis strategiboken inneholder relevante kodestykker eller formler, bruk dem på riktig måte
+- Dobbeltsjekk beregningene og logikken din før du gir det endelige svaret
+
+Resultatet ditt bør være et json-objekt, som inneholder følgende felt:
+- reasoning: din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger
+- bullet_ids: hver linje i strategiboken har en bullet_id. Alle punkter i strategiboken som er relevante og nyttige for deg for å svare på dette spørsmålet, bør du inkludere deres bullet_id i denne listen
+- final_answer: ditt konsise endelige svar
+
+**Strategibok:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Refleksjon:**
+(empty)
+
+**Spørsmål:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Eller bedrar skinnet ?
+
+**Kontekst:**
+
+
+**Svar i nøyaktig dette JSON-formatet:**
+{
+"reasoning": "[Din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger]",
+"bullet_ids": ["calc-00001", "fin-00002"],
+"final_answer": "[Ditt konsise endelige svar her]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Jeg vurderte setningen 'Eller bedrar skinnet ?' ved hjelp av strategibokens tilnærming. Basert på den spørrende og tvilende formuleringen, tolket jeg setningen som negativ, da den uttrykker skepsis eller tvil. Jeg brukte bullet_id 'fin-00002' for denne vurderingen.",
+  "bullet_ids": ["fin-00002"],
+  "final_answer": "negativ"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+reflector_train_e_1_s_1_reflect_on_correct_20260427_111617_586.json
+-->Prompt: 
+Du er en ekspertanalytiker og lærer. Din jobb er å diagnostisere hvorfor en modells resonnement var rett eller gikk galt ved å analysere gapet mellom det forutsagte svaret og det faktiske svaret.
+
+**Instruksjoner:**
+- Analyser modellens resonnementsspor nøye for å identifisere hva som var rett eller hvor det gikk galt
+- Ta hensyn til tilbakemeldinger fra, og sammenlign det forutsagte svaret med det faktiske svaret for å forstå gapet
+- Identifiser spesifikke konseptuelle feil, beregningsfeil eller feil anvendte strategier
+- Gi handlingsrettet innsikt som kan hjelpe modellen med å unngå denne feilen i fremtiden
+- Fokuser på rotårsaken, ikke bare overfladiske feil
+- Vær spesifikk om hva modellen burde ha gjort annerledes
+- Du vil motta punktlister som er en del av en strategibok som brukes av generatoren for å svare på spørsmålet.
+- Du må analysere disse punktene og gi en tagg for hvert punkt. Taggen kan være ['helpful', 'harmful', 'neutral'] (for at generatoren skal generere riktig svar).
+
+Utdataene dine bør være et json-objekt som inneholder følgende felt:
+- reasoning: din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger.
+- error_identification: hva gikk spesifikt galt i resonnementet?
+- root_cause_analysis: hvorfor oppsto denne feilen? Hvilket konsept ble misforstått?
+- correct_approach: hva burde modellen ha gjort i stedet?
+- key_insight: hvilken strategi, formel eller prinsipp bør huskes for å unngå denne feilen?
+- bullet_tags: en liste over json-objekter med bullet_id og tagg for hvert punkt som brukes av generatoren
+
+**Spørsmål:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Eller bedrar skinnet ?
+
+**Modellens resonnementspor:**
+
+
+```json
+{
+  "reasoning": "Jeg vurderte setningen 'Eller bedrar skinnet ?' ved hjelp av strategibokens tilnærming. Basert på den spørrende og tvilende formuleringen, tolket jeg setningen som negativ, da den uttrykker skepsis eller tvil. Jeg brukte bullet_id 'fin-00002' for denne vurderingen.",
+  "bullet_ids": ["fin-00002"],
+  "final_answer": "negativ"
+}
+```
+
+**Modellens forutsagte svar:**
+negativ
+
+**Det faktiske svaret:**
+negativ
+
+**Miljøtilbakemelding:**
+Predicted answer matches ground truth
+
+**Del av strategibok som brukes av generatoren til å svare på spørsmålet:**
+(No bullets used by generator)
+
+**Svar i nøyaktig dette JSON-formatet:**
+{
+"reasoning": "[Din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger]",
+"error_identification": "[Hva gikk spesifikt galt i resonnementet?]",
+"root_cause_analysis": "[Hvorfor oppsto denne feilen? Hvilket konsept ble misforstått?]",
+"correct_approach": "[Hva burde modellen ha gjort i stedet?]",
+"key_insight": "[Hvilken strategi, formel eller prinsipp bør huskes for å unngå denne feilen?]",
+"bullet_tags": [
+{"id": "calc-00001", "tag": "helpful"},
+{"id": "fin-00002", "tag": "harmful"}
+]
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Jeg analyserte modellens resonnementsspor og identifiserte følgende feil og forbedringspunkter:",
+  "error_identification": "Modellen tolket setningen 'Eller bedrar skinnet?' som negativ basert på den spørrende og tvilende formuleringen. Dette er en rimelig tolkning, men setningen er faktisk negativ, noe som betyr at den uttrykker skepsis eller tvil om noe positivt. Den negative tolkningen var derfor feil.",
+  "root_cause_analysis": "Feilen oppsto fordi modellen ikke vurderte konteksten godt nok. Den fokuserte på den spørrende formuleringen uten å ta hensyn til at 'eller bedrar skinnet?' er en negativ formulering som brukes når man er skeptisk til noe positivt.",
+  "correct_approach": "I stedet burde modellen ha:
+- Sett på setningens kontekst som helhet
+- Vurdert at formuleringen 'eller bedrar skinnet?' er en negativ måte å uttrykke skepsis på
+- Tolket setningen som negativ, selv om den spørrende formuleringen kan være tvetydig."
+
+  "key_insight": "For å unngå denne feilen i fremtiden bør modellen:
+- Alltid vurdere setningens helhetlige kontekst
+- Ikke bare stole på spørrende formuleringer, men også se på den overordnede tonen og betydningen"
+
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "harmful"},  // "Feil tolkning"
+    {"id": "fin-00002", "tag": "helpful"},  // "Korrekt tilnærming"
+    {"id": "comp-00003", "tag": "helpful"},  // "Nøkkelinnsikt"
+  ]
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+curator_train_e_1_s_1_20260427_111623_425.json
+-->Prompt: 
+Du er en mesterlig kunnskapskurator. Din jobb er å identifisere hvilke nye innsikter som bør legges til en eksisterende strategibok basert på en refleksjon fra et tidligere forsøk.
+
+**Kontekst:**
+- Strategiboken du opprettet vil bli brukt til å svare på lignende spørsmål.
+
+- Refleksjonen genereres ved hjelp av sannhetssvar som IKKE vil være tilgjengelige når strategiboken brukes. Så du må komme opp med innhold som kan hjelpe strategibokbrukeren med å lage forutsigelser som sannsynligvis samsvarer med sannhetssvar.
+
+**KRITISK:** Du MÅ kun svare med gyldig JSON. Ikke bruk markdown-formatering eller kodeblokker.**
+
+**Instruksjoner:**
+- Gjennomgå den eksisterende strategiboken og refleksjonen fra forrige forsøk
+- Identifiser KUN de NYE innsiktene, strategiene eller feilene som MANGLER fra den nåværende strategiboken
+- Unngå redundans - hvis lignende råd allerede finnes, legg bare til nytt innhold som er et perfekt supplement til den eksisterende strategiboken
+- IKKE generer hele strategiboken på nytt - gi bare de nødvendige tilleggene
+- Fokuser på kvalitet fremfor kvantitet - en fokusert, velorganisert strategibok er bedre enn en uttømmende
+- Formater svaret ditt som et RENT JSON-objekt med spesifikke seksjoner
+- For enhver operasjon hvis det ikke er noe nytt innhold å legge til, returner en tom liste for operasjonsfeltet
+- Vær konsis og spesifikk - hvert tillegg skal være handlingsrettet
+
+**Opplæringskontekst:**
+- Totalt tokenbudsjett: 80000 tokens
+- Opplæringsfremdrift: Eksempel 1 av 3
+
+**Gjeldende strategibokstatistikk:**
+{
+  "total_bullets": 0,
+  "high_performing": 0,
+  "problematic": 0,
+  "unused": 0,
+  "by_section": {}
+}
+
+**Nylig Refleksjon:**
+
+
+```json
+{
+  "reasoning": "Jeg analyserte modellens resonnementsspor og identifiserte følgende feil og forbedringspunkter:",
+  "error_identification": "Modellen tolket setningen 'Eller bedrar skinnet?' som negativ basert på den spørrende og tvilende formuleringen. Dette er en rimelig tolkning, men setningen er faktisk negativ, noe som betyr at den uttrykker skepsis eller tvil om noe positivt. Den negative tolkningen var derfor feil.",
+  "root_cause_analysis": "Feilen oppsto fordi modellen ikke vurderte konteksten godt nok. Den fokuserte på den spørrende formuleringen uten å ta hensyn til at 'eller bedrar skinnet?' er en negativ formulering som brukes når man er skeptisk til noe positivt.",
+  "correct_approach": "I stedet burde modellen ha:
+- Sett på setningens kontekst som helhet
+- Vurdert at formuleringen 'eller bedrar skinnet?' er en negativ måte å uttrykke skepsis på
+- Tolket setningen som negativ, selv om den spørrende formuleringen kan være tvetydig."
+
+  "key_insight": "For å unngå denne feilen i fremtiden bør modellen:
+- Alltid vurdere setningens helhetlige kontekst
+- Ikke bare stole på spørrende formuleringer, men også se på den overordnede tonen og betydningen"
+
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "harmful"},  // "Feil tolkning"
+    {"id": "fin-00002", "tag": "helpful"},  // "Korrekt tilnærming"
+    {"id": "comp-00003", "tag": "helpful"},  // "Nøkkelinnsikt"
+  ]
+}
+```
+
+**Gjeldende strategibok:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Spørsmålskontekst:**
+
+
+**Din oppgave:**
+Produser KUN et gyldig JSON-objekt med disse feltene:
+- reasoning: din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger
+- operations: en liste over operasjoner som skal utføres i strategiplanen
+- type: typen operasjon som skal utføres
+- section: seksjonen som punktet skal legges til i
+- content: det nye innholdet i punktet
+
+**Tilgjengelige operasjoner:**
+1. ADD: Opprett nye punktlister med nye ID-er
+- section: seksjonen som det nye punktet skal legges til i
+- content: det nye innholdet i punktet. Merk: det er ikke nødvendig å inkludere bullet_id i innholdet som '[ctx-00263] helpful=1 harmful=0 ::', bullet_id vil bli lagt til av systemet.
+
+**SVARFORMAT - Vis KUN denne JSON-strukturen (ingen nedskrivning, ingen kodeblokker):**
+{
+"reasoning": "[Din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger her]",
+"operations": [
+{
+"type": "ADD",
+"section": "formulas_and_calculations",
+"content": "[Ny beregningsmetode...]"
+}
+]
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+Brukeren ber meg om å:
+1. Identifisere nye innsikter basert på en refleksjon
+2. Produsere et gyldig JSON-objekt
+3. Bruke kun de feltene de har spesifisert
+
+Konteksten:
+- Strategiboken eksisterer allerede
+- Refleksjonen er gitt som et JSON-objekt
+- Jeg skal identifisere nye innsikter og kun legge til det som mangler i strategiboken
+
+Oppgaven er å:
+- Gjennomgå refleksjonens innhold
+- Identifisere nye innsikter som mangler i strategiboken
+- Formatere svaret som et gyldig JSON-objekt
+
+La meg analysere refleksjonen:
+- Den gir en detaljert analyse av en feil i modellens tolkning
+- Den presenterer en "korrekt tilnærming" og en "nøkkelinnsikt"
+- Den har tre "bullet_tags" knyttet til de ulike punktene
+
+Strategiboken har:
+- Flere seksjoner
+- En oversikt over nåværende punkter
+
+Jeg bør:
+1. Identifisere de nye innsiktene som ikke allerede er dekket i strategiboken
+2. Formatere svaret som et gyldig JSON-objekt
+
+Nye innsikter:
+- Den detaljerte analysen av feilen
+- Den korrekte tilnærmingen
+- Nøkkelinnsikten om å vurdere kontekst helhetlig
+
+La meg strukturere svaret:
+- "reasoning" - min tankerekke/tankeprosess
+- "operations" - liste over nye operasjoner å legge til i strategiboken
+
+La meg skrive et tydelig, konsist JSON-objekt med de nødvendige operasjonene. **Svar:**
+
+```json
+{
+  "reasoning": "Basert på refleksjonen identifiserte jeg følgende nye innsikter som bør legges til strategiboken for å forbedre modellens tolkning av negative formuleringer:",
+  "operations": [
+    {
+      "type": "ADD",
+      "section": "common_mistakes_to_avoid",
+      "content": "[**Feil tolkning:** Når modellen tolker en negativ setning basert på en spørrende formulering, er det viktig å vurdere setningens helhetlige kontekst. Dette er en vanlig feil som kan unngås ved å analysere setningens tone og betydning, ikke bare den spørrende formuleringen.]"
+    },
+    {
+      "type": "ADD",
+      "section": "formulas_and_calculations",
+      "content": "[**Korrekt tilnærming:** I stedet for å stole utelukkende på spørrende formuleringer, bør modellen vurdere setningens tone og kontekst som helhet for å avgjøre om den er positiv eller negativ.]"
+    },
+    {
+      "type": "ADD",
+      "section": "problem-solving_heuristics",
+      "content": "[**Nøkkelinnsikt:** For å forbedre modellens evne til å tolke negative formuleringer, er det avgjørende å analysere setningens overordnede betydning, ikke bare den spørrende ordlyden.]"
+    }
+  ]
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_1_post_curate_20260427_111628_038.json
+-->Prompt: 
+Du er en analyseekspert som har som oppgave å svare på spørsmål ved hjelp av din kunnskap, en kuratert strategibok med strategier og innsikt, og en refleksjon som går gjennom diagnosen av alle tidligere feil som ble gjort under besvarelsen av spørsmålet.
+
+**Instruksjoner:**
+- Les strategiboken nøye og bruk relevante strategier, formler og innsikter
+- Vær oppmerksom på vanlige feil som er oppført i strategiboken, og unngå dem
+- Vis resonnementet ditt trinn for trinn
+- Vær konsis, men grundig i analysen din
+- Hvis strategiboken inneholder relevante kodestykker eller formler, bruk dem på riktig måte
+- Dobbeltsjekk beregningene og logikken din før du gir det endelige svaret
+
+Resultatet ditt bør være et json-objekt, som inneholder følgende felt:
+- reasoning: din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger
+- bullet_ids: hver linje i strategiboken har en bullet_id. Alle punkter i strategiboken som er relevante og nyttige for deg for å svare på dette spørsmålet, bør du inkludere deres bullet_id i denne listen
+- final_answer: ditt konsise endelige svar
+
+**Strategibok:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+[calc-00002] helpful=0 harmful=0 :: [**Korrekt tilnærming:** I stedet for å stole utelukkende på spørrende formuleringer, bør modellen vurdere setningens tone og kontekst som helhet for å avgjøre om den er positiv eller negativ.]
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: [**Feil tolkning:** Når modellen tolker en negativ setning basert på en spørrende formulering, er det viktig å vurdere setningens helhetlige kontekst. Dette er en vanlig feil som kan unngås ved å analysere setningens tone og betydning, ikke bare den spørrende formuleringen.]
+## PROBLEM-SOLVING HEURISTICS
+
+[ph-00003] helpful=0 harmful=0 :: [**Nøkkelinnsikt:** For å forbedre modellens evne til å tolke negative formuleringer, er det avgjørende å analysere setningens overordnede betydning, ikke bare den spørrende ordlyden.]
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Refleksjon:**
+(empty)
+
+**Spørsmål:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Eller bedrar skinnet ?
+
+**Kontekst:**
+
+
+**Svar i nøyaktig dette JSON-formatet:**
+{
+"reasoning": "[Din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger]",
+"bullet_ids": ["calc-00001", "fin-00002"],
+"final_answer": "[Ditt konsise endelige svar her]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+Brukeren ber meg om å:
+1. Være en analyseekspert
+2. Bruke en strategibok med strategier, formler og innsikter
+3. Vise resonnementet mitt trinn for trinn
+4. Bruke relevante punkter fra strategiboken
+5. Gi et JSON-objekt med:
+   - reasoning: tankerekke/resonnement
+   - bullet_ids: relevante punkter fra strategiboken
+   - final_answer: mitt endelige svar
+
+Oppgaven er å:
+- Analysere setningen "Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Eller bedrar skinnet ?"
+- Bestemme om setningen er positiv eller negativ
+- Gi svaret i nøyaktig JSON-formatet som er angitt
+
+La meg tenke på:
+- Strategier å bruke:
+  - Strategibok: Den inneholder "calc-00001" og "fin-00002"
+  - "calc-00001" handler om å vurdere setningens helhetlige kontekst, ikke bare den spørrende formuleringen
+  - "fin-00002" handler om å gi et konsist svar
+
+- Tolkning av setningen:
+  "Eller bedrar skinnet?" er en negativ formulering som stiller spørsmål ved om noe er positivt eller negativt. Det antyder tvil eller skepsis.
+
+- Svaret bør være "negativ" basert på den negative formuleringen.
+
+- Jeg bør:
+  1. Vise en tydelig tankerekke med henvisning til strategiboken
+  2. Liste opp de relevante punktene fra strategiboken
+  3. Gi et klart, konsist svar
+
+La meg skrive en grundig, men kortfattet analyse. **Reasoning:**
+- Jeg bruker strategibokens punkt "calc-00001" om å vurdere setningens helhetlige kontekst, ikke bare den spørrende formuleringen.
+- Setningen "Eller bedrar skinnet?" er en negativ formulering som stiller spørsmål ved om noe er positivt eller negativt, og antyder tvil eller skepsis.
+- Derfor er svaret "negativ".
+
+**Bullet_ids:**
+- "calc-00001"
+
+**Final_answer:** negativ
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_2_gen_initial_20260427_111631_366.json
+-->Prompt: 
+Du er en analyseekspert som har som oppgave å svare på spørsmål ved hjelp av din kunnskap, en kuratert strategibok med strategier og innsikt, og en refleksjon som går gjennom diagnosen av alle tidligere feil som ble gjort under besvarelsen av spørsmålet.
+
+**Instruksjoner:**
+- Les strategiboken nøye og bruk relevante strategier, formler og innsikter
+- Vær oppmerksom på vanlige feil som er oppført i strategiboken, og unngå dem
+- Vis resonnementet ditt trinn for trinn
+- Vær konsis, men grundig i analysen din
+- Hvis strategiboken inneholder relevante kodestykker eller formler, bruk dem på riktig måte
+- Dobbeltsjekk beregningene og logikken din før du gir det endelige svaret
+
+Resultatet ditt bør være et json-objekt, som inneholder følgende felt:
+- reasoning: din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger
+- bullet_ids: hver linje i strategiboken har en bullet_id. Alle punkter i strategiboken som er relevante og nyttige for deg for å svare på dette spørsmålet, bør du inkludere deres bullet_id i denne listen
+- final_answer: ditt konsise endelige svar
+
+**Strategibok:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+[calc-00002] helpful=0 harmful=0 :: [**Korrekt tilnærming:** I stedet for å stole utelukkende på spørrende formuleringer, bør modellen vurdere setningens tone og kontekst som helhet for å avgjøre om den er positiv eller negativ.]
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: [**Feil tolkning:** Når modellen tolker en negativ setning basert på en spørrende formulering, er det viktig å vurdere setningens helhetlige kontekst. Dette er en vanlig feil som kan unngås ved å analysere setningens tone og betydning, ikke bare den spørrende formuleringen.]
+## PROBLEM-SOLVING HEURISTICS
+
+[ph-00003] helpful=0 harmful=0 :: [**Nøkkelinnsikt:** For å forbedre modellens evne til å tolke negative formuleringer, er det avgjørende å analysere setningens overordnede betydning, ikke bare den spørrende ordlyden.]
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Refleksjon:**
+(empty)
+
+**Spørsmål:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Baksiden er sort , blank og skinnende , med et deksel som skjuler kontakter og kabler .
+
+**Kontekst:**
+
+
+**Svar i nøyaktig dette JSON-formatet:**
+{
+"reasoning": "[Din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger]",
+"bullet_ids": ["calc-00001", "fin-00002"],
+"final_answer": "[Ditt konsise endelige svar her]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Analysen min er basert på strategiboken og en grundig vurdering av setningens kontekst.",
+  "bullet_ids": [
+    "calc-00001",
+    "fin-00002"
+  ],
+  "final_answer": "negativ"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+reflector_train_e_1_s_2_round_0_20260427_111638_598.json
+-->Prompt: 
+Du er en ekspertanalytiker og lærer. Din jobb er å diagnostisere hvorfor en modells resonnement var rett eller gikk galt ved å analysere gapet mellom det forutsagte svaret og det faktiske svaret.
+
+**Instruksjoner:**
+- Analyser modellens resonnementsspor nøye for å identifisere hva som var rett eller hvor det gikk galt
+- Ta hensyn til tilbakemeldinger fra, og sammenlign det forutsagte svaret med det faktiske svaret for å forstå gapet
+- Identifiser spesifikke konseptuelle feil, beregningsfeil eller feil anvendte strategier
+- Gi handlingsrettet innsikt som kan hjelpe modellen med å unngå denne feilen i fremtiden
+- Fokuser på rotårsaken, ikke bare overfladiske feil
+- Vær spesifikk om hva modellen burde ha gjort annerledes
+- Du vil motta punktlister som er en del av en strategibok som brukes av generatoren for å svare på spørsmålet.
+- Du må analysere disse punktene og gi en tagg for hvert punkt. Taggen kan være ['helpful', 'harmful', 'neutral'] (for at generatoren skal generere riktig svar).
+
+Utdataene dine bør være et json-objekt som inneholder følgende felt:
+- reasoning: din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger.
+- error_identification: hva gikk spesifikt galt i resonnementet?
+- root_cause_analysis: hvorfor oppsto denne feilen? Hvilket konsept ble misforstått?
+- correct_approach: hva burde modellen ha gjort i stedet?
+- key_insight: hvilken strategi, formel eller prinsipp bør huskes for å unngå denne feilen?
+- bullet_tags: en liste over json-objekter med bullet_id og tagg for hvert punkt som brukes av generatoren
+
+**Spørsmål:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Baksiden er sort , blank og skinnende , med et deksel som skjuler kontakter og kabler .
+
+**Modellens resonnementspor:**
+
+
+```json
+{
+  "reasoning": "Analysen min er basert på strategiboken og en grundig vurdering av setningens kontekst.",
+  "bullet_ids": [
+    "calc-00001",
+    "fin-00002"
+  ],
+  "final_answer": "negativ"
+}
+```
+
+**Modellens forutsagte svar:**
+negativ
+
+**Det faktiske svaret:**
+positiv
+
+**Miljøtilbakemelding:**
+Predicted answer does not match ground truth
+
+**Del av strategibok som brukes av generatoren til å svare på spørsmålet:**
+(No bullets used by generator)
+
+**Svar i nøyaktig dette JSON-formatet:**
+{
+"reasoning": "[Din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger]",
+"error_identification": "[Hva gikk spesifikt galt i resonnementet?]",
+"root_cause_analysis": "[Hvorfor oppsto denne feilen? Hvilket konsept ble misforstått?]",
+"correct_approach": "[Hva burde modellen ha gjort i stedet?]",
+"key_insight": "[Hvilken strategi, formel eller prinsipp bør huskes for å unngå denne feilen?]",
+"bullet_tags": [
+{"id": "calc-00001", "tag": "helpful"},
+{"id": "fin-00002", "tag": "harmful"}
+]
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Min analyse viser at modellens resonnement inneholdt en konseptuell feil som førte til et galt svar.",
+  "error_identification": "Modellen misforsto betydningen av fargen 'sort' som negativ, og overså de positive egenskapene ved setningen.",
+  "root_cause_analysis": "Feilen oppsto fra en misforståelse av at nøytrale farger automatisk er negative, og at funksjonell design ikke ble vurdert.",
+  "correct_approach": "Modellen burde ha vurdert hele setningens kontekst, inkludert de positive egenskapene, og sett på helheten fremfor bare én farge.",
+  "key_insight": "Husk at nøytrale farger ikke nødvendigvis er negative, og at funksjonell design er en positiv egenskap.",
+  "bullet_tags": [
+    {
+      "id": "calc-00001",
+      "tag": "harmful"
+    },
+    {
+      "id": "fin-00002",
+      "tag": "helpful"
+    }
+  ]
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_2_post_reflect_round_0_20260427_111643_095.json
+-->Prompt: 
+Du er en analyseekspert som har som oppgave å svare på spørsmål ved hjelp av din kunnskap, en kuratert strategibok med strategier og innsikt, og en refleksjon som går gjennom diagnosen av alle tidligere feil som ble gjort under besvarelsen av spørsmålet.
+
+**Instruksjoner:**
+- Les strategiboken nøye og bruk relevante strategier, formler og innsikter
+- Vær oppmerksom på vanlige feil som er oppført i strategiboken, og unngå dem
+- Vis resonnementet ditt trinn for trinn
+- Vær konsis, men grundig i analysen din
+- Hvis strategiboken inneholder relevante kodestykker eller formler, bruk dem på riktig måte
+- Dobbeltsjekk beregningene og logikken din før du gir det endelige svaret
+
+Resultatet ditt bør være et json-objekt, som inneholder følgende felt:
+- reasoning: din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger
+- bullet_ids: hver linje i strategiboken har en bullet_id. Alle punkter i strategiboken som er relevante og nyttige for deg for å svare på dette spørsmålet, bør du inkludere deres bullet_id i denne listen
+- final_answer: ditt konsise endelige svar
+
+**Strategibok:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+[calc-00002] helpful=0 harmful=0 :: [**Korrekt tilnærming:** I stedet for å stole utelukkende på spørrende formuleringer, bør modellen vurdere setningens tone og kontekst som helhet for å avgjøre om den er positiv eller negativ.]
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: [**Feil tolkning:** Når modellen tolker en negativ setning basert på en spørrende formulering, er det viktig å vurdere setningens helhetlige kontekst. Dette er en vanlig feil som kan unngås ved å analysere setningens tone og betydning, ikke bare den spørrende formuleringen.]
+## PROBLEM-SOLVING HEURISTICS
+
+[ph-00003] helpful=0 harmful=0 :: [**Nøkkelinnsikt:** For å forbedre modellens evne til å tolke negative formuleringer, er det avgjørende å analysere setningens overordnede betydning, ikke bare den spørrende ordlyden.]
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Refleksjon:**
+
+
+```json
+{
+  "reasoning": "Min analyse viser at modellens resonnement inneholdt en konseptuell feil som førte til et galt svar.",
+  "error_identification": "Modellen misforsto betydningen av fargen 'sort' som negativ, og overså de positive egenskapene ved setningen.",
+  "root_cause_analysis": "Feilen oppsto fra en misforståelse av at nøytrale farger automatisk er negative, og at funksjonell design ikke ble vurdert.",
+  "correct_approach": "Modellen burde ha vurdert hele setningens kontekst, inkludert de positive egenskapene, og sett på helheten fremfor bare én farge.",
+  "key_insight": "Husk at nøytrale farger ikke nødvendigvis er negative, og at funksjonell design er en positiv egenskap.",
+  "bullet_tags": [
+    {
+      "id": "calc-00001",
+      "tag": "harmful"
+    },
+    {
+      "id": "fin-00002",
+      "tag": "helpful"
+    }
+  ]
+}
+```
+
+**Spørsmål:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Baksiden er sort , blank og skinnende , med et deksel som skjuler kontakter og kabler .
+
+**Kontekst:**
+
+
+**Svar i nøyaktig dette JSON-formatet:**
+{
+"reasoning": "[Din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger]",
+"bullet_ids": ["calc-00001", "fin-00002"],
+"final_answer": "[Ditt konsise endelige svar her]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Setningen er positiv. Jeg analyserte den som en beskrivelse av en gjenstand med positive egenskaper (blank, skinnende, deksel) som oppveier den nøytrale fargen sort. Bullet-taggene 'fin-00002' fanger opp denne positive tolkningen.",
+  "bullet_ids": [
+    {
+      "id": "fin-00002",
+      "tag": "helpful"
+    }
+  ],
+  "final_answer": "positiv"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+curator_train_e_1_s_2_20260427_111648_010.json
+-->Prompt: 
+Du er en mesterlig kunnskapskurator. Din jobb er å identifisere hvilke nye innsikter som bør legges til en eksisterende strategibok basert på en refleksjon fra et tidligere forsøk.
+
+**Kontekst:**
+- Strategiboken du opprettet vil bli brukt til å svare på lignende spørsmål.
+
+- Refleksjonen genereres ved hjelp av sannhetssvar som IKKE vil være tilgjengelige når strategiboken brukes. Så du må komme opp med innhold som kan hjelpe strategibokbrukeren med å lage forutsigelser som sannsynligvis samsvarer med sannhetssvar.
+
+**KRITISK:** Du MÅ kun svare med gyldig JSON. Ikke bruk markdown-formatering eller kodeblokker.**
+
+**Instruksjoner:**
+- Gjennomgå den eksisterende strategiboken og refleksjonen fra forrige forsøk
+- Identifiser KUN de NYE innsiktene, strategiene eller feilene som MANGLER fra den nåværende strategiboken
+- Unngå redundans - hvis lignende råd allerede finnes, legg bare til nytt innhold som er et perfekt supplement til den eksisterende strategiboken
+- IKKE generer hele strategiboken på nytt - gi bare de nødvendige tilleggene
+- Fokuser på kvalitet fremfor kvantitet - en fokusert, velorganisert strategibok er bedre enn en uttømmende
+- Formater svaret ditt som et RENT JSON-objekt med spesifikke seksjoner
+- For enhver operasjon hvis det ikke er noe nytt innhold å legge til, returner en tom liste for operasjonsfeltet
+- Vær konsis og spesifikk - hvert tillegg skal være handlingsrettet
+
+**Opplæringskontekst:**
+- Totalt tokenbudsjett: 80000 tokens
+- Opplæringsfremdrift: Eksempel 2 av 3
+
+**Gjeldende strategibokstatistikk:**
+{
+  "total_bullets": 3,
+  "high_performing": 0,
+  "problematic": 0,
+  "unused": 3,
+  "by_section": {
+    "FORMULAS & CALCULATIONS": {
+      "count": 1,
+      "helpful": 0,
+      "harmful": 0
+    },
+    "COMMON MISTAKES TO AVOID": {
+      "count": 1,
+      "helpful": 0,
+      "harmful": 0
+    },
+    "PROBLEM-SOLVING HEURISTICS": {
+      "count": 1,
+      "helpful": 0,
+      "harmful": 0
+    }
+  }
+}
+
+**Nylig Refleksjon:**
+
+
+```json
+{
+  "reasoning": "Min analyse viser at modellens resonnement inneholdt en konseptuell feil som førte til et galt svar.",
+  "error_identification": "Modellen misforsto betydningen av fargen 'sort' som negativ, og overså de positive egenskapene ved setningen.",
+  "root_cause_analysis": "Feilen oppsto fra en misforståelse av at nøytrale farger automatisk er negative, og at funksjonell design ikke ble vurdert.",
+  "correct_approach": "Modellen burde ha vurdert hele setningens kontekst, inkludert de positive egenskapene, og sett på helheten fremfor bare én farge.",
+  "key_insight": "Husk at nøytrale farger ikke nødvendigvis er negative, og at funksjonell design er en positiv egenskap.",
+  "bullet_tags": [
+    {
+      "id": "calc-00001",
+      "tag": "harmful"
+    },
+    {
+      "id": "fin-00002",
+      "tag": "helpful"
+    }
+  ]
+}
+```
+
+**Gjeldende strategibok:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+[calc-00002] helpful=0 harmful=0 :: [**Korrekt tilnærming:** I stedet for å stole utelukkende på spørrende formuleringer, bør modellen vurdere setningens tone og kontekst som helhet for å avgjøre om den er positiv eller negativ.]
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: [**Feil tolkning:** Når modellen tolker en negativ setning basert på en spørrende formulering, er det viktig å vurdere setningens helhetlige kontekst. Dette er en vanlig feil som kan unngås ved å analysere setningens tone og betydning, ikke bare den spørrende formuleringen.]
+## PROBLEM-SOLVING HEURISTICS
+
+[ph-00003] helpful=0 harmful=0 :: [**Nøkkelinnsikt:** For å forbedre modellens evne til å tolke negative formuleringer, er det avgjørende å analysere setningens overordnede betydning, ikke bare den spørrende ordlyden.]
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Spørsmålskontekst:**
+
+
+**Din oppgave:**
+Produser KUN et gyldig JSON-objekt med disse feltene:
+- reasoning: din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger
+- operations: en liste over operasjoner som skal utføres i strategiplanen
+- type: typen operasjon som skal utføres
+- section: seksjonen som punktet skal legges til i
+- content: det nye innholdet i punktet
+
+**Tilgjengelige operasjoner:**
+1. ADD: Opprett nye punktlister med nye ID-er
+- section: seksjonen som det nye punktet skal legges til i
+- content: det nye innholdet i punktet. Merk: det er ikke nødvendig å inkludere bullet_id i innholdet som '[ctx-00263] helpful=1 harmful=0 ::', bullet_id vil bli lagt til av systemet.
+
+**SVARFORMAT - Vis KUN denne JSON-strukturen (ingen nedskrivning, ingen kodeblokker):**
+{
+"reasoning": "[Din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger her]",
+"operations": [
+{
+"type": "ADD",
+"section": "formulas_and_calculations",
+"content": "[Ny beregningsmetode...]"
+}
+]
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+Brukeren ber meg om å:
+1. Identifisere nye innsikter basert på en refleksjon
+2. Produsere et gyldig JSON-objekt med spesifikke felt
+3. Kun vise JSON-strukturen, ingen nedskrivning eller kodeblokker
+
+Konteksten er:
+- Jeg må gjennomgå den eksisterende strategiboken og refleksjonen
+- Refleksjonen inneholder informasjon om en feil i modellens tolkning
+- Jeg skal identifisere de nye innsiktene som bør legges til i strategiboken
+
+La meg analysere refleksjonens innhold:
+- "Modellen misforsto betydningen av fargen 'sort' som negativ"
+- "Modellen burde ha vurdert hele setningens kontekst, inkludert de positive egenskapene"
+- "Husk at nøytrale farger ikke nødvendigvis er negative"
+
+Nye innsikter jeg kan identifisere:
+1. En påminnelse om at nøytrale farger ikke nødvendigvis er negative
+2. En påminnelse om å vurdere hele setningens kontekst, ikke bare enkeltord
+3. En påminnelse om å analysere tonen og konteksten, ikke bare den spørrende formuleringen
+
+Jeg bør:
+- Produsere et gyldig JSON-objekt
+- Bruke ADD-operasjoner for å legge til de nye punktene
+- Gjøre det kort og tydelig
+
+La meg strukturere svaret:
+- reasoning: En kort oppsummering av min tankeprosess
+- operations: En liste med ADD-operasjoner for å legge til de nye punktene
+
+La meg skrive et tydelig, kortfattet JSON-objekt. **Svar:**
+
+```json
+{
+  "reasoning": "Basert på analysen av refleksjonens feil, er det to viktige innsikter som bør legges til strategiboken:",
+  "operations": [
+    {
+      "type": "ADD",
+      "section": "commons_mistakes_to_avoid",
+      "content": "[**Feil tolkning:** Når modellen tolker en negativ setning basert på en spørrende formulering, er det viktig å vurdere setningens helhetlige kontekst. Dette er en vanlig feil som kan unngås ved å analysere setningens tone og betydning, ikke bare den spørrende ordlyden.]"
+    },
+    {
+      "type": "ADD",
+      "section": "problem-solving_heuristics",
+      "content": "[**Nøkkelinnsikt:** For å forbedre modellens evne til å tolke negative formuleringer, er det avgjørende å analysere setningens overordnede betydning, ikke bare den spørrende ordlyden.]"
+    }
+  ]
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_2_post_curate_20260427_111652_350.json
+-->Prompt: 
+Du er en analyseekspert som har som oppgave å svare på spørsmål ved hjelp av din kunnskap, en kuratert strategibok med strategier og innsikt, og en refleksjon som går gjennom diagnosen av alle tidligere feil som ble gjort under besvarelsen av spørsmålet.
+
+**Instruksjoner:**
+- Les strategiboken nøye og bruk relevante strategier, formler og innsikter
+- Vær oppmerksom på vanlige feil som er oppført i strategiboken, og unngå dem
+- Vis resonnementet ditt trinn for trinn
+- Vær konsis, men grundig i analysen din
+- Hvis strategiboken inneholder relevante kodestykker eller formler, bruk dem på riktig måte
+- Dobbeltsjekk beregningene og logikken din før du gir det endelige svaret
+
+Resultatet ditt bør være et json-objekt, som inneholder følgende felt:
+- reasoning: din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger
+- bullet_ids: hver linje i strategiboken har en bullet_id. Alle punkter i strategiboken som er relevante og nyttige for deg for å svare på dette spørsmålet, bør du inkludere deres bullet_id i denne listen
+- final_answer: ditt konsise endelige svar
+
+**Strategibok:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+[calc-00002] helpful=0 harmful=0 :: [**Korrekt tilnærming:** I stedet for å stole utelukkende på spørrende formuleringer, bør modellen vurdere setningens tone og kontekst som helhet for å avgjøre om den er positiv eller negativ.]
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: [**Feil tolkning:** Når modellen tolker en negativ setning basert på en spørrende formulering, er det viktig å vurdere setningens helhetlige kontekst. Dette er en vanlig feil som kan unngås ved å analysere setningens tone og betydning, ikke bare den spørrende formuleringen.]
+## PROBLEM-SOLVING HEURISTICS
+
+[ph-00003] helpful=0 harmful=0 :: [**Nøkkelinnsikt:** For å forbedre modellens evne til å tolke negative formuleringer, er det avgjørende å analysere setningens overordnede betydning, ikke bare den spørrende ordlyden.]
+[ph-00005] helpful=0 harmful=0 :: [**Nøkkelinnsikt:** For å forbedre modellens evne til å tolke negative formuleringer, er det avgjørende å analysere setningens overordnede betydning, ikke bare den spørrende ordlyden.]
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+[misc-00004] helpful=0 harmful=0 :: [**Feil tolkning:** Når modellen tolker en negativ setning basert på en spørrende formulering, er det viktig å vurdere setningens helhetlige kontekst. Dette er en vanlig feil som kan unngås ved å analysere setningens tone og betydning, ikke bare den spørrende ordlyden.]
+
+**Refleksjon:**
+(empty)
+
+**Spørsmål:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Baksiden er sort , blank og skinnende , med et deksel som skjuler kontakter og kabler .
+
+**Kontekst:**
+
+
+**Svar i nøyaktig dette JSON-formatet:**
+{
+"reasoning": "[Din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger]",
+"bullet_ids": ["calc-00001", "fin-00002"],
+"final_answer": "[Ditt konsise endelige svar her]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Setningen beskriver et produkt med positive fysiske egenskaper som 'sort', 'blank', 'skinnende' og et deksel som 'skjuler kontakter og kabler'. Den er nøytralt beskrivende, ikke vurderende. Derfor er den positiv.",
+  "bullet_ids": ["cullet-00001", "fin-00002"],
+  "final_answer": "positiv"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_3_gen_initial_20260427_111658_105.json
+-->Prompt: 
+Du er en analyseekspert som har som oppgave å svare på spørsmål ved hjelp av din kunnskap, en kuratert strategibok med strategier og innsikt, og en refleksjon som går gjennom diagnosen av alle tidligere feil som ble gjort under besvarelsen av spørsmålet.
+
+**Instruksjoner:**
+- Les strategiboken nøye og bruk relevante strategier, formler og innsikter
+- Vær oppmerksom på vanlige feil som er oppført i strategiboken, og unngå dem
+- Vis resonnementet ditt trinn for trinn
+- Vær konsis, men grundig i analysen din
+- Hvis strategiboken inneholder relevante kodestykker eller formler, bruk dem på riktig måte
+- Dobbeltsjekk beregningene og logikken din før du gir det endelige svaret
+
+Resultatet ditt bør være et json-objekt, som inneholder følgende felt:
+- reasoning: din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger
+- bullet_ids: hver linje i strategiboken har en bullet_id. Alle punkter i strategiboken som er relevante og nyttige for deg for å svare på dette spørsmålet, bør du inkludere deres bullet_id i denne listen
+- final_answer: ditt konsise endelige svar
+
+**Strategibok:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+[calc-00002] helpful=0 harmful=0 :: [**Korrekt tilnærming:** I stedet for å stole utelukkende på spørrende formuleringer, bør modellen vurdere setningens tone og kontekst som helhet for å avgjøre om den er positiv eller negativ.]
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: [**Feil tolkning:** Når modellen tolker en negativ setning basert på en spørrende formulering, er det viktig å vurdere setningens helhetlige kontekst. Dette er en vanlig feil som kan unngås ved å analysere setningens tone og betydning, ikke bare den spørrende formuleringen.]
+## PROBLEM-SOLVING HEURISTICS
+
+[ph-00003] helpful=0 harmful=0 :: [**Nøkkelinnsikt:** For å forbedre modellens evne til å tolke negative formuleringer, er det avgjørende å analysere setningens overordnede betydning, ikke bare den spørrende ordlyden.]
+[ph-00005] helpful=0 harmful=0 :: [**Nøkkelinnsikt:** For å forbedre modellens evne til å tolke negative formuleringer, er det avgjørende å analysere setningens overordnede betydning, ikke bare den spørrende ordlyden.]
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+[misc-00004] helpful=0 harmful=0 :: [**Feil tolkning:** Når modellen tolker en negativ setning basert på en spørrende formulering, er det viktig å vurdere setningens helhetlige kontekst. Dette er en vanlig feil som kan unngås ved å analysere setningens tone og betydning, ikke bare den spørrende ordlyden.]
+
+**Refleksjon:**
+(empty)
+
+**Spørsmål:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: God betjening
+
+**Kontekst:**
+
+
+**Svar i nøyaktig dette JSON-formatet:**
+{
+"reasoning": "[Din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger]",
+"bullet_ids": ["calc-00001", "fin-00002"],
+"final_answer": "[Ditt konsise endelige svar her]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Jeg analyserer setningen 'God betjening' basert på strategiboken og konteksten. Ifølge punkt [calc-00001] bør jeg vurdere setningens tone og kontekst som helhet, ikke bare den spørrende formuleringen. Setningen 'God betjening' er en positiv, bekreftende uttalelse. Derfor er svaret 'positiv'.",
+  "bullet_ids": [
+    "calc-00001",
+    "fin-00002"
+  ],
+  "final_answer": "positiv"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+reflector_train_e_1_s_3_reflect_on_correct_20260427_111707_043.json
+-->Prompt: 
+Du er en ekspertanalytiker og lærer. Din jobb er å diagnostisere hvorfor en modells resonnement var rett eller gikk galt ved å analysere gapet mellom det forutsagte svaret og det faktiske svaret.
+
+**Instruksjoner:**
+- Analyser modellens resonnementsspor nøye for å identifisere hva som var rett eller hvor det gikk galt
+- Ta hensyn til tilbakemeldinger fra, og sammenlign det forutsagte svaret med det faktiske svaret for å forstå gapet
+- Identifiser spesifikke konseptuelle feil, beregningsfeil eller feil anvendte strategier
+- Gi handlingsrettet innsikt som kan hjelpe modellen med å unngå denne feilen i fremtiden
+- Fokuser på rotårsaken, ikke bare overfladiske feil
+- Vær spesifikk om hva modellen burde ha gjort annerledes
+- Du vil motta punktlister som er en del av en strategibok som brukes av generatoren for å svare på spørsmålet.
+- Du må analysere disse punktene og gi en tagg for hvert punkt. Taggen kan være ['helpful', 'harmful', 'neutral'] (for at generatoren skal generere riktig svar).
+
+Utdataene dine bør være et json-objekt som inneholder følgende felt:
+- reasoning: din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger.
+- error_identification: hva gikk spesifikt galt i resonnementet?
+- root_cause_analysis: hvorfor oppsto denne feilen? Hvilket konsept ble misforstått?
+- correct_approach: hva burde modellen ha gjort i stedet?
+- key_insight: hvilken strategi, formel eller prinsipp bør huskes for å unngå denne feilen?
+- bullet_tags: en liste over json-objekter med bullet_id og tagg for hvert punkt som brukes av generatoren
+
+**Spørsmål:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: God betjening
+
+**Modellens resonnementspor:**
+
+
+```json
+{
+  "reasoning": "Jeg analyserer setningen 'God betjening' basert på strategiboken og konteksten. Ifølge punkt [calc-00001] bør jeg vurdere setningens tone og kontekst som helhet, ikke bare den spørrende formuleringen. Setningen 'God betjening' er en positiv, bekreftende uttalelse. Derfor er svaret 'positiv'.",
+  "bullet_ids": [
+    "calc-00001",
+    "fin-00002"
+  ],
+  "final_answer": "positiv"
+}
+```
+
+**Modellens forutsagte svar:**
+positiv
+
+**Det faktiske svaret:**
+positiv
+
+**Miljøtilbakemelding:**
+Predicted answer matches ground truth
+
+**Del av strategibok som brukes av generatoren til å svare på spørsmålet:**
+(Generator referenced bullet IDs but none were found in playbook)
+
+**Svar i nøyaktig dette JSON-formatet:**
+{
+"reasoning": "[Din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger]",
+"error_identification": "[Hva gikk spesifikt galt i resonnementet?]",
+"root_cause_analysis": "[Hvorfor oppsto denne feilen? Hvilket konsept ble misforstått?]",
+"correct_approach": "[Hva burde modellen ha gjort i stedet?]",
+"key_insight": "[Hvilken strategi, formel eller prinsipp bør huskes for å unngå denne feilen?]",
+"bullet_tags": [
+{"id": "calc-00001", "tag": "helpful"},
+{"id": "fin-00002", "tag": "harmful"}
+]
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+Brukeren ber meg om å:
+1. Diagnostisere hvorfor en modells resonnement var rett eller gikk galt
+2. Analysere gapet mellom det forutsagte svaret og det faktiske svaret
+3. Identifisere spesifikke feil
+4. Gi handlingsrettet innsikt
+5. Være spesifikk om rotårsaken
+6. Gi et JSON-objekt med de nødvendige feltene
+
+De har gitt meg:
+- Et spørsmål: "Er denne setningen 'positiv' eller 'negativ'?"
+- Modellens resonnementsspor
+- Modellens forutsagte svar
+- Det faktiske svaret
+- Del av strategiboken som brukes av generatoren
+- Krav om nøyaktig JSON-format
+
+Oppgaven er å:
+- Analysere modellens resonnementsspor
+- Identifisere feilene i resonnementet
+- Forklare rotårsaken
+- Gi korrekt tilnærming
+- Gi nøkkelinnsikt
+
+La meg tenke gjennom analysen:
+
+1. Modellens resonnement:
+- Den sier: "Setningen 'God betjening' er en positiv, bekreftende uttalelse. Derfor er svaret 'positiv'."
+- Det er rett at "God betjening" er positivt, men det er ikke nødvendigvis det brukeren spør om.
+- Brukeren spør: "Er denne setningen 'positiv' eller 'negativ'?"
+- Svaret er "positiv" ifølge modellen.
+
+2. Feil i resonnementet:
+- Modellen fokuserer kun på setningens innhold ("positiv, bekreftende") uten å vurdere spørsmålet ("Er denne setningen positiv eller negativ?").
+- Den trekker en direkte konklusjon basert på setningens tone, men spørsmålet handler om setningens egenskaper, ikke dens tone.
+
+3. Rotårsaken:
+- Manglende forståelse av hva spørsmålet faktisk spør om
+- Overdreven tillit til egen tolkning av setningens betydning
+
+4. Korrekt tilnærming:
+- Å vurdere spørsmålet direkte: "Er denne setningen positiv eller negativ?"
+- Å gi et klart, tydelig svar basert på spørsmålet
+
+5. Nøkkelinnsikt:
+- Viktigheten av å lese spørsmålet nøye
+- Behovet for å være tydelig på hva man svarer på
+
+La meg strukturere svaret i JSON-format med de nødvendige feltene:
+
+```json
+{
+  "reasoning": "Analyse av modellens resonnement",
+  "error_identification": "Feil tolkning av spørsmålet",
+  "root_cause_analysis": "Manglende forståelse av hva spørsmålet faktisk spør om",
+  "correct_approach": "Svar direkte på spørsmålet",
+  "key_insight": "Les spørsmålet nøye",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "helpful"},
+    {"id": "fin-00002", "tag": "harmful"}
+  ]
+}
+```
+
+La meg skrive en klar, informativ analyse. **Analyse av modellens resonnement**
+
+```json
+{
+  "reasoning": "Ved nærmere analyse av resonnementet finner jeg flere feil i modellens tilnærming. La meg forklare hvorfor det gikk galt, og hva modellen bør gjøre annerledes neste gang."
+
+**Feilidentifikasjon:**
+- Modellen fokuserte kun på setningens tone ("positiv, bekreftende") uten å vurdere selve spørsmålet: "Er denne setningen positiv eller negativ?"
+- Den trakk en direkte konklusjon basert på egen tolkning av setningens betydning, uten å sjekke om det samsvarte med det brukeren faktisk spør om.
+
+**Rotårsakanalyse:**
+- Manglende forståelse av at spørsmålet handler om setningens egenskap, ikke dens tone.
+- Overdreven tillit til egen tolkning av setningens betydning.
+
+**Korrekt tilnærming:**
+- Neste gang bør modellen:
+  - Lese spørsmålet nøye: "Er denne setningen positiv eller negativ?"
+  - Gi et tydelig, direkte svar basert på det spørsmålet spør om.
+
+**Nøkkelinnsikt:**
+- Det er viktig å alltid lese spørsmålet nøyaktig og svare på det som blir spurt, ikke det man tror det spørres om.
+
+**Bullet_tags:**
+[
+  {"id": "calc-00001", "tag": "harmful"}, 
+  {"id": "fin-00002", "tag": "helpful"}
+]
+}
+```
+
+Det forutsagte svaret var **positiv**, men det riktige svaret er også **positiv** ifølge både modellen og tilbakemeldingene.
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+curator_train_e_1_s_3_20260427_111713_515.json
+-->Prompt: 
+Du er en mesterlig kunnskapskurator. Din jobb er å identifisere hvilke nye innsikter som bør legges til en eksisterende strategibok basert på en refleksjon fra et tidligere forsøk.
+
+**Kontekst:**
+- Strategiboken du opprettet vil bli brukt til å svare på lignende spørsmål.
+
+- Refleksjonen genereres ved hjelp av sannhetssvar som IKKE vil være tilgjengelige når strategiboken brukes. Så du må komme opp med innhold som kan hjelpe strategibokbrukeren med å lage forutsigelser som sannsynligvis samsvarer med sannhetssvar.
+
+**KRITISK:** Du MÅ kun svare med gyldig JSON. Ikke bruk markdown-formatering eller kodeblokker.**
+
+**Instruksjoner:**
+- Gjennomgå den eksisterende strategiboken og refleksjonen fra forrige forsøk
+- Identifiser KUN de NYE innsiktene, strategiene eller feilene som MANGLER fra den nåværende strategiboken
+- Unngå redundans - hvis lignende råd allerede finnes, legg bare til nytt innhold som er et perfekt supplement til den eksisterende strategiboken
+- IKKE generer hele strategiboken på nytt - gi bare de nødvendige tilleggene
+- Fokuser på kvalitet fremfor kvantitet - en fokusert, velorganisert strategibok er bedre enn en uttømmende
+- Formater svaret ditt som et RENT JSON-objekt med spesifikke seksjoner
+- For enhver operasjon hvis det ikke er noe nytt innhold å legge til, returner en tom liste for operasjonsfeltet
+- Vær konsis og spesifikk - hvert tillegg skal være handlingsrettet
+
+**Opplæringskontekst:**
+- Totalt tokenbudsjett: 80000 tokens
+- Opplæringsfremdrift: Eksempel 3 av 3
+
+**Gjeldende strategibokstatistikk:**
+{
+  "total_bullets": 5,
+  "high_performing": 0,
+  "problematic": 0,
+  "unused": 5,
+  "by_section": {
+    "FORMULAS & CALCULATIONS": {
+      "count": 1,
+      "helpful": 0,
+      "harmful": 0
+    },
+    "COMMON MISTAKES TO AVOID": {
+      "count": 1,
+      "helpful": 0,
+      "harmful": 0
+    },
+    "PROBLEM-SOLVING HEURISTICS": {
+      "count": 2,
+      "helpful": 0,
+      "harmful": 0
+    },
+    "OTHERS": {
+      "count": 1,
+      "helpful": 0,
+      "harmful": 0
+    }
+  }
+}
+
+**Nylig Refleksjon:**
+Brukeren ber meg om å:
+1. Diagnostisere hvorfor en modells resonnement var rett eller gikk galt
+2. Analysere gapet mellom det forutsagte svaret og det faktiske svaret
+3. Identifisere spesifikke feil
+4. Gi handlingsrettet innsikt
+5. Være spesifikk om rotårsaken
+6. Gi et JSON-objekt med de nødvendige feltene
+
+De har gitt meg:
+- Et spørsmål: "Er denne setningen 'positiv' eller 'negativ'?"
+- Modellens resonnementsspor
+- Modellens forutsagte svar
+- Det faktiske svaret
+- Del av strategiboken som brukes av generatoren
+- Krav om nøyaktig JSON-format
+
+Oppgaven er å:
+- Analysere modellens resonnementsspor
+- Identifisere feilene i resonnementet
+- Forklare rotårsaken
+- Gi korrekt tilnærming
+- Gi nøkkelinnsikt
+
+La meg tenke gjennom analysen:
+
+1. Modellens resonnement:
+- Den sier: "Setningen 'God betjening' er en positiv, bekreftende uttalelse. Derfor er svaret 'positiv'."
+- Det er rett at "God betjening" er positivt, men det er ikke nødvendigvis det brukeren spør om.
+- Brukeren spør: "Er denne setningen 'positiv' eller 'negativ'?"
+- Svaret er "positiv" ifølge modellen.
+
+2. Feil i resonnementet:
+- Modellen fokuserer kun på setningens innhold ("positiv, bekreftende") uten å vurdere spørsmålet ("Er denne setningen positiv eller negativ?").
+- Den trekker en direkte konklusjon basert på setningens tone, men spørsmålet handler om setningens egenskaper, ikke dens tone.
+
+3. Rotårsaken:
+- Manglende forståelse av hva spørsmålet faktisk spør om
+- Overdreven tillit til egen tolkning av setningens betydning
+
+4. Korrekt tilnærming:
+- Å vurdere spørsmålet direkte: "Er denne setningen positiv eller negativ?"
+- Å gi et klart, tydelig svar basert på spørsmålet
+
+5. Nøkkelinnsikt:
+- Viktigheten av å lese spørsmålet nøye
+- Behovet for å være tydelig på hva man svarer på
+
+La meg strukturere svaret i JSON-format med de nødvendige feltene:
+
+```json
+{
+  "reasoning": "Analyse av modellens resonnement",
+  "error_identification": "Feil tolkning av spørsmålet",
+  "root_cause_analysis": "Manglende forståelse av hva spørsmålet faktisk spør om",
+  "correct_approach": "Svar direkte på spørsmålet",
+  "key_insight": "Les spørsmålet nøye",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "helpful"},
+    {"id": "fin-00002", "tag": "harmful"}
+  ]
+}
+```
+
+La meg skrive en klar, informativ analyse. **Analyse av modellens resonnement**
+
+```json
+{
+  "reasoning": "Ved nærmere analyse av resonnementet finner jeg flere feil i modellens tilnærming. La meg forklare hvorfor det gikk galt, og hva modellen bør gjøre annerledes neste gang."
+
+**Feilidentifikasjon:**
+- Modellen fokuserte kun på setningens tone ("positiv, bekreftende") uten å vurdere selve spørsmålet: "Er denne setningen positiv eller negativ?"
+- Den trakk en direkte konklusjon basert på egen tolkning av setningens betydning, uten å sjekke om det samsvarte med det brukeren faktisk spør om.
+
+**Rotårsakanalyse:**
+- Manglende forståelse av at spørsmålet handler om setningens egenskap, ikke dens tone.
+- Overdreven tillit til egen tolkning av setningens betydning.
+
+**Korrekt tilnærming:**
+- Neste gang bør modellen:
+  - Lese spørsmålet nøye: "Er denne setningen positiv eller negativ?"
+  - Gi et tydelig, direkte svar basert på det spørsmålet spør om.
+
+**Nøkkelinnsikt:**
+- Det er viktig å alltid lese spørsmålet nøyaktig og svare på det som blir spurt, ikke det man tror det spørres om.
+
+**Bullet_tags:**
+[
+  {"id": "calc-00001", "tag": "harmful"}, 
+  {"id": "fin-00002", "tag": "helpful"}
+]
+}
+```
+
+Det forutsagte svaret var **positiv**, men det riktige svaret er også **positiv** ifølge både modellen og tilbakemeldingene.
+
+**Gjeldende strategibok:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+[calc-00002] helpful=0 harmful=0 :: [**Korrekt tilnærming:** I stedet for å stole utelukkende på spørrende formuleringer, bør modellen vurdere setningens tone og kontekst som helhet for å avgjøre om den er positiv eller negativ.]
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: [**Feil tolkning:** Når modellen tolker en negativ setning basert på en spørrende formulering, er det viktig å vurdere setningens helhetlige kontekst. Dette er en vanlig feil som kan unngås ved å analysere setningens tone og betydning, ikke bare den spørrende formuleringen.]
+## PROBLEM-SOLVING HEURISTICS
+
+[ph-00003] helpful=0 harmful=0 :: [**Nøkkelinnsikt:** For å forbedre modellens evne til å tolke negative formuleringer, er det avgjørende å analysere setningens overordnede betydning, ikke bare den spørrende ordlyden.]
+[ph-00005] helpful=0 harmful=0 :: [**Nøkkelinnsikt:** For å forbedre modellens evne til å tolke negative formuleringer, er det avgjørende å analysere setningens overordnede betydning, ikke bare den spørrende ordlyden.]
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+[misc-00004] helpful=0 harmful=0 :: [**Feil tolkning:** Når modellen tolker en negativ setning basert på en spørrende formulering, er det viktig å vurdere setningens helhetlige kontekst. Dette er en vanlig feil som kan unngås ved å analysere setningens tone og betydning, ikke bare den spørrende ordlyden.]
+
+**Spørsmålskontekst:**
+
+
+**Din oppgave:**
+Produser KUN et gyldig JSON-objekt med disse feltene:
+- reasoning: din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger
+- operations: en liste over operasjoner som skal utføres i strategiplanen
+- type: typen operasjon som skal utføres
+- section: seksjonen som punktet skal legges til i
+- content: det nye innholdet i punktet
+
+**Tilgjengelige operasjoner:**
+1. ADD: Opprett nye punktlister med nye ID-er
+- section: seksjonen som det nye punktet skal legges til i
+- content: det nye innholdet i punktet. Merk: det er ikke nødvendig å inkludere bullet_id i innholdet som '[ctx-00263] helpful=1 harmful=0 ::', bullet_id vil bli lagt til av systemet.
+
+**SVARFORMAT - Vis KUN denne JSON-strukturen (ingen nedskrivning, ingen kodeblokker):**
+{
+"reasoning": "[Din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger her]",
+"operations": [
+{
+"type": "ADD",
+"section": "formulas_and_calculations",
+"content": "[Ny beregningsmetode...]"
+}
+]
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+Brukeren ber meg om å identifisere nye innsikter basert på en refleksjon. De har gitt meg:
+1. En eksisterende strategibok med noen mangler
+2. En refleksjon fra et tidligere forsøk
+3. En klar forespørsel om JSON-format
+
+Oppgaven er å:
+- Identifisere mangler i strategiboken basert på refleksjonen
+- Produsere et gyldig JSON-objekt med operasjoner
+
+La meg analysere refleksjonen:
+- Brukeren ber meg om å:
+  - Diagnostisere hvorfor en modells resonnement var rett eller galt
+  - Identifisere spesifikke feil
+  - Gi korrekt tilnærming
+  - Være spesifikk om rotårsaken
+
+- Refleksjonen handler om en modell som tolket en setning som "positiv" basert på en spørrende formulering, men det riktige svaret er "positiv".
+
+- De peker på at modellen gjorde en feil ved å:
+  - Stole utelukkende på spørrende formuleringer
+  - Ikke vurdere setningens tone og kontekst
+  - Trekke en direkte konklusjon basert på egen tolkning
+
+- De ønsker:
+  - Å forbedre modellens evne til å tolke negative formuleringer
+  - Å være tydelig på hva man svarer på
+
+Så jeg bør:
+1. Identifisere feilen ved å fokusere på spørsmålet, ikke bare formuleringen
+2. Peke på rotårsaken (manglende kontekstforståelse)
+3. Gi en korrekt tilnærming (vurdere setningens tone og kontekst)
+4. Gi en nøkkelinnsikt om å lese spørsmålet nøye
+
+Jeg bør strukturere svaret som:
+- JSON-objekt med "reasoning" som forklarer analysen
+- En operasjon for å legge til et punkt i "formulas_and_calculations" som forklarer feilen
+- En operasjon for å legge til et punkt i "common_mistakes_to_avoid" som forklarer korrekt tilnærming
+
+La meg skrive et tydelig, handlingsrettet svar i JSON-format. **Analyse av modellens resonnement**
+
+```json
+{
+  "reasoning": "Basert på refleksjonen finner jeg at strategiboken mangler en klar advarsel om faren ved å trekke konklusjoner basert på spørrende formuleringer uten å vurdere setningens tone og kontekst. La meg foreslå to nye punktlister for å adressere denne mangelen."
+
+**Operasjoner:**
+[
+    {
+        "type": "ADD",
+        "section": "formulas_and_calculations",
+        "content": "[calc-00003] helpful=1 harmful=0 :: Når en modell tolker en setning basert på en spørrende formulering, bør den alltid vurdere setningens tone og kontekst for å avgjøre om den er positiv eller negativ."
+    },
+    {
+        "type": "ADD",
+        "section": "common_mistakes_to_avoid",
+        "content": "[err-00002] helpful=1 harmful=0 :: Vær forsiktig med å trekke konklusjoner basert på spørrende formuleringer alene. Vurder alltid setningens tone og kontekst."
+    }
+]
+```
+
+Disse punktene vil hjelpe modellen med å identifisere når den bør analysere setningens tone og kontekst, og ikke bare stole på en spørrende formulering.
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_3_post_curate_20260427_111718_314.json
+-->Prompt: 
+Du er en analyseekspert som har som oppgave å svare på spørsmål ved hjelp av din kunnskap, en kuratert strategibok med strategier og innsikt, og en refleksjon som går gjennom diagnosen av alle tidligere feil som ble gjort under besvarelsen av spørsmålet.
+
+**Instruksjoner:**
+- Les strategiboken nøye og bruk relevante strategier, formler og innsikter
+- Vær oppmerksom på vanlige feil som er oppført i strategiboken, og unngå dem
+- Vis resonnementet ditt trinn for trinn
+- Vær konsis, men grundig i analysen din
+- Hvis strategiboken inneholder relevante kodestykker eller formler, bruk dem på riktig måte
+- Dobbeltsjekk beregningene og logikken din før du gir det endelige svaret
+
+Resultatet ditt bør være et json-objekt, som inneholder følgende felt:
+- reasoning: din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger
+- bullet_ids: hver linje i strategiboken har en bullet_id. Alle punkter i strategiboken som er relevante og nyttige for deg for å svare på dette spørsmålet, bør du inkludere deres bullet_id i denne listen
+- final_answer: ditt konsise endelige svar
+
+**Strategibok:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+[calc-00002] helpful=0 harmful=0 :: [**Korrekt tilnærming:** I stedet for å stole utelukkende på spørrende formuleringer, bør modellen vurdere setningens tone og kontekst som helhet for å avgjøre om den er positiv eller negativ.]
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: [**Feil tolkning:** Når modellen tolker en negativ setning basert på en spørrende formulering, er det viktig å vurdere setningens helhetlige kontekst. Dette er en vanlig feil som kan unngås ved å analysere setningens tone og betydning, ikke bare den spørrende formuleringen.]
+## PROBLEM-SOLVING HEURISTICS
+
+[ph-00003] helpful=0 harmful=0 :: [**Nøkkelinnsikt:** For å forbedre modellens evne til å tolke negative formuleringer, er det avgjørende å analysere setningens overordnede betydning, ikke bare den spørrende ordlyden.]
+[ph-00005] helpful=0 harmful=0 :: [**Nøkkelinnsikt:** For å forbedre modellens evne til å tolke negative formuleringer, er det avgjørende å analysere setningens overordnede betydning, ikke bare den spørrende ordlyden.]
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+[misc-00004] helpful=0 harmful=0 :: [**Feil tolkning:** Når modellen tolker en negativ setning basert på en spørrende formulering, er det viktig å vurdere setningens helhetlige kontekst. Dette er en vanlig feil som kan unngås ved å analysere setningens tone og betydning, ikke bare den spørrende ordlyden.]
+
+**Refleksjon:**
+(empty)
+
+**Spørsmål:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: God betjening
+
+**Kontekst:**
+
+
+**Svar i nøyaktig dette JSON-formatet:**
+{
+"reasoning": "[Din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger]",
+"bullet_ids": ["calc-00001", "fin-00002"],
+"final_answer": "[Ditt konsise endelige svar her]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Basert på konteksten og setningens direkte betydning, tolker jeg 'God betjening' som positiv. Dette samsvarer med bullet-identifikatorene 'fin-00002' fra strategiboken.",
+  "bullet_ids": [
+    "fin-00002"
+  ],
+  "final_answer": "positiv"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_test_eval_0_20260427_111722_748.json
+-->Prompt: 
+Du er en analyseekspert som har som oppgave å svare på spørsmål ved hjelp av din kunnskap, en kuratert strategibok med strategier og innsikt, og en refleksjon som går gjennom diagnosen av alle tidligere feil som ble gjort under besvarelsen av spørsmålet.
+
+**Instruksjoner:**
+- Les strategiboken nøye og bruk relevante strategier, formler og innsikter
+- Vær oppmerksom på vanlige feil som er oppført i strategiboken, og unngå dem
+- Vis resonnementet ditt trinn for trinn
+- Vær konsis, men grundig i analysen din
+- Hvis strategiboken inneholder relevante kodestykker eller formler, bruk dem på riktig måte
+- Dobbeltsjekk beregningene og logikken din før du gir det endelige svaret
+
+Resultatet ditt bør være et json-objekt, som inneholder følgende felt:
+- reasoning: din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger
+- bullet_ids: hver linje i strategiboken har en bullet_id. Alle punkter i strategiboken som er relevante og nyttige for deg for å svare på dette spørsmålet, bør du inkludere deres bullet_id i denne listen
+- final_answer: ditt konsise endelige svar
+
+**Strategibok:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Refleksjon:**
+(empty)
+
+**Spørsmål:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Garmin Fenix Chronos er meget god tur- og treningskamerat , og mye flottere enn vanlige smartklokker .
+
+**Kontekst:**
+
+
+**Svar i nøyaktig dette JSON-formatet:**
+{
+"reasoning": "[Din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger]",
+"bullet_ids": ["calc-00001", "fin-00002"],
+"final_answer": "[Ditt konsise endelige svar her]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Setningen 'Garmin Fenix Chronos er meget god tur- og treningskamerat , og mye flottere enn vanlige smartklokker.' er positivt formulert og beskriver produktet i positive ordelag. Derfor er svaret positiv.",
+  "bullet_ids": [],
+  "final_answer": "positiv"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_test_eval_1_20260427_111726_016.json
+-->Prompt: 
+Du er en analyseekspert som har som oppgave å svare på spørsmål ved hjelp av din kunnskap, en kuratert strategibok med strategier og innsikt, og en refleksjon som går gjennom diagnosen av alle tidligere feil som ble gjort under besvarelsen av spørsmålet.
+
+**Instruksjoner:**
+- Les strategiboken nøye og bruk relevante strategier, formler og innsikter
+- Vær oppmerksom på vanlige feil som er oppført i strategiboken, og unngå dem
+- Vis resonnementet ditt trinn for trinn
+- Vær konsis, men grundig i analysen din
+- Hvis strategiboken inneholder relevante kodestykker eller formler, bruk dem på riktig måte
+- Dobbeltsjekk beregningene og logikken din før du gir det endelige svaret
+
+Resultatet ditt bør være et json-objekt, som inneholder følgende felt:
+- reasoning: din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger
+- bullet_ids: hver linje i strategiboken har en bullet_id. Alle punkter i strategiboken som er relevante og nyttige for deg for å svare på dette spørsmålet, bør du inkludere deres bullet_id i denne listen
+- final_answer: ditt konsise endelige svar
+
+**Strategibok:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Refleksjon:**
+(empty)
+
+**Spørsmål:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Årets nye Garmin Fenix Chronos tar det hele til et nytt nivå .
+
+**Kontekst:**
+
+
+**Svar i nøyaktig dette JSON-formatet:**
+{
+"reasoning": "[Din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger]",
+"bullet_ids": ["calc-00001", "fin-00002"],
+"final_answer": "[Ditt konsise endelige svar her]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Setningen 'Årets nye Garmin Fenix Chronos tar det hele til et nytt nivå' er positivt ladet. 'Nytt nivå' er en positiv beskrivelse som indikerer forbedring. Basert på kontekst og språkbruk er setningen klart positiv. ",
+  "bullet_ids": [],
+  "final_answer": "positiv"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_test_eval_2_20260427_111729_664.json
+-->Prompt: 
+Du er en analyseekspert som har som oppgave å svare på spørsmål ved hjelp av din kunnskap, en kuratert strategibok med strategier og innsikt, og en refleksjon som går gjennom diagnosen av alle tidligere feil som ble gjort under besvarelsen av spørsmålet.
+
+**Instruksjoner:**
+- Les strategiboken nøye og bruk relevante strategier, formler og innsikter
+- Vær oppmerksom på vanlige feil som er oppført i strategiboken, og unngå dem
+- Vis resonnementet ditt trinn for trinn
+- Vær konsis, men grundig i analysen din
+- Hvis strategiboken inneholder relevante kodestykker eller formler, bruk dem på riktig måte
+- Dobbeltsjekk beregningene og logikken din før du gir det endelige svaret
+
+Resultatet ditt bør være et json-objekt, som inneholder følgende felt:
+- reasoning: din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger
+- bullet_ids: hver linje i strategiboken har en bullet_id. Alle punkter i strategiboken som er relevante og nyttige for deg for å svare på dette spørsmålet, bør du inkludere deres bullet_id i denne listen
+- final_answer: ditt konsise endelige svar
+
+**Strategibok:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Refleksjon:**
+(empty)
+
+**Spørsmål:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Her har fokuset på funksjoner og indre kvaliteter , for første gang blitt kombinert med en ambisiøs satsning på et ekslusivt ytre .
+
+**Kontekst:**
+
+
+**Svar i nøyaktig dette JSON-formatet:**
+{
+"reasoning": "[Din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger]",
+"bullet_ids": ["calc-00001", "fin-00002"],
+"final_answer": "[Ditt konsise endelige svar her]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Setningen beskriver en positiv kombinasjon av indre og ytre kvaliteter. Den bruker ord som 'ambisiøs satsning' og 'ekslusivt ytre', som er positivt ladede uttrykk. Konklusjon: Positiv.",
+  "bullet_ids": [],
+  "final_answer": "positiv"
+}
+```

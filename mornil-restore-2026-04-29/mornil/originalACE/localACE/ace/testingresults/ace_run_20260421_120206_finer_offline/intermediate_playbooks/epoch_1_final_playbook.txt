@@ -1,0 +1,25 @@
+## STRATEGIES & INSIGHTS
+
+[sai-00007] helpful=1 harmful=0 :: When mapping numeric values to GAAP tags, first identify the context: if the number refers to a principal amount of a credit facility, use borrowing capacity tags; if the number is a percentage spread over a benchmark rate, use basis spread tags. Avoid generic tags like DebtInstrumentPrincipalAmount1 unless the context explicitly states a principal amount.
+[sai-00011] helpful=0 harmful=0 :: Always map any customer concentration percentage (e.g., "top customers contributed 44% of revenue") to the ConcentrationRiskPercentage1 tag, as this is the GAAP tag for revenue concentration risk.
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00002] helpful=1 harmful=0 :: Do not equate "shares of common stock" with shares outstanding; verify whether the shares are issued as part of a business combination. Avoid treating aggregate consideration as a cash payment; distinguish between cash paid and total consideration transferred.
+[err-00005] helpful=0 harmful=0 :: Do not confuse RSU counts with non‑vested numbers; RSUs granted are GrantsInPeriod, not ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsNonvestedNumber. Do not treat a sale of shares as a sale transaction; if shares were issued during the period, use StockIssuedDuringPeriodSharesNewIssues.
+[err-00009] helpful=0 harmful=0 :: Avoid interpreting "availability" as indicating current borrowing capacity; the numeric value refers to the maximum borrowing capacity of the credit facility.
+[err-00012] helpful=0 harmful=0 :: Do not overlook concentration risk metrics; if a percentage of revenue is attributed to a small group of customers, tag it as ConcentrationRiskPercentage1.
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+[ctx-00001] helpful=1 harmful=0 :: When a sentence mentions "shares of common stock" in the context of a business combination, tag it as BusinessAcquisitionEquityInterestsIssuedOrIssuableNumberOfSharesIssued. If the phrase includes "cash paid" or "cash consideration", use PaymentsToAcquireBusinessesGross. If the wording is "total consideration transferred" or "aggregate consideration", apply BusinessCombinationConsiderationTransferred1.
+[ctx-00004] helpful=0 harmful=0 :: When a sentence contains the verb "grant", tag as ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsInPeriod. When it contains "sold" or "issued", tag as StockIssuedDuringPeriodSharesNewIssues. For a convertible preferred stock price, tag as DebtInstrumentConvertibleConversionPrice1.
+[ctx-00006] helpful=0 harmful=1 :: When a numeric value is paired with phrases such as "maximum borrowing capacity", "revolving credit facility", or "credit limit", it indicates the borrowing capacity of a credit facility and should be tagged as LineOfCreditFacilityMaximumBorrowingCapacity. When a numeric value is expressed as a percentage and described as a spread over a benchmark rate (e.g., "basis spread", "spread over LIBOR", "spread over the prime rate"), it represents a debt instrument basis spread and should be tagged as DebtInstrumentBasisSpreadOnVariableRate1.
+[ctx-00008] helpful=0 harmful=0 :: When a numeric value appears in a sentence that also contains words such as "availability", "current", or "available", still tag it as LineOfCreditFacilityMaximumBorrowingCapacity if the numeric value refers to the credit facility limit. The surrounding words describe the state, not the limit.
+[ctx-00010] helpful=0 harmful=0 :: When a sentence includes a percentage of revenue attributable to a limited number of customers (e.g., "major customers accounted for 44% of revenues"), tag it as ConcentrationRiskPercentage1.
+## OTHERS
+[misc-00003] helpful=0 harmful=0 :: 1. Identify the key noun phrase (shares, cash, consideration). 2. Look for action verbs such as "issued", "paid", or "transferred". 3. Match the phrase and verb to the precise GAAP tag definition: shares issued → BusinessAcquisitionEquityInterestsIssuedOrIssuableNumberOfSharesIssued; cash paid → PaymentsToAcquireBusinessesGross; total consideration transferred → BusinessCombinationConsiderationTransferred1.

@@ -1,0 +1,15 @@
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: [Root cause analysis] - En grundig analyse av hvorfor feilene oppstod.
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+[misc-00002] helpful=0 harmful=0 :: [Konkret feilidentifikasjon] - Spesifikke eksempler på hva modellen gjorde feil.

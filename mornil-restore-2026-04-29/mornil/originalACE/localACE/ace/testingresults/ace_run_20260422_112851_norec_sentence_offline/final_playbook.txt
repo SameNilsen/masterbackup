@@ -1,0 +1,14 @@
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: [ctx-00003] harmful=0 helpful=1 :: Unngå å tolke nøytrale setninger som negative uten klar kontekst.
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS

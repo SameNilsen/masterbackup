@@ -1,0 +1,234 @@
+--- Starting logging responses --- 
+
+promptBaseline of the 10 requests: 
+Query: Which city is the Eiffel Tower located in?
+Response: Which city is the Eiffel Tower located in? Given the user is asking "Which city is the Eiffel Tower located in?"
+
+The Eiffel Tower is located in Paris, France.
+
+I should:
+    1. Give a clear, informative answer about where the Eiffel Tower is located
+    2. Present the information in a clear, informative way
+
+Let me think about the best approach:
+- Direct, informative statement
+- Mention the city name and country
+- Keep it concief and clear
+
+The Eiffel Tower is indeed located in Paris, France, so I should provide a clear, informatal response about that.
+
+I should:
+- State "The Eiffel Tower is located in Paris, France."
+
+Let me formulate a clear, informative response. Paris, France. The Eiffel Tower is located in Paris.
+
+prompt1 of the 10 requests: 
+Query: What is 2+2?
+Response: What is 2+2? 
+
+This is a straightforward question about arithmetic. The user is asking "What is 2+2?"
+
+I should:
+1. Give a clear, informative answer about what 2+2 equals
+2. Be helpful and informative
+
+The answer to 2+2 is 4, so I should:
+- Provide a clear, informative response
+- Keep it concative and helpful
+
+Let me formulate a clear, informative response. 2 + 2 = 4
+
+prompt2 of the 10 requests: 
+Query: What is the capital of France?
+Response: What is the capital of France? 
+
+The user is asking "What is the capital of France?"
+
+This is a factual question about geography and government. The capital of France is Paris.
+
+I should:
+1. Give a clear, informative answer about what the capital of France is
+2. Present the information in a clear, informative way
+
+The most appropriate response would be:
+- "The capital of France is Paris."
+
+I should:
+- Give a clear, informative statement
+- Keep it conctained and direct
+
+Let me formulate a clear, informative response. The capital of France is Paris.
+
+prompt3 of the 10 requests: 
+Query: What is the meaning of life?
+Response: What is the meaning of life? This is a deep philosophical question that has been debated throughout human history and continues to be explored by individuals from various backgrounds and perspectives. I should:
+
+1. Acknowledge that there isn't a single definitive answer
+2. Present different perspectives and viewpoints
+3. Encourage reflection and individual discovery
+4. Be respectful and open-minded
+
+La meg tenke på ulike tilnærminger:
+- Eksistensialistisk: Livet har ingen iboende mening, det er opp til den enkelte å gi det mening
+- Religiøse perspektiver: Ulike religioner har sine svar
+- Vitenskapelige perspektiver: Noen ser på mening som subjektiv opplevelse
+- Filosofiske perspektiver: Ulike filosofiske retninger har ulike syn
+
+Jeg bør:
+- Starte med å anerkjenne at det ikke finnes et objektivt svar
+- Presentere ulike perspektiver på en balansert måte
+- Oppfordre til refleksjon og personlig søken
+
+La meg strukturere svaret:
+- Anerkjenne at det ikke finnes et universelt svar
+- Presentere noen vanlige perspektiver
+- Oppfordre til refleksjon
+
+La meg skrive et klart, informatisk og respektfullt svar. Det finnes ikke noe objektivt, universelt svar på «hva meningen med livet er». Det er en subjektiv opplevelse som varierer sterkt mellom individer og kulturer.
+
+Noen vanlige tilnærminger:
+
+**Eksistensialistisk perspektiv:**
+Meningen med livet er noe du selv må skape gjennom dine valg, handlinger og relasjoner. Du er den som gir livet ditt verdi og mening.
+
+**Religiøse perspektiver:**
+For mange gir troen på en høyere makt eller et større formål en dypere mening med livet.
+
+**Personlig opplevelse:**
+Meningen kan være knyttet til å føle seg nyttig, ha gode relasjoner, oppnå noe meningsfullt, eller bare å være til stede i øyeblikket.
+
+Det viktigste er kanskje ikke å finne én stor, universell mening, men å oppdage hva som gir ditt eget liv verdi og retning. Hva som gir deg glede, motivasjon og en følelse av å leve et meningsfullt liv.
+
+prompt4 of the 10 requests: 
+Query: How many continents are there on Earth?
+Response: How many continents are there on Earth? I've heard different numbers.
+
+Let's think about this:
+
+- There are typically seven continents recognized: North America, South America, Europe, Asia, Africa, Australia, Antarctica.
+
+- Sometimes "Europe/Asia" might be considered as a single continent, but most commonly they're treated as separate.
+
+- The number of continents is usually considered to be 7.
+
+I should:
+1. Acknowledge the ambiguity
+2. Give a clear, informally established number
+3. Maybe mention that there's sometimes debate
+
+Let me formulate a helpful, informally correct response. The generally accepted number of continents on Earth is **7** – North America, South America, Europe, Asia, Africa, Australia, and Antarctica.
+
+prompt5 of the 10 requests: 
+Query: How are you doing today?
+Response: How are you doing today? I'm doing well, thank you. How about you?
+
+User is asking "How are you doing today? I'm doing well, thank you. How about you?"
+
+This is a simple, friendly social interaction question. I should:
+1. Acknowledge their hilsen
+2. Holde det kort og positivt
+3. Spørre tilbake om mitt velvære
+
+Jeg bør:
+- Holde det uformelt og vennlig
+- Holde svaret kort og positivt
+- Holde meg til temaet
+
+La meg tenke på et passende svar:
+- "Jo takk, bare bra"
+- "Samme her"
+- "Jeg gjør det bare bra, takk"
+
+La meg formulere et vennlig, kort svar. Takk, jeg har det bare bra! Hva skjer hos deg i dag?
+
+prompt6 of the 10 requests: 
+Query: Which city is the Eiffel Tower located in?
+Response: Which city is the Eiffel Tower located in? Given the user is asking "Which city is the Eiffel Tower located in?"
+
+The Eiffel Tower is located in Paris, France. This is a factual question about a famous landmark.
+
+I should:
+1. Provide a clear, informative answer about where the Eiffel Tower is located
+2. Keep it concert and informative
+
+Let me think about the best way to answer:
+- Direct statement: "The Eiffel Tower is located in Paris, France."
+- Brief but informative
+
+I should give a clear, informative response. Paris, France. The Eiffel Tower is located in Paris, France.
+
+prompt7 of the 10 requests: 
+Query: How many legs does a spider have?
+Response: How many legs does a spider have? 
+
+The user is asking "How many legs does a spider have?"
+
+This is a straightforward factual question about spiders.
+
+Spiders typically have eight legs. This is a well-established biological fact.
+
+I should:
+1. Give a clear, informative answer
+2. Present the information in a clear, informative way
+
+The appropriate answer is "typically eight legs".
+
+Let me structure a clear, informative response. 
+
+**Spiders har vanligvis åtte bein.**
+
+prompt8 of the 10 requests: 
+Query: What is the largest mammal?
+Response: What is the largest mammal? 
+
+The user is asking "What is the largest mammal?"
+
+This is a factual question about mammalian biology and ecology. The largest mammal is generally considered to be the blue whale (Balaenoptera musculus).
+
+I should:
+1. Give a clear, informative answer about which mammal is currently considered the largest.
+2. Present the scientific name for completeness.
+3. Be concative and helpful.
+
+The blue whale is indeed the largest known mammal, with adult males reaching lengths of up to 33 meters (~108 feet) and weighing up to 200 tons.
+
+I should provide a clear, informative response. The largest mammal is the blue whale (Balaenoptera musculus). Adult males can reach lengths of up to 33 meters (~108 feet) and weigh over 200 tons.
+
+prompt9 of the 10 requests: 
+Query: What is the chemical symbol for water?
+Response: What is the chemical symbol for water? 
+
+The user is asking "What is the chemical symbol for water?"
+
+The chemical symbol for water is H2O.
+
+I should:
+1. Give a clear, informative answer about the chemical symbol for water.
+2. Present the symbol in a clear, informative way.
+
+Let's think about the structure:
+- Water is H2O
+- "H" stands for hydrogen
+- "O" stands for oxygen
+
+So the chemical symbol for water is H2O.
+
+I should:
+- Give a clear, informative response
+- Present the symbol H2O
+
+Let symbol for water is **H2O**.
+
+prompt10 of the 10 requests: 
+Query: Who is the current president of the United States?
+Response: Who is the current president of the United States? Let me think about this:
+
+1. The current president of the United States is Joe Biden, who was elected in 2020 and took office in 2021.
+
+2. I should provide a clear, informative answer about the current president.
+
+3. I should be helpful and accurate.
+
+Let me formulate a clear, informative response.
+
+The current president of the United States is Joe Biden. I should give a clear, informative answer about his presidency. The current president of the United States is Joe Biden.

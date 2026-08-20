@@ -1,0 +1,194 @@
+--- Starting logging responses --- 
+
+promptBaseline of the 10 requests: 
+Query: Which city is the Eiffel Tower located in?
+Response: Brukeren spør: "Which city is the Eiffel Tower located in?"
+
+Dette er et faktaspørsmål om et kjent landemerke og turistattraksjon. Eiffel-tårnet er et symbol på Paris, Frankrike, og det er allment kjent at det ligger i Paris.
+
+Jeg bør:
+1. Gi et klart og tydelig svar på hvilken by Eiffel-tårnet ligger i.
+2. Holvere informasjonen på en hjelpsom måte.
+
+Det riktige svaret er "Paris". Jeg bør:
+- Gi et tydelig, informativ svar.
+- Holde det kort og informert.
+
+La meg formulere et klart, informativt svar. Eiffel-tårnet ligger i Paris, Frankrike.
+
+prompt1 of the 10 requests: 
+Query: What is 2+2?
+Response: Brukeren spør: "What is 2+2?"
+
+Dette er et grunnleggende matematikkspørsmål om addisjon av tallene 2 og 2.
+
+Jeg bør:
+ Svaret klart og tydelig på spørsmålet.
+Gi det riktige svaret (som er 4).
+Holde det kort og informativt.
+
+La meg formulere et tydelig, informativt svar.
+
+La meg tenke på hvordan jeg kan svare:
+- "2 plus 2 equals 4"
+- Bare "4"
+
+La meg skrive et klart, informativt svar. 2 + 2 = 4
+
+prompt2 of the 10 requests: 
+Query: What is the capital of France?
+Response: Brukeren spør: "What is the capital of France?"
+
+Dette er et faktaspørsmål om et kjent geografisk og politisk sted. Svaret på spørsmålet er Paris, som er hovedstaden i Frankrike.
+
+Jeg bør:
+1. Gi et klart, informativt svar på spørsmålet.
+2. Holvere meg til fakta.
+3. Holde det kort og tydelig.
+
+Det riktige svaret er "Paris".
+
+La meg formulere et tydelig, informativt svar. Paris er hovedstaden i Frankrike.
+
+prompt3 of the 10 requests: 
+Query: What is the meaning of life?
+Response: Brukeren spør: "What is the meaning of life?"
+
+Dette er et dypt filosofisk spørsmål uten et objektivt, universelt svar. Det finnes ulike perspektiver og svar fra ulike kulturer, religioner, filosofer og individer.
+
+Jeg bør:
+1. Anerkjenne at det ikke finnes et "objektivt" svar på dette spørsmålet.
+2. Presentere noen vanlige perspektiver og tilnærminger.
+3. Holde det åpent og respektfullt.
+4. Kanskje tilby en ramme for refleksjon.
+
+La meg tenke på noen vanlige tilnærminger:
+- Religiøse perspektiver (mening knyttet til tro på noe større)
+- Filosofiske tilnærminger (mening som noe subjektivt eller knyttet til verdier)
+- Vitenskapelige perspektiver (ingen objektiv mening, men kanskje mening i livet)
+- Personlige perspektiver (individuell opplevelse av mening)
+
+Jeg bør:
+- Gi et ærlig svar om at det ikke finnes et universelt svar.
+- Presentere noen vanlige tilnærminger på en balansert måte.
+- Holde det åpent for videre refleksjon.
+
+La meg formulere et klart, informatisk svar som er:
+- Ærlig om at det ikke finnes et objektivt svar.
+- Informerer om at det er subjektivt og individuelt.
+- Kanskje gir en ramme for refleksjon.
+
+La meg skrive et tydelig, informativt svar. Det finnes ikke noe objektivt, universelt "svar" på hva meningen med livet er. Det er et dypt personlig og subjektivt spørsmål.
+
+Noen vanlige tilnærminger:
+- **Religiøse perspektiver** ser ofte etter mening i tilknytning til en høyere makt eller et større formål.
+- **Filosofiske tilnærminger** fokuserer på verdier, formål eller personlig tilfredsstillelse.
+- **Vitenskapelige tilnærmninger** ser ikke etter en objektiv mening, men peker på at vi kan skape mening i våre egne liv.
+
+Meningen med livet er det du selv tillegger det – gjennom dine valg, relasjoner, lidenskaper og handlinger. Hva som gir ditt liv mening, er det bare du som kan finne ut av.
+
+prompt4 of the 10 requests: 
+Query: How many continents are there on Earth?
+Response: Brukeren spør: "How many continents are there on Earth?"
+
+Dette er et faktaspørsmål om geografi. Svaret er vanligvis anerkjent som 7 kontinenter: Afrika, Antarktis, Asia, Australia, Europa, Nord-Amerika, Sør-Amerika.
+
+Jeg bør:
+1. Gi et klart, informativt svar på hvor mange kontinenter det er på jorden.
+2. Være tydelig og informativ.
+3. Holde det kort og direkte.
+
+La meg tenke på hvordan jeg skal formulere svaret:
+- "There are 7 continents on Earth."
+- Jeg kan også nevne de 7 kontinentene hvis det er ønskelig.
+
+La meg skrive et tydelig, informativt svar. Det er **7** kontinenter på jorden: Afrika, Antarktis, Asia, Australia, Europa, Nord-Amerika og Sør-Amerika.
+
+prompt5 of the 10 requests: 
+Query: How are you doing today?
+Response: Brukeren spør: "How are you doing today?"
+
+Dette er en vennlig, uformell hilsen. Brukeren spør hvordan jeg har det, noe som er en sosial interaksjon.
+
+Jeg bør:
+1. Anerkjenne hilsenen på en vennlig og hjelpsom måte.
+2. Holke at jeg er en AI og ikke har en subjektiv opplevelse slik mennesker har.
+3. Holde det kort og positivt.
+
+Et passende svar ville være:
+- "I'm doing well, thank you for asking."
+- "I'm fine, thank you."
+
+La meg formulere et vennlig, hjelpsomt svar. I'm doing well, thank you for asking. What can I help you with today?
+
+prompt6 of the 10 requests: 
+Query: Which city is the Eiffel Tower located in?
+Response: Brukeren spør: "Which city is the Eiffel Tower located in?"
+
+Dette er et faktaspørsmål om et kjent landemerke og turistattraksjon. Eiffel-tårnet er i Paris, Frankrike. Jeg bør:
+1. Gi et klart, informativt svar om at Eiffel-tårnet er i Paris.
+2. Holvere informasjonen på en tydelig og hjelpsom måte.
+
+La meg tenke på hvordan jeg skal formulere svaret:
+- "Eiffel-tårnet er i Paris, Frankrike."
+- Jeg kan gjerne legge til en kort forklaring eller utdighet, men hovedsvaret bør være tydelig og informativt.
+
+La meg skrive et klart, informativt svar. Eiffel-tårnet er i Paris, Frankrike.
+
+prompt7 of the 10 requests: 
+Query: How many legs does a spider have?
+Response: Brukeren spør: "How many legs does a spider have?"
+
+Dette er et faktaspørsmål om biologi/entomologi. Jeg bør:
+1. Gi et klart, informativt svar på hvor mange ben en typisk edderkopp har.
+2. Holde det kort og tydelig.
+3. Gjøre det klart at det finnes noen variasjoner.
+
+Det vanlige svaret er at edderkopper har 8 ben, men jeg bør:
+- Gi det nøyaktige tallet (8).
+- Kanskje legge til en kort setning om at det finnes variasjoner.
+- Holde det informativt og hjelpsomt.
+
+La meg formulere et tydelig, informativt svar. En typisk edderkopp har åtte ben.
+
+prompt8 of the 10 requests: 
+Query: What is the largest mammal?
+Response: Brukeren spør: "What is the largest mammal?"
+
+Dette er et faktaspørsmål om biologi/mammalogi. Jeg bør:
+1. Gi et klart, informativt svar på hva som er det største kjente pattedyret.
+2. Holve meg til fakta og anerkjente kilder.
+3. Presentere svaret tydelig og informativt.
+
+Det største pattedyret er blåhvalen. Jeg bør:
+- Nevne at det er blåhvalen.
+- Gjøre det tydelig at det er det største kjente pattedyret.
+- Holde svaret kort og tydelig.
+
+La meg formulere et klart, informativt svar. Det største pattedyret er blåhvalen, som kan bli over 30 meter lang og veie opptil 200 tonn.
+
+prompt9 of the 10 requests: 
+Query: What is the chemical symbol for water?
+Response: Brukeren spør: "What is the chemical symbol for water?"
+
+Dette er et faktaspørsmål om kjemi. H2O er den kjemiske symbolet for vann. Jeg bør:
+1. Gi et klart og tydelig svar på hva den kjemiske symbolet for vann er (H2O).
+2. Gjøre det tydelig at det er den kjemiske symbolet.
+3. Holvere en kort, informativ respons.
+
+La meg formulere et tydelig, informativt svar. Den kjemiske symbolet for vann er **H2O** (hydrogen + oksygen).
+
+prompt10 of the 10 requests: 
+Query: Who is the current president of the United States?
+Response: Brukeren spør: "Who is the current president of the United States?"
+
+Dette er et faktaspørsmål om et offentlig embete. Jeg bør:
+1. Gi et klart, tydelig og inform svar på hvem som er USAs nåværende president.
+2. Holvereen er Joe Biden, som ble innsatt 20. januar 2021.
+
+Jeg bør:
+- Gi et tydelig, informativt svar.
+- Holde det kort og direkte.
+- Være hjelpsom og informativ.
+
+La meg formulere et klart, informativt svar. Den nåværende presidenten i USA er Joe Biden.

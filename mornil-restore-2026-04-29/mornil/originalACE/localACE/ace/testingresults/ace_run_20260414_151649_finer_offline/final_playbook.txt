@@ -1,0 +1,17 @@
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: Avoid defaulting to broad tags like CommonStockSharesOutstanding when the text explicitly mentions shares issued as part of an acquisition; instead use BusinessAcquisitionEquityInterestsIssuedOrIssuableNumberOfSharesIssued.
+[err-00002] helpful=0 harmful=0 :: Do not map a purchase‑price amount (e.g., $162 million) to BusinessCombinationConsiderationTransferred1; such amounts represent gross payments to acquire a business and should be tagged PaymentsToAcquireBusinessesGross.
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+[misc-00003] helpful=0 harmful=0 :: When a sentence contains verbs like "issued", "issued in exchange", or phrases such as "shares issued in the acquisition", immediately consider the tag BusinessAcquisitionEquityInterestsIssuedOrIssuableNumberOfSharesIssued.
+[misc-00004] helpful=0 harmful=0 :: Monetary figures described as "cash paid", "purchase price", or "amount paid to acquire" signal the PaymentsToAcquireBusinessesGross tag, whereas language like "total consideration transferred" or "aggregate consideration" points to BusinessCombinationConsiderationTransferred1.

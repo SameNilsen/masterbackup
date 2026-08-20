@@ -1,0 +1,87 @@
+[
+  {
+    "epoch": 1,
+    "step": 1,
+    "target": "2.0",
+    "pre_train_result": {
+      "final_answer": "2.0",
+      "is_correct": true,
+      "playbook_num_tokens": 61,
+      "playbook_length": 184
+    },
+    "post_train_result": {
+      "final_answer": "2.0",
+      "is_correct": true,
+      "playbook_num_tokens": 112,
+      "playbook_length": 334
+    }
+  },
+  {
+    "epoch": 1,
+    "step": 2,
+    "target": "0.2",
+    "pre_train_result": {
+      "final_answer": "20.0",
+      "is_correct": false,
+      "playbook_num_tokens": 112,
+      "playbook_length": 334
+    },
+    "post_train_result": {
+      "final_answer": "0,40",
+      "is_correct": false,
+      "playbook_num_tokens": 164,
+      "playbook_length": 490
+    }
+  },
+  {
+    "epoch": 1,
+    "step": 3,
+    "target": "27432.79",
+    "pre_train_result": {
+      "final_answer": "18425.00",
+      "is_correct": false,
+      "playbook_num_tokens": 164,
+      "playbook_length": 490
+    },
+    "post_train_result": {
+      "final_answer": "26434.0",
+      "is_correct": false,
+      "playbook_num_tokens": 164,
+      "playbook_length": 490
+    }
+  },
+  {
+    "epoch": 1,
+    "step": 4,
+    "target": "0.69",
+    "pre_train_result": {
+      "final_answer": "1,87",
+      "is_correct": false,
+      "playbook_num_tokens": 164,
+      "playbook_length": 490
+    },
+    "post_train_result": {
+      "final_answer": "1,52",
+      "is_correct": false,
+      "playbook_num_tokens": 228,
+      "playbook_length": 679
+    }
+  },
+  {
+    "epoch": 1,
+    "step": 5,
+    "target": "0.06",
+    "pre_train_result": {
+      "final_answer": "5.75",
+      "is_correct": false,
+      "playbook_num_tokens": 228,
+      "playbook_length": 679
+    },
+    "post_train_result": {
+      "final_answer": "5.30",
+      "is_correct": false,
+      "playbook_num_tokens": 228,
+      "playbook_length": 679
+    }
+  }
+]

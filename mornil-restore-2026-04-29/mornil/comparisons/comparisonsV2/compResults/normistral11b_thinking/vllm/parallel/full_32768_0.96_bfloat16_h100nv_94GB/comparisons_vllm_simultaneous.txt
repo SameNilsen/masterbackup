@@ -1,0 +1,11 @@
+--- Starting comparisons --- 
+Initial GPU memory loaded: [93495] MiB
+Of total GPU memory: [95830] MiB
+
+In total for 10 requests: Time taken for comparisons: 4.399004824925214 seconds.
+With GPU memory usage values (MiB): [[93497], [93501], [93501], [93501]]
+GPU utilization values (%): [[83], [85], [86], [1]]
+Power draw values (W): [[346.54], [348.12], [342.65], [281.46]]
+With avg GPU memory usage values (MiB): 93500.0
+avg GPU utilization values (%): 84.66666666666667
+avg Power draw values (W): 329.6925

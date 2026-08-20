@@ -1,0 +1,43 @@
+{
+  "test_results": {
+    "accuracy": 0.4,
+    "correct": 4,
+    "total": 10,
+    "no_answer": 0
+  },
+  "error_log": {
+    "accuracy": 0.4,
+    "errors": [
+      {
+        "index": 0,
+        "prediction": "B",
+        "ground_truth": "C"
+      },
+      {
+        "index": 2,
+        "prediction": "B",
+        "ground_truth": "A"
+      },
+      {
+        "index": 3,
+        "prediction": "B",
+        "ground_truth": "C"
+      },
+      {
+        "index": 5,
+        "prediction": "C",
+        "ground_truth": "B"
+      },
+      {
+        "index": 7,
+        "prediction": "B",
+        "ground_truth": "C"
+      },
+      {
+        "index": 8,
+        "prediction": "D",
+        "ground_truth": "B"
+      }
+    ]
+  }
+}

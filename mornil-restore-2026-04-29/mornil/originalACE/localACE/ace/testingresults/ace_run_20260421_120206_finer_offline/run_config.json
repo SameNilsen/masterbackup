@@ -1,0 +1,27 @@
+{
+  "task_name": "finer",
+  "mode": "offline",
+  "generator_model": "gpt_oss_20b",
+  "reflector_model": "gpt_oss_20b",
+  "curator_model": "gpt_oss_20b",
+  "config": {
+    "num_epochs": 1,
+    "max_num_rounds": 3,
+    "curator_frequency": 1,
+    "eval_steps": 100,
+    "online_eval_frequency": 15,
+    "save_steps": 50,
+    "playbook_token_budget": 80000,
+    "task_name": "finer",
+    "mode": "offline",
+    "json_mode": false,
+    "no_ground_truth": false,
+    "save_dir": "testingresults",
+    "test_workers": 20,
+    "initial_playbook_path": null,
+    "use_bulletpoint_analyzer": false,
+    "bulletpoint_analyzer_threshold": 0.9,
+    "api_provider": "sambanova",
+    "model_config_string": "gpt_oss_20b_vllm_full_None_0.8_bfloat16_a100_80GB"
+  }
+}

@@ -1,0 +1,775 @@
+Starting job 3304547 on gpu-14 on Fox at Wed Apr 8 11:58:13 CEST 2026
+
+Wed Apr  8 11:58:13 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.82.09              Driver Version: 580.82.09      CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA H100 NVL                On  |   00000000:E1:00.0 Off |                    0 |
+| N/A   34C    P0             91W /  400W |       0MiB /  95830MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+RUNNING: compPart120b5 python3 /fp/projects01/ec12/mornil/comparisons/comparisonsV2/comparison2.py --model gpt_oss_120b --quantization full --inference_provider vllm --dtype auto --gpu_usage 0.8 --model_length 16384 --order serial --gpu h100nv_94GB
+Package             Version
+------------------- --------
+async-timeout       4.0.2
+attrs               20.3.0
+Automat             22.10.0
+cffi                1.14.5
+chardet             4.0.0
+constantly          15.1.0
+cryptography        36.0.1
+dbus-python         1.2.18
+Deprecated          1.2.15
+distro              1.5.0
+gitdb               4.0.9
+GitPython           3.1.45
+gpg                 1.15.1
+hyperlink           21.0.0
+idna                2.10
+incremental         21.3.0
+jwcrypto            1.5.6
+libcomps            0.1.18
+nftables            0.1
+numpy               1.23.5
+packaging           20.9
+perf                0.1
+pika                1.2.1
+pip                 21.3.1
+ply                 3.11
+pyasn1              0.4.8
+pyasn1-modules      0.2.8
+pycparser           2.20
+PyGObject           3.40.1
+pyinotify           0.9.6
+pyOpenSSL           21.0.0
+pyparsing           2.4.7
+PySocks             1.7.1
+python-dateutil     2.8.1
+python-linux-procfs 0.7.3
+pyudev              0.22.0
+PyYAML              5.4.1
+redis               4.3.3
+requests            2.25.1
+rpm                 4.16.1.3
+selinux             3.6
+sepolicy            3.6
+service-identity    21.1.0
+setools             4.4.4
+setuptools          53.0.0
+simplejson          3.17.6
+six                 1.15.0
+smmap               5.0.0
+systemd-python      234
+toml                0.10.2
+tornado             6.4.2
+Twisted             22.10.0
+typing_extensions   4.12.2
+urllib3             1.26.5
+websockify          0.11.0
+wrapt               1.17.1
+zope.interface      5.4.0
+Setting up...
+Current directory:
+/fp/projects01/ec12/mornil
+Contents of current directory:
+bash_comparisons1.sh
+bash_comparisonsPart120b5.sh
+bash_simple1.sh
+comparisons
+general
+gptossenv
+hf_cache
+mastertestenv
+next_bashs
+originalACE
+reviewed_slurm_logs
+setup_gpt_oss.sh
+setup_normal.sh
+simple_llms
+slurm-3304382.out
+slurm-3304487.out
+slurm-3304547.out
+triton_cache
+vllm_cache
+Setting HF_HOME var:
+HF_HOME set to /fp/projects01/ec12/mornil/hf_cache
+Setting VLLM_CACHE_ROOT var:
+VLLM_CACHE_ROOT set to /fp/projects01/ec12/mornil/vllm_cache
+Setting TRITON_CACHE_DIR var:
+TRITON_CACHE_DIR set to /fp/projects01/ec12/mornil/triton_cache
+
+Currently Loaded Modules:
+  1) GCCcore/13.3.0                   7) Tcl/8.6.14-GCCcore-13.3.0
+  2) zlib/1.3.1-GCCcore-13.3.0        8) SQLite/3.45.3-GCCcore-13.3.0
+  3) binutils/2.42-GCCcore-13.3.0     9) XZ/5.4.5-GCCcore-13.3.0
+  4) bzip2/1.0.8-GCCcore-13.3.0      10) libffi/3.4.5-GCCcore-13.3.0
+  5) ncurses/6.5-GCCcore-13.3.0      11) OpenSSL/3
+  6) libreadline/8.2-GCCcore-13.3.0  12) Python/3.12.3-GCCcore-13.3.0
+
+ 
+
+Found existing installation: triton 3.6.0
+Uninstalling triton-3.6.0:
+  Successfully uninstalled triton-3.6.0
+Collecting triton==3.4
+  Using cached triton-3.4.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (1.7 kB)
+Requirement already satisfied: setuptools>=40.8.0 in ./mastertestenv/lib/python3.12/site-packages (from triton==3.4) (79.0.1)
+Using cached triton-3.4.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (155.6 MB)
+Installing collected packages: triton
+Successfully installed triton-3.4.0
+
+[notice] A new release of pip is available: 24.0 -> 26.0.1
+[notice] To update, run: pip install --upgrade pip
+Package                           Version
+--------------------------------- -------------
+accelerate                        1.13.0
+aiohappyeyeballs                  2.6.1
+aiohttp                           3.13.3
+aiosignal                         1.4.0
+annotated-doc                     0.0.4
+annotated-types                   0.7.0
+anyio                             4.12.1
+astor                             0.8.1
+attrs                             25.4.0
+bitsandbytes                      0.49.2
+blake3                            1.0.8
+cachetools                        7.0.5
+cbor2                             5.8.0
+certifi                           2026.2.25
+cffi                              2.0.0
+charset-normalizer                3.4.5
+click                             8.3.1
+cloudpickle                       3.1.2
+compressed-tensors                0.11.0
+cuda-pathfinder                   1.4.2
+cupy-cuda12x                      14.0.1
+depyf                             0.19.0
+dill                              0.4.1
+diskcache                         5.6.3
+distro                            1.9.0
+dnspython                         2.8.0
+dotenv                            0.9.9
+einops                            0.8.2
+email-validator                   2.3.0
+faiss-cpu                         1.13.2
+fastapi                           0.135.1
+fastapi-cli                       0.0.24
+fastapi-cloud-cli                 0.15.0
+fastar                            0.8.0
+filelock                          3.25.2
+frozendict                        2.4.7
+frozenlist                        1.8.0
+fsspec                            2026.2.0
+gguf                              0.18.0
+h11                               0.16.0
+hf-xet                            1.4.2
+httpcore                          1.0.9
+httptools                         0.7.1
+httpx                             0.28.1
+huggingface_hub                   0.36.2
+idna                              3.11
+interegular                       0.3.3
+Jinja2                            3.1.6
+jiter                             0.13.0
+joblib                            1.5.3
+jsonpatch                         1.33
+jsonpointer                       3.0.0
+jsonschema                        4.26.0
+jsonschema-specifications         2025.9.1
+langchain-core                    1.2.18
+langchain-huggingface             1.2.1
+langsmith                         0.7.17
+lark                              1.2.2
+llguidance                        0.7.30
+llvmlite                          0.44.0
+lm-format-enforcer                0.11.3
+markdown-it-py                    4.0.0
+MarkupSafe                        3.0.3
+mdurl                             0.1.2
+mistral_common                    1.10.0
+mpmath                            1.3.0
+msgpack                           1.1.2
+msgspec                           0.20.0
+multidict                         6.7.1
+nest-asyncio                      1.6.0
+networkx                          3.6.1
+ninja                             1.13.0
+numba                             0.61.2
+numpy                             2.2.6
+nvidia-cublas-cu12                12.8.4.1
+nvidia-cuda-cupti-cu12            12.8.90
+nvidia-cuda-nvrtc-cu12            12.8.93
+nvidia-cuda-runtime-cu12          12.8.90
+nvidia-cudnn-cu12                 9.10.2.21
+nvidia-cufft-cu12                 11.3.3.83
+nvidia-cufile-cu12                1.13.1.3
+nvidia-curand-cu12                10.3.9.90
+nvidia-cusolver-cu12              11.7.3.90
+nvidia-cusparse-cu12              12.5.8.93
+nvidia-cusparselt-cu12            0.7.1
+nvidia-nccl-cu12                  2.27.3
+nvidia-nvjitlink-cu12             12.8.93
+nvidia-nvshmem-cu12               3.3.20
+nvidia-nvtx-cu12                  12.8.90
+openai                            2.26.0
+openai-harmony                    0.0.8
+opencv-python-headless            4.13.0.92
+orjson                            3.11.7
+outlines_core                     0.2.11
+packaging                         26.0
+partial-json-parser               0.2.1.1.post7
+pillow                            12.1.1
+pip                               24.0
+prometheus_client                 0.24.1
+prometheus-fastapi-instrumentator 7.1.0
+propcache                         0.4.1
+protobuf                          7.34.0
+psutil                            7.2.2
+py-cpuinfo                        9.0.0
+pybase64                          1.4.3
+pycountry                         26.2.16
+pycparser                         3.0
+pydantic                          2.12.5
+pydantic_core                     2.41.5
+pydantic-extra-types              2.11.0
+pydantic-settings                 2.13.1
+Pygments                          2.19.2
+python-dotenv                     1.2.2
+python-json-logger                4.0.0
+python-multipart                  0.0.22
+PyYAML                            6.0.3
+pyzmq                             27.1.0
+ray                               2.54.0
+referencing                       0.37.0
+regex                             2026.2.28
+requests                          2.32.5
+requests-toolbelt                 1.0.0
+rich                              14.3.3
+rich-toolkit                      0.19.7
+rignore                           0.7.6
+rpds-py                           0.30.0
+safetensors                       0.7.0
+scikit-learn                      1.8.0
+scipy                             1.17.1
+sentence-transformers             5.3.0
+sentencepiece                     0.2.1
+sentry-sdk                        2.54.0
+setproctitle                      1.3.7
+setuptools                        79.0.1
+shellingham                       1.5.4
+six                               1.17.0
+sniffio                           1.3.1
+soundfile                         0.13.1
+soxr                              1.0.0
+starlette                         0.52.1
+sympy                             1.14.0
+tenacity                          9.1.4
+threadpoolctl                     3.6.0
+tiktoken                          0.12.0
+tokenizers                        0.22.2
+torch                             2.8.0
+torchaudio                        2.8.0
+torchvision                       0.23.0
+tqdm                              4.67.3
+transformers                      4.57.6
+triton                            3.4.0
+typer                             0.24.1
+typing_extensions                 4.15.0
+typing-inspection                 0.4.2
+urllib3                           2.6.3
+uuid_utils                        0.14.1
+uvicorn                           0.41.0
+uvloop                            0.22.1
+vllm                              0.11.0
+watchfiles                        1.1.1
+websockets                        16.0
+xformers                          0.0.32.post1
+xgrammar                          0.1.25
+xxhash                            3.6.0
+yarl                              1.23.0
+zstandard                         0.25.0
+
+[notice] A new release of pip is available: 24.0 -> 26.0.1
+[notice] To update, run: pip install --upgrade pip
+Checking installed packages...
+
+[notice] A new release of pip is available: 24.0 -> 26.0.1
+[notice] To update, run: pip install --upgrade pip
+accelerate                        1.13.0
+bitsandbytes                      0.49.2
+dotenv                            0.9.9
+faiss-cpu                         1.13.2
+langchain-core                    1.2.18
+langchain-huggingface             1.2.1
+nest-asyncio                      1.6.0
+python-dotenv                     1.2.2
+sentence-transformers             5.3.0
+tiktoken                          0.12.0
+torch                             2.8.0
+torchaudio                        2.8.0
+torchvision                       0.23.0
+transformers                      4.57.6
+triton                            3.4.0
+vllm                              0.11.0
+Ready to go.
+----------------SERIAL----------------
+HGello.
+Model: gpt_oss_120b
+Quantization: full
+Model Length: 16384
+GPU Usage Threshold: 0.8
+Inference Provider: vllm
+Data Type: auto
+Order: serial
+GPU: h100nv_94GB
+/fp/projects01/ec12/mornil/comparisons/comparisonsV2/compResults/gpt_oss_120b/vllm/serial/full_16384_0.8_auto_h100nv_94GB/
+Total GPU memory: [95830]
+Setup LLM...
+INFO 04-08 11:58:58 [__init__.py:216] Automatically detected platform cuda.
+Loading NorMistral model with vLLM and paramaters: auto full 16384 0.8
+INFO 04-08 11:59:12 [utils.py:233] non-default args: {'trust_remote_code': True, 'max_model_len': 16384, 'gpu_memory_utilization': 0.8, 'disable_log_stats': True, 'model': 'openai/gpt-oss-120b'}
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+INFO 04-08 11:59:13 [model.py:547] Resolved architecture: GptOssForCausalLM
+`torch_dtype` is deprecated! Use `dtype` instead!
+Parse safetensors files:   0%|          | 0/15 [00:00<?, ?it/s]Parse safetensors files:   7%|▋         | 1/15 [00:00<00:03,  3.72it/s]Parse safetensors files: 100%|██████████| 15/15 [00:00<00:00, 45.31it/s]
+INFO 04-08 11:59:14 [model.py:1510] Using max model len 16384
+INFO 04-08 11:59:20 [scheduler.py:205] Chunked prefill is enabled with max_num_batched_tokens=16384.
+INFO 04-08 11:59:20 [config.py:271] Overriding max cuda graph capture size to 992 for performance.
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m INFO 04-08 11:59:22 [core.py:644] Waiting for init message from front-end.
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m INFO 04-08 11:59:22 [core.py:77] Initializing a V1 LLM engine (v0.11.0) with config: model='openai/gpt-oss-120b', speculative_config=None, tokenizer='openai/gpt-oss-120b', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=16384, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, disable_custom_all_reduce=False, quantization=mxfp4, enforce_eager=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_fallback=False, disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='openai_gptoss'), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None), seed=0, served_model_name=openai/gpt-oss-120b, enable_prefix_caching=True, chunked_prefill_enabled=True, pooler_config=None, compilation_config={"level":3,"debug_dump_path":"","cache_dir":"","backend":"","custom_ops":[],"splitting_ops":["vllm.unified_attention","vllm.unified_attention_with_output","vllm.mamba_mixer2","vllm.mamba_mixer","vllm.short_conv","vllm.linear_attention","vllm.plamo2_mamba_mixer","vllm.gdn_attention","vllm.sparse_attn_indexer"],"use_inductor":true,"compile_sizes":[],"inductor_compile_config":{"enable_auto_functionalized_v2":false},"inductor_passes":{},"cudagraph_mode":[2,1],"use_cudagraph":true,"cudagraph_num_of_warmups":1,"cudagraph_capture_sizes":[992,976,960,944,928,912,896,880,864,848,832,816,800,784,768,752,736,720,704,688,672,656,640,624,608,592,576,560,544,528,512,496,480,464,448,432,416,400,384,368,352,336,320,304,288,272,256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"cudagraph_copy_inputs":false,"full_cuda_graph":false,"use_inductor_graph_partition":false,"pass_config":{},"max_capture_size":992,"local_cache_dir":null}
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m INFO 04-08 11:59:25 [parallel_state.py:1208] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, TP rank 0, EP rank 0
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m WARNING 04-08 11:59:25 [topk_topp_sampler.py:66] FlashInfer is not available. Falling back to the PyTorch-native implementation of top-p & top-k sampling. For the best performance, please install FlashInfer.
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m INFO 04-08 11:59:26 [gpu_model_runner.py:2602] Starting to load model openai/gpt-oss-120b...
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m INFO 04-08 11:59:26 [gpu_model_runner.py:2634] Loading model from scratch...
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m INFO 04-08 11:59:26 [cuda.py:366] Using Flash Attention backend on V1 engine.
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m WARNING 04-08 11:59:26 [mxfp4.py:89] MXFP4 MoE is enabled on Hopper/Blackwell but FlashInfer is not available. This may result in degraded performance. Please `pip install vllm[flashinfer]` for best results.
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m INFO 04-08 11:59:26 [mxfp4.py:98] Using Marlin backend
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m INFO 04-08 11:59:27 [weight_utils.py:392] Using model weights format ['*.safetensors']
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m Loading safetensors checkpoint shards:   0% Completed | 0/15 [00:00<?, ?it/s]
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m Loading safetensors checkpoint shards:   7% Completed | 1/15 [00:08<02:03,  8.84s/it]
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m Loading safetensors checkpoint shards:  13% Completed | 2/15 [00:17<01:56,  8.93s/it]
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m Loading safetensors checkpoint shards:  20% Completed | 3/15 [00:25<01:42,  8.53s/it]
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m Loading safetensors checkpoint shards:  27% Completed | 4/15 [00:36<01:40,  9.17s/it]
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m Loading safetensors checkpoint shards:  33% Completed | 5/15 [00:45<01:30,  9.10s/it]
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m Loading safetensors checkpoint shards:  40% Completed | 6/15 [00:53<01:21,  9.06s/it]
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m Loading safetensors checkpoint shards:  47% Completed | 7/15 [01:02<01:12,  9.03s/it]
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m Loading safetensors checkpoint shards:  53% Completed | 8/15 [01:13<01:06,  9.57s/it]
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m Loading safetensors checkpoint shards:  60% Completed | 9/15 [01:22<00:56,  9.38s/it]
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m Loading safetensors checkpoint shards:  67% Completed | 10/15 [01:31<00:46,  9.24s/it]
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m Loading safetensors checkpoint shards:  73% Completed | 11/15 [01:42<00:38,  9.73s/it]
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m Loading safetensors checkpoint shards:  80% Completed | 12/15 [01:51<00:29,  9.69s/it]
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m Loading safetensors checkpoint shards:  87% Completed | 13/15 [02:01<00:18,  9.49s/it]
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m Loading safetensors checkpoint shards:  93% Completed | 14/15 [02:10<00:09,  9.61s/it]
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m Loading safetensors checkpoint shards: 100% Completed | 15/15 [02:20<00:00,  9.62s/it]
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m Loading safetensors checkpoint shards: 100% Completed | 15/15 [02:20<00:00,  9.37s/it]
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m 
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m INFO 04-08 12:01:48 [default_loader.py:267] Loading weights took 140.75 seconds
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m WARNING 04-08 12:01:48 [marlin_utils_fp4.py:196] Your GPU does not have native support for FP4 computation but FP4 quantization is being used. Weight-only FP4 compression will be used leveraging the Marlin kernel. This may degrade performance for compute-heavy workloads.
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m INFO 04-08 12:01:52 [gpu_model_runner.py:2653] Model loading took 65.9651 GiB and 145.236419 seconds
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m INFO 04-08 12:02:03 [backends.py:548] Using cache directory: /fp/projects01/ec12/mornil/vllm_cache/torch_compile_cache/a4a939155b/rank_0_0/backbone for vLLM's torch.compile
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m INFO 04-08 12:02:03 [backends.py:559] Dynamo bytecode transform time: 11.22 s
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m INFO 04-08 12:02:08 [backends.py:197] Cache the graph for dynamic shape for later use
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m INFO 04-08 12:02:49 [backends.py:218] Compiling a graph for dynamic shape takes 45.17 s
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m INFO 04-08 12:02:51 [monitor.py:34] torch.compile takes 56.40 s in total
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m INFO 04-08 12:02:53 [gpu_worker.py:298] Available KV cache memory: 1.16 GiB
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m INFO 04-08 12:02:54 [kv_cache_utils.py:1087] GPU KV cache size: 16,816 tokens
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m INFO 04-08 12:02:54 [kv_cache_utils.py:1091] Maximum concurrency for 16,384 tokens per request: 1.03x
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   0%|          | 0/81 [00:00<?, ?it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   1%|          | 1/81 [00:00<00:08,  9.59it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   4%|▎         | 3/81 [00:00<00:07, 10.46it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   6%|▌         | 5/81 [00:00<00:07, 10.48it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   9%|▊         | 7/81 [00:00<00:07, 10.27it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  11%|█         | 9/81 [00:00<00:06, 10.32it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  14%|█▎        | 11/81 [00:01<00:06, 10.32it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  16%|█▌        | 13/81 [00:01<00:06, 10.37it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  19%|█▊        | 15/81 [00:01<00:06, 10.35it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  21%|██        | 17/81 [00:01<00:06, 10.51it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  23%|██▎       | 19/81 [00:01<00:05, 10.50it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  26%|██▌       | 21/81 [00:02<00:05, 10.64it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  28%|██▊       | 23/81 [00:02<00:05, 10.77it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  31%|███       | 25/81 [00:02<00:05, 10.96it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  33%|███▎      | 27/81 [00:02<00:04, 11.22it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  36%|███▌      | 29/81 [00:02<00:04, 11.30it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  38%|███▊      | 31/81 [00:02<00:04, 11.36it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  41%|████      | 33/81 [00:03<00:04, 11.59it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  43%|████▎     | 35/81 [00:03<00:03, 11.67it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  46%|████▌     | 37/81 [00:03<00:03, 11.63it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  48%|████▊     | 39/81 [00:03<00:03, 11.59it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  51%|█████     | 41/81 [00:03<00:03, 11.71it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  53%|█████▎    | 43/81 [00:03<00:03, 11.86it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  56%|█████▌    | 45/81 [00:04<00:02, 12.04it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  58%|█████▊    | 47/81 [00:04<00:02, 12.03it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  60%|██████    | 49/81 [00:04<00:02, 12.06it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  63%|██████▎   | 51/81 [00:04<00:02, 11.94it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  65%|██████▌   | 53/81 [00:04<00:02, 11.79it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  68%|██████▊   | 55/81 [00:04<00:02, 11.83it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  70%|███████   | 57/81 [00:05<00:02, 11.92it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  73%|███████▎  | 59/81 [00:05<00:01, 11.89it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  75%|███████▌  | 61/81 [00:05<00:01, 11.86it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  78%|███████▊  | 63/81 [00:05<00:01, 11.79it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  80%|████████  | 65/81 [00:05<00:01, 11.74it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  83%|████████▎ | 67/81 [00:05<00:01, 11.68it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  85%|████████▌ | 69/81 [00:06<00:01, 11.58it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  88%|████████▊ | 71/81 [00:06<00:00, 11.65it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  90%|█████████ | 73/81 [00:06<00:00, 11.67it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  93%|█████████▎| 75/81 [00:06<00:00, 11.72it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  95%|█████████▌| 77/81 [00:06<00:00, 11.76it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  98%|█████████▊| 79/81 [00:06<00:00, 11.92it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|██████████| 81/81 [00:07<00:00, 12.20it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|██████████| 81/81 [00:07<00:00, 11.43it/s]
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m Capturing CUDA graphs (decode, FULL):   0%|          | 0/81 [00:00<?, ?it/s]Capturing CUDA graphs (decode, FULL):   1%|          | 1/81 [00:00<00:36,  2.22it/s]Capturing CUDA graphs (decode, FULL):   2%|▏         | 2/81 [00:00<00:19,  4.03it/s]Capturing CUDA graphs (decode, FULL):   4%|▎         | 3/81 [00:00<00:14,  5.51it/s]Capturing CUDA graphs (decode, FULL):   5%|▍         | 4/81 [00:00<00:11,  6.67it/s]Capturing CUDA graphs (decode, FULL):   6%|▌         | 5/81 [00:00<00:10,  7.54it/s]Capturing CUDA graphs (decode, FULL):   7%|▋         | 6/81 [00:00<00:09,  8.12it/s]Capturing CUDA graphs (decode, FULL):   9%|▊         | 7/81 [00:01<00:08,  8.52it/s]Capturing CUDA graphs (decode, FULL):  10%|▉         | 8/81 [00:01<00:08,  8.86it/s]Capturing CUDA graphs (decode, FULL):  11%|█         | 9/81 [00:01<00:07,  9.16it/s]Capturing CUDA graphs (decode, FULL):  12%|█▏        | 10/81 [00:01<00:07,  9.39it/s]Capturing CUDA graphs (decode, FULL):  14%|█▎        | 11/81 [00:01<00:07,  9.53it/s]Capturing CUDA graphs (decode, FULL):  16%|█▌        | 13/81 [00:01<00:06,  9.82it/s]Capturing CUDA graphs (decode, FULL):  19%|█▊        | 15/81 [00:01<00:06, 10.03it/s]Capturing CUDA graphs (decode, FULL):  21%|██        | 17/81 [00:02<00:06, 10.27it/s]Capturing CUDA graphs (decode, FULL):  23%|██▎       | 19/81 [00:02<00:05, 10.43it/s]Capturing CUDA graphs (decode, FULL):  26%|██▌       | 21/81 [00:02<00:05, 10.67it/s]Capturing CUDA graphs (decode, FULL):  28%|██▊       | 23/81 [00:02<00:05, 10.85it/s]Capturing CUDA graphs (decode, FULL):  31%|███       | 25/81 [00:02<00:05, 11.10it/s]Capturing CUDA graphs (decode, FULL):  33%|███▎      | 27/81 [00:02<00:04, 11.31it/s]Capturing CUDA graphs (decode, FULL):  36%|███▌      | 29/81 [00:03<00:04, 11.50it/s]Capturing CUDA graphs (decode, FULL):  38%|███▊      | 31/81 [00:03<00:04, 11.76it/s]Capturing CUDA graphs (decode, FULL):  41%|████      | 33/81 [00:03<00:04, 11.96it/s]Capturing CUDA graphs (decode, FULL):  43%|████▎     | 35/81 [00:03<00:03, 12.07it/s]Capturing CUDA graphs (decode, FULL):  46%|████▌     | 37/81 [00:03<00:03, 12.02it/s]Capturing CUDA graphs (decode, FULL):  48%|████▊     | 39/81 [00:03<00:03, 12.16it/s]Capturing CUDA graphs (decode, FULL):  51%|█████     | 41/81 [00:04<00:03, 12.32it/s]Capturing CUDA graphs (decode, FULL):  53%|█████▎    | 43/81 [00:04<00:03, 12.54it/s]Capturing CUDA graphs (decode, FULL):  56%|█████▌    | 45/81 [00:04<00:02, 12.62it/s]Capturing CUDA graphs (decode, FULL):  58%|█████▊    | 47/81 [00:04<00:02, 12.74it/s]Capturing CUDA graphs (decode, FULL):  60%|██████    | 49/81 [00:04<00:02, 12.79it/s]Capturing CUDA graphs (decode, FULL):  63%|██████▎   | 51/81 [00:04<00:02, 12.82it/s]Capturing CUDA graphs (decode, FULL):  65%|██████▌   | 53/81 [00:05<00:02, 12.81it/s]Capturing CUDA graphs (decode, FULL):  68%|██████▊   | 55/81 [00:05<00:02, 12.89it/s]Capturing CUDA graphs (decode, FULL):  70%|███████   | 57/81 [00:05<00:01, 12.90it/s]Capturing CUDA graphs (decode, FULL):  73%|███████▎  | 59/81 [00:05<00:01, 12.90it/s]Capturing CUDA graphs (decode, FULL):  75%|███████▌  | 61/81 [00:05<00:01, 12.86it/s]Capturing CUDA graphs (decode, FULL):  78%|███████▊  | 63/81 [00:05<00:01, 12.83it/s]Capturing CUDA graphs (decode, FULL):  80%|████████  | 65/81 [00:05<00:01, 12.77it/s]Capturing CUDA graphs (decode, FULL):  83%|████████▎ | 67/81 [00:06<00:01, 12.81it/s]Capturing CUDA graphs (decode, FULL):  85%|████████▌ | 69/81 [00:06<00:00, 12.78it/s]Capturing CUDA graphs (decode, FULL):  88%|████████▊ | 71/81 [00:06<00:00, 12.84it/s]Capturing CUDA graphs (decode, FULL):  90%|█████████ | 73/81 [00:06<00:00, 12.84it/s]Capturing CUDA graphs (decode, FULL):  93%|█████████▎| 75/81 [00:06<00:00, 12.90it/s]Capturing CUDA graphs (decode, FULL):  95%|█████████▌| 77/81 [00:06<00:00, 12.88it/s]Capturing CUDA graphs (decode, FULL):  98%|█████████▊| 79/81 [00:07<00:00, 12.96it/s]Capturing CUDA graphs (decode, FULL): 100%|██████████| 81/81 [00:07<00:00, 13.04it/s]Capturing CUDA graphs (decode, FULL): 100%|██████████| 81/81 [00:07<00:00, 11.29it/s]
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m INFO 04-08 12:03:09 [gpu_model_runner.py:3480] Graph capturing finished in 15 secs, took 1.38 GiB
+[1;36m(EngineCore_DP0 pid=4180934)[0;0m INFO 04-08 12:03:09 [core.py:210] init engine (profile, create kv cache, warmup model) took 77.10 seconds
+INFO 04-08 12:03:11 [llm.py:306] Supported_tasks: ['generate']
+load done
+Setting up sampling parameters...
+setup done
+LLM finished setting up.
+Get initial GPU memory:  [78811]
+Starting comparisons.
+1 request, baseline...
+MakeRequest called with promptnr promptBaseline and query Which city is the Eiffel Tower located in?
+Asking LLM...
+promptBaseline: Waiting for LLM response...
+promptBaseline: Waiting for LLM response...
+promptBaseline: Waiting for LLM response...
+INFO 04-08 12:03:13 [chat_utils.py:560] Detected the chat template content format to be 'string'. You can set `--chat-template-content-format` to override this.
+Adding requests:   0%|          | 0/1 [00:00<?, ?it/s]Adding requests: 100%|██████████| 1/1 [00:00<00:00, 1338.32it/s]
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  2.71it/s, est. speed input: 205.96 toks/s, output: 124.65 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  2.71it/s, est. speed input: 205.96 toks/s, output: 124.65 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  2.71it/s, est. speed input: 205.96 toks/s, output: 124.65 toks/s]
+Doing 10 requests...
+Handling prompt1 with query What is 2+2?...
+MakeRequest called with promptnr prompt1 and query What is 2+2?
+Asking LLM...
+prompt1: Waiting for LLM response...
+Adding requests:   0%|          | 0/1 [00:00<?, ?it/s]Adding requests: 100%|██████████| 1/1 [00:00<00:00, 2792.48it/s]
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  3.37it/s, est. speed input: 249.65 toks/s, output: 155.18 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  3.37it/s, est. speed input: 249.65 toks/s, output: 155.18 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  3.37it/s, est. speed input: 249.65 toks/s, output: 155.18 toks/s]
+Handling prompt2 with query What is the capital of France?...
+MakeRequest called with promptnr prompt2 and query What is the capital of France?
+Asking LLM...
+prompt2: Waiting for LLM response...
+Adding requests:   0%|          | 0/1 [00:00<?, ?it/s]Adding requests: 100%|██████████| 1/1 [00:00<00:00, 3148.88it/s]
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  3.61it/s, est. speed input: 267.24 toks/s, output: 155.28 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  3.61it/s, est. speed input: 267.24 toks/s, output: 155.28 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  3.61it/s, est. speed input: 267.24 toks/s, output: 155.28 toks/s]
+Handling prompt3 with query What is the meaning of life?...
+MakeRequest called with promptnr prompt3 and query What is the meaning of life?
+Asking LLM...
+prompt3: Waiting for LLM response...
+Adding requests:   0%|          | 0/1 [00:00<?, ?it/s]Adding requests: 100%|██████████| 1/1 [00:00<00:00, 2888.64it/s]
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:12<00:00, 12.19s/it, est. speed input: 6.07 toks/s, output: 158.91 toks/s]Processed prompts: 100%|██████████| 1/1 [00:12<00:00, 12.19s/it, est. speed input: 6.07 toks/s, output: 158.91 toks/s]Processed prompts: 100%|██████████| 1/1 [00:12<00:00, 12.19s/it, est. speed input: 6.07 toks/s, output: 158.91 toks/s]
+prompt3: Waiting for LLM response...
+prompt3: Waiting for LLM response...
+prompt3: Waiting for LLM response...
+prompt3: Waiting for LLM response...
+prompt3: Waiting for LLM response...
+prompt3: Waiting for LLM response...
+prompt3: Waiting for LLM response...
+prompt3: Waiting for LLM response...
+prompt3: Waiting for LLM response...
+prompt3: Waiting for LLM response...
+Handling prompt4 with query How many continents are there on Earth?...
+MakeRequest called with promptnr prompt4 and query How many continents are there on Earth?
+Asking LLM...
+prompt4: Waiting for LLM response...
+Adding requests:   0%|          | 0/1 [00:00<?, ?it/s]Adding requests: 100%|██████████| 1/1 [00:00<00:00, 2941.31it/s]
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.24s/it, est. speed input: 60.40 toks/s, output: 158.64 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.24s/it, est. speed input: 60.40 toks/s, output: 158.64 toks/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.24s/it, est. speed input: 60.40 toks/s, output: 158.64 toks/s]
+prompt4: Waiting for LLM response...
+Handling prompt5 with query How are you doing today?...
+MakeRequest called with promptnr prompt5 and query How are you doing today?
+Asking LLM...
+prompt5: Waiting for LLM response...
+Adding requests:   0%|          | 0/1 [00:00<?, ?it/s]Adding requests: 100%|██████████| 1/1 [00:00<00:00, 3066.01it/s]
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  2.22it/s, est. speed input: 162.40 toks/s, output: 157.94 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  2.22it/s, est. speed input: 162.40 toks/s, output: 157.94 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  2.22it/s, est. speed input: 162.40 toks/s, output: 157.94 toks/s]
+Handling prompt6 with query Which city is the Eiffel Tower located in?...
+MakeRequest called with promptnr prompt6 and query Which city is the Eiffel Tower located in?
+Asking LLM...
+prompt6: Waiting for LLM response...
+Adding requests:   0%|          | 0/1 [00:00<?, ?it/s]Adding requests: 100%|██████████| 1/1 [00:00<00:00, 3015.32it/s]
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  3.32it/s, est. speed input: 252.25 toks/s, output: 155.99 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  3.32it/s, est. speed input: 252.25 toks/s, output: 155.99 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  3.32it/s, est. speed input: 252.25 toks/s, output: 155.99 toks/s]
+Handling prompt7 with query How many legs does a spider have?...
+MakeRequest called with promptnr prompt7 and query How many legs does a spider have?
+Asking LLM...
+prompt7: Waiting for LLM response...
+Adding requests:   0%|          | 0/1 [00:00<?, ?it/s]Adding requests: 100%|██████████| 1/1 [00:00<00:00, 3109.19it/s]
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.91it/s, est. speed input: 143.52 toks/s, output: 158.82 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.91it/s, est. speed input: 143.52 toks/s, output: 158.82 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.91it/s, est. speed input: 143.52 toks/s, output: 158.82 toks/s]
+Handling prompt8 with query What is the largest mammal?...
+MakeRequest called with promptnr prompt8 and query What is the largest mammal?
+Asking LLM...
+prompt8: Waiting for LLM response...
+Adding requests:   0%|          | 0/1 [00:00<?, ?it/s]Adding requests: 100%|██████████| 1/1 [00:00<00:00, 2774.01it/s]
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:04<00:00,  4.10s/it, est. speed input: 18.05 toks/s, output: 159.29 toks/s]Processed prompts: 100%|██████████| 1/1 [00:04<00:00,  4.10s/it, est. speed input: 18.05 toks/s, output: 159.29 toks/s]Processed prompts: 100%|██████████| 1/1 [00:04<00:00,  4.10s/it, est. speed input: 18.05 toks/s, output: 159.29 toks/s]
+prompt8: Waiting for LLM response...
+prompt8: Waiting for LLM response...
+prompt8: Waiting for LLM response...
+Handling prompt9 with query What is the chemical symbol for water?...
+MakeRequest called with promptnr prompt9 and query What is the chemical symbol for water?
+Asking LLM...
+prompt9: Waiting for LLM response...
+Adding requests:   0%|          | 0/1 [00:00<?, ?it/s]Adding requests: 100%|██████████| 1/1 [00:00<00:00, 3310.42it/s]
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  2.45it/s, est. speed input: 184.07 toks/s, output: 157.07 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  2.45it/s, est. speed input: 184.07 toks/s, output: 157.07 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  2.45it/s, est. speed input: 184.07 toks/s, output: 157.07 toks/s]
+Handling prompt10 with query Who is the current president of the United States?...
+MakeRequest called with promptnr prompt10 and query Who is the current president of the United States?
+Asking LLM...
+prompt10: Waiting for LLM response...
+Adding requests:   0%|          | 0/1 [00:00<?, ?it/s]Adding requests: 100%|██████████| 1/1 [00:00<00:00, 3079.52it/s]
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:02<00:00,  2.19s/it, est. speed input: 35.16 toks/s, output: 158.89 toks/s]Processed prompts: 100%|██████████| 1/1 [00:02<00:00,  2.19s/it, est. speed input: 35.16 toks/s, output: 158.89 toks/s]Processed prompts: 100%|██████████| 1/1 [00:02<00:00,  2.19s/it, est. speed input: 35.16 toks/s, output: 158.89 toks/s]
+prompt10: Waiting for LLM response...
+prompt10: Waiting for LLM response...
+2049086 26 78811.0
+1579 18 87.72222222222223
+5056.65 26 194.48653846153846
+ERROR 04-08 12:03:43 [core_client.py:564] Engine core proc EngineCore_DP0 died unexpectedly, shutting down client.
+----------------PARALLEL----------------
+HGello.
+Model: gpt_oss_120b
+Quantization: full
+Model Length: 16384
+GPU Usage Threshold: 0.8
+Inference Provider: vllm
+Data Type: auto
+Order: parallel
+GPU: h100nv_94GB
+/fp/projects01/ec12/mornil/comparisons/comparisonsV2/compResults/gpt_oss_120b/vllm/parallel/full_16384_0.8_auto_h100nv_94GB/
+Total GPU memory: [95830]
+Setup LLM...
+INFO 04-08 12:04:02 [__init__.py:216] Automatically detected platform cuda.
+Loading NorMistral model with vLLM and paramaters: auto full 16384 0.8
+INFO 04-08 12:04:11 [utils.py:233] non-default args: {'trust_remote_code': True, 'max_model_len': 16384, 'gpu_memory_utilization': 0.8, 'disable_log_stats': True, 'model': 'openai/gpt-oss-120b'}
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+INFO 04-08 12:04:12 [model.py:547] Resolved architecture: GptOssForCausalLM
+`torch_dtype` is deprecated! Use `dtype` instead!
+Parse safetensors files:   0%|          | 0/15 [00:00<?, ?it/s]Parse safetensors files:   7%|▋         | 1/15 [00:00<00:04,  3.32it/s]Parse safetensors files: 100%|██████████| 15/15 [00:00<00:00, 43.92it/s]
+INFO 04-08 12:04:13 [model.py:1510] Using max model len 16384
+INFO 04-08 12:04:17 [scheduler.py:205] Chunked prefill is enabled with max_num_batched_tokens=16384.
+INFO 04-08 12:04:17 [config.py:271] Overriding max cuda graph capture size to 992 for performance.
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m INFO 04-08 12:04:19 [core.py:644] Waiting for init message from front-end.
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m INFO 04-08 12:04:19 [core.py:77] Initializing a V1 LLM engine (v0.11.0) with config: model='openai/gpt-oss-120b', speculative_config=None, tokenizer='openai/gpt-oss-120b', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=16384, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, disable_custom_all_reduce=False, quantization=mxfp4, enforce_eager=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_fallback=False, disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='openai_gptoss'), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None), seed=0, served_model_name=openai/gpt-oss-120b, enable_prefix_caching=True, chunked_prefill_enabled=True, pooler_config=None, compilation_config={"level":3,"debug_dump_path":"","cache_dir":"","backend":"","custom_ops":[],"splitting_ops":["vllm.unified_attention","vllm.unified_attention_with_output","vllm.mamba_mixer2","vllm.mamba_mixer","vllm.short_conv","vllm.linear_attention","vllm.plamo2_mamba_mixer","vllm.gdn_attention","vllm.sparse_attn_indexer"],"use_inductor":true,"compile_sizes":[],"inductor_compile_config":{"enable_auto_functionalized_v2":false},"inductor_passes":{},"cudagraph_mode":[2,1],"use_cudagraph":true,"cudagraph_num_of_warmups":1,"cudagraph_capture_sizes":[992,976,960,944,928,912,896,880,864,848,832,816,800,784,768,752,736,720,704,688,672,656,640,624,608,592,576,560,544,528,512,496,480,464,448,432,416,400,384,368,352,336,320,304,288,272,256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"cudagraph_copy_inputs":false,"full_cuda_graph":false,"use_inductor_graph_partition":false,"pass_config":{},"max_capture_size":992,"local_cache_dir":null}
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m INFO 04-08 12:04:21 [parallel_state.py:1208] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, TP rank 0, EP rank 0
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m WARNING 04-08 12:04:21 [topk_topp_sampler.py:66] FlashInfer is not available. Falling back to the PyTorch-native implementation of top-p & top-k sampling. For the best performance, please install FlashInfer.
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m INFO 04-08 12:04:21 [gpu_model_runner.py:2602] Starting to load model openai/gpt-oss-120b...
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m INFO 04-08 12:04:21 [gpu_model_runner.py:2634] Loading model from scratch...
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m INFO 04-08 12:04:22 [cuda.py:366] Using Flash Attention backend on V1 engine.
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m WARNING 04-08 12:04:22 [mxfp4.py:89] MXFP4 MoE is enabled on Hopper/Blackwell but FlashInfer is not available. This may result in degraded performance. Please `pip install vllm[flashinfer]` for best results.
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m INFO 04-08 12:04:22 [mxfp4.py:98] Using Marlin backend
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m INFO 04-08 12:04:22 [weight_utils.py:392] Using model weights format ['*.safetensors']
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m Loading safetensors checkpoint shards:   0% Completed | 0/15 [00:00<?, ?it/s]
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m Loading safetensors checkpoint shards:   7% Completed | 1/15 [00:08<02:00,  8.61s/it]
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m Loading safetensors checkpoint shards:  13% Completed | 2/15 [00:17<01:54,  8.79s/it]
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m Loading safetensors checkpoint shards:  20% Completed | 3/15 [00:25<01:40,  8.40s/it]
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m Loading safetensors checkpoint shards:  27% Completed | 4/15 [00:35<01:39,  9.05s/it]
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m Loading safetensors checkpoint shards:  33% Completed | 5/15 [00:44<01:30,  9.02s/it]
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m Loading safetensors checkpoint shards:  40% Completed | 6/15 [00:53<01:20,  8.91s/it]
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m Loading safetensors checkpoint shards:  47% Completed | 7/15 [01:01<01:10,  8.86s/it]
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m Loading safetensors checkpoint shards:  53% Completed | 8/15 [01:12<01:05,  9.43s/it]
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m Loading safetensors checkpoint shards:  60% Completed | 9/15 [01:21<00:55,  9.19s/it]
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m Loading safetensors checkpoint shards:  67% Completed | 10/15 [01:29<00:45,  9.05s/it]
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m Loading safetensors checkpoint shards:  73% Completed | 11/15 [01:41<00:39,  9.78s/it]
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m Loading safetensors checkpoint shards:  80% Completed | 12/15 [01:50<00:28,  9.52s/it]
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m Loading safetensors checkpoint shards:  87% Completed | 13/15 [01:59<00:18,  9.29s/it]
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m Loading safetensors checkpoint shards:  93% Completed | 14/15 [02:08<00:09,  9.45s/it]
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m Loading safetensors checkpoint shards: 100% Completed | 15/15 [02:18<00:00,  9.40s/it]
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m Loading safetensors checkpoint shards: 100% Completed | 15/15 [02:18<00:00,  9.21s/it]
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m 
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m INFO 04-08 12:06:41 [default_loader.py:267] Loading weights took 138.40 seconds
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m WARNING 04-08 12:06:41 [marlin_utils_fp4.py:196] Your GPU does not have native support for FP4 computation but FP4 quantization is being used. Weight-only FP4 compression will be used leveraging the Marlin kernel. This may degrade performance for compute-heavy workloads.
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m INFO 04-08 12:06:45 [gpu_model_runner.py:2653] Model loading took 65.9651 GiB and 142.670239 seconds
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m INFO 04-08 12:06:53 [backends.py:548] Using cache directory: /fp/projects01/ec12/mornil/vllm_cache/torch_compile_cache/a4a939155b/rank_0_0/backbone for vLLM's torch.compile
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m INFO 04-08 12:06:53 [backends.py:559] Dynamo bytecode transform time: 7.61 s
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m INFO 04-08 12:06:56 [backends.py:164] Directly load the compiled graph(s) for dynamic shape from the cache, took 2.908 s
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m INFO 04-08 12:07:04 [monitor.py:34] torch.compile takes 7.61 s in total
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m INFO 04-08 12:07:05 [gpu_worker.py:298] Available KV cache memory: 1.15 GiB
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m INFO 04-08 12:07:05 [kv_cache_utils.py:1087] GPU KV cache size: 16,784 tokens
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m INFO 04-08 12:07:05 [kv_cache_utils.py:1091] Maximum concurrency for 16,384 tokens per request: 1.02x
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   0%|          | 0/81 [00:00<?, ?it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   1%|          | 1/81 [00:00<00:08,  9.68it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   4%|▎         | 3/81 [00:00<00:07, 10.50it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   6%|▌         | 5/81 [00:00<00:07, 10.54it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   9%|▊         | 7/81 [00:00<00:07, 10.34it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  11%|█         | 9/81 [00:00<00:06, 10.40it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  14%|█▎        | 11/81 [00:01<00:06, 10.36it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  16%|█▌        | 13/81 [00:01<00:06, 10.41it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  19%|█▊        | 15/81 [00:01<00:06, 10.39it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  21%|██        | 17/81 [00:01<00:06, 10.55it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  23%|██▎       | 19/81 [00:01<00:05, 10.54it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  26%|██▌       | 21/81 [00:01<00:05, 10.67it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  28%|██▊       | 23/81 [00:02<00:05, 10.79it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  31%|███       | 25/81 [00:02<00:05, 10.97it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  33%|███▎      | 27/81 [00:02<00:04, 11.24it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  36%|███▌      | 29/81 [00:02<00:04, 11.34it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  38%|███▊      | 31/81 [00:02<00:04, 11.41it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  41%|████      | 33/81 [00:03<00:04, 11.64it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  43%|████▎     | 35/81 [00:03<00:03, 11.70it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  46%|████▌     | 37/81 [00:03<00:03, 11.66it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  48%|████▊     | 39/81 [00:03<00:03, 11.60it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  51%|█████     | 41/81 [00:03<00:03, 11.73it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  53%|█████▎    | 43/81 [00:03<00:03, 11.91it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  56%|█████▌    | 45/81 [00:04<00:02, 12.10it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  58%|█████▊    | 47/81 [00:04<00:02, 12.08it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  60%|██████    | 49/81 [00:04<00:02, 12.15it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  63%|██████▎   | 51/81 [00:04<00:02, 11.91it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  65%|██████▌   | 53/81 [00:04<00:02, 11.73it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  68%|██████▊   | 55/81 [00:04<00:02, 11.74it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  70%|███████   | 57/81 [00:05<00:02, 11.85it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  73%|███████▎  | 59/81 [00:05<00:01, 11.83it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  75%|███████▌  | 61/81 [00:05<00:01, 11.79it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  78%|███████▊  | 63/81 [00:05<00:01, 11.74it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  80%|████████  | 65/81 [00:05<00:01, 11.68it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  83%|████████▎ | 67/81 [00:05<00:01, 11.65it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  85%|████████▌ | 69/81 [00:06<00:01, 11.52it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  88%|████████▊ | 71/81 [00:06<00:00, 11.62it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  90%|█████████ | 73/81 [00:06<00:00, 11.65it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  93%|█████████▎| 75/81 [00:06<00:00, 11.69it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  95%|█████████▌| 77/81 [00:06<00:00, 11.77it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  98%|█████████▊| 79/81 [00:06<00:00, 11.96it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|██████████| 81/81 [00:07<00:00, 12.29it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|██████████| 81/81 [00:07<00:00, 11.44it/s]
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m Capturing CUDA graphs (decode, FULL):   0%|          | 0/81 [00:00<?, ?it/s]Capturing CUDA graphs (decode, FULL):   1%|          | 1/81 [00:00<00:12,  6.28it/s]Capturing CUDA graphs (decode, FULL):   2%|▏         | 2/81 [00:00<00:10,  7.83it/s]Capturing CUDA graphs (decode, FULL):   4%|▎         | 3/81 [00:00<00:09,  8.57it/s]Capturing CUDA graphs (decode, FULL):   5%|▍         | 4/81 [00:00<00:08,  8.98it/s]Capturing CUDA graphs (decode, FULL):   6%|▌         | 5/81 [00:00<00:08,  9.31it/s]Capturing CUDA graphs (decode, FULL):   7%|▋         | 6/81 [00:00<00:07,  9.38it/s]Capturing CUDA graphs (decode, FULL):   9%|▊         | 7/81 [00:00<00:07,  9.44it/s]Capturing CUDA graphs (decode, FULL):  10%|▉         | 8/81 [00:00<00:07,  9.52it/s]Capturing CUDA graphs (decode, FULL):  11%|█         | 9/81 [00:00<00:07,  9.66it/s]Capturing CUDA graphs (decode, FULL):  12%|█▏        | 10/81 [00:01<00:07,  9.74it/s]Capturing CUDA graphs (decode, FULL):  14%|█▎        | 11/81 [00:01<00:07,  9.77it/s]Capturing CUDA graphs (decode, FULL):  16%|█▌        | 13/81 [00:01<00:06,  9.99it/s]Capturing CUDA graphs (decode, FULL):  19%|█▊        | 15/81 [00:01<00:06, 10.14it/s]Capturing CUDA graphs (decode, FULL):  21%|██        | 17/81 [00:01<00:06, 10.37it/s]Capturing CUDA graphs (decode, FULL):  23%|██▎       | 19/81 [00:01<00:05, 10.52it/s]Capturing CUDA graphs (decode, FULL):  26%|██▌       | 21/81 [00:02<00:05, 10.72it/s]Capturing CUDA graphs (decode, FULL):  28%|██▊       | 23/81 [00:02<00:05, 10.90it/s]Capturing CUDA graphs (decode, FULL):  31%|███       | 25/81 [00:02<00:05, 11.12it/s]Capturing CUDA graphs (decode, FULL):  33%|███▎      | 27/81 [00:02<00:04, 11.31it/s]Capturing CUDA graphs (decode, FULL):  36%|███▌      | 29/81 [00:02<00:04, 11.51it/s]Capturing CUDA graphs (decode, FULL):  38%|███▊      | 31/81 [00:02<00:04, 11.78it/s]Capturing CUDA graphs (decode, FULL):  41%|████      | 33/81 [00:03<00:04, 11.99it/s]Capturing CUDA graphs (decode, FULL):  43%|████▎     | 35/81 [00:03<00:03, 12.09it/s]Capturing CUDA graphs (decode, FULL):  46%|████▌     | 37/81 [00:03<00:03, 12.05it/s]Capturing CUDA graphs (decode, FULL):  48%|████▊     | 39/81 [00:03<00:03, 12.18it/s]Capturing CUDA graphs (decode, FULL):  51%|█████     | 41/81 [00:03<00:03, 12.36it/s]Capturing CUDA graphs (decode, FULL):  53%|█████▎    | 43/81 [00:03<00:03, 12.62it/s]Capturing CUDA graphs (decode, FULL):  56%|█████▌    | 45/81 [00:04<00:02, 12.71it/s]Capturing CUDA graphs (decode, FULL):  58%|█████▊    | 47/81 [00:04<00:02, 12.89it/s]Capturing CUDA graphs (decode, FULL):  60%|██████    | 49/81 [00:04<00:02, 12.93it/s]Capturing CUDA graphs (decode, FULL):  63%|██████▎   | 51/81 [00:04<00:02, 12.97it/s]Capturing CUDA graphs (decode, FULL):  65%|██████▌   | 53/81 [00:04<00:02, 12.94it/s]Capturing CUDA graphs (decode, FULL):  68%|██████▊   | 55/81 [00:04<00:01, 13.02it/s]Capturing CUDA graphs (decode, FULL):  70%|███████   | 57/81 [00:04<00:01, 13.02it/s]Capturing CUDA graphs (decode, FULL):  73%|███████▎  | 59/81 [00:05<00:01, 13.03it/s]Capturing CUDA graphs (decode, FULL):  75%|███████▌  | 61/81 [00:05<00:01, 12.99it/s]Capturing CUDA graphs (decode, FULL):  78%|███████▊  | 63/81 [00:05<00:01, 13.02it/s]Capturing CUDA graphs (decode, FULL):  80%|████████  | 65/81 [00:05<00:01, 12.95it/s]Capturing CUDA graphs (decode, FULL):  83%|████████▎ | 67/81 [00:05<00:01, 13.00it/s]Capturing CUDA graphs (decode, FULL):  85%|████████▌ | 69/81 [00:05<00:00, 12.95it/s]Capturing CUDA graphs (decode, FULL):  88%|████████▊ | 71/81 [00:06<00:00, 13.01it/s]Capturing CUDA graphs (decode, FULL):  90%|█████████ | 73/81 [00:06<00:00, 13.01it/s]Capturing CUDA graphs (decode, FULL):  93%|█████████▎| 75/81 [00:06<00:00, 13.07it/s]Capturing CUDA graphs (decode, FULL):  95%|█████████▌| 77/81 [00:06<00:00, 13.06it/s]Capturing CUDA graphs (decode, FULL):  98%|█████████▊| 79/81 [00:06<00:00, 13.11it/s]Capturing CUDA graphs (decode, FULL): 100%|██████████| 81/81 [00:06<00:00, 13.23it/s]Capturing CUDA graphs (decode, FULL): 100%|██████████| 81/81 [00:06<00:00, 11.85it/s]
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m INFO 04-08 12:07:20 [gpu_model_runner.py:3480] Graph capturing finished in 15 secs, took 1.38 GiB
+[1;36m(EngineCore_DP0 pid=4181924)[0;0m INFO 04-08 12:07:20 [core.py:210] init engine (profile, create kv cache, warmup model) took 35.06 seconds
+INFO 04-08 12:07:22 [llm.py:306] Supported_tasks: ['generate']
+load done
+Setting up sampling parameters...
+setup done
+LLM finished setting up.
+Get initial GPU memory:  [78813]
+Starting comparisons.
+Doing 10 requests...
+Waiting for LLM response...
+Adding requests:   0%|          | 0/10 [00:00<?, ?it/s]Adding requests: 100%|██████████| 10/10 [00:00<00:00, 1867.37it/s]
+Processed prompts:   0%|          | 0/10 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  10%|█         | 1/10 [00:01<00:09,  1.11s/it, est. speed input: 9.04 toks/s, output: 55.15 toks/s]Processed prompts:  20%|██        | 2/10 [00:09<00:44,  5.60s/it, est. speed input: 1.72 toks/s, output: 68.48 toks/s]Processed prompts:  30%|███       | 3/10 [00:25<01:11, 10.18s/it, est. speed input: 0.94 toks/s, output: 106.84 toks/s]Processed prompts: 100%|██████████| 10/10 [00:25<00:00, 10.18s/it, est. speed input: 3.02 toks/s, output: 669.02 toks/s]Processed prompts: 100%|██████████| 10/10 [00:25<00:00,  2.55s/it, est. speed input: 3.02 toks/s, output: 669.02 toks/s]
+Waiting for LLM response...
+Waiting for LLM response...
+Waiting for LLM response...
+Waiting for LLM response...
+Waiting for LLM response...
+Waiting for LLM response...
+Waiting for LLM response...
+Waiting for LLM response...
+Waiting for LLM response...
+Waiting for LLM response...
+Waiting for LLM response...
+Waiting for LLM response...
+Waiting for LLM response...
+Waiting for LLM response...
+Waiting for LLM response...
+Waiting for LLM response...
+Waiting for LLM response...
+Waiting for LLM response...
+Waiting for LLM response...
+Waiting for LLM response...
+Waiting for LLM response...
+Waiting for LLM response...
+1812745 23 78815.0
+2112 23 91.82608695652173
+7852.530000000001 23 341.414347826087
+ERROR 04-08 12:07:48 [core_client.py:564] Engine core proc EngineCore_DP0 died unexpectedly, shutting down client.
+----------------XBRL----------------
+HGello.
+Model: gpt_oss_120b
+Quantization: full
+Model Length: 16384
+GPU Usage Threshold: 0.8
+Inference Provider: vllm
+Data Type: auto
+Order: xbrl
+GPU: h100nv_94GB
+/fp/projects01/ec12/mornil/comparisons/comparisonsV2/compResults/gpt_oss_120b/vllm/xbrl/full_16384_0.8_auto_h100nv_94GB/
+Total GPU memory: [95830]
+Setup LLM...
+INFO 04-08 12:07:59 [__init__.py:216] Automatically detected platform cuda.
+Loading NorMistral model with vLLM and paramaters: auto full 16384 0.8
+INFO 04-08 12:08:05 [utils.py:233] non-default args: {'trust_remote_code': True, 'max_model_len': 16384, 'gpu_memory_utilization': 0.8, 'disable_log_stats': True, 'model': 'openai/gpt-oss-120b'}
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+INFO 04-08 12:08:06 [model.py:547] Resolved architecture: GptOssForCausalLM
+`torch_dtype` is deprecated! Use `dtype` instead!
+Parse safetensors files:   0%|          | 0/15 [00:00<?, ?it/s]Parse safetensors files:   7%|▋         | 1/15 [00:00<00:03,  3.53it/s]Parse safetensors files:  20%|██        | 3/15 [00:00<00:01,  8.36it/s]Parse safetensors files: 100%|██████████| 15/15 [00:00<00:00, 36.75it/s]
+INFO 04-08 12:08:07 [model.py:1510] Using max model len 16384
+INFO 04-08 12:08:10 [scheduler.py:205] Chunked prefill is enabled with max_num_batched_tokens=16384.
+INFO 04-08 12:08:10 [config.py:271] Overriding max cuda graph capture size to 992 for performance.
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m INFO 04-08 12:08:12 [core.py:644] Waiting for init message from front-end.
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m INFO 04-08 12:08:12 [core.py:77] Initializing a V1 LLM engine (v0.11.0) with config: model='openai/gpt-oss-120b', speculative_config=None, tokenizer='openai/gpt-oss-120b', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=16384, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, disable_custom_all_reduce=False, quantization=mxfp4, enforce_eager=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_fallback=False, disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='openai_gptoss'), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None), seed=0, served_model_name=openai/gpt-oss-120b, enable_prefix_caching=True, chunked_prefill_enabled=True, pooler_config=None, compilation_config={"level":3,"debug_dump_path":"","cache_dir":"","backend":"","custom_ops":[],"splitting_ops":["vllm.unified_attention","vllm.unified_attention_with_output","vllm.mamba_mixer2","vllm.mamba_mixer","vllm.short_conv","vllm.linear_attention","vllm.plamo2_mamba_mixer","vllm.gdn_attention","vllm.sparse_attn_indexer"],"use_inductor":true,"compile_sizes":[],"inductor_compile_config":{"enable_auto_functionalized_v2":false},"inductor_passes":{},"cudagraph_mode":[2,1],"use_cudagraph":true,"cudagraph_num_of_warmups":1,"cudagraph_capture_sizes":[992,976,960,944,928,912,896,880,864,848,832,816,800,784,768,752,736,720,704,688,672,656,640,624,608,592,576,560,544,528,512,496,480,464,448,432,416,400,384,368,352,336,320,304,288,272,256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"cudagraph_copy_inputs":false,"full_cuda_graph":false,"use_inductor_graph_partition":false,"pass_config":{},"max_capture_size":992,"local_cache_dir":null}
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m INFO 04-08 12:08:13 [parallel_state.py:1208] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, TP rank 0, EP rank 0
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m WARNING 04-08 12:08:14 [topk_topp_sampler.py:66] FlashInfer is not available. Falling back to the PyTorch-native implementation of top-p & top-k sampling. For the best performance, please install FlashInfer.
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m INFO 04-08 12:08:14 [gpu_model_runner.py:2602] Starting to load model openai/gpt-oss-120b...
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m INFO 04-08 12:08:14 [gpu_model_runner.py:2634] Loading model from scratch...
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m INFO 04-08 12:08:14 [cuda.py:366] Using Flash Attention backend on V1 engine.
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m WARNING 04-08 12:08:14 [mxfp4.py:89] MXFP4 MoE is enabled on Hopper/Blackwell but FlashInfer is not available. This may result in degraded performance. Please `pip install vllm[flashinfer]` for best results.
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m INFO 04-08 12:08:14 [mxfp4.py:98] Using Marlin backend
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m INFO 04-08 12:08:15 [weight_utils.py:392] Using model weights format ['*.safetensors']
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m Loading safetensors checkpoint shards:   0% Completed | 0/15 [00:00<?, ?it/s]
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m Loading safetensors checkpoint shards:   7% Completed | 1/15 [00:08<02:00,  8.58s/it]
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m Loading safetensors checkpoint shards:  13% Completed | 2/15 [00:17<01:52,  8.68s/it]
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m Loading safetensors checkpoint shards:  20% Completed | 3/15 [00:25<01:39,  8.28s/it]
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m Loading safetensors checkpoint shards:  27% Completed | 4/15 [00:35<01:38,  8.96s/it]
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m Loading safetensors checkpoint shards:  33% Completed | 5/15 [00:44<01:29,  8.97s/it]
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m Loading safetensors checkpoint shards:  40% Completed | 6/15 [00:52<01:20,  8.89s/it]
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m Loading safetensors checkpoint shards:  47% Completed | 7/15 [01:01<01:10,  8.81s/it]
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m Loading safetensors checkpoint shards:  53% Completed | 8/15 [01:12<01:05,  9.39s/it]
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m Loading safetensors checkpoint shards:  60% Completed | 9/15 [01:20<00:54,  9.13s/it]
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m Loading safetensors checkpoint shards:  67% Completed | 10/15 [01:29<00:44,  8.98s/it]
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m Loading safetensors checkpoint shards:  73% Completed | 11/15 [01:39<00:37,  9.38s/it]
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m Loading safetensors checkpoint shards:  80% Completed | 12/15 [01:48<00:28,  9.34s/it]
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m Loading safetensors checkpoint shards:  87% Completed | 13/15 [01:57<00:18,  9.14s/it]
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m Loading safetensors checkpoint shards:  93% Completed | 14/15 [02:07<00:09,  9.34s/it]
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m Loading safetensors checkpoint shards: 100% Completed | 15/15 [02:16<00:00,  9.30s/it]
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m Loading safetensors checkpoint shards: 100% Completed | 15/15 [02:16<00:00,  9.10s/it]
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m 
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m INFO 04-08 12:10:32 [default_loader.py:267] Loading weights took 136.75 seconds
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m WARNING 04-08 12:10:32 [marlin_utils_fp4.py:196] Your GPU does not have native support for FP4 computation but FP4 quantization is being used. Weight-only FP4 compression will be used leveraging the Marlin kernel. This may degrade performance for compute-heavy workloads.
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m INFO 04-08 12:10:36 [gpu_model_runner.py:2653] Model loading took 65.9651 GiB and 140.885397 seconds
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m INFO 04-08 12:10:43 [backends.py:548] Using cache directory: /fp/projects01/ec12/mornil/vllm_cache/torch_compile_cache/a4a939155b/rank_0_0/backbone for vLLM's torch.compile
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m INFO 04-08 12:10:43 [backends.py:559] Dynamo bytecode transform time: 7.31 s
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m INFO 04-08 12:10:47 [backends.py:164] Directly load the compiled graph(s) for dynamic shape from the cache, took 2.802 s
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m INFO 04-08 12:10:54 [monitor.py:34] torch.compile takes 7.31 s in total
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m INFO 04-08 12:10:55 [gpu_worker.py:298] Available KV cache memory: 1.15 GiB
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m INFO 04-08 12:10:55 [kv_cache_utils.py:1087] GPU KV cache size: 16,784 tokens
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m INFO 04-08 12:10:55 [kv_cache_utils.py:1091] Maximum concurrency for 16,384 tokens per request: 1.02x
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   0%|          | 0/81 [00:00<?, ?it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   1%|          | 1/81 [00:00<00:08,  9.68it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   4%|▎         | 3/81 [00:00<00:07, 10.55it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   6%|▌         | 5/81 [00:00<00:07, 10.56it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   9%|▊         | 7/81 [00:00<00:07, 10.36it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  11%|█         | 9/81 [00:00<00:06, 10.43it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  14%|█▎        | 11/81 [00:01<00:06, 10.35it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  16%|█▌        | 13/81 [00:01<00:06, 10.34it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  19%|█▊        | 15/81 [00:01<00:06, 10.31it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  21%|██        | 17/81 [00:01<00:06, 10.46it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  23%|██▎       | 19/81 [00:01<00:05, 10.44it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  26%|██▌       | 21/81 [00:02<00:05, 10.56it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  28%|██▊       | 23/81 [00:02<00:05, 10.67it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  31%|███       | 25/81 [00:02<00:05, 10.86it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  33%|███▎      | 27/81 [00:02<00:04, 11.11it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  36%|███▌      | 29/81 [00:02<00:04, 11.19it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  38%|███▊      | 31/81 [00:02<00:04, 11.25it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  41%|████      | 33/81 [00:03<00:04, 11.46it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  43%|████▎     | 35/81 [00:03<00:03, 11.53it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  46%|████▌     | 37/81 [00:03<00:03, 11.49it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  48%|████▊     | 39/81 [00:03<00:03, 11.41it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  51%|█████     | 41/81 [00:03<00:03, 11.54it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  53%|█████▎    | 43/81 [00:03<00:03, 11.71it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  56%|█████▌    | 45/81 [00:04<00:03, 11.89it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  58%|█████▊    | 47/81 [00:04<00:02, 11.87it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  60%|██████    | 49/81 [00:04<00:02, 11.93it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  63%|██████▎   | 51/81 [00:04<00:02, 11.80it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  65%|██████▌   | 53/81 [00:04<00:02, 11.67it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  68%|██████▊   | 55/81 [00:04<00:02, 11.71it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  70%|███████   | 57/81 [00:05<00:02, 11.83it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  73%|███████▎  | 59/81 [00:05<00:01, 11.81it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  75%|███████▌  | 61/81 [00:05<00:01, 11.79it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  78%|███████▊  | 63/81 [00:05<00:01, 11.75it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  80%|████████  | 65/81 [00:05<00:01, 11.68it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  83%|████████▎ | 67/81 [00:05<00:01, 11.62it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  85%|████████▌ | 69/81 [00:06<00:01, 11.53it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  88%|████████▊ | 71/81 [00:06<00:00, 11.62it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  90%|█████████ | 73/81 [00:06<00:00, 11.69it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  93%|█████████▎| 75/81 [00:06<00:00, 11.73it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  95%|█████████▌| 77/81 [00:06<00:00, 11.82it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  98%|█████████▊| 79/81 [00:06<00:00, 12.01it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|██████████| 81/81 [00:07<00:00, 12.31it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|██████████| 81/81 [00:07<00:00, 11.38it/s]
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m Capturing CUDA graphs (decode, FULL):   0%|          | 0/81 [00:00<?, ?it/s]Capturing CUDA graphs (decode, FULL):   1%|          | 1/81 [00:00<00:12,  6.52it/s]Capturing CUDA graphs (decode, FULL):   2%|▏         | 2/81 [00:00<00:09,  8.00it/s]Capturing CUDA graphs (decode, FULL):   4%|▎         | 3/81 [00:00<00:08,  8.76it/s]Capturing CUDA graphs (decode, FULL):   5%|▍         | 4/81 [00:00<00:08,  9.16it/s]Capturing CUDA graphs (decode, FULL):   6%|▌         | 5/81 [00:00<00:08,  9.40it/s]Capturing CUDA graphs (decode, FULL):   7%|▋         | 6/81 [00:00<00:07,  9.47it/s]Capturing CUDA graphs (decode, FULL):   9%|▊         | 7/81 [00:00<00:07,  9.49it/s]Capturing CUDA graphs (decode, FULL):  10%|▉         | 8/81 [00:00<00:07,  9.54it/s]Capturing CUDA graphs (decode, FULL):  11%|█         | 9/81 [00:00<00:07,  9.66it/s]Capturing CUDA graphs (decode, FULL):  14%|█▎        | 11/81 [00:01<00:07,  9.78it/s]Capturing CUDA graphs (decode, FULL):  16%|█▌        | 13/81 [00:01<00:06,  9.95it/s]Capturing CUDA graphs (decode, FULL):  19%|█▊        | 15/81 [00:01<00:06, 10.11it/s]Capturing CUDA graphs (decode, FULL):  21%|██        | 17/81 [00:01<00:06, 10.30it/s]Capturing CUDA graphs (decode, FULL):  23%|██▎       | 19/81 [00:01<00:05, 10.48it/s]Capturing CUDA graphs (decode, FULL):  26%|██▌       | 21/81 [00:02<00:05, 10.70it/s]Capturing CUDA graphs (decode, FULL):  28%|██▊       | 23/81 [00:02<00:05, 10.90it/s]Capturing CUDA graphs (decode, FULL):  31%|███       | 25/81 [00:02<00:05, 11.10it/s]Capturing CUDA graphs (decode, FULL):  33%|███▎      | 27/81 [00:02<00:04, 11.31it/s]Capturing CUDA graphs (decode, FULL):  36%|███▌      | 29/81 [00:02<00:04, 11.49it/s]Capturing CUDA graphs (decode, FULL):  38%|███▊      | 31/81 [00:02<00:04, 11.78it/s]Capturing CUDA graphs (decode, FULL):  41%|████      | 33/81 [00:03<00:04, 11.95it/s]Capturing CUDA graphs (decode, FULL):  43%|████▎     | 35/81 [00:03<00:03, 12.09it/s]Capturing CUDA graphs (decode, FULL):  46%|████▌     | 37/81 [00:03<00:03, 12.06it/s]Capturing CUDA graphs (decode, FULL):  48%|████▊     | 39/81 [00:03<00:03, 12.21it/s]Capturing CUDA graphs (decode, FULL):  51%|█████     | 41/81 [00:03<00:03, 12.34it/s]Capturing CUDA graphs (decode, FULL):  53%|█████▎    | 43/81 [00:03<00:03, 12.60it/s]Capturing CUDA graphs (decode, FULL):  56%|█████▌    | 45/81 [00:04<00:02, 12.70it/s]Capturing CUDA graphs (decode, FULL):  58%|█████▊    | 47/81 [00:04<00:02, 12.83it/s]Capturing CUDA graphs (decode, FULL):  60%|██████    | 49/81 [00:04<00:02, 12.87it/s]Capturing CUDA graphs (decode, FULL):  63%|██████▎   | 51/81 [00:04<00:02, 12.91it/s]Capturing CUDA graphs (decode, FULL):  65%|██████▌   | 53/81 [00:04<00:02, 12.89it/s]Capturing CUDA graphs (decode, FULL):  68%|██████▊   | 55/81 [00:04<00:02, 12.97it/s]Capturing CUDA graphs (decode, FULL):  70%|███████   | 57/81 [00:04<00:01, 12.97it/s]Capturing CUDA graphs (decode, FULL):  73%|███████▎  | 59/81 [00:05<00:01, 13.00it/s]Capturing CUDA graphs (decode, FULL):  75%|███████▌  | 61/81 [00:05<00:01, 12.96it/s]Capturing CUDA graphs (decode, FULL):  78%|███████▊  | 63/81 [00:05<00:01, 12.98it/s]Capturing CUDA graphs (decode, FULL):  80%|████████  | 65/81 [00:05<00:01, 12.91it/s]Capturing CUDA graphs (decode, FULL):  83%|████████▎ | 67/81 [00:05<00:01, 12.97it/s]Capturing CUDA graphs (decode, FULL):  85%|████████▌ | 69/81 [00:05<00:00, 12.92it/s]Capturing CUDA graphs (decode, FULL):  88%|████████▊ | 71/81 [00:06<00:00, 12.99it/s]Capturing CUDA graphs (decode, FULL):  90%|█████████ | 73/81 [00:06<00:00, 12.98it/s]Capturing CUDA graphs (decode, FULL):  93%|█████████▎| 75/81 [00:06<00:00, 13.07it/s]Capturing CUDA graphs (decode, FULL):  95%|█████████▌| 77/81 [00:06<00:00, 13.04it/s]Capturing CUDA graphs (decode, FULL):  98%|█████████▊| 79/81 [00:06<00:00, 13.14it/s]Capturing CUDA graphs (decode, FULL): 100%|██████████| 81/81 [00:06<00:00, 13.20it/s]Capturing CUDA graphs (decode, FULL): 100%|██████████| 81/81 [00:06<00:00, 11.85it/s]
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m INFO 04-08 12:11:10 [gpu_model_runner.py:3480] Graph capturing finished in 15 secs, took 1.38 GiB
+[1;36m(EngineCore_DP0 pid=4182479)[0;0m INFO 04-08 12:11:10 [core.py:210] init engine (profile, create kv cache, warmup model) took 34.60 seconds
+INFO 04-08 12:11:12 [llm.py:306] Supported_tasks: ['generate']
+load done
+Setting up sampling parameters...
+setup done
+LLM finished setting up.
+Doing comparisons with xbrl...
+Get initial GPU memory:  [78813]
+Starting comparisons.
+MakeRequest called with promptnr prompt1 and query 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Reflection:**
+(empty)
+
+**Question:**
+You are XBRL expert.  Here is a list of US GAAP tags options: ,OperatingLeasesRentExpenseNet,MinorityInterestOwnershipPercentageByParent,ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsInPeriodWeightedAverageGrantDateFairValue,DerivativeNotionalAmount,PreferredStockDividendRatePercentage,GuaranteeObligationsMaximumExposure,LossContingencyEstimateOfPossibleLoss,OperatingLeaseRightOfUseAsset,NumberOfOperatingSegments,PaymentsToAcquireBusinessesNetOfCashAcquired,DebtInstrumentBasisSpreadOnVariableRate1,InterestExpense,ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsNonvestedNumber,CommonStockSharesOutstanding,StockRepurchaseProgramRemainingAuthorizedRepurchaseAmount1,LineOfCreditFacilityInterestRateAtPeriodEnd,ContractWithCustomerLiabilityRevenueRecognized,AmortizationOfIntangibleAssets,ShareBasedCompensationArrangementByShareBasedPaymentAwardAwardVestingPeriod1,DebtInstrumentRedemptionPricePercentage,RepaymentsOfDebt,DisposalGroupIncludingDiscontinuedOperationConsideration,LineOfCreditFacilityRemainingBorrowingCapacity,BusinessCombinationAcquisitionRelatedCosts,LesseeOperatingLeaseRenewalTerm,TreasuryStockValueAcquiredCostMethod,PreferredStockSharesAuthorized,RelatedPartyTransactionExpensesFromTransactionsWithRelatedParty,ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedInPeriodTotalFairValue,UnrecognizedTaxBenefitsThatWouldImpactEffectiveTaxRate,SaleOfStockNumberOfSharesIssuedInTransaction,OperatingLeaseWeightedAverageRemainingLeaseTerm1,StockRepurchaseProgramAuthorizedAmount1,SupplementalInformationForPropertyCasualtyInsuranceUnderwritersPriorYearClaimsAndClaimsAdjustmentExpense,RelatedPartyTransactionAmountsOfTransaction,CommonStockDividendsPerShareDeclared,IncomeLossFromEquityMethodInvestments,DebtInstrumentMaturityDate,LettersOfCreditOutstandingAmount,AllocatedShareBasedCompensationExpense,EffectiveIncomeTaxRateContinuingOperations,ShareBasedCompensationArrangementByShareBasedPaymentAwardNumberOfSharesAuthorized,ShareBasedCompensationArrangementByShareBasedPaymentAwardNumberOfSharesAvailableForGrant,ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsGrantsInPeriodGross,ConcentrationRiskPercentage1,OperatingLeasePayments,LongTermDebt,RestructuringCharges,CommonStockParOrStatedValuePerShare,DebtInstrumentConvertibleConversionPrice1,Revenues,DeferredFinanceCostsGross,EffectiveIncomeTaxRateReconciliationAtFederalStatutoryIncomeTaxRate,DefinedBenefitPlanContributionsByEmployer,GoodwillImpairmentLoss,LossContingencyPendingClaimsNumber,OperatingLeaseLiability,LineOfCreditFacilityMaximumBorrowingCapacity,OperatingLeaseExpense,DerivativeFixedInterestRate,LineOfCreditFacilityCommitmentFeePercentage,CumulativeEffectOfNewAccountingPrincipleInPeriodOfAdoption,SharebasedCompensationArrangementBySharebasedPaymentAwardAwardVestingRightsPercentage,DebtWeightedAverageInterestRate,PaymentsToAcquireBusinessesGross,DebtInstrumentCarryingAmount,BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedIntangibles,RevenueFromContractWithCustomerExcludingAssessedTax,PublicUtilitiesRequestedRateIncreaseDecreaseAmount,ContractWithCustomerLiability,DebtInstrumentTerm,DebtInstrumentFairValue,RevenueFromContractWithCustomerIncludingAssessedTax,RevenueFromRelatedParties,DebtInstrumentInterestRateEffectivePercentage,GainsLossesOnExtinguishmentOfDebt,EmployeeServiceShareBasedCompensationNonvestedAwardsTotalCompensationCostNotYetRecognizedShareBasedAwardsOtherThanOptions,DebtInstrumentUnamortizedDiscount,LineOfCreditFacilityCurrentBorrowingCapacity,CashAndCashEquivalentsFairValueDisclosure,LesseeOperatingLeaseTermOfContract,RestructuringAndRelatedCostExpectedCost1,DefinedContributionPlanCostRecognized,OperatingLeaseCost,LossContingencyDamagesSoughtValue,ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsGrantsInPeriodWeightedAverageGrantDateFairValue,ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsInPeriod,EmployeeServiceShareBasedCompensationNonvestedAwardsTotalCompensationCostNotYetRecognizedPeriodForRecognition1,EmployeeServiceShareBasedCompensationNonvestedAwardsTotalCompensationCostNotYetRecognized,FiniteLivedIntangibleAssetUsefulLife,Depreciation,AcquiredFiniteLivedIntangibleAssetsWeightedAverageUsefulLife,DeferredFinanceCostsNet,DebtInstrumentInterestRateStatedPercentage,Goodwill,CommonStockCapitalSharesReservedForFutureIssuance,LongTermDebtFairValue,OperatingLossCarryforwards,InterestExpenseDebt,UnrecognizedTaxBenefits,BusinessCombinationContingentConsiderationLiability,TreasuryStockAcquiredAverageCostPerShare,ClassOfWarrantOrRightExercisePriceOfWarrantsOrRights1,SharebasedCompensationArrangementBySharebasedPaymentAwardExpirationPeriod,NumberOfRealEstateProperties,TreasuryStockSharesAcquired,AntidilutiveSecuritiesExcludedFromComputationOfEarningsPerShareAmount,CommonStockSharesAuthorized,SharePrice,DebtInstrumentFaceAmount,AmortizationOfFinancingCosts,BusinessCombinationConsiderationTransferred1,LineOfCreditFacilityUnusedCapacityCommitmentFeePercentage,StockRepurchasedDuringPeriodShares,ProceedsFromIssuanceOfCommonStock,StockIssuedDuringPeriodSharesNewIssues,AccrualForEnvironmentalLossContingencies,BusinessAcquisitionPercentageOfVotingInterestsAcquired,LossContingencyAccrualAtCarryingValue,OperatingLeaseWeightedAverageDiscountRatePercent,ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsExercisesInPeriodTotalIntrinsicValue,BusinessAcquisitionEquityInterestsIssuedOrIssuableNumberOfSharesIssued,CapitalizedContractCostAmortization,NumberOfReportableSegments,AssetImpairmentCharges,RevenueRemainingPerformanceObligation,EquityMethodInvestmentOwnershipPercentage,MinorityInterestOwnershipPercentageByNoncontrollingOwners,AreaOfRealEstateProperty,StockRepurchasedAndRetiredDuringPeriodShares,LineOfCredit,BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedIntangibleAssetsOtherThanGoodwill,IncomeTaxExpenseBenefit,PropertyPlantAndEquipmentUsefulLife,LeaseAndRentalExpense,ShareBasedCompensation,EquityMethodInvestments,SaleOfStockPricePerShare,EmployeeServiceShareBasedCompensationTaxBenefitFromCompensationExpense. Answer the following 4 independent questions by providing only  4 US GAAP tags answers in the order of the questions. Each answer must be saperated by a comma (,).  Provide nothing else. 
+1. What is best tag for entity "13,699,549" in sentence: "On August 1 , 2018 , CVR Energy completed an exchange offer whereby CVR Refining 's public unitholders tendered a total of 21,625,106 common units of CVR Refining in exchange for 13,699,549 shares of CVR Energy common stock .?"
+2. What is best tag for entity "99" in sentence: "During 2016 , CVR Partners acquired a nitrogen fertilizer business for total purchase price consideration which included the issuance of common units of CVR Partners with a fair value of $ 335 million , cash paid of $ 99 million and debt assumed with a fair value of $ 368 million .?"
+3. What is best tag for entity "162" in sentence: "Precision Tune and American Driveline were acquired in 2017 for an aggregate purchase price of $ 162 million .?"
+4. What is best tag for entity "1.2" in sentence: "Pep Boys was acquired in 2016 for aggregate consideration of approximately $ 1.2 billion .?"
+Output US GAAP tags:
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+Asking LLM...
+prompt1: Waiting for LLM response...
+prompt1: Waiting for LLM response...
+prompt1: Waiting for LLM response...
+INFO 04-08 12:11:15 [chat_utils.py:560] Detected the chat template content format to be 'string'. You can set `--chat-template-content-format` to override this.
+Adding requests:   0%|          | 0/1 [00:00<?, ?it/s]Adding requests: 100%|██████████| 1/1 [00:00<00:00, 1264.49it/s]
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:03<00:00,  3.96s/it, est. speed input: 507.35 toks/s, output: 151.88 toks/s]Processed prompts: 100%|██████████| 1/1 [00:03<00:00,  3.96s/it, est. speed input: 507.35 toks/s, output: 151.88 toks/s]Processed prompts: 100%|██████████| 1/1 [00:03<00:00,  3.96s/it, est. speed input: 507.35 toks/s, output: 151.88 toks/s]
+prompt1: Waiting for LLM response...
+prompt1: Waiting for LLM response...
+prompt1: Waiting for LLM response...
+472886 6 78814.33333333333
+272 4 68.0
+1055.73 6 175.955
+ERROR 04-08 12:11:19 [core_client.py:564] Engine core proc EngineCore_DP0 died unexpectedly, shutting down client.
+
+Job 3304547 consumed 4.2 billing hours from project ec12.
+
+Submitted 2026-04-08T11:57:07; waited 1.1 minutes in the queue after becoming eligible to run.
+
+Requested wallclock time: 15.0 minutes
+Elapsed wallclock time:   13.2 minutes
+
+Job exited normally.
+
+Task and CPU statistics:
+ID             CPUs  Tasks  CPU util                Start  Elapsed  Exit status
+3304547           1            0.0 %  2026-04-08T11:58:13  789.0 s  0
+3304547.batch     1      1    87.6 %  2026-04-08T11:58:13  789.0 s  0
+
+Used CPU time:   11.5 CPU minutes
+Unused CPU time: 1.6 CPU minutes
+
+Memory statistics, in GiB:
+ID              Alloc   Usage
+3304547          16.0        
+3304547.batch    16.0    16.0
+
+Job 3304547 completed at Wed Apr 8 12:11:22 CEST 2026

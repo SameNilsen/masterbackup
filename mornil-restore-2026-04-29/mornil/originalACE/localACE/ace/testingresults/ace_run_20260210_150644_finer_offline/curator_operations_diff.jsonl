@@ -1,0 +1,4 @@
+{"timestamp": "2026-02-10T15:19:31.140611", "operation_type": "ADD", "reason": "", "section": "by_section", "content": "[ctx-00263] neutral ::", "content_length": 22, "call_id": "train_e_1_s_1"}
+{"timestamp": "2026-02-10T15:19:31.142050", "operation_type": "ADD", "reason": "", "section": "by_section", "content": "[ctx-00264] neutral ::", "content_length": 22, "call_id": "train_e_1_s_1"}
+{"timestamp": "2026-02-10T15:19:31.142649", "operation_type": "ADD", "reason": "", "section": "by_section", "content": "[ctx-00265] BusinessCombinationAcquisitionRelatedCosts ::", "content_length": 57, "call_id": "train_e_1_s_1"}
+{"timestamp": "2026-02-10T15:19:31.143153", "operation_type": "ADD", "reason": "", "section": "by_section", "content": "[ctx-00266] PaymentsToAcquireBusinessesGross ::", "content_length": 47, "call_id": "train_e_1_s_1"}

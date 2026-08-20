@@ -1,0 +1,584 @@
+
+============================================================
+CURATOR FAILURE LOG
+============================================================
+Timestamp: 2026-04-28 12:14:27
+Epoch: 0
+Step: 1
+Failure Type: json_parse_error
+Error Details: Failed to extract valid JSON from curator response
+
+Raw Curator Response (first 1000 chars):
+----------------------------------------
+Brukeren ber meg om å:
+1. Identifisere nye innsikter fra en refleksjon
+2. Produsere et gyldig JSON-objekt med spesifikke felt
+3. Bruke ADD-operasjoner for å legge til innhold
+4. Kun vise JSON-strukturen uten nedskrivning eller kodeblokker
+
+Konteksten er:
+- Jeg må kun svare med gyldig JSON
+- Jeg skal identifisere nye innsikter fra en refleksjon
+- Jeg skal bruke ADD-operasjoner for å legge til innhold
+- Jeg skal vise kun JSON-strukturen
+
+La meg analysere refleksjonsdataene:
+- "Feilidentifikasjon: Modellen overså at Formel 1 også kjøres i et punkt-til-punkt-format (navigasjon mellom sjekkpunkter på banen)."
+- "Korrekt tilnærming: Vurdere alle alternativene nøye og sammenligne dem direkte mot spørsmålet."
+- "Nøkkelinnsikt: Husk alltid å vurdere alle motorsportene som oppfyller kriteriet, ikke bare de du umiddelbart tenker på."
+
+Dette er klare nye innsikter:
+1. Formel 1 bør vurderes når man analyserer punkt-til-punkt-kjøring
+2. Man bør vurdere alle alternativer nøye
+3. Det er en nøkkelinnsi
+----------------------------------------
+
+Full Raw Curator Response:
+----------------------------------------
+Brukeren ber meg om å:
+1. Identifisere nye innsikter fra en refleksjon
+2. Produsere et gyldig JSON-objekt med spesifikke felt
+3. Bruke ADD-operasjoner for å legge til innhold
+4. Kun vise JSON-strukturen uten nedskrivning eller kodeblokker
+
+Konteksten er:
+- Jeg må kun svare med gyldig JSON
+- Jeg skal identifisere nye innsikter fra en refleksjon
+- Jeg skal bruke ADD-operasjoner for å legge til innhold
+- Jeg skal vise kun JSON-strukturen
+
+La meg analysere refleksjonsdataene:
+- "Feilidentifikasjon: Modellen overså at Formel 1 også kjøres i et punkt-til-punkt-format (navigasjon mellom sjekkpunkter på banen)."
+- "Korrekt tilnærming: Vurdere alle alternativene nøye og sammenligne dem direkte mot spørsmålet."
+- "Nøkkelinnsikt: Husk alltid å vurdere alle motorsportene som oppfyller kriteriet, ikke bare de du umiddelbart tenker på."
+
+Dette er klare nye innsikter:
+1. Formel 1 bør vurderes når man analyserer punkt-til-punkt-kjøring
+2. Man bør vurdere alle alternativer nøye
+3. Det er en nøkkelinnsikt å tenke bredt
+
+Jeg bør:
+1. Skrive en klar, informativ "reasoning" som forklarer innsiktene
+2. Bruke ADD-operasjoner for å legge til punktene
+3. Formatere JSON-strukturen tydelig
+
+La meg strukturere svaret:
+- "reasoning" som forklarer innsiktene
+- "operations" som inneholder ADD-operasjoner
+
+La meg skrive en tydelig, kortfattet JSON som kun viser strukturen. **Svar:**
+
+```json
+{
+  "reasoning": "## Formel 1 bør vurderes ved punkt-til-punkt-analyse
+
+Basert på refleksjonen ser vi at den eksisterende strategiplanen manglet en viktig vurdering: **Formel 1** bør alltid vurderes når man analyserer punkt-til-punkt-kjøring, da den oppfyller dette kriteriet på samme måte som andre motorsportgrener.
+
+Den korrekte tilnærmingen er å vurdere alle alternativer nøye og sammenligne dem direkte mot spørsmålet, ikke bare de man umiddelbart tenker på.
+
+**Nøkkelinnsikt:** Husk alltid å vurdere alle motorsportene som oppfyller kriteriet, ikke bare de du umiddelbart tenker på."
+
+  "operations": [
+    {
+      "type": "ADD",
+      "section": "common_mistakes_to_avoid",
+      "content": "[**Vurder alle alternativer**] Når du analyserer punkt-til-punkt-kjøring, må du alltid vurdere alle motorsportgrener som oppfyller kriteriet – ikke bare de du umiddelbart tenker på."
+    },
+    {
+      "type": "ADD",
+      "section": "problem-solving_heuristics",
+      "content": "[**Vurder alle alternativer**] Når du står overfor et spørsmål om motorsport, bør du alltid vurdere alle grener som oppfyller kriteriet, ikke bare de du umiddelbart tenker på."
+    }
+  ]
+}
+```
+----------------------------------------
+
+
+============================================================
+CURATOR FAILURE LOG
+============================================================
+Timestamp: 2026-04-28 12:15:06
+Epoch: 0
+Step: 2
+Failure Type: json_parse_error
+Error Details: JSON missing required 'operations' field
+
+Raw Curator Response (first 1000 chars):
+----------------------------------------
+Brukeren ber meg om å:
+1. Gjennomgå den eksisterende strategiboken og refleksjonen fra forrige forsøk
+2. Identifisere KUN de NYE innsiktene, strategiene eller feilene som MANGLER fra den nåværende strategiboken
+3. Unngå redundans - hvis lignende råd allerede finnes, legg bare til nytt innhold som er et perfekt supplement til den eksisterende strategiboken
+4. IKKE generer hele strategiboken på nytt - gi bare de nødvendige tilleggene
+5. Fokuser på kvalitet fremfor kvantitet - en fokusert, velorganisert strategibok er bedre enn en uttømmende
+6. Formater svaret mitt som et RENT JSON-objekt med spesifikke seksjoner
+
+Konteksten er:
+- Jeg har en eksisterende strategibok
+- Jeg har en refleksjon fra et tidligere forsøk
+- Jeg må identifisere nye innsikter som mangler i strategiboken
+
+Refleksjonen:
+```json
+{
+  "reasoning": "Analyse av modellens resonnement",
+  "error_identification": "Feil tolkning av spørsmålet",
+  "root_cause_analysis": "Mangel på klarhet i instruksjonen",
+  "correct_approach":
+----------------------------------------
+
+Full Raw Curator Response:
+----------------------------------------
+Brukeren ber meg om å:
+1. Gjennomgå den eksisterende strategiboken og refleksjonen fra forrige forsøk
+2. Identifisere KUN de NYE innsiktene, strategiene eller feilene som MANGLER fra den nåværende strategiboken
+3. Unngå redundans - hvis lignende råd allerede finnes, legg bare til nytt innhold som er et perfekt supplement til den eksisterende strategiboken
+4. IKKE generer hele strategiboken på nytt - gi bare de nødvendige tilleggene
+5. Fokuser på kvalitet fremfor kvantitet - en fokusert, velorganisert strategibok er bedre enn en uttømmende
+6. Formater svaret mitt som et RENT JSON-objekt med spesifikke seksjoner
+
+Konteksten er:
+- Jeg har en eksisterende strategibok
+- Jeg har en refleksjon fra et tidligere forsøk
+- Jeg må identifisere nye innsikter som mangler i strategiboken
+
+Refleksjonen:
+```json
+{
+  "reasoning": "Analyse av modellens resonnement",
+  "error_identification": "Feil tolkning av spørsmålet",
+  "root_cause_analysis": "Mangel på klarhet i instruksjonen",
+  "correct_approach": "Klar og direkte lesing av spørsmålet",
+  "key_insight": "Viktigheten av tydelige instrukser",
+  "bullet_tags": [
+    {
+      "id": "mis-00001",
+      "tag": "harmful"
+    },
+    {
+      "id": "cor-00002",
+      "tag": "helpful"
+    }
+  ]
+}
+```
+
+Strategiboken:
+```json
+{
+  "total_bullets": 0,
+  "high_performing": 0,
+  "problematic": 0,
+  "unused": 0,
+  "by_section": {}
+}
+```
+
+Oppgaven er å:
+- Identifisere nye innsikter
+- Formatere svaret som et rent JSON-objekt
+
+Jeg bør:
+1. Identifisere de nye innsiktene som ble fremhevet i refleksjonen
+2. Formatere dem som JSON-operasjoner
+
+La meg tenke på de nye innsiktene:
+- «Viktigheten av tydelige instrukser»
+- «Klar og direkte lesing av spørsmålet»
+
+Disse er nye innsikter som ikke nødvendigvis er eksplisitt uttrykt i den nåværende strategiboken.
+
+Jeg bør:
+- Strukturere svaret som et JSON-objekt
+- Inkludere en «reasoning»-del som forklarer tankeprosessen min
+- Inkludere operasjoner som ADD-elementer med:
+  - type: "ADD"
+  - section: "common_mistakes_to_avoid"
+  - content: "Viktigheten av tydelige instrukser"
+
+La meg skrive et tydelig, kortfattet svar. **Svar:**
+
+```json
+{
+  "reasoning": "Basert på refleksjonen identifiserte jeg én ny innsikt som manglet i strategiboken: 'Viktigheten av tydelige instrukser'.
+
+Dette er en fundamental lærdom som bør integreres i strategiboken for å unngå lignende feil i fremtiden."
+
+"operations": [
+    {
+        "type": "ADD",
+        "section": "common_mistakes_to_avoid",
+        "content": "[Viktigheten av tydelige instrukser]"
+    }
+]
+}
+```
+----------------------------------------
+
+
+============================================================
+CURATOR FAILURE LOG
+============================================================
+Timestamp: 2026-04-28 12:15:25
+Epoch: 0
+Step: 3
+Failure Type: json_parse_error
+Error Details: Failed to extract valid JSON from curator response
+
+Raw Curator Response (first 1000 chars):
+----------------------------------------
+Brukeren ber meg om å:
+1. Identifisere nye innsikter basert på en refleksjon
+2. Produserer KUN et gyldig JSON-objekt med spesifikke felt
+3. Jeg må:
+   - Gjennomgå den eksisterende strategiboken og refleksjonen
+   - Identifisere KUN de NYE innsiktene
+   - Unngå redundans
+   - Fokuser på kvalitet fremfor kvantitet
+   - Formatere svaret som ren JSON uten markdown eller kodeblokker
+
+Konteksten er:
+- Strategiboken eksisterer allerede
+- Refleksjonen gir tilbakemelding på et tidligere forsøk
+- Jeg skal kun identifisere nye innsikter, ikke hele strategiboken på nytt
+
+Oppgaven er å:
+- Identifisere nye innsikter fra refleksjonen
+- Formatere dem som JSON-operasjoner
+
+La meg analysere refleksjonen:
+- Brukeren sier: "Analysen min viser at modellens resonnement var korrekt."
+- De identifiserer en "mangel": "mangelen på en tydelig begrunnelse for hvorfor 'Niggaz With Attitude' er den mest sannsynlige tolkningen."
+- De foreslår en "korrekt tilnærming": "For fremtidige lignende spørsmål ville jeg fores
+----------------------------------------
+
+Full Raw Curator Response:
+----------------------------------------
+Brukeren ber meg om å:
+1. Identifisere nye innsikter basert på en refleksjon
+2. Produserer KUN et gyldig JSON-objekt med spesifikke felt
+3. Jeg må:
+   - Gjennomgå den eksisterende strategiboken og refleksjonen
+   - Identifisere KUN de NYE innsiktene
+   - Unngå redundans
+   - Fokuser på kvalitet fremfor kvantitet
+   - Formatere svaret som ren JSON uten markdown eller kodeblokker
+
+Konteksten er:
+- Strategiboken eksisterer allerede
+- Refleksjonen gir tilbakemelding på et tidligere forsøk
+- Jeg skal kun identifisere nye innsikter, ikke hele strategiboken på nytt
+
+Oppgaven er å:
+- Identifisere nye innsikter fra refleksjonen
+- Formatere dem som JSON-operasjoner
+
+La meg analysere refleksjonen:
+- Brukeren sier: "Analysen min viser at modellens resonnement var korrekt."
+- De identifiserer en "mangel": "mangelen på en tydelig begrunnelse for hvorfor 'Niggaz With Attitude' er den mest sannsynlige tolkningen."
+- De foreslår en "korrekt tilnærming": "For fremtidige lignende spørsmål ville jeg foreslått å:"
+   - Presentere en klar, trinnvis tankeprosess
+   - Vise hvordan man vurderer svaralternativene basert på kontekst og kunnskap
+   - Gjøre en kort historisk referanse for å underbygge konklusjonen
+
+Disse utgjør klare nye innsikter:
+1. Viktigheten av tydelig begrunnelse og resonnering
+2. Forslag til hvordan man bør strukturere analysen
+
+Jeg bør:
+- Identifisere disse som nye innsikter
+- Formatere dem som JSON-operations
+- Holde det kort og fokusert
+
+La meg skrive et tydelig, rent JSON-svar. **Svar:**
+
+```json
+{
+  "reasoning": "Basert på refleksjonen har vi identifisert to nye innsikter som bør legges til strategiboken for å hjelpe brukere med å forbedre sin tilnærming til lignende spørsmål."
+
+  "operations": [
+    {
+      "type": "ADD",
+      "section": "common_mistakes_to_avoid",
+      "content": "[ctx-00264] helpful=1 harmful=0 :: **Mangel på begrunnelse** – Når du vurderer spørsmål av denne typen, er det viktig å:
+       - Presentere en klar, trinnvis tankeprosess
+       - Vise hvordan du resonnerte deg frem til konklusjonen
+       - Gjøre en kort historisk referanse når det er relevant"
+    },
+    {
+      "type": "ADD",
+      "section": "problem_solving_heuristics",
+      "content": "[ctx-00265] helpful=1 harmful=0 :: **Resonneringsprosess** – For å forbedre analysen i lignende spørsmål, bør du:
+       1. Presentere en tydelig, trinnvis tankeprosess
+       2. Vise hvordan du vurderte svaralternativene basert på sammenhengen og din kunnskap
+       3. Gjøre en kort historisk referanse når det er relevant"
+    }
+  ]
+}
+```
+----------------------------------------
+
+
+============================================================
+CURATOR FAILURE LOG
+============================================================
+Timestamp: 2026-04-28 12:16:54
+Epoch: 0
+Step: 6
+Failure Type: json_parse_error
+Error Details: JSON missing required 'reasoning' field
+
+Raw Curator Response (first 1000 chars):
+----------------------------------------
+Brukeren ber meg om å analysere modellens resonnement og gi et svar i nøyaktig dette JSON-formatet. De har gitt:
+- Et spørsmål: "Drake er rapperen med flest streams på Spotify i tiåret som gikk. Hvor kommer han fra?. Svaralternativer: A: Canada. B: California. C: Costa Rica. D: Colorado.. Vennligst velg alternativet som svarer på spørsmålet (for eksampel 'A', 'B', 'C' eller 'D')"
+- En strategibok med:
+  - Ingen bullets brukt av generatoren
+- Et faktisk svar: "A"
+
+Min oppgave er å:
+1. Analysere modellens resonnement
+2. Identifisere hva som gikk galt i resonnementet
+3. Identifisere rotårsaken til feilen
+4. Gi en korrekt tilnærming
+5. Gi en nøkkelinnsikt
+6. Bruke bullet_ids fra strategiboken
+
+La meg tenke gjennom dette:
+- Modellens resonnement: Den forutsagte svaret var "A" (Canada), men det faktiske svaret var også "A" (Canada).
+- Feilen er at modellen ikke sjekket det faktiske svaret mot alternativene, men bare forutsagte svaret.
+- Rotårsaken er en manglende verifisering av det faktiske
+----------------------------------------
+
+Full Raw Curator Response:
+----------------------------------------
+Brukeren ber meg om å analysere modellens resonnement og gi et svar i nøyaktig dette JSON-formatet. De har gitt:
+- Et spørsmål: "Drake er rapperen med flest streams på Spotify i tiåret som gikk. Hvor kommer han fra?. Svaralternativer: A: Canada. B: California. C: Costa Rica. D: Colorado.. Vennligst velg alternativet som svarer på spørsmålet (for eksampel 'A', 'B', 'C' eller 'D')"
+- En strategibok med:
+  - Ingen bullets brukt av generatoren
+- Et faktisk svar: "A"
+
+Min oppgave er å:
+1. Analysere modellens resonnement
+2. Identifisere hva som gikk galt i resonnementet
+3. Identifisere rotårsaken til feilen
+4. Gi en korrekt tilnærming
+5. Gi en nøkkelinnsikt
+6. Bruke bullet_ids fra strategiboken
+
+La meg tenke gjennom dette:
+- Modellens resonnement: Den forutsagte svaret var "A" (Canada), men det faktiske svaret var også "A" (Canada).
+- Feilen er at modellen ikke sjekket det faktiske svaret mot alternativene, men bare forutsagte svaret.
+- Rotårsaken er en manglende verifisering av det faktiske svaret mot alternativene.
+- Den korrekte tilnærmingen ville vært å:
+  - Sammenligne det faktiske svaret med alternativene
+  - Velge det alternativet som samsvarer nøyaktig med det faktiske svaret
+- Nøkkelinnsikten er viktigheten av å verifisere det faktiske svaret mot alternativene.
+
+La meg strukturere svaret:
+- reasoning: Analyse av modellens tankegang
+- error_identification: Hva gikk galt
+- root_cause_analysis: Hvorfor feilen oppsto
+- correct_approach: Hva modellen burde ha gjort
+- key_insight: Viktigheten av å verifisere det faktiske svaret
+
+La meg skrive et tydelig, informativt svar i JSON-format. **Reasoning:**
+Din modells resonnement var delvis rett, men gikk galt på et kritisk punkt. Her er analysen:
+
+**Error identification:**
+Feilen var at modellen kun vurderte det forutsagte svaret uten å sammenligne det med de faktiske alternativene.
+
+**Root cause analysis:**
+Feilen oppsto fordi modellen antok at det forutsagte svaret alltid var korrekt, uten å sjekke om det samsvarte med det oppgitte svaret.
+
+**Correct approach:**
+For å unngå denne feilen i fremtiden, bør modellen:
+1. Sammenligne det faktiske svaret med alternativene
+2. Velge det alternativet som nøyaktig samsvarer med det faktiske svaret
+3. Bekrefte at det valgte alternativet faktisk er riktig
+
+**Key insight:**
+Husk alltid å sjekke det faktiske svaret mot alternativene, selv når du har en sterk antagelse om hva svaret bør være.
+
+**Bullet tags:**
+```json
+[
+  {
+    "id": "fin-00002",
+    "tag": "harmful"
+  }
+]
+```
+
+Det "harmfulle" punktet var at modellen ikke verifiserte det faktiske svaret mot alternativene, noe som førte til feil svar.
+
+**Gjeldende strategibok:**
+```json
+{
+  "total_bullets": 3,
+  "high_performing": 0,
+  "problematic": 0,
+  "unused": 3,
+  "by_section": {
+    "COMMON MISTAKES TO AVOID": {
+      "count": 2,
+      "helpful": 0,
+      "harmful": 0
+    },
+    "PROBLEM-SOLVING HEURISTICS": {
+      "count": 1,
+      "helpful": 0,
+      "harmful": 0
+    }
+  }
+}
+```
+
+**Operations:**
+```json
+[
+  {
+    "type": "ADD",
+    "section": "COMMON MISTAKES TO AVOID",
+    "content": "[ctx-00267] helpful=1 harmful=0 :: **Sjekk svarene** = 1 helpful=1 harmful=0 :: Sjekk alltid det faktiske svaret mot alternativene før du konkluderer."
+  }
+]
+```
+
+Dette tillegget hjelper deg med å unngå lignende feil i fremtiden ved å understreke viktigheten av å verifisere informasjon mot kilder og alternativer.
+----------------------------------------
+
+
+============================================================
+CURATOR FAILURE LOG
+============================================================
+Timestamp: 2026-04-28 12:17:17
+Epoch: 0
+Step: 7
+Failure Type: json_parse_error
+Error Details: JSON missing required 'reasoning' field
+
+Raw Curator Response (first 1000 chars):
+----------------------------------------
+Brukeren ber meg om å:
+1. Identifisere nye innsikter basert på en refleksjon
+2. Formatere svaret som ren JSON uten markdown-formatering
+3. Kun legge til det som er nytt og relevant
+
+La meg analysere refleksjonen:
+- Brukeren ber om å diagnostisere modellens resonnement
+- De identifiserer en feil i antagelsen om at creepers alltid er grønne
+- De ber om handlingsrettet innsikt og et JSON-objekt med:
+  - reasoning: min tankerekke/resonnement
+  - error_identification: hva gikk galt
+  - root_cause_analyse: hvorfor feilen oppsto
+  - correct_approach: hva modellen burde ha gjort
+  - key_insight: lærdom å huske
+
+Jeg bør:
+1. Identifisere feilen i resonnementet (antagelsen om at creepers alltid er grønne)
+2. Peke på at svaret "A" ikke er begrunnet i resonnementet
+3. Forklare hvorfor "A" faktisk er riktig (basert på definisjonen i Minecraft)
+4. Gi en klar og tydelig anbefaling om hva modellen bør gjøre
+
+La meg strukturere svaret i JSON-format:
+- reasoning: Min analyse av resonnementet
+- error_iden
+----------------------------------------
+
+Full Raw Curator Response:
+----------------------------------------
+Brukeren ber meg om å:
+1. Identifisere nye innsikter basert på en refleksjon
+2. Formatere svaret som ren JSON uten markdown-formatering
+3. Kun legge til det som er nytt og relevant
+
+La meg analysere refleksjonen:
+- Brukeren ber om å diagnostisere modellens resonnement
+- De identifiserer en feil i antagelsen om at creepers alltid er grønne
+- De ber om handlingsrettet innsikt og et JSON-objekt med:
+  - reasoning: min tankerekke/resonnement
+  - error_identification: hva gikk galt
+  - root_cause_analyse: hvorfor feilen oppsto
+  - correct_approach: hva modellen burde ha gjort
+  - key_insight: lærdom å huske
+
+Jeg bør:
+1. Identifisere feilen i resonnementet (antagelsen om at creepers alltid er grønne)
+2. Peke på at svaret "A" ikke er begrunnet i resonnementet
+3. Forklare hvorfor "A" faktisk er riktig (basert på definisjonen i Minecraft)
+4. Gi en klar og tydelig anbefaling om hva modellen bør gjøre
+
+La meg strukturere svaret i JSON-format:
+- reasoning: Min analyse av resonnementet
+- error_identification: "Feil antagelse om at creepers alltid er grønne"
+- root_cause_analysis: "Manglende vurdering av andre alternativer"
+- correct_approach: "Sjekke definisjonen i spillets univers"
+- key_insight: "Alltid sjekke kilden til informasjon"
+- bullet_tags: to objekter med "helpful" og "harmful" tagg
+
+La meg skrive et tydelig og informativt svar. **Diagnose av resonnementet:**
+
+```json
+{
+  "reasoning": "Ved nærmere analyse av spørsmålet og tilbakemeldingene ser jeg at modellens resonnement hadde en grunnleggende feil. Her er min vurdering av hva som gikk galt og hva modellen bør gjøre fremover:",
+  "error_identification": "Modellen gjorde en feil antagelse om at creepers alltid er grønne, uten å vurdere de andre svaralternativene.",
+  "root_cause_analysis": "Feilen oppsto fordi modellen ikke vurderte at definisjonen av creepers kan variere mellom ulike versjoner av spillet, og at det faktiske svaret ikke var begrunnet i resonnementet.",
+  "correct_approach": "For å unngå denne feilen i fremtiden, bør modellen:
+- Alltid sjekke den offisielle definisjonen av et konsept i spillets univers
+- Vurdere alle svaralternativer før den trekker konklusjoner"
+  "key_insight": "Den viktigste lærdommen er å være nøye med å sjekke kilden til informasjon og ikke basere konklusjoner på antagelser.",
+  "bullet_tags": [
+    {
+      "id": "calc-00001",
+      "tag": "harmful"
+    },
+    {
+      "id": "fin-00003",
+      "tag": "helpful"
+    }
+  ]
+}
+```
+
+**Konklusjon:** Det riktige svaret er "A" fordi det er den offisielle fargen på creepers i Minecraft. Modellens resonnement manglet en grundig vurdering av alternativene og begrunnelse for konklusjonen.
+
+**Gjeldende strategibok:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: [ctx-00264] **Sjekk kilder** = 1 helpful=1 harmful=0 :: Vær nøye med å bruke pålitelige kilder for statistikk.
+[err-00002] helpful=0 harmful=0 :: [ctx-00265] helpful=1 harmful=0 :: **Sjekk forutsetningene** = 1 helpful=1 harmful=0 :: Vær tydelig på hva spørsmålet ber om, og sjekk at du har all nødvendig informasjon før du begynner å analysere.
+## PROBLEM-SOLVING HEURISTICS
+
+[ph-00003] helpful=0 harmful=0 :: [ctx-00266] helpful=1 harmful=0 :: **Sjekk kilder** = 1 helpful=1 harmful=0 :: Vær nøye med å bruke pålitelige kilder for statistikk.
+
+**Nye innsikter:**
+- **Sjekk kilder** - Legg til en ny bullet med "helpful" tagg
+- **Sjekk forutsetningene** - Legg til en ny bullet med "helpful" tagg
+
+**Operasjoner å legge til:**
+```json
+[
+  {
+    "type": "ADD",
+    "section": "common_mistakes_to_avoid",
+    "content": "[ctx-00264] **Sjekk kilder** = 1 helpful=1 harmful=0 :: Vær nøye med å bruke pålitelige kilder for statistikk."
+  },
+  {
+    "type": "ADD",
+    "section": "common_mistakes_to_avoid",
+    "content": "[ctx-00265] **Sjekk forutsetningene** = 1 helpful=1 harmful=0 :: Vær tydelig på hva spørsmålet ber om, og sjekk at du har all nødvendig informasjon før du begynner å analysere."
+  }
+]
+```
+
+**Total:** 2 nye operasjoner lagt til.
+----------------------------------------
+

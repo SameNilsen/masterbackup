@@ -1,0 +1,11 @@
+salloc --account=ec12 --ntasks=1 --mem-per-cpu=12G --time=00:20:00 --qos=devel --partition=accel --gpus=1
+
+python3 -m eval.finance.run --task_name finer --mode offline --save_path testingresults --generator_model gpt_oss_120b --quantization full --gpu_usage 0.96 --inference_provider vllm --dtype auto --gpu h200
+
+python3 -m eval.finance.run --task_name formula --mode offline --save_path testingresults --generator_model gpt_oss_20b --quantization full --gpu_usage 0.8 --inference_provider vllm --dtype bfloat16 --gpu h200
+
+python3 -m eval.finance.run --task_name formula --mode offline --save_path testingresults --generator_model normistral11b_thinking --quantization full --model_length 32768 --gpu_usage 0.8 --inference_provider vllm --dtype bfloat16 --gpu h200
+
+python3 -m eval.noreval.run --task_name norec_sentence --mode offline --save_path testingresults --generator_model normistral11b_thinking --quantization full --model_length 32768 --gpu_usage 0.8 --inference_provider vllm --dtype bfloat16 --gpu h200
+
+python3 -m eval.noreval.run --task_name nrkquiz --mode offline --save_path testingresults --generator_model normistral11b_thinking --quantization full --model_length 32768 --gpu_usage 0.8 --inference_provider vllm --dtype bfloat16 --gpu h200 --num_samples 1

@@ -1,0 +1,87 @@
+[
+  {
+    "epoch": 1,
+    "step": 1,
+    "target": "BusinessAcquisitionEquityInterestsIssuedOrIssuableNumberOfSharesIssued,PaymentsToAcquireBusinessesGross,PaymentsToAcquireBusinessesGross,BusinessCombinationConsiderationTransferred1",
+    "pre_train_result": {
+      "final_answer": "CommonStockSharesOutstanding,PaymentsToAcquireBusinessesGross,BusinessCombinationConsiderationTransferred1,BusinessCombinationConsiderationTransferred1",
+      "is_correct": false,
+      "playbook_num_tokens": 61,
+      "playbook_length": 184
+    },
+    "post_train_result": {
+      "final_answer": "CommonStockSharesOutstanding,PaymentsToAcquireBusinessesGross,BusinessCombinationConsiderationTransferred1,BusinessCombinationConsiderationTransferred1",
+      "is_correct": false,
+      "playbook_num_tokens": 213,
+      "playbook_length": 869
+    }
+  },
+  {
+    "epoch": 1,
+    "step": 2,
+    "target": "ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsInPeriod,ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsInPeriod,StockIssuedDuringPeriodSharesNewIssues,DebtInstrumentConvertibleConversionPrice1",
+    "pre_train_result": {
+      "final_answer": "ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsInPeriod,ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsInPeriod,SaleOfStockNumberOfSharesIssuedInTransaction,SaleOfStockPricePerShare",
+      "is_correct": false,
+      "playbook_num_tokens": 213,
+      "playbook_length": 869
+    },
+    "post_train_result": {
+      "final_answer": "ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsInPeriod,ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsInPeriod,StockIssuedDuringPeriodSharesNewIssues,SaleOfStockPricePerShare",
+      "is_correct": false,
+      "playbook_num_tokens": 356,
+      "playbook_length": 1543
+    }
+  },
+  {
+    "epoch": 1,
+    "step": 3,
+    "target": "LineOfCreditFacilityMaximumBorrowingCapacity,DebtInstrumentBasisSpreadOnVariableRate1,DebtInstrumentBasisSpreadOnVariableRate1,DebtInstrumentBasisSpreadOnVariableRate1",
+    "pre_train_result": {
+      "final_answer": "LineOfCreditFacilityMaximumBorrowingCapacity,LineOfCreditFacilityInterestRateAtPeriodEnd,LineOfCreditFacilityInterestRateAtPeriodEnd,LineOfCreditFacilityInterestRateAtPeriodEnd",
+      "is_correct": false,
+      "playbook_num_tokens": 356,
+      "playbook_length": 1543
+    },
+    "post_train_result": {
+      "final_answer": "LineOfCreditFacilityMaximumBorrowingCapacity,DebtInstrumentBasisSpreadOnVariableRate1,DebtInstrumentBasisSpreadOnVariableRate1,DebtInstrumentBasisSpreadOnVariableRate1",
+      "is_correct": true,
+      "playbook_num_tokens": 501,
+      "playbook_length": 2127
+    }
+  },
+  {
+    "epoch": 1,
+    "step": 4,
+    "target": "DebtInstrumentInterestRateStatedPercentage,LineOfCreditFacilityMaximumBorrowingCapacity,LineOfCreditFacilityMaximumBorrowingCapacity,LettersOfCreditOutstandingAmount",
+    "pre_train_result": {
+      "final_answer": "DebtInstrumentInterestRateStatedPercentage,LineOfCreditFacilityMaximumBorrowingCapacity,LineOfCreditFacilityRemainingBorrowingCapacity,LettersOfCreditOutstandingAmount",
+      "is_correct": false,
+      "playbook_num_tokens": 501,
+      "playbook_length": 2127
+    },
+    "post_train_result": {
+      "final_answer": "DebtInstrumentInterestRateStatedPercentage,LineOfCreditFacilityMaximumBorrowingCapacity,LineOfCreditFacilityMaximumBorrowingCapacity,LettersOfCreditOutstandingAmount",
+      "is_correct": true,
+      "playbook_num_tokens": 680,
+      "playbook_length": 2967
+    }
+  },
+  {
+    "epoch": 1,
+    "step": 5,
+    "target": "DebtInstrumentInterestRateStatedPercentage,InterestExpenseDebt,InterestExpenseDebt,ConcentrationRiskPercentage1",
+    "pre_train_result": {
+      "final_answer": "DebtInstrumentInterestRateStatedPercentage,InterestExpense,InterestExpense,ConcentrationRiskPercentage1",
+      "is_correct": false,
+      "playbook_num_tokens": 680,
+      "playbook_length": 2967
+    },
+    "post_train_result": {
+      "final_answer": "DebtInstrumentInterestRateStatedPercentage,InterestExpenseDebt,InterestExpenseDebt,ConcentrationRiskPercentage1",
+      "is_correct": true,
+      "playbook_num_tokens": 777,
+      "playbook_length": 3401
+    }
+  }
+]

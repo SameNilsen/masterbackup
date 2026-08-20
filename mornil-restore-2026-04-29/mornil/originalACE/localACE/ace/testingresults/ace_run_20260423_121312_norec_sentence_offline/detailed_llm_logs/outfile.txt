@@ -1,0 +1,1422 @@
+"model_config_string": "gpt_oss_20b_vllm_full_None_0.8_bfloat16_a100_pcie_40GB"
+norec_sentence 3 samples.
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_test_eval_0_20260423_121318_114.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Reflection:**
+(empty)
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Garmin Fenix Chronos er meget god tur- og treningskamerat , og mye flottere enn vanlige smartklokker .
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+{
+  "reasoning": "The sentence states that the Garmin Fenix Chronos is a very good hiking and training companion and is much fancier than ordinary smartwatches. This expresses a positive evaluation of the product, so the sentiment is positive.",
+  "bullet_ids": [],
+  "final_answer": "positiv"
+}
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_test_eval_1_20260423_121320_079.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Reflection:**
+(empty)
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Årets nye Garmin Fenix Chronos tar det hele til et nytt nivå .
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+{
+  "reasoning": "The sentence is in Norwegian: \"Årets nye Garmin Fenix Chronos tar det hele til et nytt nivå.\" Translating to English gives \"This year's new Garmin Fenix Chronos takes everything to a new level.\" The phrase expresses enthusiasm and improvement, which is a positive sentiment. Therefore, the sentence is classified as positive.",
+  "bullet_ids": [],
+  "final_answer": "positiv"
+}
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_test_eval_2_20260423_121322_730.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Reflection:**
+(empty)
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Her har fokuset på funksjoner og indre kvaliteter , for første gang blitt kombinert med en ambisiøs satsning på et ekslusivt ytre .
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+{
+  "reasoning": "The sentence describes a combination of a focus on functions and inner qualities with an ambitious investment in an exclusive exterior. The key adjectives are \"ambisiøse\" (ambitious) and \"eksklusivt\" (exclusive), both of which carry positive connotations. The overall tone is celebratory and forward‑looking, indicating a positive sentiment. No negative words or phrases are present that would shift the tone to negative. Therefore, the sentence is best classified as positive.",
+  "bullet_ids": [],
+  "final_answer": "positiv"
+}
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_1_gen_initial_20260423_121326_276.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Reflection:**
+(empty)
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Eller bedrar skinnet ?
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+{
+  "reasoning": "The sentence \"Eller bedrar skinnet?\" is a rhetorical question that implies deception or false appearance. In sentiment terms, it conveys a negative connotation, as it questions the authenticity of something. Therefore, the sentence is classified as negative.",
+  "bullet_ids": [],
+  "final_answer": "negativ"
+}
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+reflector_train_e_1_s_1_reflect_on_correct_20260423_121330_062.json
+-->Prompt: 
+You are an expert analyst and educator. Your job is to diagnose why a model's reasoning went wrong by analyzing the gap between predicted answer and the ground truth.
+
+**Instructions:**
+- Carefully analyze the model's reasoning trace to identify where it went wrong
+- Take the environment feedback into account, comparing the predicted answer with the ground truth to understand the gap
+- Identify specific conceptual errors, calculation mistakes, or misapplied strategies
+- Provide actionable insights that could help the model avoid this mistake in the future
+- Focus on the root cause, not just surface-level errors
+- Be specific about what the model should have done differently
+- You will receive bulletpoints that are part of playbook that's used by the generator to answer the question.
+- You need to analyze these bulletpoints, and give the tag for each bulletpoint, tag can be ['helpful', 'harmful', 'neutral'] (for the generator to generate the correct answer)
+
+Your output should be a json object, which contains the following fields
+  - reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+  - error_identification: what specifically went wrong in the reasoning?
+  - root_cause_analysis: why did this error occur? What concept was misunderstood?
+  - correct_approach: what should the model have done instead?
+  - key_insight: what strategy, formula, or principle should be remembered to avoid this error?
+  - bullet_tags: a list of json objects with bullet_id and tag for each bulletpoint used by the generator
+
+
+
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Eller bedrar skinnet ?
+
+**Model's Reasoning Trace:**
+{
+  "reasoning": "The sentence \"Eller bedrar skinnet?\" is a rhetorical question that implies deception or false appearance. In sentiment terms, it conveys a negative connotation, as it questions the authenticity of something. Therefore, the sentence is classified as negative.",
+  "bullet_ids": [],
+  "final_answer": "negativ"
+}
+
+**Model's Predicted Answer:**
+negativ
+
+**Ground Truth Answer:**
+Negative
+
+**Environment Feedback:**
+Predicted answer matches ground truth
+
+**Part of Playbook that's used by the generator to answer the question:**
+(No bullets used by generator)
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",
+  "error_identification": "[What specifically went wrong in the reasoning?]",
+  "root_cause_analysis": "[Why did this error occur? What concept was misunderstood?]",
+  "correct_approach": "[What should the model have done instead?]",
+  "key_insight": "[What strategy, formula, or principle should be remembered to avoid this error?]",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "helpful"},
+    {"id": "fin-00002", "tag": "harmful"}
+  ]
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+{
+  "reasoning": "The model correctly interpreted the Norwegian phrase \"Eller bedrar skinnet?\" as a rhetorical question implying deception, which carries a negative connotation. The answer \"negativ\" matches the ground truth.",
+  "error_identification": "No error in reasoning or answer.",
+  "root_cause_analysis": "The model applied appropriate sentiment analysis for a short Norwegian sentence and did not misinterpret the context.",
+  "correct_approach": "The model should continue to identify rhetorical questions that imply deception as negative sentiment, as it did here.",
+  "key_insight": "When encountering short Norwegian sentences that question authenticity, classify them as negative sentiment.",
+  "bullet_tags": []
+}
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+curator_train_e_1_s_1_20260423_121332_722.json
+-->Prompt: 
+You are a master curator of knowledge. Your job is to identify what new insights should be added to an existing playbook based on a reflection from a previous attempt.
+
+**Context:**
+- The playbook you created will be used to help answering similar questions. 
+- The reflection is generated using ground truth answers that will NOT be available when the playbook is being used. So you need to come up with content that can aid the playbook user to create predictions that likely align with ground truth. 
+
+**CRITICAL: You MUST respond with valid JSON only. Do not use markdown formatting or code blocks.**
+
+**Instructions:**
+- Review the existing playbook and the reflection from the previous attempt
+- Identify ONLY the NEW insights, strategies, or mistakes that are MISSING from the current playbook
+- Avoid redundancy - if similar advice already exists, only add new content that is a perfect complement to the existing playbook
+- Do NOT regenerate the entire playbook - only provide the additions needed
+- Focus on quality over quantity - a focused, well-organized playbook is better than an exhaustive one
+- Format your response as a PURE JSON object with specific sections
+- For any operation if no new content to add, return an empty list for the operations field
+- Be concise and specific - each addition should be actionable
+
+
+**Training Context:**
+- Total token budget: 80000 tokens
+- Training progress: Sample 1 out of 3
+
+**Current Playbook Stats:**
+{
+  "total_bullets": 0,
+  "high_performing": 0,
+  "problematic": 0,
+  "unused": 0,
+  "by_section": {}
+}
+
+**Recent Reflection:**
+{
+  "reasoning": "The model correctly interpreted the Norwegian phrase \"Eller bedrar skinnet?\" as a rhetorical question implying deception, which carries a negative connotation. The answer \"negativ\" matches the ground truth.",
+  "error_identification": "No error in reasoning or answer.",
+  "root_cause_analysis": "The model applied appropriate sentiment analysis for a short Norwegian sentence and did not misinterpret the context.",
+  "correct_approach": "The model should continue to identify rhetorical questions that imply deception as negative sentiment, as it did here.",
+  "key_insight": "When encountering short Norwegian sentences that question authenticity, classify them as negative sentiment.",
+  "bullet_tags": []
+}
+
+**Current Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Question Context:**
+
+
+**Your Task:**
+Output ONLY a valid JSON object with these exact fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- operations: a list of operations to be performed on the playbook
+  - type: the type of operation to be performed
+  - section: the section to add the bullet to
+  - content: the new content of the bullet
+
+**Available Operations:**
+1. ADD: Create new bullet points with fresh IDs
+    - section: the section to add the new bullet to
+    - content: the new content of the bullet. Note: no need to include the bullet_id in the content like '[ctx-00263] helpful=1 harmful=0 ::', the bullet_id will be added by the system.
+
+**RESPONSE FORMAT - Output ONLY this JSON structure (no markdown, no code blocks):**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations here]",
+  "operations": [
+    {
+      "type": "ADD", 
+      "section": "formulas_and_calculations",
+      "content": "[New calculation method...]"
+    }
+  ]
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+{"reasoning":"The reflection confirms that short Norwegian rhetorical questions questioning authenticity (e.g., \"Eller bedrar skinnet?\") should be classified as negative sentiment because they imply deception. This specific cue is not yet captured in the playbook. Adding it under the \"CONTEXT CLUES & INDICATORS\" section will help users recognize and correctly label similar sentences in future tasks.","operations":[{"type":"ADD","section":"context_clues_and_indicators","content":"Short Norwegian rhetorical questions that question authenticity (e.g., \"Eller bedrar skinnet?\") should be classified as negative sentiment, as they imply deception."}]}
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_1_post_curate_20260423_121334_631.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+[ctx-00001] helpful=0 harmful=0 :: Short Norwegian rhetorical questions that question authenticity (e.g., "Eller bedrar skinnet?") should be classified as negative sentiment, as they imply deception.
+## OTHERS
+
+**Reflection:**
+(empty)
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Eller bedrar skinnet ?
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+{
+  "reasoning": "The sentence \"Eller bedrar skinnet?\" is a short Norwegian rhetorical question that questions authenticity, implying deception. According to the playbook context clue [ctx-00001], such sentences should be classified as negative sentiment.",
+  "bullet_ids": ["ctx-00001"],
+  "final_answer": "negativ"
+}
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_2_gen_initial_20260423_121340_852.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+[ctx-00001] helpful=0 harmful=0 :: Short Norwegian rhetorical questions that question authenticity (e.g., "Eller bedrar skinnet?") should be classified as negative sentiment, as they imply deception.
+## OTHERS
+
+**Reflection:**
+(empty)
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Baksiden er sort , blank og skinnende , med et deksel som skjuler kontakter og kabler .
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+{
+  "reasoning": "The sentence \"Baksiden er sort , blank og skinnende , med et deksel som skjuler kontakter og kabler\" is a neutral description of a product’s backside. It contains no evaluative adjectives or emotive language that would indicate a positive or negative sentiment. Since the question forces a choice between \"positiv\" and \"negativ\", and the sentence is not positive, the appropriate classification under the given options is \"negativ\".",
+  "bullet_ids": [],
+  "final_answer": "negativ"
+}
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+reflector_train_e_1_s_2_round_0_20260423_121346_513.json
+-->Prompt: 
+You are an expert analyst and educator. Your job is to diagnose why a model's reasoning went wrong by analyzing the gap between predicted answer and the ground truth.
+
+**Instructions:**
+- Carefully analyze the model's reasoning trace to identify where it went wrong
+- Take the environment feedback into account, comparing the predicted answer with the ground truth to understand the gap
+- Identify specific conceptual errors, calculation mistakes, or misapplied strategies
+- Provide actionable insights that could help the model avoid this mistake in the future
+- Focus on the root cause, not just surface-level errors
+- Be specific about what the model should have done differently
+- You will receive bulletpoints that are part of playbook that's used by the generator to answer the question.
+- You need to analyze these bulletpoints, and give the tag for each bulletpoint, tag can be ['helpful', 'harmful', 'neutral'] (for the generator to generate the correct answer)
+
+Your output should be a json object, which contains the following fields
+  - reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+  - error_identification: what specifically went wrong in the reasoning?
+  - root_cause_analysis: why did this error occur? What concept was misunderstood?
+  - correct_approach: what should the model have done instead?
+  - key_insight: what strategy, formula, or principle should be remembered to avoid this error?
+  - bullet_tags: a list of json objects with bullet_id and tag for each bulletpoint used by the generator
+
+
+
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Baksiden er sort , blank og skinnende , med et deksel som skjuler kontakter og kabler .
+
+**Model's Reasoning Trace:**
+{
+  "reasoning": "The sentence \"Baksiden er sort , blank og skinnende , med et deksel som skjuler kontakter og kabler\" is a neutral description of a product’s backside. It contains no evaluative adjectives or emotive language that would indicate a positive or negative sentiment. Since the question forces a choice between \"positiv\" and \"negativ\", and the sentence is not positive, the appropriate classification under the given options is \"negativ\".",
+  "bullet_ids": [],
+  "final_answer": "negativ"
+}
+
+**Model's Predicted Answer:**
+negativ
+
+**Ground Truth Answer:**
+Positive
+
+**Environment Feedback:**
+Predicted answer does not match ground truth
+
+**Part of Playbook that's used by the generator to answer the question:**
+(No bullets used by generator)
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",
+  "error_identification": "[What specifically went wrong in the reasoning?]",
+  "root_cause_analysis": "[Why did this error occur? What concept was misunderstood?]",
+  "correct_approach": "[What should the model have done instead?]",
+  "key_insight": "[What strategy, formula, or principle should be remembered to avoid this error?]",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "helpful"},
+    {"id": "fin-00002", "tag": "harmful"}
+  ]
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+{
+  "reasoning": "The model interpreted the sentence as a neutral description because it did not identify any explicitly positive or negative words. It concluded that since there were no overt evaluative adjectives, the sentiment must be negative. However, the sentence contains the adjective \"skinnende\" (shiny), which is a positive attribute, and the phrase \"med et deksel som skjuler kontakter og kabler\" (with a cover that hides contacts and cables) implies a desirable feature. In Norwegian sentiment analysis, the presence of positive descriptors like \"skinnende\" and the implication of a cleaner appearance (hiding cables) should lead to a positive classification. The model’s reasoning failed to recognize these positive cues and incorrectly defaulted to negative.",
+  "error_identification": "The model incorrectly assumed that the absence of overtly evaluative adjectives meant a negative sentiment, ignoring the positive connotation of \"skinnende\" and the implied benefit of hiding cables.",
+  "root_cause_analysis": "The model misunderstood the sentiment analysis task: it treated the sentence as purely descriptive and did not account for adjectives that carry positive sentiment or for context that suggests a favorable feature. This reflects a lack of sensitivity to sentiment-laden words and contextual cues.",
+  "correct_approach": "Identify sentiment-bearing adjectives (e.g., \"skinnende\") and evaluate contextual implications (e.g., hiding cables is a positive feature). Classify the sentence as positive because it highlights attractive qualities.",
+  "key_insight": "When determining sentiment, always look for adjectives or phrases that convey positive or negative connotation, and consider the context that may turn a neutral description into a favorable one.",
+  "bullet_tags": []
+}
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_2_post_reflect_round_0_20260423_121349_560.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+[ctx-00001] helpful=0 harmful=0 :: Short Norwegian rhetorical questions that question authenticity (e.g., "Eller bedrar skinnet?") should be classified as negative sentiment, as they imply deception.
+## OTHERS
+
+**Reflection:**
+{
+  "reasoning": "The model interpreted the sentence as a neutral description because it did not identify any explicitly positive or negative words. It concluded that since there were no overt evaluative adjectives, the sentiment must be negative. However, the sentence contains the adjective \"skinnende\" (shiny), which is a positive attribute, and the phrase \"med et deksel som skjuler kontakter og kabler\" (with a cover that hides contacts and cables) implies a desirable feature. In Norwegian sentiment analysis, the presence of positive descriptors like \"skinnende\" and the implication of a cleaner appearance (hiding cables) should lead to a positive classification. The model’s reasoning failed to recognize these positive cues and incorrectly defaulted to negative.",
+  "error_identification": "The model incorrectly assumed that the absence of overtly evaluative adjectives meant a negative sentiment, ignoring the positive connotation of \"skinnende\" and the implied benefit of hiding cables.",
+  "root_cause_analysis": "The model misunderstood the sentiment analysis task: it treated the sentence as purely descriptive and did not account for adjectives that carry positive sentiment or for context that suggests a favorable feature. This reflects a lack of sensitivity to sentiment-laden words and contextual cues.",
+  "correct_approach": "Identify sentiment-bearing adjectives (e.g., \"skinnende\") and evaluate contextual implications (e.g., hiding cables is a positive feature). Classify the sentence as positive because it highlights attractive qualities.",
+  "key_insight": "When determining sentiment, always look for adjectives or phrases that convey positive or negative connotation, and consider the context that may turn a neutral description into a favorable one.",
+  "bullet_tags": []
+}
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Baksiden er sort , blank og skinnende , med et deksel som skjuler kontakter og kabler .
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+{
+  "reasoning": "The sentence describes the backside as \"sort\" (black), \"blank\" (smooth/clean), and \"skinnende\" (shiny). The adjective \"skinnende\" carries a positive connotation, indicating an attractive appearance. Additionally, the phrase \"med et deksel som skjuler kontakter og kabler\" highlights a functional benefit—hiding contacts and cables—which is generally viewed positively. There are no negative descriptors or expressions of dissatisfaction. Therefore, the overall sentiment conveyed by the sentence is positive.",
+  "bullet_ids": [],
+  "final_answer": "positiv"
+}
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+curator_train_e_1_s_2_20260423_121357_443.json
+-->Prompt: 
+You are a master curator of knowledge. Your job is to identify what new insights should be added to an existing playbook based on a reflection from a previous attempt.
+
+**Context:**
+- The playbook you created will be used to help answering similar questions. 
+- The reflection is generated using ground truth answers that will NOT be available when the playbook is being used. So you need to come up with content that can aid the playbook user to create predictions that likely align with ground truth. 
+
+**CRITICAL: You MUST respond with valid JSON only. Do not use markdown formatting or code blocks.**
+
+**Instructions:**
+- Review the existing playbook and the reflection from the previous attempt
+- Identify ONLY the NEW insights, strategies, or mistakes that are MISSING from the current playbook
+- Avoid redundancy - if similar advice already exists, only add new content that is a perfect complement to the existing playbook
+- Do NOT regenerate the entire playbook - only provide the additions needed
+- Focus on quality over quantity - a focused, well-organized playbook is better than an exhaustive one
+- Format your response as a PURE JSON object with specific sections
+- For any operation if no new content to add, return an empty list for the operations field
+- Be concise and specific - each addition should be actionable
+
+
+**Training Context:**
+- Total token budget: 80000 tokens
+- Training progress: Sample 2 out of 3
+
+**Current Playbook Stats:**
+{
+  "total_bullets": 1,
+  "high_performing": 0,
+  "problematic": 0,
+  "unused": 1,
+  "by_section": {
+    "CONTEXT CLUES & INDICATORS": {
+      "count": 1,
+      "helpful": 0,
+      "harmful": 0
+    }
+  }
+}
+
+**Recent Reflection:**
+{
+  "reasoning": "The model interpreted the sentence as a neutral description because it did not identify any explicitly positive or negative words. It concluded that since there were no overt evaluative adjectives, the sentiment must be negative. However, the sentence contains the adjective \"skinnende\" (shiny), which is a positive attribute, and the phrase \"med et deksel som skjuler kontakter og kabler\" (with a cover that hides contacts and cables) implies a desirable feature. In Norwegian sentiment analysis, the presence of positive descriptors like \"skinnende\" and the implication of a cleaner appearance (hiding cables) should lead to a positive classification. The model’s reasoning failed to recognize these positive cues and incorrectly defaulted to negative.",
+  "error_identification": "The model incorrectly assumed that the absence of overtly evaluative adjectives meant a negative sentiment, ignoring the positive connotation of \"skinnende\" and the implied benefit of hiding cables.",
+  "root_cause_analysis": "The model misunderstood the sentiment analysis task: it treated the sentence as purely descriptive and did not account for adjectives that carry positive sentiment or for context that suggests a favorable feature. This reflects a lack of sensitivity to sentiment-laden words and contextual cues.",
+  "correct_approach": "Identify sentiment-bearing adjectives (e.g., \"skinnende\") and evaluate contextual implications (e.g., hiding cables is a positive feature). Classify the sentence as positive because it highlights attractive qualities.",
+  "key_insight": "When determining sentiment, always look for adjectives or phrases that convey positive or negative connotation, and consider the context that may turn a neutral description into a favorable one.",
+  "bullet_tags": []
+}
+
+**Current Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+[ctx-00001] helpful=0 harmful=0 :: Short Norwegian rhetorical questions that question authenticity (e.g., "Eller bedrar skinnet?") should be classified as negative sentiment, as they imply deception.
+## OTHERS
+
+**Question Context:**
+
+
+**Your Task:**
+Output ONLY a valid JSON object with these exact fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- operations: a list of operations to be performed on the playbook
+  - type: the type of operation to be performed
+  - section: the section to add the bullet to
+  - content: the new content of the bullet
+
+**Available Operations:**
+1. ADD: Create new bullet points with fresh IDs
+    - section: the section to add the new bullet to
+    - content: the new content of the bullet. Note: no need to include the bullet_id in the content like '[ctx-00263] helpful=1 harmful=0 ::', the bullet_id will be added by the system.
+
+**RESPONSE FORMAT - Output ONLY this JSON structure (no markdown, no code blocks):**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations here]",
+  "operations": [
+    {
+      "type": "ADD", 
+      "section": "formulas_and_calculations",
+      "content": "[New calculation method...]"
+    }
+  ]
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+{"reasoning":"The reflection highlights that the model failed to detect sentiment-bearing adjectives such as \"skinnende\" and contextual cues that imply a positive feature (hiding cables). It also incorrectly defaulted to negative sentiment when no overt evaluative adjectives were present. These insights are not covered in the current playbook, which only contains a single rule about rhetorical questions implying deception. Therefore, new bullets should be added to the \"CONTEXT CLUES & INDICATORS\" section to explicitly instruct the model to look for sentiment-laden adjectives and contextual benefits, and to avoid defaulting to negative sentiment. Additionally, a new bullet in the \"COMMON MISTAKES TO AVOID\" section should warn against assuming absence of explicit adjectives means negative sentiment and against ignoring contextual implications that turn a neutral description into a favorable one.","operations":[{"type":"ADD","section":"context_clues_and_indicators","content":"Identify sentiment-bearing adjectives (e.g., \"skinnende\") and evaluate their polarity."},{"type":"ADD","section":"context_clues_and_indicators","content":"Recognize contextual cues that imply benefit (e.g., \"hides cables\" for cleaner appearance) as positive signals."},{"type":"ADD","section":"context_clues_and_indicators","content":"Do not default to negative when no overt adjectives; consider implied positive features."},{"type":"ADD","section":"common_mistakes_to_avoid","content":"Assuming absence of explicit evaluative adjectives equates to negative sentiment."},{"type":"ADD","section":"common_mistakes_to_avoid","content":"Ignoring contextual implications that turn a neutral description into a favorable one."}]}
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_2_post_curate_20260423_121359_914.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00005] helpful=0 harmful=0 :: Assuming absence of explicit evaluative adjectives equates to negative sentiment.
+[err-00006] helpful=0 harmful=0 :: Ignoring contextual implications that turn a neutral description into a favorable one.
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+[ctx-00001] helpful=0 harmful=0 :: Short Norwegian rhetorical questions that question authenticity (e.g., "Eller bedrar skinnet?") should be classified as negative sentiment, as they imply deception.
+[ctx-00002] helpful=0 harmful=0 :: Identify sentiment-bearing adjectives (e.g., "skinnende") and evaluate their polarity.
+[ctx-00003] helpful=0 harmful=0 :: Recognize contextual cues that imply benefit (e.g., "hides cables" for cleaner appearance) as positive signals.
+[ctx-00004] helpful=0 harmful=0 :: Do not default to negative when no overt adjectives; consider implied positive features.
+## OTHERS
+
+**Reflection:**
+(empty)
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Baksiden er sort , blank og skinnende , med et deksel som skjuler kontakter og kabler .
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+{
+  "reasoning": "The sentence contains the adjective \"skinnende\" (shiny), which is a positive sentiment-bearing word ([ctx-00002]). Additionally, the phrase \"med et deksel som skjuler kontakter og kabler\" implies a benefit by hiding cables, which is a positive feature ([ctx-00003]). The other descriptors \"sort\" and \"blank\" are neutral. Overall, the positive elements outweigh the neutral ones, leading to a positive sentiment classification.",
+  "bullet_ids": ["ctx-00002", "ctx-00003"],
+  "final_answer": "positiv"
+}
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_3_gen_initial_20260423_121402_678.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00005] helpful=0 harmful=0 :: Assuming absence of explicit evaluative adjectives equates to negative sentiment.
+[err-00006] helpful=0 harmful=0 :: Ignoring contextual implications that turn a neutral description into a favorable one.
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+[ctx-00001] helpful=0 harmful=0 :: Short Norwegian rhetorical questions that question authenticity (e.g., "Eller bedrar skinnet?") should be classified as negative sentiment, as they imply deception.
+[ctx-00002] helpful=0 harmful=0 :: Identify sentiment-bearing adjectives (e.g., "skinnende") and evaluate their polarity.
+[ctx-00003] helpful=0 harmful=0 :: Recognize contextual cues that imply benefit (e.g., "hides cables" for cleaner appearance) as positive signals.
+[ctx-00004] helpful=0 harmful=0 :: Do not default to negative when no overt adjectives; consider implied positive features.
+## OTHERS
+
+**Reflection:**
+(empty)
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: God betjening
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+{
+  "reasoning": "The phrase \"God betjening\" translates to \"Good service\" in English. The adjective \"God\" (good) is a clear sentiment-bearing word indicating a positive evaluation. According to the context clues in the playbook, identifying such adjectives ([ctx-00002]) signals positive sentiment, and we should not default to negative when no overt adjectives are present ([ctx-00004]). Therefore, the sentence is classified as positive.",
+  "bullet_ids": ["ctx-00002", "ctx-00004"],
+  "final_answer": "positiv"
+}
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+reflector_train_e_1_s_3_reflect_on_correct_20260423_121409_229.json
+-->Prompt: 
+You are an expert analyst and educator. Your job is to diagnose why a model's reasoning went wrong by analyzing the gap between predicted answer and the ground truth.
+
+**Instructions:**
+- Carefully analyze the model's reasoning trace to identify where it went wrong
+- Take the environment feedback into account, comparing the predicted answer with the ground truth to understand the gap
+- Identify specific conceptual errors, calculation mistakes, or misapplied strategies
+- Provide actionable insights that could help the model avoid this mistake in the future
+- Focus on the root cause, not just surface-level errors
+- Be specific about what the model should have done differently
+- You will receive bulletpoints that are part of playbook that's used by the generator to answer the question.
+- You need to analyze these bulletpoints, and give the tag for each bulletpoint, tag can be ['helpful', 'harmful', 'neutral'] (for the generator to generate the correct answer)
+
+Your output should be a json object, which contains the following fields
+  - reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+  - error_identification: what specifically went wrong in the reasoning?
+  - root_cause_analysis: why did this error occur? What concept was misunderstood?
+  - correct_approach: what should the model have done instead?
+  - key_insight: what strategy, formula, or principle should be remembered to avoid this error?
+  - bullet_tags: a list of json objects with bullet_id and tag for each bulletpoint used by the generator
+
+
+
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: God betjening
+
+**Model's Reasoning Trace:**
+{
+  "reasoning": "The phrase \"God betjening\" translates to \"Good service\" in English. The adjective \"God\" (good) is a clear sentiment-bearing word indicating a positive evaluation. According to the context clues in the playbook, identifying such adjectives ([ctx-00002]) signals positive sentiment, and we should not default to negative when no overt adjectives are present ([ctx-00004]). Therefore, the sentence is classified as positive.",
+  "bullet_ids": ["ctx-00002", "ctx-00004"],
+  "final_answer": "positiv"
+}
+
+**Model's Predicted Answer:**
+positiv
+
+**Ground Truth Answer:**
+Positive
+
+**Environment Feedback:**
+Predicted answer matches ground truth
+
+**Part of Playbook that's used by the generator to answer the question:**
+[ctx-00002] helpful=0 harmful=0 :: Identify sentiment-bearing adjectives (e.g., "skinnende") and evaluate their polarity.
+[ctx-00004] helpful=0 harmful=0 :: Do not default to negative when no overt adjectives; consider implied positive features.
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",
+  "error_identification": "[What specifically went wrong in the reasoning?]",
+  "root_cause_analysis": "[Why did this error occur? What concept was misunderstood?]",
+  "correct_approach": "[What should the model have done instead?]",
+  "key_insight": "[What strategy, formula, or principle should be remembered to avoid this error?]",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "helpful"},
+    {"id": "fin-00002", "tag": "harmful"}
+  ]
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+{
+  "reasoning": "The model correctly identified that \"God\" in Norwegian means \"good\" in English, which is a clear positive sentiment word. It referenced the playbook clues that sentiment-bearing adjectives indicate polarity ([ctx-00002]) and that we should not default to negative when no overt adjectives are present ([ctx-00004]). Thus, it concluded the sentence is positive, matching the ground truth.",
+  "error_identification": "No error was identified; the reasoning aligns with the correct answer.",
+  "root_cause_analysis": "Not applicable – the model applied the correct concept of sentiment-bearing adjectives and did not misinterpret the sentence.",
+  "correct_approach": "The model already followed the correct approach: translate the phrase, identify the sentiment word, and apply the playbook rules to determine polarity.",
+  "key_insight": "When evaluating sentiment, always look for explicit sentiment-bearing adjectives and use them to determine polarity, while avoiding a default negative stance when such adjectives are absent.",
+  "bullet_tags": [
+    {"id": "ctx-00002", "tag": "neutral"},
+    {"id": "ctx-00004", "tag": "neutral"}
+  ]
+}
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+curator_train_e_1_s_3_20260423_121415_629.json
+-->Prompt: 
+You are a master curator of knowledge. Your job is to identify what new insights should be added to an existing playbook based on a reflection from a previous attempt.
+
+**Context:**
+- The playbook you created will be used to help answering similar questions. 
+- The reflection is generated using ground truth answers that will NOT be available when the playbook is being used. So you need to come up with content that can aid the playbook user to create predictions that likely align with ground truth. 
+
+**CRITICAL: You MUST respond with valid JSON only. Do not use markdown formatting or code blocks.**
+
+**Instructions:**
+- Review the existing playbook and the reflection from the previous attempt
+- Identify ONLY the NEW insights, strategies, or mistakes that are MISSING from the current playbook
+- Avoid redundancy - if similar advice already exists, only add new content that is a perfect complement to the existing playbook
+- Do NOT regenerate the entire playbook - only provide the additions needed
+- Focus on quality over quantity - a focused, well-organized playbook is better than an exhaustive one
+- Format your response as a PURE JSON object with specific sections
+- For any operation if no new content to add, return an empty list for the operations field
+- Be concise and specific - each addition should be actionable
+
+
+**Training Context:**
+- Total token budget: 80000 tokens
+- Training progress: Sample 3 out of 3
+
+**Current Playbook Stats:**
+{
+  "total_bullets": 6,
+  "high_performing": 0,
+  "problematic": 0,
+  "unused": 6,
+  "by_section": {
+    "COMMON MISTAKES TO AVOID": {
+      "count": 2,
+      "helpful": 0,
+      "harmful": 0
+    },
+    "CONTEXT CLUES & INDICATORS": {
+      "count": 4,
+      "helpful": 0,
+      "harmful": 0
+    }
+  }
+}
+
+**Recent Reflection:**
+{
+  "reasoning": "The model correctly identified that \"God\" in Norwegian means \"good\" in English, which is a clear positive sentiment word. It referenced the playbook clues that sentiment-bearing adjectives indicate polarity ([ctx-00002]) and that we should not default to negative when no overt adjectives are present ([ctx-00004]). Thus, it concluded the sentence is positive, matching the ground truth.",
+  "error_identification": "No error was identified; the reasoning aligns with the correct answer.",
+  "root_cause_analysis": "Not applicable – the model applied the correct concept of sentiment-bearing adjectives and did not misinterpret the sentence.",
+  "correct_approach": "The model already followed the correct approach: translate the phrase, identify the sentiment word, and apply the playbook rules to determine polarity.",
+  "key_insight": "When evaluating sentiment, always look for explicit sentiment-bearing adjectives and use them to determine polarity, while avoiding a default negative stance when such adjectives are absent.",
+  "bullet_tags": [
+    {"id": "ctx-00002", "tag": "neutral"},
+    {"id": "ctx-00004", "tag": "neutral"}
+  ]
+}
+
+**Current Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00005] helpful=0 harmful=0 :: Assuming absence of explicit evaluative adjectives equates to negative sentiment.
+[err-00006] helpful=0 harmful=0 :: Ignoring contextual implications that turn a neutral description into a favorable one.
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+[ctx-00001] helpful=0 harmful=0 :: Short Norwegian rhetorical questions that question authenticity (e.g., "Eller bedrar skinnet?") should be classified as negative sentiment, as they imply deception.
+[ctx-00002] helpful=0 harmful=0 :: Identify sentiment-bearing adjectives (e.g., "skinnende") and evaluate their polarity.
+[ctx-00003] helpful=0 harmful=0 :: Recognize contextual cues that imply benefit (e.g., "hides cables" for cleaner appearance) as positive signals.
+[ctx-00004] helpful=0 harmful=0 :: Do not default to negative when no overt adjectives; consider implied positive features.
+## OTHERS
+
+**Question Context:**
+
+
+**Your Task:**
+Output ONLY a valid JSON object with these exact fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- operations: a list of operations to be performed on the playbook
+  - type: the type of operation to be performed
+  - section: the section to add the bullet to
+  - content: the new content of the bullet
+
+**Available Operations:**
+1. ADD: Create new bullet points with fresh IDs
+    - section: the section to add the new bullet to
+    - content: the new content of the bullet. Note: no need to include the bullet_id in the content like '[ctx-00263] helpful=1 harmful=0 ::', the bullet_id will be added by the system.
+
+**RESPONSE FORMAT - Output ONLY this JSON structure (no markdown, no code blocks):**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations here]",
+  "operations": [
+    {
+      "type": "ADD", 
+      "section": "formulas_and_calculations",
+      "content": "[New calculation method...]"
+    }
+  ]
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+{"reasoning":"The reflection highlights that the model correctly translated the Norwegian word \"God\" to the English sentiment word \"good\" and used that to determine polarity.  The current playbook already covers the importance of sentiment‑bearing adjectives ([ctx-00002]) and warns against defaulting to negative when no overt adjectives are present ([ctx-00004]).  However, it does not explicitly address two key points that emerged from the reflection:\n1. The necessity of translating sentiment‑bearing words from the source language before applying polarity rules.\n2. The risk of misclassifying sentiment when a noun (or other non‑adjective token) carries positive or negative connotations in the source language.\nThese gaps are not redundant with existing bullets, so new entries are warranted in the \"CONTEXT CLUES & INDICATORS\" and \"COMMON MISTAKES TO AVOID\" sections.\n\nThe new bullets will:\n- Encourage a quick translation check for any word that could be sentiment‑bearing in the source language.\n- Warn against assuming nouns are neutral, especially when they are known sentiment words in the source language.\n\nNo other sections require additions based on the reflection.","operations":[{"type":"ADD","section":"context_clues_and_indicators","content":"When encountering a word that may carry sentiment in the source language, perform a quick translation to English (or the target language) to confirm its polarity before applying sentiment rules."},{"type":"ADD","section":"common_mistakes_to_avoid","content":"Assuming that nouns or non‑adjective tokens are neutral; many nouns in the source language (e.g., \"God\" in Norwegian) are sentiment words and should be treated as such."}]}
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_3_post_curate_20260423_121418_041.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00005] helpful=0 harmful=0 :: Assuming absence of explicit evaluative adjectives equates to negative sentiment.
+[err-00006] helpful=0 harmful=0 :: Ignoring contextual implications that turn a neutral description into a favorable one.
+[err-00008] helpful=0 harmful=0 :: Assuming that nouns or non‑adjective tokens are neutral; many nouns in the source language (e.g., "God" in Norwegian) are sentiment words and should be treated as such.
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+[ctx-00001] helpful=0 harmful=0 :: Short Norwegian rhetorical questions that question authenticity (e.g., "Eller bedrar skinnet?") should be classified as negative sentiment, as they imply deception.
+[ctx-00002] helpful=0 harmful=0 :: Identify sentiment-bearing adjectives (e.g., "skinnende") and evaluate their polarity.
+[ctx-00003] helpful=0 harmful=0 :: Recognize contextual cues that imply benefit (e.g., "hides cables" for cleaner appearance) as positive signals.
+[ctx-00004] helpful=0 harmful=0 :: Do not default to negative when no overt adjectives; consider implied positive features.
+[ctx-00007] helpful=0 harmful=0 :: When encountering a word that may carry sentiment in the source language, perform a quick translation to English (or the target language) to confirm its polarity before applying sentiment rules.
+## OTHERS
+
+**Reflection:**
+(empty)
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: God betjening
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+{
+  "reasoning": "The phrase \"God betjening\" is Norwegian for \"Good service\". The word \"God\" is a sentiment‑bearing adjective that conveys a positive evaluation. There is no contextual cue indicating a negative or neutral stance, and the phrase is straightforwardly praising the service. Therefore, the sentiment is positive.",
+  "bullet_ids": ["ctx-00002", "ctx-00004", "ctx-00007"],
+  "final_answer": "positiv"
+}
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_test_eval_0_20260423_121419_829.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Reflection:**
+(empty)
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Garmin Fenix Chronos er meget god tur- og treningskamerat , og mye flottere enn vanlige smartklokker .
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+{
+  "reasoning": "The sentence states that the Garmin Fenix Chronos is a very good hiking and training companion and is much fancier than ordinary smartwatches. Both clauses express positive attributes, indicating a positive sentiment.",
+  "bullet_ids": [],
+  "final_answer": "positiv"
+}
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_test_eval_1_20260423_121422_709.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Reflection:**
+(empty)
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Årets nye Garmin Fenix Chronos tar det hele til et nytt nivå .
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+{
+  "reasoning": "The sentence \"Årets nye Garmin Fenix Chronos tar det hele til et nytt nivå\" is a statement of praise, indicating that the product elevates everything to a new level. It contains no negative or critical language, only positive connotations such as \"ny\" (new) and \"nytt nivå\" (new level). Therefore, the overall sentiment is positive.",
+  "bullet_ids": [],
+  "final_answer": "positiv"
+}
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_test_eval_2_20260423_121424_902.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Reflection:**
+(empty)
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Her har fokuset på funksjoner og indre kvaliteter , for første gang blitt kombinert med en ambisiøs satsning på et ekslusivt ytre .
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+{
+  "reasoning": "The sentence expresses a positive development: it highlights that the focus on functions and inner qualities is now combined with an ambitious investment in an exclusive exterior. There are no negative words or tones, and the adjectives \"ambisiøse\" (ambitious) and \"eksklusivt\" (exclusive) carry positive connotations. Therefore, the overall sentiment is positive.",
+  "bullet_ids": [],
+  "final_answer": "positiv"
+}

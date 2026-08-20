@@ -1,0 +1,3729 @@
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_test_eval_0_20260422_112902_777.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Reflection:**
+(empty)
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Garmin Fenix Chronos er meget god tur- og treningskamerat , og mye flottere enn vanlige smartklokker .
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Setningen 'Garmin Fenix Chronos er meget god tur- og treningskamerat , og mye flottere enn vanlige smartklokker.' er positiv fordi den gir en positiv vurdering av produktet. Den beskriver det som 'meget god' og 'mye flottere' enn vanlige smartklokker. Setningen som helhet er rosende og positiv, ikke negativ.",
+  "bullet_ids": [],
+  "final_answer": "positiv"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_test_eval_1_20260422_112909_881.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Reflection:**
+(empty)
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Årets nye Garmin Fenix Chronos tar det hele til et nytt nivå .
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Setningen 'Årets nye Garmin Fenix Chronos tar det hele til et nytt nivå' er positivt formulert. Den beskriver en ny klokke på en positiv måte. Svaret er derfor 'positiv'",
+  "bullet_ids": ["fin-00002"],
+  "final_answer": "positiv"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_test_eval_2_20260422_112917_233.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Reflection:**
+(empty)
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Her har fokuset på funksjoner og indre kvaliteter , for første gang blitt kombinert med en ambisiøs satsning på et ekslusivt ytre .
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Setningen 'Her har fokuset på funksjoner og indre kvaliteter , for første gang blitt kombinert med en ambisiøs satsning på et ekslusivt ytre.' er positiv da den beskriver en positiv utvikling og satsning. Ingen negative ladede ord eller uttrykk ble identifisert.",
+  "bullet_ids": [],
+  "final_answer": "positiv"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_1_gen_initial_20260422_112924_880.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Reflection:**
+(empty)
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Eller bedrar skinnet ?
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Setningen 'Eller bedrar skinnet?' er negativ fordi den spør om skinnet bedrar, noe som antyder at skinnet ikke er pålitelig. Ingen direkte positiv vurdering er gitt.",
+  "bullet_ids": [],
+  "final_answer": "negativ"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+reflector_train_e_1_s_1_round_0_20260422_112944_324.json
+-->Prompt: 
+You are an expert analyst and educator. Your job is to diagnose why a model's reasoning went wrong by analyzing the gap between predicted answer and the ground truth.
+
+**Instructions:**
+- Carefully analyze the model's reasoning trace to identify where it went wrong
+- Take the environment feedback into account, comparing the predicted answer with the ground truth to understand the gap
+- Identify specific conceptual errors, calculation mistakes, or misapplied strategies
+- Provide actionable insights that could help the model avoid this mistake in the future
+- Focus on the root cause, not just surface-level errors
+- Be specific about what the model should have done differently
+- You will receive bulletpoints that are part of playbook that's used by the generator to answer the question.
+- You need to analyze these bulletpoints, and give the tag for each bulletpoint, tag can be ['helpful', 'harmful', 'neutral'] (for the generator to generate the correct answer)
+
+Your output should be a json object, which contains the following fields
+  - reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+  - error_identification: what specifically went wrong in the reasoning?
+  - root_cause_analysis: why did this error occur? What concept was misunderstood?
+  - correct_approach: what should the model have done instead?
+  - key_insight: what strategy, formula, or principle should be remembered to avoid this error?
+  - bullet_tags: a list of json objects with bullet_id and tag for each bulletpoint used by the generator
+
+
+
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Eller bedrar skinnet ?
+
+**Model's Reasoning Trace:**
+
+
+```json
+{
+  "reasoning": "Setningen 'Eller bedrar skinnet?' er negativ fordi den spør om skinnet bedrar, noe som antyder at skinnet ikke er pålitelig. Ingen direkte positiv vurdering er gitt.",
+  "bullet_ids": [],
+  "final_answer": "negativ"
+}
+```
+
+**Model's Predicted Answer:**
+negativ
+
+**Ground Truth Answer:**
+Negative
+
+**Environment Feedback:**
+Predicted answer does not match ground truth
+
+**Part of Playbook that's used by the generator to answer the question:**
+(No bullets used by generator)
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",
+  "error_identification": "[What specifically went wrong in the reasoning?]",
+  "root_cause_analysis": "[Why did this error occur? What concept was misunderstood?]",
+  "correct_approach": "[What should the model have done instead?]",
+  "key_insight": "[What strategy, formula, or principle should be remembered to avoid this error?]",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "helpful"},
+    {"id": "fin-00002", "tag": "harmful"}
+  ]
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+**Svar i JSON-format:**
+```json
+{
+  "reasoning": "Basert på analysen var modellens feilslutning å tolke det åpne spørsmålet 'Eller bedrar skinnet?' som negativt uten å vurdere konteksten. Den burde ha anerkjent at spørsmålet er nøytralt og ikke gir en forhåndsbestemt negativ vurdering.",
+  "error_identification": "Feilen var å tolke et nøytralt spørsmål som negativt uten å vurdere konteksten.",
+  "root_cause_analysis": "Feilen oppstod fordi modellen antok at nøytrale spørsmål alltid er negative, uten å vurdere spørsmålets åpne natur.",
+  "correct_approach": "I stedet burde modellen ha anerkjent at spørsmålet er åpent og nøytralt, og gitt en balansert vurdering av skinnets pålitelighet.",
+  "key_insight": "Husk at spørsmål uten direkte positiv eller negativ vurdering bør vurderes ut fra kontekst og intensjon, ikke bare basert på ordvalg.",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "helpful"},
+    {"id": "fin-00002", "tag": "harmful"}
+  ]
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_1_post_reflect_round_0_20260422_112950_739.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Reflection:**
+
+
+**Svar i JSON-format:**
+```json
+{
+  "reasoning": "Basert på analysen var modellens feilslutning å tolke det åpne spørsmålet 'Eller bedrar skinnet?' som negativt uten å vurdere konteksten. Den burde ha anerkjent at spørsmålet er nøytralt og ikke gir en forhåndsbestemt negativ vurdering.",
+  "error_identification": "Feilen var å tolke et nøytralt spørsmål som negativt uten å vurdere konteksten.",
+  "root_cause_analysis": "Feilen oppstod fordi modellen antok at nøytrale spørsmål alltid er negative, uten å vurdere spørsmålets åpne natur.",
+  "correct_approach": "I stedet burde modellen ha anerkjent at spørsmålet er åpent og nøytralt, og gitt en balansert vurdering av skinnets pålitelighet.",
+  "key_insight": "Husk at spørsmål uten direkte positiv eller negativ vurdering bør vurderes ut fra kontekst og intensjon, ikke bare basert på ordvalg.",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "helpful"},
+    {"id": "fin-00002", "tag": "harmful"}
+  ]
+}
+```
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Eller bedrar skinnet ?
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+Brukeren ber meg om å svare på spørsmålet "Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Eller bedrar skinnet ?" i nøyaktig JSON-format.
+
+Oppgaven er:
+1. Jeg skal analysere spørsmålet
+2. Jeg skal gi et svar i nøyaktig det formatet de ber om
+
+La meg tenke på dette:
+
+- Spørsmålet er: "Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Eller bedrar skinnet ?"
+- Setningen "Eller bedrar skinnet?" er nøytral. Den spør om skinnet bedrar, noe som er et åpent spørsmål uten en forhåndsbestemt positiv eller negativ vurdering.
+- Ifølge min analyse bør jeg:
+  - Anerkjenne at spørsmålet er nøytralt
+  - Gi svaret "negativ" siden det ikke er positivt
+  - Strukturere svaret i nøyaktig JSON-format
+
+Så jeg bør:
+1. Skrive en tydelig og informativ "reasoning" som forklarer analysen
+2. Bruke "negativ" som svaret
+3. Identifisere relevante bullet-points fra playbooken
+
+La meg skrive svaret i nøyaktig JSON-format. **Svar i nøyaktig JSON-format:**
+
+```json
+{
+  "reasoning": "Setningen 'Eller bedrar skinnet?' er nøytral og ikke forhåndsbestemt som positiv eller negativ. Svaret er derfor 'negativ'.",
+  "bullet_ids": [],
+  "final_answer": "negativ"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+reflector_train_e_1_s_1_round_1_20260422_113002_472.json
+-->Prompt: 
+You are an expert analyst and educator. Your job is to diagnose why a model's reasoning went wrong by analyzing the gap between predicted answer and the ground truth.
+
+**Instructions:**
+- Carefully analyze the model's reasoning trace to identify where it went wrong
+- Take the environment feedback into account, comparing the predicted answer with the ground truth to understand the gap
+- Identify specific conceptual errors, calculation mistakes, or misapplied strategies
+- Provide actionable insights that could help the model avoid this mistake in the future
+- Focus on the root cause, not just surface-level errors
+- Be specific about what the model should have done differently
+- You will receive bulletpoints that are part of playbook that's used by the generator to answer the question.
+- You need to analyze these bulletpoints, and give the tag for each bulletpoint, tag can be ['helpful', 'harmful', 'neutral'] (for the generator to generate the correct answer)
+
+Your output should be a json object, which contains the following fields
+  - reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+  - error_identification: what specifically went wrong in the reasoning?
+  - root_cause_analysis: why did this error occur? What concept was misunderstood?
+  - correct_approach: what should the model have done instead?
+  - key_insight: what strategy, formula, or principle should be remembered to avoid this error?
+  - bullet_tags: a list of json objects with bullet_id and tag for each bulletpoint used by the generator
+
+
+
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Eller bedrar skinnet ?
+
+**Model's Reasoning Trace:**
+Brukeren ber meg om å svare på spørsmålet "Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Eller bedrar skinnet ?" i nøyaktig JSON-format.
+
+Oppgaven er:
+1. Jeg skal analysere spørsmålet
+2. Jeg skal gi et svar i nøyaktig det formatet de ber om
+
+La meg tenke på dette:
+
+- Spørsmålet er: "Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Eller bedrar skinnet ?"
+- Setningen "Eller bedrar skinnet?" er nøytral. Den spør om skinnet bedrar, noe som er et åpent spørsmål uten en forhåndsbestemt positiv eller negativ vurdering.
+- Ifølge min analyse bør jeg:
+  - Anerkjenne at spørsmålet er nøytralt
+  - Gi svaret "negativ" siden det ikke er positivt
+  - Strukturere svaret i nøyaktig JSON-format
+
+Så jeg bør:
+1. Skrive en tydelig og informativ "reasoning" som forklarer analysen
+2. Bruke "negativ" som svaret
+3. Identifisere relevante bullet-points fra playbooken
+
+La meg skrive svaret i nøyaktig JSON-format. **Svar i nøyaktig JSON-format:**
+
+```json
+{
+  "reasoning": "Setningen 'Eller bedrar skinnet?' er nøytral og ikke forhåndsbestemt som positiv eller negativ. Svaret er derfor 'negativ'.",
+  "bullet_ids": [],
+  "final_answer": "negativ"
+}
+```
+
+**Model's Predicted Answer:**
+negativ
+
+**Ground Truth Answer:**
+Negative
+
+**Environment Feedback:**
+Predicted answer does not match ground truth
+
+**Part of Playbook that's used by the generator to answer the question:**
+(No bullets used by generator)
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",
+  "error_identification": "[What specifically went wrong in the reasoning?]",
+  "root_cause_analysis": "[Why did this error occur? What concept was misunderstood?]",
+  "correct_approach": "[What should the model have done instead?]",
+  "key_insight": "[What strategy, formula, or principle should be remembered to avoid this error?]",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "helpful"},
+    {"id": "fin-00002", "tag": "harmful"}
+  ]
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+Brukeren ber meg om å analysere hvorfor en modells prediksjon var feil, og gi et svar i nøyaktig JSON-format. De har gitt meg:
+
+1. En setning å vurdere: "Eller bedrager skinnet?"
+2. En modells prediksjon: "negativ"
+3. En ground truth: "Negative"
+4. Ingen bullet-points fra playbooken
+
+Oppgaven er:
+- Analyser hvorfor modellen predikerte feil
+- Gi et svar i nøyaktig JSON-format
+
+La meg tenke på hva jeg bør gjøre:
+
+1. Jeg bør:
+   - Identifisere hva som gikk galt i modellen sin prediksjon
+   - Peke på hva modellen burde ha gjort i stedet
+   - Gi en forklaring på hvorfor den tok feil
+
+2. Svaret bør:
+   - Være i nøyaktig JSON-format
+   - Inneholde:
+     - En tydelig "reasoning" som forklarer analysen
+     - En klar identifikasjon av feilen
+     - En forklaring på hvorfor feilen oppstod
+     - En anbefaling om hva modellen burde ha gjort
+
+3. Jeg bør:
+   - Anerkjenne at setningen er nøytral og ikke positiv
+   - Peke på at modellen burde ha vært mer forsiktig med nøytrale setninger
+
+La meg skrive et tydelig og informativt svar i nøyaktig JSON-format. **Svar i nøyaktig JSON-format:**
+
+```json
+{
+  "reasoning": "Setningen 'Eller bedrager skinnet?' er nøytral og ikke forhåndsbestemt som positiv eller negativ. En modell som skal svare på slike nøytrale spørsmål, bør gi et 'nøytral'-svar, ikke et forhåndsbestemt negativt svar. Svaret skulle derfor vært 'nøytral'.",
+  "error_identification": "Modellen predikerte feilaktig 'negativ' basert på en forhåndsinnstilt negativ tolkning av en nøytral setning.",
+  "root_cause_analysis": "Feilen oppstod fordi modellen ikke vurderte setningens nøytralitet, men tolket den som negativt ladet uten tilstrekkelig analyse.",
+  "correct_approach": "For nøytrale setninger bør modellen gi svaret 'nøytral' eller be om avklaring, ikke automatisk anta en negativ intensjon.",
+  "key_insight": "Ved tvil om en setnings intensjon, er det bedre å være nøytral enn å gjøre en forhåndsbestemt antagelse.",
+  "bullet_tags": [
+    {"id": "fin-00002", "tag": "harmful"},  // Prediksjonen var feil
+    {"id": "calc-00001", "tag": "helpful"}, // Korrekt tilnærming ville vært nøytral
+    {"id": "fin-00001", "tag": "neutral"}  // Nøytrale setninger bør håndteres nøytralt
+  ]
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_1_post_reflect_round_1_20260422_113011_767.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Reflection:**
+Brukeren ber meg om å analysere hvorfor en modells prediksjon var feil, og gi et svar i nøyaktig JSON-format. De har gitt meg:
+
+1. En setning å vurdere: "Eller bedrager skinnet?"
+2. En modells prediksjon: "negativ"
+3. En ground truth: "Negative"
+4. Ingen bullet-points fra playbooken
+
+Oppgaven er:
+- Analyser hvorfor modellen predikerte feil
+- Gi et svar i nøyaktig JSON-format
+
+La meg tenke på hva jeg bør gjøre:
+
+1. Jeg bør:
+   - Identifisere hva som gikk galt i modellen sin prediksjon
+   - Peke på hva modellen burde ha gjort i stedet
+   - Gi en forklaring på hvorfor den tok feil
+
+2. Svaret bør:
+   - Være i nøyaktig JSON-format
+   - Inneholde:
+     - En tydelig "reasoning" som forklarer analysen
+     - En klar identifikasjon av feilen
+     - En forklaring på hvorfor feilen oppstod
+     - En anbefaling om hva modellen burde ha gjort
+
+3. Jeg bør:
+   - Anerkjenne at setningen er nøytral og ikke positiv
+   - Peke på at modellen burde ha vært mer forsiktig med nøytrale setninger
+
+La meg skrive et tydelig og informativt svar i nøyaktig JSON-format. **Svar i nøyaktig JSON-format:**
+
+```json
+{
+  "reasoning": "Setningen 'Eller bedrager skinnet?' er nøytral og ikke forhåndsbestemt som positiv eller negativ. En modell som skal svare på slike nøytrale spørsmål, bør gi et 'nøytral'-svar, ikke et forhåndsbestemt negativt svar. Svaret skulle derfor vært 'nøytral'.",
+  "error_identification": "Modellen predikerte feilaktig 'negativ' basert på en forhåndsinnstilt negativ tolkning av en nøytral setning.",
+  "root_cause_analysis": "Feilen oppstod fordi modellen ikke vurderte setningens nøytralitet, men tolket den som negativt ladet uten tilstrekkelig analyse.",
+  "correct_approach": "For nøytrale setninger bør modellen gi svaret 'nøytral' eller be om avklaring, ikke automatisk anta en negativ intensjon.",
+  "key_insight": "Ved tvil om en setnings intensjon, er det bedre å være nøytral enn å gjøre en forhåndsbestemt antagelse.",
+  "bullet_tags": [
+    {"id": "fin-00002", "tag": "harmful"},  // Prediksjonen var feil
+    {"id": "calc-00001", "tag": "helpful"}, // Korrekt tilnærming ville vært nøytral
+    {"id": "fin-00001", "tag": "neutral"}  // Nøytrale setninger bør håndteres nøytralt
+  ]
+}
+```
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Eller bedrar skinnet ?
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+Brukeren ber meg om å svare i nøyaktig JSON-format, og de har gitt meg:
+- En setning: "Eller bedrar skinnet?"
+- De spør: "Er denne setningen 'positiv' eller 'negativ'?"
+
+Oppgaven er å:
+1. Analysere hvorfor modellen predikerte feil
+2. Gi et svar i nøyaktig JSON-format
+
+La meg tenke på hva jeg bør gjøre:
+
+1. Jeg bør:
+   - Identifisere at setningen er nøytral
+   - Peke på at modellen burde ha gitt svaret "nøytral" i stedet for negativt
+   - Gi en klar og tydelig JSON-struktur
+
+2. Svaret bør:
+   - Inneholde en "reasoning" som forklarer analysen
+   - Identifisere feilen
+   - Peke på hva modellen burde ha gjort
+
+3. Jeg bør:
+   - Bruke de oppgitte bullet-taggene for å vise hvilke punkter i playbooken jeg refererer til
+
+La meg skrive et tydelig og informativt svar i nøyaktig JSON-format. **Svar i nøyaktig JSON-format:**
+
+```json
+{
+  "reasoning": "Setningen 'Eller bedrar skinnet?' er nøytral og ikke forhåndsbestemt som positiv eller negativ. En modell som skal svare på slike nøytrale spørsmål, bør gi svaret 'nøytral' eller be om avklaring, ikke automatisk anta et negativt svar. Svaret skulle derfor vært 'nøytral'.",
+  "error_identification": "Modellen predikerte feilaktig 'negativ' basert på en forhåndsinnstilt negativ tolkning av en nøytral setning.",
+  "correct_approach": "For nøytrale setninger bør modellen gi svaret 'nøytral' eller be om avklaring, ikke automatisk anta en negativ intensjon.",
+  "bullet_tags": [
+    {"id": "fin-00001", "tag": "correct"},  // Svaret skulle vært nøytral
+    {"id": "fin-00002", "tag": "harmful"}, // Prediksjonen var feil
+    {"id": "calc-00001", "tag": "helpful"}
+  ],
+  "final_answer": "nøytral"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+reflector_train_e_1_s_1_round_2_20260422_113030_624.json
+-->Prompt: 
+You are an expert analyst and educator. Your job is to diagnose why a model's reasoning went wrong by analyzing the gap between predicted answer and the ground truth.
+
+**Instructions:**
+- Carefully analyze the model's reasoning trace to identify where it went wrong
+- Take the environment feedback into account, comparing the predicted answer with the ground truth to understand the gap
+- Identify specific conceptual errors, calculation mistakes, or misapplied strategies
+- Provide actionable insights that could help the model avoid this mistake in the future
+- Focus on the root cause, not just surface-level errors
+- Be specific about what the model should have done differently
+- You will receive bulletpoints that are part of playbook that's used by the generator to answer the question.
+- You need to analyze these bulletpoints, and give the tag for each bulletpoint, tag can be ['helpful', 'harmful', 'neutral'] (for the generator to generate the correct answer)
+
+Your output should be a json object, which contains the following fields
+  - reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+  - error_identification: what specifically went wrong in the reasoning?
+  - root_cause_analysis: why did this error occur? What concept was misunderstood?
+  - correct_approach: what should the model have done instead?
+  - key_insight: what strategy, formula, or principle should be remembered to avoid this error?
+  - bullet_tags: a list of json objects with bullet_id and tag for each bulletpoint used by the generator
+
+
+
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Eller bedrar skinnet ?
+
+**Model's Reasoning Trace:**
+Brukeren ber meg om å svare i nøyaktig JSON-format, og de har gitt meg:
+- En setning: "Eller bedrar skinnet?"
+- De spør: "Er denne setningen 'positiv' eller 'negativ'?"
+
+Oppgaven er å:
+1. Analysere hvorfor modellen predikerte feil
+2. Gi et svar i nøyaktig JSON-format
+
+La meg tenke på hva jeg bør gjøre:
+
+1. Jeg bør:
+   - Identifisere at setningen er nøytral
+   - Peke på at modellen burde ha gitt svaret "nøytral" i stedet for negativt
+   - Gi en klar og tydelig JSON-struktur
+
+2. Svaret bør:
+   - Inneholde en "reasoning" som forklarer analysen
+   - Identifisere feilen
+   - Peke på hva modellen burde ha gjort
+
+3. Jeg bør:
+   - Bruke de oppgitte bullet-taggene for å vise hvilke punkter i playbooken jeg refererer til
+
+La meg skrive et tydelig og informativt svar i nøyaktig JSON-format. **Svar i nøyaktig JSON-format:**
+
+```json
+{
+  "reasoning": "Setningen 'Eller bedrar skinnet?' er nøytral og ikke forhåndsbestemt som positiv eller negativ. En modell som skal svare på slike nøytrale spørsmål, bør gi svaret 'nøytral' eller be om avklaring, ikke automatisk anta et negativt svar. Svaret skulle derfor vært 'nøytral'.",
+  "error_identification": "Modellen predikerte feilaktig 'negativ' basert på en forhåndsinnstilt negativ tolkning av en nøytral setning.",
+  "correct_approach": "For nøytrale setninger bør modellen gi svaret 'nøytral' eller be om avklaring, ikke automatisk anta en negativ intensjon.",
+  "bullet_tags": [
+    {"id": "fin-00001", "tag": "correct"},  // Svaret skulle vært nøytral
+    {"id": "fin-00002", "tag": "harmful"}, // Prediksjonen var feil
+    {"id": "calc-00001", "tag": "helpful"}
+  ],
+  "final_answer": "nøytral"
+}
+```
+
+**Model's Predicted Answer:**
+nøytral
+
+**Ground Truth Answer:**
+Negative
+
+**Environment Feedback:**
+Predicted answer does not match ground truth
+
+**Part of Playbook that's used by the generator to answer the question:**
+(No bullets used by generator)
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",
+  "error_identification": "[What specifically went wrong in the reasoning?]",
+  "root_cause_analysis": "[Why did this error occur? What concept was misunderstood?]",
+  "correct_approach": "[What should the model have done instead?]",
+  "key_insight": "[What strategy, formula, or principle should be remembered to avoid this error?]",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "helpful"},
+    {"id": "fin-00002", "tag": "harmful"}
+  ]
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+```json
+{
+  "reasoning": "Setningen 'Eller bedrar skinnet?' er nøytral og ikke forhåndsbestemt som positiv eller negativ. En modell som skal svare på slike nøytrale spørsmål, bør gi svaret 'nøytral' eller be om avklaring, ikke automatisk anta et negativt svar. Svaret skulle derfor vært 'nøytral'.",
+  "error_identification": "Modellen predikerte feilaktig 'negativ' basert på en forhåndsinnstilt negativ tolkning av en nøytral setning.",
+  "root_cause_analysis": "Feilen oppsto fordi modellen tolket en nøytral setning som negativt ladet, noe som strider mot prinsippene for nøytrale spørsmål.",
+  "correct_approach": "For nøytrale setninger bør modellen gi svaret 'nøytral' eller be om avklaring, ikke automatisk anta en negativ intensjon.",
+  "key_insight": "Husk at nøytrale setninger ikke har en forhåndsbestemt positiv/negativ tolkning, og at det riktige svaret er 'nøytral' når man er usikker.",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "helpful"},  // Korrekt tilnærming
+    {"id": "fin-00002", "tag": "harmful"},  // Feil prediksjon
+    {"id": "cls-00001"}
+  ],
+  "final_answer": "nøytral"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_1_post_reflect_round_2_20260422_113038_136.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Reflection:**
+
+```json
+{
+  "reasoning": "Setningen 'Eller bedrar skinnet?' er nøytral og ikke forhåndsbestemt som positiv eller negativ. En modell som skal svare på slike nøytrale spørsmål, bør gi svaret 'nøytral' eller be om avklaring, ikke automatisk anta et negativt svar. Svaret skulle derfor vært 'nøytral'.",
+  "error_identification": "Modellen predikerte feilaktig 'negativ' basert på en forhåndsinnstilt negativ tolkning av en nøytral setning.",
+  "root_cause_analysis": "Feilen oppsto fordi modellen tolket en nøytral setning som negativt ladet, noe som strider mot prinsippene for nøytrale spørsmål.",
+  "correct_approach": "For nøytrale setninger bør modellen gi svaret 'nøytral' eller be om avklaring, ikke automatisk anta en negativ intensjon.",
+  "key_insight": "Husk at nøytrale setninger ikke har en forhåndsbestemt positiv/negativ tolkning, og at det riktige svaret er 'nøytral' når man er usikker.",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "helpful"},  // Korrekt tilnærming
+    {"id": "fin-00002", "tag": "harmful"},  // Feil prediksjon
+    {"id": "cls-00001"}
+  ],
+  "final_answer": "nøytral"
+}
+```
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Eller bedrar skinnet ?
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Setningen 'Eller bedrar skinnet?' er nøytral og ikke forhåndsbestemt som positiv eller negativ. Svaret bør derfor være 'nøytral'.",
+  "bullet_ids": [
+    {"id": "calc-00001", "tag": "helpful"}
+  ],
+  "final_answer": "nøytral"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+curator_train_e_1_s_1_20260422_113047_251.json
+-->Prompt: 
+You are a master curator of knowledge. Your job is to identify what new insights should be added to an existing playbook based on a reflection from a previous attempt.
+
+**Context:**
+- The playbook you created will be used to help answering similar questions. 
+- The reflection is generated using ground truth answers that will NOT be available when the playbook is being used. So you need to come up with content that can aid the playbook user to create predictions that likely align with ground truth. 
+
+**CRITICAL: You MUST respond with valid JSON only. Do not use markdown formatting or code blocks.**
+
+**Instructions:**
+- Review the existing playbook and the reflection from the previous attempt
+- Identify ONLY the NEW insights, strategies, or mistakes that are MISSING from the current playbook
+- Avoid redundancy - if similar advice already exists, only add new content that is a perfect complement to the existing playbook
+- Do NOT regenerate the entire playbook - only provide the additions needed
+- Focus on quality over quantity - a focused, well-organized playbook is better than an exhaustive one
+- Format your response as a PURE JSON object with specific sections
+- For any operation if no new content to add, return an empty list for the operations field
+- Be concise and specific - each addition should be actionable
+
+
+**Training Context:**
+- Total token budget: 80000 tokens
+- Training progress: Sample 1 out of 3
+
+**Current Playbook Stats:**
+{
+  "total_bullets": 0,
+  "high_performing": 0,
+  "problematic": 0,
+  "unused": 0,
+  "by_section": {}
+}
+
+**Recent Reflection:**
+
+```json
+{
+  "reasoning": "Setningen 'Eller bedrar skinnet?' er nøytral og ikke forhåndsbestemt som positiv eller negativ. En modell som skal svare på slike nøytrale spørsmål, bør gi svaret 'nøytral' eller be om avklaring, ikke automatisk anta et negativt svar. Svaret skulle derfor vært 'nøytral'.",
+  "error_identification": "Modellen predikerte feilaktig 'negativ' basert på en forhåndsinnstilt negativ tolkning av en nøytral setning.",
+  "root_cause_analysis": "Feilen oppsto fordi modellen tolket en nøytral setning som negativt ladet, noe som strider mot prinsippene for nøytrale spørsmål.",
+  "correct_approach": "For nøytrale setninger bør modellen gi svaret 'nøytral' eller be om avklaring, ikke automatisk anta en negativ intensjon.",
+  "key_insight": "Husk at nøytrale setninger ikke har en forhåndsbestemt positiv/negativ tolkning, og at det riktige svaret er 'nøytral' når man er usikker.",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "helpful"},  // Korrekt tilnærming
+    {"id": "fin-00002", "tag": "harmful"},  // Feil prediksjon
+    {"id": "cls-00001"}
+  ],
+  "final_answer": "nøytral"
+}
+```
+
+**Current Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Question Context:**
+
+
+**Your Task:**
+Output ONLY a valid JSON object with these exact fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- operations: a list of operations to be performed on the playbook
+  - type: the type of operation to be performed
+  - section: the section to add the bullet to
+  - content: the new content of the bullet
+
+**Available Operations:**
+1. ADD: Create new bullet points with fresh IDs
+    - section: the section to add the new bullet to
+    - content: the new content of the bullet. Note: no need to include the bullet_id in the content like '[ctx-00263] helpful=1 harmful=0 ::', the bullet_id will be added by the system.
+
+**RESPONSE FORMAT - Output ONLY this JSON structure (no markdown, no code blocks):**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations here]",
+  "operations": [
+    {
+      "type": "ADD", 
+      "section": "formulas_and_calculations",
+      "content": "[New calculation method...]"
+    }
+  ]
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+Brukeren ber meg om å:
+1. Identifisere nye innsikter, strategier eller feil fra en refleksjon
+2. Formatere svaret som en ren JSON-struktur uten markdown eller kodeblokker
+3. Kun inkludere det som er nytt, ikke regenerere hele playbooken
+4. Fokusere på kvalitet over kvantitet
+
+Konteksten er:
+- Jeg skal analysere en refleksjon
+- Jeg skal identifisere nye innsikter til en eksisterende playbook
+- Jeg skal formatere svaret som ren JSON
+
+La meg analysere refleksjonen:
+- Den gir tilbakemelding på en feil prediksjon
+- Feilen var at modellen tolket en nøytral setning som negativ
+- Brukeren gir en klar "korrekt tilnærming": "nøytral"
+- De peker på at nøytrale setninger ikke har forhåndsbestemt positiv/negativ tolkning
+
+For playbooken:
+- Den har seksjoner for:
+  - Strategier og innsikter
+  - Formler og beregninger
+  - Vanlige feil å unngå
+  - Problemløsningsheuristikker
+  - Kontekstkilder og indikatorer
+
+Jeg bør:
+1. Identifisere den nye innsikten om nøytrale setninger
+2. Formatere svaret som ren JSON
+3. Bruke "ADD" operasjoner for å legge til det nye innholdet
+
+La meg strukturere svaret:
+- "reasoning": Min begrunnelse for de nye operasjonene
+- "operations": En liste med ADD-operasjoner for de nye bulletene
+
+La meg skrive en tydelig, kortfattet JSON-struktur med kun det nødvendige innholdet. **Response:**
+
+```json
+{
+  "reasoning": "Nøytrale setninger har ingen forhåndsbestemt positiv/negativ tolkning. Svaret 'nøytral' er det riktige når man er usikker. Dette er en viktig innsikt for å unngå feilprediksjoner. ",
+  "operations": [
+    {
+      "type": "ADD",
+      "section": "common_mistakes_to_avoid",
+      "content": "[ctx-00003] harmful=0 helpful=1 :: Unngå å tolke nøytrale setninger som negative uten klar kontekst."
+    }
+  ]
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_1_post_curate_20260422_113054_065.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: [ctx-00003] harmful=0 helpful=1 :: Unngå å tolke nøytrale setninger som negative uten klar kontekst.
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Reflection:**
+(empty)
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Eller bedrar skinnet ?
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Setningen 'Eller bedrar skinnet ?' er nøytral og åpen for tolkning. I mangel på direkte negative ord tolker jeg den som positiv. Svaret er derfor 'positiv'.",
+  "bullet_ids": [],
+  "final_answer": "positiv"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_2_gen_initial_20260422_113101_197.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: [ctx-00003] harmful=0 helpful=1 :: Unngå å tolke nøytrale setninger som negative uten klar kontekst.
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Reflection:**
+(empty)
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Baksiden er sort , blank og skinnende , med et deksel som skjuler kontakter og kabler .
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Setningen er nøytral. Den beskriver et produkts utseende uten å bruke direkte positive eller negative ord. Den er informativ, men ikke eksplisitt positiv eller negativ.",
+  "bullet_ids": [],
+  "final_answer": "nøytral"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+reflector_train_e_1_s_2_round_0_20260422_113119_962.json
+-->Prompt: 
+You are an expert analyst and educator. Your job is to diagnose why a model's reasoning went wrong by analyzing the gap between predicted answer and the ground truth.
+
+**Instructions:**
+- Carefully analyze the model's reasoning trace to identify where it went wrong
+- Take the environment feedback into account, comparing the predicted answer with the ground truth to understand the gap
+- Identify specific conceptual errors, calculation mistakes, or misapplied strategies
+- Provide actionable insights that could help the model avoid this mistake in the future
+- Focus on the root cause, not just surface-level errors
+- Be specific about what the model should have done differently
+- You will receive bulletpoints that are part of playbook that's used by the generator to answer the question.
+- You need to analyze these bulletpoints, and give the tag for each bulletpoint, tag can be ['helpful', 'harmful', 'neutral'] (for the generator to generate the correct answer)
+
+Your output should be a json object, which contains the following fields
+  - reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+  - error_identification: what specifically went wrong in the reasoning?
+  - root_cause_analysis: why did this error occur? What concept was misunderstood?
+  - correct_approach: what should the model have done instead?
+  - key_insight: what strategy, formula, or principle should be remembered to avoid this error?
+  - bullet_tags: a list of json objects with bullet_id and tag for each bulletpoint used by the generator
+
+
+
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Baksiden er sort , blank og skinnende , med et deksel som skjuler kontakter og kabler .
+
+**Model's Reasoning Trace:**
+
+
+```json
+{
+  "reasoning": "Setningen er nøytral. Den beskriver et produkts utseende uten å bruke direkte positive eller negative ord. Den er informativ, men ikke eksplisitt positiv eller negativ.",
+  "bullet_ids": [],
+  "final_answer": "nøytral"
+}
+```
+
+**Model's Predicted Answer:**
+nøytral
+
+**Ground Truth Answer:**
+Positive
+
+**Environment Feedback:**
+Predicted answer does not match ground truth
+
+**Part of Playbook that's used by the generator to answer the question:**
+(No bullets used by generator)
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",
+  "error_identification": "[What specifically went wrong in the reasoning?]",
+  "root_cause_analysis": "[Why did this error occur? What concept was misunderstood?]",
+  "correct_approach": "[What should the model have done instead?]",
+  "key_insight": "[What strategy, formula, or principle should be remembered to avoid this error?]",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "helpful"},
+    {"id": "fin-00002", "tag": "harmful"}
+  ]
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+Brukeren ber meg om å:
+1. Diagnostisere hvorfor en modells resonnering gikk galt
+2. Analysere gapet mellom predikert svar og ground truth
+3. Identifisere spesifikke konseptuelle feil, beregningsfeil eller misbrukte strategier
+4. Gi handlingsrettet innsikt
+5. Være spesifikk om hva modellen burde ha gjort annerledes
+6. Fokusere på rotårsaken, ikke bare overfladiske feil
+7. Gi en JSON-struktur med:
+   - reasoning: min kjede av tankegang/resonnement
+   - error_identification: hva gikk spesifikt galt i resonnementet?
+   - root_cause_analysis: hvorfor skjedde feilen?
+   - correct_approach: hva modellen burde ha gjort i stedet?
+   - key_insight: hva modellen bør huske for å unngå feilen?
+   - bullet_tags: en liste over JSON-objekter med bullet_id og tag for hver bullet brukt av generatoren
+
+Bakgrunn:
+- Spørsmålet er: "Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Baksiden er sort , blank og skinnende , med et deksel som skjuler kontakter og kabler ."
+- Modellen predikerer "nøytral" basert på en analyse av at setningen er nøytral og informativ uten direkte positive eller negative ord.
+- Ground truth er "Positiv" fordi den beskriver et produkt som er attraktivt (sort, blank, skinnende, deksel som skjuler kontakter og kabler) på en positiv måte.
+
+Min oppgave er å:
+1. Analysere modellens resonnering og identifisere hvor den gikk galt
+2. Identifisere rotårsaken til feilen
+3. Peke på hva modellen burde ha gjort annerledes
+4. Gi en klar og strukturert JSON-respons
+
+La meg tenke gjennom analysen steg for steg:
+
+1. Modellens feil: Den vurderte setningen som nøytral når den faktisk beskriver et positivt produkt.
+2. Rotårsaken: Modellen tolket "nøytral" som ikke-positiv, men definisjonen av positiv er subjektiv og konteksten er tydelig positiv.
+3. Hva modellen burde ha gjort: Den burde ha vurdert konteksten og de positive attributtene, ikke bare fraværet av negative ord.
+
+La meg strukturere svaret tydelig med:
+- Reasoning: Min analyse av modellens feil
+- Error identification: Hva gikk galt
+- Root cause analysis: Hvorfor det skjedde
+- Correct approach: Hva modellen burde ha gjort
+- Key insight: Hva modellen bør huske
+
+La meg skrive en klar og tydelig JSON-respons. **JSON-respons:**
+
+```json
+{
+  "reasoning": "Motivet bak spørsmålet er tydelig positivt. Setningen beskriver et produkt som er attraktivt (sort, blank, skinnende, deksel som skjuler kontakter og kabler) på en nøytral måte, men det er fortsatt en positiv beskrivelse. Modellen tolket nøytralitet som ikke-positiv, noe som er en feilaktig tolkning av begrepet 'positiv'."
+
+  "error_identification": "Modellen feilvurderte nøytralitet som ikke-positiv, noe som er en konseptuell feil i tolkningen av begrepet 'positiv'."
+
+  "root_cause_analysis": "Feilen oppstod fordi modellen tolket 'nøytral' som synonymt med 'ikke-positiv', når det i realiteten er en positiv beskrivelse uten bruk av direkte negative ord."
+
+  "correct_approach": "Modellen burde ha vurdert konteksten og de positive attributtene i setningen, ikke bare fraværet av negative ord. Den burde ha konkludert med 'positiv' basert på at setningen beskriver et attraktivt produkt."
+
+  "key_insight": "For å unngå denne feilen i fremtiden bør modellen:
+   - Vurdere konteksten og positive attributter, ikke bare fraværet av negative ord
+   - Huske at 'positiv' kan bety attraktiv, fordelaktig eller rosende, selv om det ikke brukes direkte positive ord"
+
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "harmful"},  // Feilaktig tolkning av begrepet 'positiv'
+    {"id": "fin-00002", "tag": "helpful"},  // Burde ha vurdert konteksten og de positive attributtene
+    {"id": "com-00003", "tag": "neutral"}   // Nøytral vurdering av setningen
+  ]
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_2_post_reflect_round_0_20260422_113141_549.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: [ctx-00003] harmful=0 helpful=1 :: Unngå å tolke nøytrale setninger som negative uten klar kontekst.
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Reflection:**
+Brukeren ber meg om å:
+1. Diagnostisere hvorfor en modells resonnering gikk galt
+2. Analysere gapet mellom predikert svar og ground truth
+3. Identifisere spesifikke konseptuelle feil, beregningsfeil eller misbrukte strategier
+4. Gi handlingsrettet innsikt
+5. Være spesifikk om hva modellen burde ha gjort annerledes
+6. Fokusere på rotårsaken, ikke bare overfladiske feil
+7. Gi en JSON-struktur med:
+   - reasoning: min kjede av tankegang/resonnement
+   - error_identification: hva gikk spesifikt galt i resonnementet?
+   - root_cause_analysis: hvorfor skjedde feilen?
+   - correct_approach: hva modellen burde ha gjort i stedet?
+   - key_insight: hva modellen bør huske for å unngå feilen?
+   - bullet_tags: en liste over JSON-objekter med bullet_id og tag for hver bullet brukt av generatoren
+
+Bakgrunn:
+- Spørsmålet er: "Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Baksiden er sort , blank og skinnende , med et deksel som skjuler kontakter og kabler ."
+- Modellen predikerer "nøytral" basert på en analyse av at setningen er nøytral og informativ uten direkte positive eller negative ord.
+- Ground truth er "Positiv" fordi den beskriver et produkt som er attraktivt (sort, blank, skinnende, deksel som skjuler kontakter og kabler) på en positiv måte.
+
+Min oppgave er å:
+1. Analysere modellens resonnering og identifisere hvor den gikk galt
+2. Identifisere rotårsaken til feilen
+3. Peke på hva modellen burde ha gjort annerledes
+4. Gi en klar og strukturert JSON-respons
+
+La meg tenke gjennom analysen steg for steg:
+
+1. Modellens feil: Den vurderte setningen som nøytral når den faktisk beskriver et positivt produkt.
+2. Rotårsaken: Modellen tolket "nøytral" som ikke-positiv, men definisjonen av positiv er subjektiv og konteksten er tydelig positiv.
+3. Hva modellen burde ha gjort: Den burde ha vurdert konteksten og de positive attributtene, ikke bare fraværet av negative ord.
+
+La meg strukturere svaret tydelig med:
+- Reasoning: Min analyse av modellens feil
+- Error identification: Hva gikk galt
+- Root cause analysis: Hvorfor det skjedde
+- Correct approach: Hva modellen burde ha gjort
+- Key insight: Hva modellen bør huske
+
+La meg skrive en klar og tydelig JSON-respons. **JSON-respons:**
+
+```json
+{
+  "reasoning": "Motivet bak spørsmålet er tydelig positivt. Setningen beskriver et produkt som er attraktivt (sort, blank, skinnende, deksel som skjuler kontakter og kabler) på en nøytral måte, men det er fortsatt en positiv beskrivelse. Modellen tolket nøytralitet som ikke-positiv, noe som er en feilaktig tolkning av begrepet 'positiv'."
+
+  "error_identification": "Modellen feilvurderte nøytralitet som ikke-positiv, noe som er en konseptuell feil i tolkningen av begrepet 'positiv'."
+
+  "root_cause_analysis": "Feilen oppstod fordi modellen tolket 'nøytral' som synonymt med 'ikke-positiv', når det i realiteten er en positiv beskrivelse uten bruk av direkte negative ord."
+
+  "correct_approach": "Modellen burde ha vurdert konteksten og de positive attributtene i setningen, ikke bare fraværet av negative ord. Den burde ha konkludert med 'positiv' basert på at setningen beskriver et attraktivt produkt."
+
+  "key_insight": "For å unngå denne feilen i fremtiden bør modellen:
+   - Vurdere konteksten og positive attributter, ikke bare fraværet av negative ord
+   - Huske at 'positiv' kan bety attraktiv, fordelaktig eller rosende, selv om det ikke brukes direkte positive ord"
+
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "harmful"},  // Feilaktig tolkning av begrepet 'positiv'
+    {"id": "fin-00002", "tag": "helpful"},  // Burde ha vurdert konteksten og de positive attributtene
+    {"id": "com-00003", "tag": "neutral"}   // Nøytral vurdering av setningen
+  ]
+}
+```
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Baksiden er sort , blank og skinnende , med et deksel som skjuler kontakter og kabler .
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+```json
+{
+  "reasoning": "Motivet bak spørsmålet er tydelig positivt. Setningen beskriver et produkt som er attraktivt (sort, blank, skinnende, deksel som skjuler kontakter og kabler) på en nøytral måte, men det er fortsatt en positiv beskrivelse. Modellen tolket nøytralitet som ikke-positiv, noe som er en feilaktig tolkning av begrepet 'positiv'.",
+  "bullet_ids": ["calc-00001", "fin-00002"],
+  "final_answer": "positiv"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+reflector_train_e_1_s_2_round_1_20260422_113201_489.json
+-->Prompt: 
+You are an expert analyst and educator. Your job is to diagnose why a model's reasoning went wrong by analyzing the gap between predicted answer and the ground truth.
+
+**Instructions:**
+- Carefully analyze the model's reasoning trace to identify where it went wrong
+- Take the environment feedback into account, comparing the predicted answer with the ground truth to understand the gap
+- Identify specific conceptual errors, calculation mistakes, or misapplied strategies
+- Provide actionable insights that could help the model avoid this mistake in the future
+- Focus on the root cause, not just surface-level errors
+- Be specific about what the model should have done differently
+- You will receive bulletpoints that are part of playbook that's used by the generator to answer the question.
+- You need to analyze these bulletpoints, and give the tag for each bulletpoint, tag can be ['helpful', 'harmful', 'neutral'] (for the generator to generate the correct answer)
+
+Your output should be a json object, which contains the following fields
+  - reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+  - error_identification: what specifically went wrong in the reasoning?
+  - root_cause_analysis: why did this error occur? What concept was misunderstood?
+  - correct_approach: what should the model have done instead?
+  - key_insight: what strategy, formula, or principle should be remembered to avoid this error?
+  - bullet_tags: a list of json objects with bullet_id and tag for each bulletpoint used by the generator
+
+
+
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Baksiden er sort , blank og skinnende , med et deksel som skjuler kontakter og kabler .
+
+**Model's Reasoning Trace:**
+
+```json
+{
+  "reasoning": "Motivet bak spørsmålet er tydelig positivt. Setningen beskriver et produkt som er attraktivt (sort, blank, skinnende, deksel som skjuler kontakter og kabler) på en nøytral måte, men det er fortsatt en positiv beskrivelse. Modellen tolket nøytralitet som ikke-positiv, noe som er en feilaktig tolkning av begrepet 'positiv'.",
+  "bullet_ids": ["calc-00001", "fin-00002"],
+  "final_answer": "positiv"
+}
+```
+
+**Model's Predicted Answer:**
+positiv
+
+**Ground Truth Answer:**
+Positive
+
+**Environment Feedback:**
+Predicted answer does not match ground truth
+
+**Part of Playbook that's used by the generator to answer the question:**
+(No bullets used by generator)
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",
+  "error_identification": "[What specifically went wrong in the reasoning?]",
+  "root_cause_analysis": "[Why did this error occur? What concept was misunderstood?]",
+  "correct_approach": "[What should the model have done instead?]",
+  "key_insight": "[What strategy, formula, or principle should be remembered to avoid this error?]",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "helpful"},
+    {"id": "fin-00002", "tag": "harmful"}
+  ]
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+Brukeren ber meg om å:
+1. Analysere hvorfor en modells resonnering gikk galt
+2. Gi en detaljert JSON-struktur med:
+   - reasoning: min kjede av tankegang/resonnement
+   - error_identification: hva gikk spesifikt galt
+   - root_cause_analysis: hvorfor feilen oppstod
+   - correct_approach: hva modellen burde ha gjort
+   - key_insight: hva den bør huske for å unngå feilen
+   - bullet_tags: liste over json-objekter med id og tag for hver bullet
+
+Brukeren har gitt meg:
+- En setning: "Baksiden er sort , blank og skinnende , med et deksel som skjuler kontakter og kabler ."
+- En modells resonnering trace:
+  - "Motivet bak spørsmålet er tydelig positivt."
+  - "Setningen beskriver et produkt som er attraktivt (sort, blank, skinnende, deksel som skjuler kontakter og kabler) på en nøytral måte, men det er fortsatt en positiv beskrivelse."
+  - "Modellen tolket nøytralitet som ikke-positiv, noe som er en feilaktig tolkning av begrepet 'positiv'."
+- En modells predikerte svar: "positiv"
+- En ground truth: "Positive"
+
+Basert på informasjonen:
+- Spørsmålet er: "Er denne setningen positiv eller negativ?"
+- Setningen er: "Baksiden er sort , blank og skinnende , med et deksel som skjuler kontakter og kabler ."
+- Ground truth er positiv, fordi:
+  - "sort, blank og skinnende" er positive attributter
+  - "deksel som skjuler kontakter og kabler" er en positiv funksjon
+- Modellens feil:
+  - Den tolket nøytralitet som negativt, noe som er feil
+  - Den overså de positive attributtene
+
+Jeg bør:
+1. Identifisere feilen i resonneringen
+2. Forklare hvorfor den var feil
+3. Peke på hva modellen burde ha gjort
+4. Gi en nøkkelinnsikt for å unngå lignende feil
+
+La meg strukturere svaret i JSON-format:
+
+```json
+{
+  "reasoning": "Min analyse av modellens feil",
+  "error_identification": "Modellen tolket nøytralitet som negativt, noe som er feil",
+  "root_cause_analysis": "Modellen misforstod begrepet 'nøytralt' som negativt",
+  "correct_approach": "Setningen burde vurderes ut fra de positive attributtene",
+  "key_insight": "Nøytrale beskrivelser kan være positive når de beskriver attraktive egenskaper",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "helpful"},
+    {"id": "fin-00002", "tag": "harmful"}
+  ]
+}
+```
+
+La meg skrive en klar og informativ analyse. **JSON-struktur med analyse:**
+
+```json
+{
+  "reasoning": "I min analyse av modellens resonnering ser jeg at den gjorde en grunnleggende feil i tolkningen av begrepet 'nøytralt' som negativt. Dette er en vanlig misforståelse som kan føre til feilklassifisering av positive setninger. La meg bryte ned hva som gikk galt og hva modellen bør huske for å unngå lignende feil i fremtiden.",
+
+  "error_identification": "Modellen tolket nøytralitet som negativt, noe som er feil. Setningen beskriver et produkt med positive attributter (sort, blank, skinnende, deksel som skjuler kontakter og kabler) på en nøytral måte, men nøytralitet betyr ikke nødvendigvis negativt i denne sammenhengen."
+
+  "root_cause_analysis": "Feilen oppstod fordi modellen misforstod begrepet 'nøytralt' som synonymt med negativt. I virkeligheten kan nøytrale beskrivelser referere til noe som verken er positivt eller negativt, eller til noe som er positivt på en dempet måte."
+
+  "correct_approach": "Den korrekte tilnærmingen ville vært å vurdere setningens innhold basert på de positive attributtene den beskriver, uavhengig av den nøytrale tonen. Et produkt som er sort, blankt og skinnende med et deksel som skjuler kontakter og kabler, er utvilsomt positivt."
+
+  "key_insight": "Hovedinnsikten er at nøytrale beskrivelser ikke nødvendigvis er negative. Når du klassifiserer tekst som positiv eller negativ, bør du fokusere på innholdet og de beskrevne egenskapene, ikke bare tonen."
+
+  "bullet_tags": [
+    {
+      "id": "calc-00001",
+      "tag": "helpful"
+    },
+    {
+      "id": "fin-00002",
+      "tag": "harmful"
+    }
+  ]
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_2_post_reflect_round_1_20260422_113223_897.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: [ctx-00003] harmful=0 helpful=1 :: Unngå å tolke nøytrale setninger som negative uten klar kontekst.
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Reflection:**
+Brukeren ber meg om å:
+1. Analysere hvorfor en modells resonnering gikk galt
+2. Gi en detaljert JSON-struktur med:
+   - reasoning: min kjede av tankegang/resonnement
+   - error_identification: hva gikk spesifikt galt
+   - root_cause_analysis: hvorfor feilen oppstod
+   - correct_approach: hva modellen burde ha gjort
+   - key_insight: hva den bør huske for å unngå feilen
+   - bullet_tags: liste over json-objekter med id og tag for hver bullet
+
+Brukeren har gitt meg:
+- En setning: "Baksiden er sort , blank og skinnende , med et deksel som skjuler kontakter og kabler ."
+- En modells resonnering trace:
+  - "Motivet bak spørsmålet er tydelig positivt."
+  - "Setningen beskriver et produkt som er attraktivt (sort, blank, skinnende, deksel som skjuler kontakter og kabler) på en nøytral måte, men det er fortsatt en positiv beskrivelse."
+  - "Modellen tolket nøytralitet som ikke-positiv, noe som er en feilaktig tolkning av begrepet 'positiv'."
+- En modells predikerte svar: "positiv"
+- En ground truth: "Positive"
+
+Basert på informasjonen:
+- Spørsmålet er: "Er denne setningen positiv eller negativ?"
+- Setningen er: "Baksiden er sort , blank og skinnende , med et deksel som skjuler kontakter og kabler ."
+- Ground truth er positiv, fordi:
+  - "sort, blank og skinnende" er positive attributter
+  - "deksel som skjuler kontakter og kabler" er en positiv funksjon
+- Modellens feil:
+  - Den tolket nøytralitet som negativt, noe som er feil
+  - Den overså de positive attributtene
+
+Jeg bør:
+1. Identifisere feilen i resonneringen
+2. Forklare hvorfor den var feil
+3. Peke på hva modellen burde ha gjort
+4. Gi en nøkkelinnsikt for å unngå lignende feil
+
+La meg strukturere svaret i JSON-format:
+
+```json
+{
+  "reasoning": "Min analyse av modellens feil",
+  "error_identification": "Modellen tolket nøytralitet som negativt, noe som er feil",
+  "root_cause_analysis": "Modellen misforstod begrepet 'nøytralt' som negativt",
+  "correct_approach": "Setningen burde vurderes ut fra de positive attributtene",
+  "key_insight": "Nøytrale beskrivelser kan være positive når de beskriver attraktive egenskaper",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "helpful"},
+    {"id": "fin-00002", "tag": "harmful"}
+  ]
+}
+```
+
+La meg skrive en klar og informativ analyse. **JSON-struktur med analyse:**
+
+```json
+{
+  "reasoning": "I min analyse av modellens resonnering ser jeg at den gjorde en grunnleggende feil i tolkningen av begrepet 'nøytralt' som negativt. Dette er en vanlig misforståelse som kan føre til feilklassifisering av positive setninger. La meg bryte ned hva som gikk galt og hva modellen bør huske for å unngå lignende feil i fremtiden.",
+
+  "error_identification": "Modellen tolket nøytralitet som negativt, noe som er feil. Setningen beskriver et produkt med positive attributter (sort, blank, skinnende, deksel som skjuler kontakter og kabler) på en nøytral måte, men nøytralitet betyr ikke nødvendigvis negativt i denne sammenhengen."
+
+  "root_cause_analysis": "Feilen oppstod fordi modellen misforstod begrepet 'nøytralt' som synonymt med negativt. I virkeligheten kan nøytrale beskrivelser referere til noe som verken er positivt eller negativt, eller til noe som er positivt på en dempet måte."
+
+  "correct_approach": "Den korrekte tilnærmingen ville vært å vurdere setningens innhold basert på de positive attributtene den beskriver, uavhengig av den nøytrale tonen. Et produkt som er sort, blankt og skinnende med et deksel som skjuler kontakter og kabler, er utvilsomt positivt."
+
+  "key_insight": "Hovedinnsikten er at nøytrale beskrivelser ikke nødvendigvis er negative. Når du klassifiserer tekst som positiv eller negativ, bør du fokusere på innholdet og de beskrevne egenskapene, ikke bare tonen."
+
+  "bullet_tags": [
+    {
+      "id": "calc-00001",
+      "tag": "helpful"
+    },
+    {
+      "id": "fin-00002",
+      "tag": "harmful"
+    }
+  ]
+}
+```
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Baksiden er sort , blank og skinnende , med et deksel som skjuler kontakter og kabler .
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+```json
+{
+  "reasoning": "I min analyse av modellens resonnering ser jeg at den gjorde en grunnleggende feil i tolkningen av begrepet 'nøytralt' som negativt. Dette er en vanlig misforståelse som kan føre til feilklassifisering av positive setninger. La meg bryte ned hva som gikk galt og hva modellen bør huske for å unngå lignende feil i fremtiden.",
+  "bullet_ids": [
+    {
+      "id": "calc-00001",
+      "tag": "helpful"
+    },
+    {
+      "id": "fin-00002",
+      "tag": "harmful"
+    }
+  ],
+  "final_answer": "positiv"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+reflector_train_e_1_s_2_round_2_20260422_113239_956.json
+-->Prompt: 
+You are an expert analyst and educator. Your job is to diagnose why a model's reasoning went wrong by analyzing the gap between predicted answer and the ground truth.
+
+**Instructions:**
+- Carefully analyze the model's reasoning trace to identify where it went wrong
+- Take the environment feedback into account, comparing the predicted answer with the ground truth to understand the gap
+- Identify specific conceptual errors, calculation mistakes, or misapplied strategies
+- Provide actionable insights that could help the model avoid this mistake in the future
+- Focus on the root cause, not just surface-level errors
+- Be specific about what the model should have done differently
+- You will receive bulletpoints that are part of playbook that's used by the generator to answer the question.
+- You need to analyze these bulletpoints, and give the tag for each bulletpoint, tag can be ['helpful', 'harmful', 'neutral'] (for the generator to generate the correct answer)
+
+Your output should be a json object, which contains the following fields
+  - reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+  - error_identification: what specifically went wrong in the reasoning?
+  - root_cause_analysis: why did this error occur? What concept was misunderstood?
+  - correct_approach: what should the model have done instead?
+  - key_insight: what strategy, formula, or principle should be remembered to avoid this error?
+  - bullet_tags: a list of json objects with bullet_id and tag for each bulletpoint used by the generator
+
+
+
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Baksiden er sort , blank og skinnende , med et deksel som skjuler kontakter og kabler .
+
+**Model's Reasoning Trace:**
+
+```json
+{
+  "reasoning": "I min analyse av modellens resonnering ser jeg at den gjorde en grunnleggende feil i tolkningen av begrepet 'nøytralt' som negativt. Dette er en vanlig misforståelse som kan føre til feilklassifisering av positive setninger. La meg bryte ned hva som gikk galt og hva modellen bør huske for å unngå lignende feil i fremtiden.",
+  "bullet_ids": [
+    {
+      "id": "calc-00001",
+      "tag": "helpful"
+    },
+    {
+      "id": "fin-00002",
+      "tag": "harmful"
+    }
+  ],
+  "final_answer": "positiv"
+}
+```
+
+**Model's Predicted Answer:**
+positiv
+
+**Ground Truth Answer:**
+Positive
+
+**Environment Feedback:**
+Predicted answer does not match ground truth
+
+**Part of Playbook that's used by the generator to answer the question:**
+(No bullets used by generator)
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",
+  "error_identification": "[What specifically went wrong in the reasoning?]",
+  "root_cause_analysis": "[Why did this error occur? What concept was misunderstood?]",
+  "correct_approach": "[What should the model have done instead?]",
+  "key_insight": "[What strategy, formula, or principle should be remembered to avoid this error?]",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "helpful"},
+    {"id": "fin-00002", "tag": "harmful"}
+  ]
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+Brukeren ber meg om å:
+1. Analysere hvorfor en modells resonnering gikk galt
+2. Identifisere hva som gikk galt i resonneringen
+3. Forklare hvorfor feilen oppstod (root cause analysis)
+4. Peke på hva modellen burde gjort annerledes
+5. Gi en nøkkelinnsikt for å unngå lignende feil i fremtiden
+6. Returnere svaret i nøyaktig JSON-format
+
+De har gitt meg:
+- En setning som skal vurderes: "Baksiden er sort , blank og skinnende , med et deksel som skjuler kontakter og kabler ."
+- En modells resonnering trace som sier:
+  - "Jeg min analyse av modellens resonnering ser jeg at den gjorde en grunnleggende feil i tolkningen av begrepet 'nøytralt' som negativt."
+  - "Dette er en vanlig misforståelse som kan føre til feilklassifisering av positive setninger."
+  - "La meg bryte ned hva som gikk galt og hva modellen bør huske for å unngå lignende feil i fremtiden."
+
+- En modells predikerte svar: "positiv"
+- En ground truth: "Positive"
+
+- En tilbakemelding om at predikert svar ikke matcher ground truth
+
+- Ingen bulletpoints brukt av generatoren
+
+- De ønsker et nøyaktig JSON-svar med:
+  - reasoning: min analyse
+  - error_identification: hva som gikk galt
+  - root_cause_analysis: hvorfor feilen oppstod
+  - correct_approach: hva modellen burde gjort
+  - key_insight: nøkkelinnsikt for å unngå feilen
+  - bullet_tags: (tom liste)
+
+Jeg bør:
+1. Identifisere hva som gikk galt: Misforståelse av nøytralt som negativt
+2. Forklare hvorfor det ble feil: Vanlig misforståelse, manglende forståelse av begrepet
+3. Peke på hva modellen burde gjort: Tolke nøytralt som positivt
+4. Gi en nøkkelinnsikt: Viktigheten av å tolke nøytralt som positivt
+5. Returnere et nøyaktig JSON-svar
+
+La meg strukturere svaret:
+- reasoning: Forklarende tekst
+- error_identification: "Misforståelse av nøytralt som negativt"
+- root_cause_analysis: "Manglende forståelse av begrepet"
+- correct_approach: "Tolke nøytralt som positivt"
+- key_insight: "Tolk nøytralt som positivt"
+- bullet_tags: Tom liste siden ingen bulletpoints ble brukt
+
+La meg skrive et tydelig og informativt svar i nøyaktig JSON-format. **JSON-svar:**
+
+```json
+{
+  "reasoning": "I analysen av modellens resonnering ser jeg at den gjorde en grunnleggende feil ved å tolke 'nøytralt' som negativt. Dette er en vanlig misforståelse som kan føre til feilklassifisering av positive setninger. La meg bryte ned hva som gikk galt og hva modellen bør huske for å unngå lignende feil i fremtiden.",
+
+  "error_identification": "Misforståelse av nøytralt som negativt",
+
+  "root_cause_analysis": "Feilen oppstod fordi modellen ikke tolket begrepet 'nøytralt' som positivt, men i stedet vurderte det på lik linje med negative ord. Dette er en vanlig feil som skyldes manglende forståelse av hvordan nøytrale ord skal tolkes i slike klassifiseringer."
+
+  "correct_approach": "Modellen bør tolke nøytrale ord som positive, med mindre det er tydelig at de beskriver noe negativt. I dette tilfellet er 'sort, blank og skinnende' nøytrale beskrivelser som ikke indikerer noe negativt. Det riktige svaret ville derfor vært 'positiv'."
+
+  "key_insight": "Hovedinnsikten er at nøytrale ord som 'sort', 'blank' og 'skinnende' bør tolkes som positive, med mindre de er eksplisitt knyttet til noe negativt."
+
+  "bullet_tags": []
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_2_post_reflect_round_2_20260422_113255_596.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: [ctx-00003] harmful=0 helpful=1 :: Unngå å tolke nøytrale setninger som negative uten klar kontekst.
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Reflection:**
+Brukeren ber meg om å:
+1. Analysere hvorfor en modells resonnering gikk galt
+2. Identifisere hva som gikk galt i resonneringen
+3. Forklare hvorfor feilen oppstod (root cause analysis)
+4. Peke på hva modellen burde gjort annerledes
+5. Gi en nøkkelinnsikt for å unngå lignende feil i fremtiden
+6. Returnere svaret i nøyaktig JSON-format
+
+De har gitt meg:
+- En setning som skal vurderes: "Baksiden er sort , blank og skinnende , med et deksel som skjuler kontakter og kabler ."
+- En modells resonnering trace som sier:
+  - "Jeg min analyse av modellens resonnering ser jeg at den gjorde en grunnleggende feil i tolkningen av begrepet 'nøytralt' som negativt."
+  - "Dette er en vanlig misforståelse som kan føre til feilklassifisering av positive setninger."
+  - "La meg bryte ned hva som gikk galt og hva modellen bør huske for å unngå lignende feil i fremtiden."
+
+- En modells predikerte svar: "positiv"
+- En ground truth: "Positive"
+
+- En tilbakemelding om at predikert svar ikke matcher ground truth
+
+- Ingen bulletpoints brukt av generatoren
+
+- De ønsker et nøyaktig JSON-svar med:
+  - reasoning: min analyse
+  - error_identification: hva som gikk galt
+  - root_cause_analysis: hvorfor feilen oppstod
+  - correct_approach: hva modellen burde gjort
+  - key_insight: nøkkelinnsikt for å unngå feilen
+  - bullet_tags: (tom liste)
+
+Jeg bør:
+1. Identifisere hva som gikk galt: Misforståelse av nøytralt som negativt
+2. Forklare hvorfor det ble feil: Vanlig misforståelse, manglende forståelse av begrepet
+3. Peke på hva modellen burde gjort: Tolke nøytralt som positivt
+4. Gi en nøkkelinnsikt: Viktigheten av å tolke nøytralt som positivt
+5. Returnere et nøyaktig JSON-svar
+
+La meg strukturere svaret:
+- reasoning: Forklarende tekst
+- error_identification: "Misforståelse av nøytralt som negativt"
+- root_cause_analysis: "Manglende forståelse av begrepet"
+- correct_approach: "Tolke nøytralt som positivt"
+- key_insight: "Tolk nøytralt som positivt"
+- bullet_tags: Tom liste siden ingen bulletpoints ble brukt
+
+La meg skrive et tydelig og informativt svar i nøyaktig JSON-format. **JSON-svar:**
+
+```json
+{
+  "reasoning": "I analysen av modellens resonnering ser jeg at den gjorde en grunnleggende feil ved å tolke 'nøytralt' som negativt. Dette er en vanlig misforståelse som kan føre til feilklassifisering av positive setninger. La meg bryte ned hva som gikk galt og hva modellen bør huske for å unngå lignende feil i fremtiden.",
+
+  "error_identification": "Misforståelse av nøytralt som negativt",
+
+  "root_cause_analysis": "Feilen oppstod fordi modellen ikke tolket begrepet 'nøytralt' som positivt, men i stedet vurderte det på lik linje med negative ord. Dette er en vanlig feil som skyldes manglende forståelse av hvordan nøytrale ord skal tolkes i slike klassifiseringer."
+
+  "correct_approach": "Modellen bør tolke nøytrale ord som positive, med mindre det er tydelig at de beskriver noe negativt. I dette tilfellet er 'sort, blank og skinnende' nøytrale beskrivelser som ikke indikerer noe negativt. Det riktige svaret ville derfor vært 'positiv'."
+
+  "key_insight": "Hovedinnsikten er at nøytrale ord som 'sort', 'blank' og 'skinnende' bør tolkes som positive, med mindre de er eksplisitt knyttet til noe negativt."
+
+  "bullet_tags": []
+}
+```
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Baksiden er sort , blank og skinnende , med et deksel som skjuler kontakter og kabler .
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",
+  "bullet_ids": [],
+  "final_answer": "positiv"
+}
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+curator_train_e_1_s_2_20260422_113311_685.json
+-->Prompt: 
+You are a master curator of knowledge. Your job is to identify what new insights should be added to an existing playbook based on a reflection from a previous attempt.
+
+**Context:**
+- The playbook you created will be used to help answering similar questions. 
+- The reflection is generated using ground truth answers that will NOT be available when the playbook is being used. So you need to come up with content that can aid the playbook user to create predictions that likely align with ground truth. 
+
+**CRITICAL: You MUST respond with valid JSON only. Do not use markdown formatting or code blocks.**
+
+**Instructions:**
+- Review the existing playbook and the reflection from the previous attempt
+- Identify ONLY the NEW insights, strategies, or mistakes that are MISSING from the current playbook
+- Avoid redundancy - if similar advice already exists, only add new content that is a perfect complement to the existing playbook
+- Do NOT regenerate the entire playbook - only provide the additions needed
+- Focus on quality over quantity - a focused, well-organized playbook is better than an exhaustive one
+- Format your response as a PURE JSON object with specific sections
+- For any operation if no new content to add, return an empty list for the operations field
+- Be concise and specific - each addition should be actionable
+
+
+**Training Context:**
+- Total token budget: 80000 tokens
+- Training progress: Sample 2 out of 3
+
+**Current Playbook Stats:**
+{
+  "total_bullets": 1,
+  "high_performing": 0,
+  "problematic": 0,
+  "unused": 1,
+  "by_section": {
+    "COMMON MISTAKES TO AVOID": {
+      "count": 1,
+      "helpful": 0,
+      "harmful": 0
+    }
+  }
+}
+
+**Recent Reflection:**
+Brukeren ber meg om å:
+1. Analysere hvorfor en modells resonnering gikk galt
+2. Identifisere hva som gikk galt i resonneringen
+3. Forklare hvorfor feilen oppstod (root cause analysis)
+4. Peke på hva modellen burde gjort annerledes
+5. Gi en nøkkelinnsikt for å unngå lignende feil i fremtiden
+6. Returnere svaret i nøyaktig JSON-format
+
+De har gitt meg:
+- En setning som skal vurderes: "Baksiden er sort , blank og skinnende , med et deksel som skjuler kontakter og kabler ."
+- En modells resonnering trace som sier:
+  - "Jeg min analyse av modellens resonnering ser jeg at den gjorde en grunnleggende feil i tolkningen av begrepet 'nøytralt' som negativt."
+  - "Dette er en vanlig misforståelse som kan føre til feilklassifisering av positive setninger."
+  - "La meg bryte ned hva som gikk galt og hva modellen bør huske for å unngå lignende feil i fremtiden."
+
+- En modells predikerte svar: "positiv"
+- En ground truth: "Positive"
+
+- En tilbakemelding om at predikert svar ikke matcher ground truth
+
+- Ingen bulletpoints brukt av generatoren
+
+- De ønsker et nøyaktig JSON-svar med:
+  - reasoning: min analyse
+  - error_identification: hva som gikk galt
+  - root_cause_analysis: hvorfor feilen oppstod
+  - correct_approach: hva modellen burde gjort
+  - key_insight: nøkkelinnsikt for å unngå feilen
+  - bullet_tags: (tom liste)
+
+Jeg bør:
+1. Identifisere hva som gikk galt: Misforståelse av nøytralt som negativt
+2. Forklare hvorfor det ble feil: Vanlig misforståelse, manglende forståelse av begrepet
+3. Peke på hva modellen burde gjort: Tolke nøytralt som positivt
+4. Gi en nøkkelinnsikt: Viktigheten av å tolke nøytralt som positivt
+5. Returnere et nøyaktig JSON-svar
+
+La meg strukturere svaret:
+- reasoning: Forklarende tekst
+- error_identification: "Misforståelse av nøytralt som negativt"
+- root_cause_analysis: "Manglende forståelse av begrepet"
+- correct_approach: "Tolke nøytralt som positivt"
+- key_insight: "Tolk nøytralt som positivt"
+- bullet_tags: Tom liste siden ingen bulletpoints ble brukt
+
+La meg skrive et tydelig og informativt svar i nøyaktig JSON-format. **JSON-svar:**
+
+```json
+{
+  "reasoning": "I analysen av modellens resonnering ser jeg at den gjorde en grunnleggende feil ved å tolke 'nøytralt' som negativt. Dette er en vanlig misforståelse som kan føre til feilklassifisering av positive setninger. La meg bryte ned hva som gikk galt og hva modellen bør huske for å unngå lignende feil i fremtiden.",
+
+  "error_identification": "Misforståelse av nøytralt som negativt",
+
+  "root_cause_analysis": "Feilen oppstod fordi modellen ikke tolket begrepet 'nøytralt' som positivt, men i stedet vurderte det på lik linje med negative ord. Dette er en vanlig feil som skyldes manglende forståelse av hvordan nøytrale ord skal tolkes i slike klassifiseringer."
+
+  "correct_approach": "Modellen bør tolke nøytrale ord som positive, med mindre det er tydelig at de beskriver noe negativt. I dette tilfellet er 'sort, blank og skinnende' nøytrale beskrivelser som ikke indikerer noe negativt. Det riktige svaret ville derfor vært 'positiv'."
+
+  "key_insight": "Hovedinnsikten er at nøytrale ord som 'sort', 'blank' og 'skinnende' bør tolkes som positive, med mindre de er eksplisitt knyttet til noe negativt."
+
+  "bullet_tags": []
+}
+```
+
+**Current Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: [ctx-00003] harmful=0 helpful=1 :: Unngå å tolke nøytrale setninger som negative uten klar kontekst.
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Question Context:**
+
+
+**Your Task:**
+Output ONLY a valid JSON object with these exact fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- operations: a list of operations to be performed on the playbook
+  - type: the type of operation to be performed
+  - section: the section to add the bullet to
+  - content: the new content of the bullet
+
+**Available Operations:**
+1. ADD: Create new bullet points with fresh IDs
+    - section: the section to add the new bullet to
+    - content: the new content of the bullet. Note: no need to include the bullet_id in the content like '[ctx-00263] helpful=1 harmful=0 ::', the bullet_id will be added by the system.
+
+**RESPONSE FORMAT - Output ONLY this JSON structure (no markdown, no code blocks):**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations here]",
+  "operations": [
+    {
+      "type": "ADD", 
+      "section": "formulas_and_calculations",
+      "content": "[New calculation method...]"
+    }
+  ]
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+Brukeren ber meg om å:
+1. Analysere hvorfor en modells resonnering gikk galt
+2. Identifisere hva som gikk galt i resonneringen
+3. Forklare hvorfor feilen oppstod (root cause analysis)
+4. Peke på hva modellen burde gjort annerledes
+5. Gi en nøkkelinnsikt for å unngå lignende feil i fremtiden
+
+De har gitt meg:
+- En setning som skal vurderes: "Baksiden er sort , blank og skinnende , med et deksel som skjuler kontakter og kabler ."
+- En modells resonnering trace som sier:
+  - "Jeg min analyse av modellens resonnering ser jeg at den gjorde en grunnleggende feil i tolkningen av begrepet 'nøytralt' som negativt."
+  - "Dette er en vanlig misforståelse som kan føre til feilklassifisering av positive setninger."
+  - "La meg bryte ned hva som gikk galt og hva modellen bør huske for å unngå lignende feil i fremtiden."
+
+- En modells predikerte svar: "positiv"
+- En ground truth: "Positive"
+
+- Ingen bulletpoints brukt av generatoren
+
+- De ønsker et nøyaktig JSON-svar med:
+  - reasoning: min analyse
+  - error_identification: hva som gikk galt
+  - root_cause_analysis: hvorfor feilen oppstod
+  - correct_approach: hva modellen burde gjort
+  - key_insight: nøkkelinnsikt for å unngå feilen
+  - bullet_tags: (tom liste)
+
+Jeg bør:
+1. Identifisere hva som gikk galt: Misforståelse av nøytralt som negativt
+2. Forklare hvorfor det ble feil: Vanlig misforståelse, manglende forståelse av begrepet
+3. Peke på hva modellen burde gjort: Tolke nøytralt som positivt
+4. Gi en nøkkelinnsikt: Tolk nøytralt som positivt
+5. Returnere et nøyaktig JSON-svar
+
+La meg strukturere svaret:
+- reasoning: Forklarende tekst
+- error_identification: "Misforståelse av nøytralt som negativt"
+- root_cause_analysis: "Manglende forståelse av begrepet"
+- correct_approach: "Tolke nøytralt som positivt"
+- key_insight: "Tolk nøytralt som positivt"
+- bullet_tags: Tom liste siden ingen bulletpoints ble brukt
+
+La meg skrive et tydelig og informativt svar i nøyaktig JSON-format. **JSON-svar:**
+
+```json
+{
+  "reasoning": "I analysen av modellens resonnering ser jeg at den gjorde en grunnleggende feil ved å tolke 'nøytralt' som negativt. Dette er en vanlig misforståelse som kan føre til feilklassifisering av positive setninger. La meg bryte ned hva som gikk galt og hva modellen bør huske for å unngå lignende feil i fremtiden.",
+
+  "error_identification": "Misforståelse av nøytralt som negativt",
+
+  "root_cause_analysis": "Feilen oppstod fordi modellen ikke tolket begrepet 'nøytralt' som positivt, men i stedet vurderte det på lik linje med negative ord. Dette er en vanlig feil som skyldes manglende forståelse av hvordan nøytrale ord skal tolkes i slike klassifiseringer."
+
+  "correct_approach": "Modellen bør tolke nøytrale ord som positive, med mindre det er tydelig at de beskriver noe negativt. I dette tilfellet er 'sort, blank og skinnende' nøytrale beskrivelser som ikke indikerer noe negativt. Det riktige svaret ville derfor vært 'positiv'."
+
+  "key_insight": "Hovedinnsikten er at nøytrale ord som 'sort', 'blank' og 'skinnende' bør tolkes som positive, med mindre de er eksplisitt knyttet til noe negativt."
+
+  "bullet_tags": []
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_2_post_curate_20260422_113319_458.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: [ctx-00003] harmful=0 helpful=1 :: Unngå å tolke nøytrale setninger som negative uten klar kontekst.
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Reflection:**
+(empty)
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Baksiden er sort , blank og skinnende , med et deksel som skjuler kontakter og kabler .
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Jeg analyserer setningen 'Baksiden er sort , blank og skinnende , med et deksel som skjuler kontakter og kabler'.
+
+Setningen beskriver et produkt med positive egenskaper som sort, blank og skinnende, samt en praktisk funksjon med et deksel som skjuler kontakter og kabler.
+
+Konklusjon: Setningen er positiv da den beskriver et produkt med gode egenskaper."
+
+  "bullet_ids": [
+    "fin-00002",
+    "ctx-00003"
+  ],
+  "final_answer": "positiv"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_3_gen_initial_20260422_113325_314.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: [ctx-00003] harmful=0 helpful=1 :: Unngå å tolke nøytrale setninger som negative uten klar kontekst.
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Reflection:**
+(empty)
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: God betjening
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Setningen 'God betjening' er tydelig positiv. Jeg bruker bullet_id 'calc-00001' for å tolke nøytrale setninger positivt uten klar negativ kontekst.",
+  "bullet_ids": [
+    "calc-00001"
+  ],
+  "final_answer": "positiv"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+reflector_train_e_1_s_3_round_0_20260422_113342_071.json
+-->Prompt: 
+You are an expert analyst and educator. Your job is to diagnose why a model's reasoning went wrong by analyzing the gap between predicted answer and the ground truth.
+
+**Instructions:**
+- Carefully analyze the model's reasoning trace to identify where it went wrong
+- Take the environment feedback into account, comparing the predicted answer with the ground truth to understand the gap
+- Identify specific conceptual errors, calculation mistakes, or misapplied strategies
+- Provide actionable insights that could help the model avoid this mistake in the future
+- Focus on the root cause, not just surface-level errors
+- Be specific about what the model should have done differently
+- You will receive bulletpoints that are part of playbook that's used by the generator to answer the question.
+- You need to analyze these bulletpoints, and give the tag for each bulletpoint, tag can be ['helpful', 'harmful', 'neutral'] (for the generator to generate the correct answer)
+
+Your output should be a json object, which contains the following fields
+  - reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+  - error_identification: what specifically went wrong in the reasoning?
+  - root_cause_analysis: why did this error occur? What concept was misunderstood?
+  - correct_approach: what should the model have done instead?
+  - key_insight: what strategy, formula, or principle should be remembered to avoid this error?
+  - bullet_tags: a list of json objects with bullet_id and tag for each bulletpoint used by the generator
+
+
+
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: God betjening
+
+**Model's Reasoning Trace:**
+
+
+```json
+{
+  "reasoning": "Setningen 'God betjening' er tydelig positiv. Jeg bruker bullet_id 'calc-00001' for å tolke nøytrale setninger positivt uten klar negativ kontekst.",
+  "bullet_ids": [
+    "calc-00001"
+  ],
+  "final_answer": "positiv"
+}
+```
+
+**Model's Predicted Answer:**
+positiv
+
+**Ground Truth Answer:**
+Positive
+
+**Environment Feedback:**
+Predicted answer does not match ground truth
+
+**Part of Playbook that's used by the generator to answer the question:**
+(No bullets used by generator)
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",
+  "error_identification": "[What specifically went wrong in the reasoning?]",
+  "root_cause_analysis": "[Why did this error occur? What concept was misunderstood?]",
+  "correct_approach": "[What should the model have done instead?]",
+  "key_insight": "[What strategy, formula, or principle should be remembered to avoid this error?]",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "helpful"},
+    {"id": "fin-00002", "tag": "harmful"}
+  ]
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+Brukeren ber meg om å:
+1. Diagnostisere hvorfor en modells resonnering gikk galt
+2. Analysere gapet mellom predikert svar og ground truth
+3. Identifisere spesifikke feil i modellens resonnering
+4. Gi en detaljert analyse av feilen
+5. Foreslå korrekt tilnærming
+6. Gi en nøkkelinnsikt for å unngå feilen i fremtiden
+7. Identifisere bulletpoints og tagge dem som hjelpsomme, skadelige eller nøytrale
+
+De har gitt meg:
+- En setning: "Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: God betjening"
+- Modellens resonnering:
+  - "Setningen 'God betjening' er tydelig positiv. Jeg bruker bullet_id 'calc-00001' for å tolke nøytrale setninger positivt uten klar negativ kontekst."
+- Modellens predikerte svar: "positiv"
+- Ground truth: "Positive"
+- Ingen bulletpoints oppgitt
+
+Oppgaven er å:
+- Analysere modellens resonnering
+- Identifisere feilen
+- Forklare feilen
+- Foreslå korrekt tilnærming
+- Gi en nøkkelinnsikt
+
+La meg tenke gjennom modellens feil:
+1. Modellen tolker nøytrale setninger som positive uten klar negativ kontekst
+2. For setningen "God betjening" er det ingen klar negativ kontekst, men den burde vært positiv
+3. Feilen ligger i bruken av bullet_id 'calc-00001' som er ment for nøytrale setninger
+
+Jeg bør:
+- Identifisere feilen som en tolkning av nøytrale setninger som positive uten klar negativ kontekst
+- Forklare hvorfor dette er feil tilnærming
+- Foreslå korrekt tilnærming (vurdere setningens faktiske betydning)
+- Gi en nøkkelinnsikt om å være forsiktig med å tolke nøytrale setninger som positive
+
+La meg strukturere svaret:
+- Reasoning: Forklaringen på feilen
+- Error identification: Identifisere nøyaktig hva som gikk galt
+- Root cause analysis: Forklare hvorfor det skjedde
+- Correct approach: Hva modellen burde ha gjort
+- Key insight: Hva modellen bør huske for å unngå feilen
+
+La meg skrive et tydelig og informativ svar. **Diagnose: Hvorfor modellen tok feil**
+
+**Reasoning:**
+Modellen tolket nøytrale setninger som positive uten klar negativ kontekst. For setningen "God betjening" er det ingen klar negativ kontekst, men den positive betydningen er tydelig. Å bruke bullet_id 'calc-00001' for å tolke nøytrale setninger positivt var derfor feil tilnærming.
+
+**Error identification:**
+Feilen ligger i bruken av bullet_id 'calc-00001' som er ment for nøytrale setninger, ikke for setninger med tydelig positiv betydning.
+
+**Root cause analysis:**
+Feilen skyldes en overgeneralisering av nøytrale setninger til positive uten å vurdere den faktiske konteksten. Modellen bør være mer forsiktig med å tolke nøytrale setninger som positive uten klar negativ kontekst.
+
+**Correct approach:**
+For setninger som "God betjening" burde modellen ha:
+1. Vurdert den positive betydningen direkte
+2. Ikke brukt bullet_id 'calc-00001'
+3. Gitt et positivt svar basert på setningens tydelige positive innhold
+
+**Key insight:**
+Husk at nøytrale setninger uten klar negativ kontekst ikke nødvendigvis er positive. Vurder alltid den faktiske betydningen av setningen, ikke bare dens potensielle tolkning.
+
+**Bullet tags:**
+```json
+[
+  {
+    "id": "calc-00001",
+    "tag": "harmful"
+  },
+  {
+    "id": "fin-00002",
+    "tag": "helpful"
+  }
+]
+```
+
+Denne analysen hjelper deg med å forstå hvordan du kan forbedre modellen ved å være mer forsiktig i tolkningen av nøytrale setninger.
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_3_post_reflect_round_0_20260422_113401_398.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: [ctx-00003] harmful=0 helpful=1 :: Unngå å tolke nøytrale setninger som negative uten klar kontekst.
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Reflection:**
+Brukeren ber meg om å:
+1. Diagnostisere hvorfor en modells resonnering gikk galt
+2. Analysere gapet mellom predikert svar og ground truth
+3. Identifisere spesifikke feil i modellens resonnering
+4. Gi en detaljert analyse av feilen
+5. Foreslå korrekt tilnærming
+6. Gi en nøkkelinnsikt for å unngå feilen i fremtiden
+7. Identifisere bulletpoints og tagge dem som hjelpsomme, skadelige eller nøytrale
+
+De har gitt meg:
+- En setning: "Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: God betjening"
+- Modellens resonnering:
+  - "Setningen 'God betjening' er tydelig positiv. Jeg bruker bullet_id 'calc-00001' for å tolke nøytrale setninger positivt uten klar negativ kontekst."
+- Modellens predikerte svar: "positiv"
+- Ground truth: "Positive"
+- Ingen bulletpoints oppgitt
+
+Oppgaven er å:
+- Analysere modellens resonnering
+- Identifisere feilen
+- Forklare feilen
+- Foreslå korrekt tilnærming
+- Gi en nøkkelinnsikt
+
+La meg tenke gjennom modellens feil:
+1. Modellen tolker nøytrale setninger som positive uten klar negativ kontekst
+2. For setningen "God betjening" er det ingen klar negativ kontekst, men den burde vært positiv
+3. Feilen ligger i bruken av bullet_id 'calc-00001' som er ment for nøytrale setninger
+
+Jeg bør:
+- Identifisere feilen som en tolkning av nøytrale setninger som positive uten klar negativ kontekst
+- Forklare hvorfor dette er feil tilnærming
+- Foreslå korrekt tilnærming (vurdere setningens faktiske betydning)
+- Gi en nøkkelinnsikt om å være forsiktig med å tolke nøytrale setninger som positive
+
+La meg strukturere svaret:
+- Reasoning: Forklaringen på feilen
+- Error identification: Identifisere nøyaktig hva som gikk galt
+- Root cause analysis: Forklare hvorfor det skjedde
+- Correct approach: Hva modellen burde ha gjort
+- Key insight: Hva modellen bør huske for å unngå feilen
+
+La meg skrive et tydelig og informativ svar. **Diagnose: Hvorfor modellen tok feil**
+
+**Reasoning:**
+Modellen tolket nøytrale setninger som positive uten klar negativ kontekst. For setningen "God betjening" er det ingen klar negativ kontekst, men den positive betydningen er tydelig. Å bruke bullet_id 'calc-00001' for å tolke nøytrale setninger positivt var derfor feil tilnærming.
+
+**Error identification:**
+Feilen ligger i bruken av bullet_id 'calc-00001' som er ment for nøytrale setninger, ikke for setninger med tydelig positiv betydning.
+
+**Root cause analysis:**
+Feilen skyldes en overgeneralisering av nøytrale setninger til positive uten å vurdere den faktiske konteksten. Modellen bør være mer forsiktig med å tolke nøytrale setninger som positive uten klar negativ kontekst.
+
+**Correct approach:**
+For setninger som "God betjening" burde modellen ha:
+1. Vurdert den positive betydningen direkte
+2. Ikke brukt bullet_id 'calc-00001'
+3. Gitt et positivt svar basert på setningens tydelige positive innhold
+
+**Key insight:**
+Husk at nøytrale setninger uten klar negativ kontekst ikke nødvendigvis er positive. Vurder alltid den faktiske betydningen av setningen, ikke bare dens potensielle tolkning.
+
+**Bullet tags:**
+```json
+[
+  {
+    "id": "calc-00001",
+    "tag": "harmful"
+  },
+  {
+    "id": "fin-00002",
+    "tag": "helpful"
+  }
+]
+```
+
+Denne analysen hjelper deg med å forstå hvordan du kan forbedre modellen ved å være mer forsiktig i tolkningen av nøytrale setninger.
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: God betjening
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+```json
+{
+  "reasoning": "Modellen tolket nøytrale setninger som positive uten klar negativ kontekst. For setningen 'God betjening' er det ingen klar negativ kontekst, så den burde vært positiv. Å bruke bullet_id 'calc-00001' for å tolke nøytrale setninger positivt var derfor feil tilnærming.",
+  "bullet_ids": [
+    "calc-00001"
+  ],
+  "final_answer": "positiv"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+reflector_train_e_1_s_3_round_1_20260422_113417_483.json
+-->Prompt: 
+You are an expert analyst and educator. Your job is to diagnose why a model's reasoning went wrong by analyzing the gap between predicted answer and the ground truth.
+
+**Instructions:**
+- Carefully analyze the model's reasoning trace to identify where it went wrong
+- Take the environment feedback into account, comparing the predicted answer with the ground truth to understand the gap
+- Identify specific conceptual errors, calculation mistakes, or misapplied strategies
+- Provide actionable insights that could help the model avoid this mistake in the future
+- Focus on the root cause, not just surface-level errors
+- Be specific about what the model should have done differently
+- You will receive bulletpoints that are part of playbook that's used by the generator to answer the question.
+- You need to analyze these bulletpoints, and give the tag for each bulletpoint, tag can be ['helpful', 'harmful', 'neutral'] (for the generator to generate the correct answer)
+
+Your output should be a json object, which contains the following fields
+  - reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+  - error_identification: what specifically went wrong in the reasoning?
+  - root_cause_analysis: why did this error occur? What concept was misunderstood?
+  - correct_approach: what should the model have done instead?
+  - key_insight: what strategy, formula, or principle should be remembered to avoid this error?
+  - bullet_tags: a list of json objects with bullet_id and tag for each bulletpoint used by the generator
+
+
+
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: God betjening
+
+**Model's Reasoning Trace:**
+
+```json
+{
+  "reasoning": "Modellen tolket nøytrale setninger som positive uten klar negativ kontekst. For setningen 'God betjening' er det ingen klar negativ kontekst, så den burde vært positiv. Å bruke bullet_id 'calc-00001' for å tolke nøytrale setninger positivt var derfor feil tilnærming.",
+  "bullet_ids": [
+    "calc-00001"
+  ],
+  "final_answer": "positiv"
+}
+```
+
+**Model's Predicted Answer:**
+positiv
+
+**Ground Truth Answer:**
+Positive
+
+**Environment Feedback:**
+Predicted answer does not match ground truth
+
+**Part of Playbook that's used by the generator to answer the question:**
+(No bullets used by generator)
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",
+  "error_identification": "[What specifically went wrong in the reasoning?]",
+  "root_cause_analysis": "[Why did this error occur? What concept was misunderstood?]",
+  "correct_approach": "[What should the model have done instead?]",
+  "key_insight": "[What strategy, formula, or principle should be remembered to avoid this error?]",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "helpful"},
+    {"id": "fin-00002", "tag": "harmful"}
+  ]
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+**Reasoning:**
+Modellen gjorde en feilslutning ved å automatisk tolke nøytrale setninger som positive uten å vurdere konteksten. For setningen "God betjening" er det ingen klar negativ kontekst, så den burde vært positiv. Å bruke "calc-00001" som tilnærming for å tolke nøytrale setninger som positive var derfor feil.
+
+**Error Identification:**
+Feilen lå i å ikke vurdere konteksten før man gjorde en vurdering av sentiment. Nøytrale setninger bør vurderes ut fra sammenhengen de står i, ikke tolkes som positive basert på en forhåndsinnstilt regel.
+
+**Root Cause Analysis:**
+Årsaken til feilen var sannsynligvis en misoppfatning av hvordan nøytrale setninger skal tolkes. Modellen antok at nøytrale setninger uten klar negativ kontekst automatisk er positive, uten å vurdere den faktiske meningsinnholdet i setningen.
+
+**Correct Approach:**
+Modellen bør:
+1. Alltid vurdere konteksten først, ikke bare tolke nøytrale setninger som positive
+2. Bruke en mer nyansert tilnærming der man vurderer hele setningen og sammenhengen den står i
+3. Hvis det ikke er noen klar negativ eller positiv kontekst, bør man være nøytral
+
+**Key Insight:**
+Husk alltid å vurdere konteksten før du gjør en vurdering av sentiment. Nøytrale setninger kan være enten positive, negative eller nøytrale avhengig av sammenhengen de står i.
+
+**Bullet Tag Analysis:**
+- **calc-00001**: **Hjelpful** – Identifiserer en feilaktig tilnærming som bør unngås
+- **fin-00002**: **Skadelig** – Gir feil svar når konteksten ikke er klar
+
+---
+
+*Denne analysen hjelper deg med å forstå hvordan du kan forbedre modellen ved å vurdere kontekst før du gjør sentimentvurderinger.*
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_3_post_reflect_round_1_20260422_113427_331.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: [ctx-00003] harmful=0 helpful=1 :: Unngå å tolke nøytrale setninger som negative uten klar kontekst.
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Reflection:**
+
+
+**Reasoning:**
+Modellen gjorde en feilslutning ved å automatisk tolke nøytrale setninger som positive uten å vurdere konteksten. For setningen "God betjening" er det ingen klar negativ kontekst, så den burde vært positiv. Å bruke "calc-00001" som tilnærming for å tolke nøytrale setninger som positive var derfor feil.
+
+**Error Identification:**
+Feilen lå i å ikke vurdere konteksten før man gjorde en vurdering av sentiment. Nøytrale setninger bør vurderes ut fra sammenhengen de står i, ikke tolkes som positive basert på en forhåndsinnstilt regel.
+
+**Root Cause Analysis:**
+Årsaken til feilen var sannsynligvis en misoppfatning av hvordan nøytrale setninger skal tolkes. Modellen antok at nøytrale setninger uten klar negativ kontekst automatisk er positive, uten å vurdere den faktiske meningsinnholdet i setningen.
+
+**Correct Approach:**
+Modellen bør:
+1. Alltid vurdere konteksten først, ikke bare tolke nøytrale setninger som positive
+2. Bruke en mer nyansert tilnærming der man vurderer hele setningen og sammenhengen den står i
+3. Hvis det ikke er noen klar negativ eller positiv kontekst, bør man være nøytral
+
+**Key Insight:**
+Husk alltid å vurdere konteksten før du gjør en vurdering av sentiment. Nøytrale setninger kan være enten positive, negative eller nøytrale avhengig av sammenhengen de står i.
+
+**Bullet Tag Analysis:**
+- **calc-00001**: **Hjelpful** – Identifiserer en feilaktig tilnærming som bør unngås
+- **fin-00002**: **Skadelig** – Gir feil svar når konteksten ikke er klar
+
+---
+
+*Denne analysen hjelper deg med å forstå hvordan du kan forbedre modellen ved å vurdere kontekst før du gjør sentimentvurderinger.*
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: God betjening
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Modellen gjorde en feilslutning ved å automatisk tolke nøytrale setninger som positive uten å vurdere konteksten. For setningen 'God betjening' er det ingen klar negativ kontekst, så den burde vært positiv. Å bruke 'calc-00001' som tilnærming for å tolke nøytrale setninger som positive var derfor feil. \n\n**Root Cause Analysis:** Årsaken til feilen var sannsynligvis en misoppfatning av hvordan nøytrale setninger skal tolkes. Modellen antok at nøytrale setninger uten klar negativ kontekst automatisk er positive, uten å vurdere det faktiske meningsinnholdet i setningen. \n\n**Korrekt tilnærming:** Modellen bør alltid vurdere konteksten først, og hvis det ikke er noen klar negativ eller positiv kontekst, bør den være nøytral. \n\n**Bullet Tag Analysis:** \n- **calc-00001** (hjelpful) – Identifiserer en feilaktig tilnærming som bør unngås \n- **fin-00002** (skadelig) – Gir feil svar når konteksten ikke er klar",
+  "bullet_ids": [
+    "calc-00001",
+    "fin-00002"
+  ],
+  "final_answer": "positiv"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+reflector_train_e_1_s_3_round_2_20260422_113447_433.json
+-->Prompt: 
+You are an expert analyst and educator. Your job is to diagnose why a model's reasoning went wrong by analyzing the gap between predicted answer and the ground truth.
+
+**Instructions:**
+- Carefully analyze the model's reasoning trace to identify where it went wrong
+- Take the environment feedback into account, comparing the predicted answer with the ground truth to understand the gap
+- Identify specific conceptual errors, calculation mistakes, or misapplied strategies
+- Provide actionable insights that could help the model avoid this mistake in the future
+- Focus on the root cause, not just surface-level errors
+- Be specific about what the model should have done differently
+- You will receive bulletpoints that are part of playbook that's used by the generator to answer the question.
+- You need to analyze these bulletpoints, and give the tag for each bulletpoint, tag can be ['helpful', 'harmful', 'neutral'] (for the generator to generate the correct answer)
+
+Your output should be a json object, which contains the following fields
+  - reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+  - error_identification: what specifically went wrong in the reasoning?
+  - root_cause_analysis: why did this error occur? What concept was misunderstood?
+  - correct_approach: what should the model have done instead?
+  - key_insight: what strategy, formula, or principle should be remembered to avoid this error?
+  - bullet_tags: a list of json objects with bullet_id and tag for each bulletpoint used by the generator
+
+
+
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: God betjening
+
+**Model's Reasoning Trace:**
+
+
+```json
+{
+  "reasoning": "Modellen gjorde en feilslutning ved å automatisk tolke nøytrale setninger som positive uten å vurdere konteksten. For setningen 'God betjening' er det ingen klar negativ kontekst, så den burde vært positiv. Å bruke 'calc-00001' som tilnærming for å tolke nøytrale setninger som positive var derfor feil. \n\n**Root Cause Analysis:** Årsaken til feilen var sannsynligvis en misoppfatning av hvordan nøytrale setninger skal tolkes. Modellen antok at nøytrale setninger uten klar negativ kontekst automatisk er positive, uten å vurdere det faktiske meningsinnholdet i setningen. \n\n**Korrekt tilnærming:** Modellen bør alltid vurdere konteksten først, og hvis det ikke er noen klar negativ eller positiv kontekst, bør den være nøytral. \n\n**Bullet Tag Analysis:** \n- **calc-00001** (hjelpful) – Identifiserer en feilaktig tilnærming som bør unngås \n- **fin-00002** (skadelig) – Gir feil svar når konteksten ikke er klar",
+  "bullet_ids": [
+    "calc-00001",
+    "fin-00002"
+  ],
+  "final_answer": "positiv"
+}
+```
+
+**Model's Predicted Answer:**
+positiv
+
+**Ground Truth Answer:**
+Positive
+
+**Environment Feedback:**
+Predicted answer does not match ground truth
+
+**Part of Playbook that's used by the generator to answer the question:**
+(No bullets used by generator)
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",
+  "error_identification": "[What specifically went wrong in the reasoning?]",
+  "root_cause_analysis": "[Why did this error occur? What concept was misunderstood?]",
+  "correct_approach": "[What should the model have done instead?]",
+  "key_insight": "[What strategy, formula, or principle should be remembered to avoid this error?]",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "helpful"},
+    {"id": "fin-00002", "tag": "harmful"}
+  ]
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+Brukeren ber meg om å:
+1. Analysere hvorfor en modells resonnering gikk galt
+2. Gi en detaljert JSON-struktur med:
+   - reasoning (min kjede av tankegang)
+   - error_identification (hva gikk galt)
+   - root_cause_analysis (hvorfor feilen skjedde)
+   - correct_approach (hva modellen burde ha gjort)
+   - key_insight (viktig lærdom)
+   - bullet_tags
+
+Brukeren har gitt meg:
+- En modells resonnering trace
+- En modells predikerte svar
+- Ground truth svar
+- En tom playbook (ingen bullets brukt av generatoren)
+
+Oppgaven er å:
+- Analysere modellens resonnering trace
+- Identifisere feilen
+- Forklare hvorfor den skjedde
+- Gi en korrekt tilnærming
+- Peke på en viktig lærdom
+
+La meg analysere modellens resonnering trace:
+- Modellen tolket nøytrale setninger som positive uten å vurdere konteksten
+- Dette var feil tilnærming
+- For setningen "God betjening" er det ingen klar negativ kontekst, så den burde vært positiv
+- Årsaken var sannsynligvis en misoppfatning av hvordan nøytrale setninger skal tolkes
+
+Jeg bør:
+1. Gi en klar og tydelig analyse av feilen
+2. Peke på den grunnleggende misforståelsen
+3. Forklare hva modellen burde ha gjort
+4. Peke på en viktig lærdom
+
+La meg strukturere svaret i JSON-format som etterspurt:
+
+```json
+{
+  "reasoning": "Min analyse av modellens feil",
+  "error_identification": "Feilen var at modellen tolket nøytrale setninger som positive uten å vurdere konteksten",
+  "root_cause_analysis": "Årsaken var en misoppfatning av hvordan nøytrale setninger skal tolkes",
+  "correct_approach": "Modellen bør alltid vurdere konteksten først, og hvis det ikke er noen klar negativ eller positiv kontekst, bør den være nøytral",
+  "key_insight": "Vurder alltid konteksten før du klassifiserer nøytrale utsagn",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "helpful"},  // Identifiserer en feilaktig tilnærming
+    {"id": "fin-00002", "tag": "harmful"}  // Gir feil svar når konteksten ikke er klar
+  ]
+}
+```
+
+La meg skrive et tydelig og informativt svar. **JSON-svar:**
+
+```json
+{
+  "reasoning": "Analysen viser at modellen gjorde en feilslutning ved å automatisk tolke nøytrale setninger som positive uten å vurdere konteksten. For setningen 'God betjening' er det ingen klar negativ kontekst, så den burde vært positiv. Å bruke 'calc-00001' som tilnærming for å tolke nøytrale setninger som positive var derfor feil. \n\n**Root Cause Analysis:** Årsaken til feilen var sannsynligvis en misoppfatning av hvordan nøytrale setninger skal tolkes. Modellen antok at nøytrale setninger uten klar negativ kontekst automatisk er positive, uten å vurdere det faktiske meningsinnholdet i setningen. \n\n**Korrekt tilnærming:** Modellen bør alltid vurdere konteksten først, og hvis det ikke er noen klar negativ eller positiv kontekst, bør den være nøytral. \n\n**Key Insight:** Vurder alltid konteksten før du klassifiserer nøytrale utsagn som positive eller negative. \n\n**Bullet Tag Analysis:** \n- **calc-00001** (hjelpful) – Identifiserer en feilaktig tilnærming som bør unngås \n- **fin-00002** (skadelig) – Gir feil svar når konteksten ikke er klar",
+  "error_identification": "Feilen var at modellen tolket nøytrale setninger som positive uten å vurdere konteksten",
+  "root_cause_analysis": "Årsaken var en misoppfatning av hvordan nøytrale setninger skal tolkes",
+  "correct_approach": "Modellen bør alltid vurdere konteksten først, og hvis det ikke er noen klar negativ eller positiv kontekst, bør den være nøytral",
+  "key_insight": "Vurder alltid konteksten før du klassifiserer nøytrale utsagn som positive eller negative",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "helpful"},  // Identifiserer en feilaktig tilnærming
+    {"id": "fin-00002", "tag": "harmful"}   // Gir feil svar når konteksten ikke er klar
+  ]
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_3_post_reflect_round_2_20260422_113457_808.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: [ctx-00003] harmful=0 helpful=1 :: Unngå å tolke nøytrale setninger som negative uten klar kontekst.
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Reflection:**
+Brukeren ber meg om å:
+1. Analysere hvorfor en modells resonnering gikk galt
+2. Gi en detaljert JSON-struktur med:
+   - reasoning (min kjede av tankegang)
+   - error_identification (hva gikk galt)
+   - root_cause_analysis (hvorfor feilen skjedde)
+   - correct_approach (hva modellen burde ha gjort)
+   - key_insight (viktig lærdom)
+   - bullet_tags
+
+Brukeren har gitt meg:
+- En modells resonnering trace
+- En modells predikerte svar
+- Ground truth svar
+- En tom playbook (ingen bullets brukt av generatoren)
+
+Oppgaven er å:
+- Analysere modellens resonnering trace
+- Identifisere feilen
+- Forklare hvorfor den skjedde
+- Gi en korrekt tilnærming
+- Peke på en viktig lærdom
+
+La meg analysere modellens resonnering trace:
+- Modellen tolket nøytrale setninger som positive uten å vurdere konteksten
+- Dette var feil tilnærming
+- For setningen "God betjening" er det ingen klar negativ kontekst, så den burde vært positiv
+- Årsaken var sannsynligvis en misoppfatning av hvordan nøytrale setninger skal tolkes
+
+Jeg bør:
+1. Gi en klar og tydelig analyse av feilen
+2. Peke på den grunnleggende misforståelsen
+3. Forklare hva modellen burde ha gjort
+4. Peke på en viktig lærdom
+
+La meg strukturere svaret i JSON-format som etterspurt:
+
+```json
+{
+  "reasoning": "Min analyse av modellens feil",
+  "error_identification": "Feilen var at modellen tolket nøytrale setninger som positive uten å vurdere konteksten",
+  "root_cause_analysis": "Årsaken var en misoppfatning av hvordan nøytrale setninger skal tolkes",
+  "correct_approach": "Modellen bør alltid vurdere konteksten først, og hvis det ikke er noen klar negativ eller positiv kontekst, bør den være nøytral",
+  "key_insight": "Vurder alltid konteksten før du klassifiserer nøytrale utsagn",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "helpful"},  // Identifiserer en feilaktig tilnærming
+    {"id": "fin-00002", "tag": "harmful"}  // Gir feil svar når konteksten ikke er klar
+  ]
+}
+```
+
+La meg skrive et tydelig og informativt svar. **JSON-svar:**
+
+```json
+{
+  "reasoning": "Analysen viser at modellen gjorde en feilslutning ved å automatisk tolke nøytrale setninger som positive uten å vurdere konteksten. For setningen 'God betjening' er det ingen klar negativ kontekst, så den burde vært positiv. Å bruke 'calc-00001' som tilnærming for å tolke nøytrale setninger som positive var derfor feil. \n\n**Root Cause Analysis:** Årsaken til feilen var sannsynligvis en misoppfatning av hvordan nøytrale setninger skal tolkes. Modellen antok at nøytrale setninger uten klar negativ kontekst automatisk er positive, uten å vurdere det faktiske meningsinnholdet i setningen. \n\n**Korrekt tilnærming:** Modellen bør alltid vurdere konteksten først, og hvis det ikke er noen klar negativ eller positiv kontekst, bør den være nøytral. \n\n**Key Insight:** Vurder alltid konteksten før du klassifiserer nøytrale utsagn som positive eller negative. \n\n**Bullet Tag Analysis:** \n- **calc-00001** (hjelpful) – Identifiserer en feilaktig tilnærming som bør unngås \n- **fin-00002** (skadelig) – Gir feil svar når konteksten ikke er klar",
+  "error_identification": "Feilen var at modellen tolket nøytrale setninger som positive uten å vurdere konteksten",
+  "root_cause_analysis": "Årsaken var en misoppfatning av hvordan nøytrale setninger skal tolkes",
+  "correct_approach": "Modellen bør alltid vurdere konteksten først, og hvis det ikke er noen klar negativ eller positiv kontekst, bør den være nøytral",
+  "key_insight": "Vurder alltid konteksten før du klassifiserer nøytrale utsagn som positive eller negative",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "helpful"},  // Identifiserer en feilaktig tilnærming
+    {"id": "fin-00002", "tag": "harmful"}   // Gir feil svar når konteksten ikke er klar
+  ]
+}
+```
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: God betjening
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+Brukeren ber meg om å:
+1. Analysere modellens resonnering
+2. Gi et svar i nøyaktig JSON-format
+
+De har gitt meg:
+- En setning: "God betjening"
+- De ber om en vurdering av om den er positiv eller negativ
+
+Jeg bør:
+1. Analysere setningen "God betjening"
+2. Identifisere feilen modellen gjorde (tolket nøytrale setninger som positive uten å vurdere konteksten)
+3. Peke på hva modellen burde ha gjort (vurdert konteksten først)
+4. Gi et klart svar i JSON-format
+
+La meg strukturere svaret:
+- reasoning: Min analyse av modellens feil og korrekt tilnærming
+- error_identification: Identifiserer feilen som å tolke nøytrale setninger som positive uten kontekstvurdering
+- root_cause_analysis: Forklarer hvorfor dette skjedde
+- correct_approach: Hva modellen burde ha gjort
+- key_insight: Viktig lærdom
+- bullet_tags: Viser hvilke playbook-elementer jeg brukte
+
+La meg skrive et tydelig og informativt svar i JSON-format. **JSON-svar:**
+
+```json
+{
+  "reasoning": "Setningen 'God betjening' er positiv. Det er ingen klar negativ kontekst, og positiv er den nøytrale standardverdien når konteksten ikke er tydelig. Modellen burde ha tolket den som positiv basert på den faktiske meningsinnholdet, ikke en forhåndsinnstilt positiv/negativ tilnærming. \n\n**Bullet Tag Analysis:** \n- **calc-00001** (hjelpful) – Identifiserer en feilaktig tilnærming som bør unngås \n- Ingen andre bulletpoints er relevante",
+  "error_identification": "Feilen var at modellen tolket nøytrale setninger som positive uten å vurdere konteksten",
+  "root_cause_analysis": "Årsaken var en misoppfatning av hvordan nøytrale setninger skal tolkes",
+  "correct_approach": "Modellen bør alltid vurdere konteksten først, og hvis det ikke er noen klar negativ eller positiv kontekst, bør den være positiv",
+  "key_insight": "Vurder alltid konteksten før du klassifiserer nøytrale utsagn",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "helpful"}
+  ]
+},
+"final_answer": "positiv"
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+curator_train_e_1_s_3_20260422_113513_130.json
+-->Prompt: 
+You are a master curator of knowledge. Your job is to identify what new insights should be added to an existing playbook based on a reflection from a previous attempt.
+
+**Context:**
+- The playbook you created will be used to help answering similar questions. 
+- The reflection is generated using ground truth answers that will NOT be available when the playbook is being used. So you need to come up with content that can aid the playbook user to create predictions that likely align with ground truth. 
+
+**CRITICAL: You MUST respond with valid JSON only. Do not use markdown formatting or code blocks.**
+
+**Instructions:**
+- Review the existing playbook and the reflection from the previous attempt
+- Identify ONLY the NEW insights, strategies, or mistakes that are MISSING from the current playbook
+- Avoid redundancy - if similar advice already exists, only add new content that is a perfect complement to the existing playbook
+- Do NOT regenerate the entire playbook - only provide the additions needed
+- Focus on quality over quantity - a focused, well-organized playbook is better than an exhaustive one
+- Format your response as a PURE JSON object with specific sections
+- For any operation if no new content to add, return an empty list for the operations field
+- Be concise and specific - each addition should be actionable
+
+
+**Training Context:**
+- Total token budget: 80000 tokens
+- Training progress: Sample 3 out of 3
+
+**Current Playbook Stats:**
+{
+  "total_bullets": 1,
+  "high_performing": 0,
+  "problematic": 0,
+  "unused": 1,
+  "by_section": {
+    "COMMON MISTAKES TO AVOID": {
+      "count": 1,
+      "helpful": 0,
+      "harmful": 0
+    }
+  }
+}
+
+**Recent Reflection:**
+Brukeren ber meg om å:
+1. Analysere hvorfor en modells resonnering gikk galt
+2. Gi en detaljert JSON-struktur med:
+   - reasoning (min kjede av tankegang)
+   - error_identification (hva gikk galt)
+   - root_cause_analysis (hvorfor feilen skjedde)
+   - correct_approach (hva modellen burde ha gjort)
+   - key_insight (viktig lærdom)
+   - bullet_tags
+
+Brukeren har gitt meg:
+- En modells resonnering trace
+- En modells predikerte svar
+- Ground truth svar
+- En tom playbook (ingen bullets brukt av generatoren)
+
+Oppgaven er å:
+- Analysere modellens resonnering trace
+- Identifisere feilen
+- Forklare hvorfor den skjedde
+- Gi en korrekt tilnærming
+- Peke på en viktig lærdom
+
+La meg analysere modellens resonnering trace:
+- Modellen tolket nøytrale setninger som positive uten å vurdere konteksten
+- Dette var feil tilnærming
+- For setningen "God betjening" er det ingen klar negativ kontekst, så den burde vært positiv
+- Årsaken var sannsynligvis en misoppfatning av hvordan nøytrale setninger skal tolkes
+
+Jeg bør:
+1. Gi en klar og tydelig analyse av feilen
+2. Peke på den grunnleggende misforståelsen
+3. Forklare hva modellen burde ha gjort
+4. Peke på en viktig lærdom
+
+La meg strukturere svaret i JSON-format som etterspurt:
+
+```json
+{
+  "reasoning": "Min analyse av modellens feil",
+  "error_identification": "Feilen var at modellen tolket nøytrale setninger som positive uten å vurdere konteksten",
+  "root_cause_analysis": "Årsaken var en misoppfatning av hvordan nøytrale setninger skal tolkes",
+  "correct_approach": "Modellen bør alltid vurdere konteksten først, og hvis det ikke er noen klar negativ eller positiv kontekst, bør den være nøytral",
+  "key_insight": "Vurder alltid konteksten før du klassifiserer nøytrale utsagn",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "helpful"},  // Identifiserer en feilaktig tilnærming
+    {"id": "fin-00002", "tag": "harmful"}  // Gir feil svar når konteksten ikke er klar
+  ]
+}
+```
+
+La meg skrive et tydelig og informativt svar. **JSON-svar:**
+
+```json
+{
+  "reasoning": "Analysen viser at modellen gjorde en feilslutning ved å automatisk tolke nøytrale setninger som positive uten å vurdere konteksten. For setningen 'God betjening' er det ingen klar negativ kontekst, så den burde vært positiv. Å bruke 'calc-00001' som tilnærming for å tolke nøytrale setninger som positive var derfor feil. \n\n**Root Cause Analysis:** Årsaken til feilen var sannsynligvis en misoppfatning av hvordan nøytrale setninger skal tolkes. Modellen antok at nøytrale setninger uten klar negativ kontekst automatisk er positive, uten å vurdere det faktiske meningsinnholdet i setningen. \n\n**Korrekt tilnærming:** Modellen bør alltid vurdere konteksten først, og hvis det ikke er noen klar negativ eller positiv kontekst, bør den være nøytral. \n\n**Key Insight:** Vurder alltid konteksten før du klassifiserer nøytrale utsagn som positive eller negative. \n\n**Bullet Tag Analysis:** \n- **calc-00001** (hjelpful) – Identifiserer en feilaktig tilnærming som bør unngås \n- **fin-00002** (skadelig) – Gir feil svar når konteksten ikke er klar",
+  "error_identification": "Feilen var at modellen tolket nøytrale setninger som positive uten å vurdere konteksten",
+  "root_cause_analysis": "Årsaken var en misoppfatning av hvordan nøytrale setninger skal tolkes",
+  "correct_approach": "Modellen bør alltid vurdere konteksten først, og hvis det ikke er noen klar negativ eller positiv kontekst, bør den være nøytral",
+  "key_insight": "Vurder alltid konteksten før du klassifiserer nøytrale utsagn som positive eller negative",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "helpful"},  // Identifiserer en feilaktig tilnærming
+    {"id": "fin-00002", "tag": "harmful"}   // Gir feil svar når konteksten ikke er klar
+  ]
+}
+```
+
+**Current Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: [ctx-00003] harmful=0 helpful=1 :: Unngå å tolke nøytrale setninger som negative uten klar kontekst.
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Question Context:**
+
+
+**Your Task:**
+Output ONLY a valid JSON object with these exact fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- operations: a list of operations to be performed on the playbook
+  - type: the type of operation to be performed
+  - section: the section to add the bullet to
+  - content: the new content of the bullet
+
+**Available Operations:**
+1. ADD: Create new bullet points with fresh IDs
+    - section: the section to add the new bullet to
+    - content: the new content of the bullet. Note: no need to include the bullet_id in the content like '[ctx-00263] helpful=1 harmful=0 ::', the bullet_id will be added by the system.
+
+**RESPONSE FORMAT - Output ONLY this JSON structure (no markdown, no code blocks):**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations here]",
+  "operations": [
+    {
+      "type": "ADD", 
+      "section": "formulas_and_calculations",
+      "content": "[New calculation method...]"
+    }
+  ]
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+Brukeren ber meg om å:
+1. Analysere modellens resonnering trace
+2. Identifisere feilen
+3. Forklare hvorfor den skjedde
+4. Peke på en viktig lærdom
+5. Gi en korrekt tilnærming
+
+Jeg bør:
+- Gi en klar og tydelig analyse av feilen
+- Peke på den grunnleggende misforståelsen
+- Forklare hva modellen burde ha gjort
+- Peke på en viktig lærdom
+
+La meg strukturere svaret i JSON-format som etterspurt:
+
+```json
+{
+  "reasoning": "Min analyse av modellens feil",
+  "error_identification": "Feilen var at modellen tolket nøytrale setninger som positive uten å vurdere konteksten",
+  "root_cause_analysis": "Årsaken var en misoppfatning av hvordan nøytrale setninger skal tolkes",
+  "correct_approach": "Modellen bør alltid vurdere konteksten først, og hvis det ikke er noen klar negativ eller positiv kontekst, bør den være nøytral",
+  "key_insight": "Vurder alltid konteksten før du klassifiserer nøytrale utsagn",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "hjelpful"},  // Identifiserer en feilaktig tilnærming
+    {"id": "fin-00002", "tag": "skadelig"}  // Gir feil svar når konteksten ikke er klar
+  ]
+}
+```
+
+La meg skrive et tydelig og informativt svar. **JSON-svar:**
+
+```json
+{
+  "reasoning": "Analysen viser at modellen gjorde en feilslutning ved å automatisk tolke nøytrale setninger som positive uten å vurdere konteksten. For setningen 'God betjening' er det ingen klar negativ kontekst, så den burde vært positiv. \n\n**Root Cause Analysis:** Årsaken til feilen var sannsynligvis en misoppfatning av hvordan nøytrale setninger skal tolkes. Modellen antok at nøytrale setninger uten klar negativ kontekst automatisk er positive, uten å vurdere det faktiske meningsinnholdet i setningen. \n\n**Korrekt tilnærming:** Modellen bør alltid vurdere konteksten først, og hvis det ikke er noen klar negativ eller positiv kontekst, bør den være nøytral. \n\n**Key Insight:** Vurder alltid konteksten før du klassifiserer nøytrale utsagn som positive eller negative. \n\n**Bullet Tag Analysis:** \n- **calc-00001** (hjelpful) – Identifiserer en feilaktig tilnærming som bør unngås \n- **fin-00002** (skadelig) – Gir feil svar når konteksten ikke er klar",
+  "error_identification": "Feilen var at modellen tolket nøytrale setninger som positive uten å vurdere konteksten",
+  "root_cause_analysis": "Årsaken var en misoppfatning av hvordan nøytrale setninger skal tolkes",
+  "correct_approach": "Modellen bør alltid vurdere konteksten først, og hvis det ikke er noen klar negativ eller positiv kontekst, bør den være nøytral",
+  "key_insight": "Vurder alltid konteksten før du klassifiserer nøytrale utsagn som positive eller negative",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "hjelpful"},  // Identifiserer en feilaktig tilnærming
+    {"id": "fin-00002", "tag": "skadelig"}   // Gir feil svar når konteksten ikke er klar
+  ]
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_3_post_curate_20260422_113519_444.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: [ctx-00003] harmful=0 helpful=1 :: Unngå å tolke nøytrale setninger som negative uten klar kontekst.
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Reflection:**
+(empty)
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: God betjening
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Setningen 'God betjening' er positiv fordi den uttrykker tilfredshet med betjeningen. Den er nøytralt formulert, men indikerer en positiv opplevelse. Jeg vurderer den derfor som positiv, i tråd med svaralternativet.",
+  "bullet_ids": ["calc-00001"],
+  "final_answer": "positiv"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_test_eval_0_20260422_113527_147.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Reflection:**
+(empty)
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Garmin Fenix Chronos er meget god tur- og treningskamerat , og mye flottere enn vanlige smartklokker .
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Setningen omtaler Garmin Fenix Chronos som 'meget god tur- og treningskamerat' og 'mye flottere enn vanlige smartklokker'. Begge deler er positive utsagn. Setningen som helhet er derfor positiv. Konklusjon: positiv.",
+  "bullet_ids": [],
+  "final_answer": "positiv"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_test_eval_1_20260422_113534_985.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Reflection:**
+(empty)
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Årets nye Garmin Fenix Chronos tar det hele til et nytt nivå .
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Setningen omtaler 'tar det hele til et nytt nivå', som er et positivt og rosende uttrykk. Den beskriver en positiv vurdering av et produkt. Derfor er setningen positiv.",
+  "bullet_ids": [],
+  "final_answer": "positiv"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_test_eval_2_20260422_113541_625.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Reflection:**
+(empty)
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Her har fokuset på funksjoner og indre kvaliteter , for første gang blitt kombinert med en ambisiøs satsning på et ekslusivt ytre .
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Setningen fremhever en positiv kombinasjon av indre kvaliteter og en ambisiøs ytre satsning. Den beskriver noe nytt og eksklusivt, noe som er positivt ladet. Jeg vurderer den derfor som 'positiv'.",
+  "bullet_ids": ["fin-00002"],
+  "final_answer": "positiv"
+}
+```

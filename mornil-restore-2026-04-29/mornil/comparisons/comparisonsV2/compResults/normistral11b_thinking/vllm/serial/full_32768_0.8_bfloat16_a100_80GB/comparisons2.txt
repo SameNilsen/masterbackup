@@ -1,0 +1,85 @@
+--- Starting comparisons --- 
+Initial GPU memory loaded: [65979] MiB
+Of total GPU memory: [81920] MiB
+
+promptBaseline of the 10 requests: 
+Time taken for comparisons: 4.35298128426075 seconds.
+ Starttime: 2026-03-24 12:52:28.798268 Endtime: 2026-03-24 12:52:33.150896
+With GPU memory usage values (MiB): [[65979], [65981], [65981], [65981]]
+GPU utilization values (%): [[0], [96], [96], [0]]
+Power draw values (W): [[73.77], [299.04], [291.08], [74.95]]
+
+prompt1 of the 10 requests: 
+Time taken for comparisons: 3.29125361610204 seconds.
+ Starttime: 2026-03-24 12:52:33.151464 Endtime: 2026-03-24 12:52:36.442380
+With GPU memory usage values (MiB): [[65981], [65981], [65981]]
+GPU utilization values (%): [[96], [96], [0]]
+Power draw values (W): [[294.69], [297.94], [73.26]]
+
+prompt2 of the 10 requests: 
+Time taken for comparisons: 2.1834204141050577 seconds.
+ Starttime: 2026-03-24 12:52:36.442904 Endtime: 2026-03-24 12:52:38.625990
+With GPU memory usage values (MiB): [[65981], [65981]]
+GPU utilization values (%): [[95], [0]]
+Power draw values (W): [[297.94], [73.76]]
+
+prompt3 of the 10 requests: 
+Time taken for comparisons: 5.531851260922849 seconds.
+ Starttime: 2026-03-24 12:52:38.626516 Endtime: 2026-03-24 12:52:44.158020
+With GPU memory usage values (MiB): [[65981], [65981], [65981], [65981], [65981]]
+GPU utilization values (%): [[96], [96], [95], [96], [0]]
+Power draw values (W): [[279.68], [296.59], [292.56], [282.15], [74.65]]
+
+prompt4 of the 10 requests: 
+Time taken for comparisons: 3.3250706093385816 seconds.
+ Starttime: 2026-03-24 12:52:44.158546 Endtime: 2026-03-24 12:52:47.475301
+With GPU memory usage values (MiB): [[65981], [65981], [65981]]
+GPU utilization values (%): [[96], [95], [22]]
+Power draw values (W): [[288.06], [300.09], [75.34]]
+
+prompt5 of the 10 requests: 
+Time taken for comparisons: 3.295959790237248 seconds.
+ Starttime: 2026-03-24 12:52:47.483809 Endtime: 2026-03-24 12:52:50.779472
+With GPU memory usage values (MiB): [[65981], [65981], [65981]]
+GPU utilization values (%): [[96], [96], [0]]
+Power draw values (W): [[294.4], [279.61], [74.96]]
+
+prompt6 of the 10 requests: 
+Time taken for comparisons: 3.3064977880567312 seconds.
+ Starttime: 2026-03-24 12:52:50.779951 Endtime: 2026-03-24 12:52:54.086122
+With GPU memory usage values (MiB): [[65981], [65981], [65981]]
+GPU utilization values (%): [[96], [96], [0]]
+Power draw values (W): [[303.13], [298.81], [75.15]]
+
+prompt7 of the 10 requests: 
+Time taken for comparisons: 3.3099875887855887 seconds.
+ Starttime: 2026-03-24 12:52:54.086642 Endtime: 2026-03-24 12:52:57.396318
+With GPU memory usage values (MiB): [[65981], [65981], [65981]]
+GPU utilization values (%): [[96], [96], [0]]
+Power draw values (W): [[295.47], [287.51], [75.45]]
+
+prompt8 of the 10 requests: 
+Time taken for comparisons: 3.2848271718248725 seconds.
+ Starttime: 2026-03-24 12:52:57.396819 Endtime: 2026-03-24 12:53:00.681340
+With GPU memory usage values (MiB): [[65981], [65981], [65981]]
+GPU utilization values (%): [[96], [96], [0]]
+Power draw values (W): [[285.98], [297.56], [76.23]]
+
+prompt9 of the 10 requests: 
+Time taken for comparisons: 3.2940007830038667 seconds.
+ Starttime: 2026-03-24 12:53:00.681835 Endtime: 2026-03-24 12:53:03.975526
+With GPU memory usage values (MiB): [[65981], [65981], [65981]]
+GPU utilization values (%): [[96], [95], [0]]
+Power draw values (W): [[283.8], [297.77], [76.36]]
+
+prompt10 of the 10 requests: 
+Time taken for comparisons: 2.203994072973728 seconds.
+ Starttime: 2026-03-24 12:53:03.976025 Endtime: 2026-03-24 12:53:06.179709
+With GPU memory usage values (MiB): [[65981], [65981]]
+GPU utilization values (%): [[95], [96]]
+Power draw values (W): [[291.86], [177.76]]
+
+In total for 10 requests: Time taken for comparisons: 33.028736567124724 seconds.
+With avg GPU memory usage values (MiB): 65981.0
+avg GPU utilization values (%): 92.4090909090909
+avg Power draw values (W): 286.8266666666667

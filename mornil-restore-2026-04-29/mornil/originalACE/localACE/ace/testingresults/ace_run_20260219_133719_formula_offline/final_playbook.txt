@@ -1,0 +1,15 @@
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+[calc-00001] helpful=0 harmful=0 :: CURRENT RATIO FORMULA: Current Ratio = Current Assets / Current Liabilities. Always verify that all values are in the same unit of measurement (e.g., USD, EUR) before performing calculations.
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00002] helpful=0 harmful=0 :: UNIT INCONSISTENCY ERROR: Ensure all financial values used in calculations are expressed in identical units (currency, time periods, etc.) to prevent incorrect results.
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS

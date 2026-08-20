@@ -1,0 +1,11 @@
+--- Starting logging responses --- 
+
+promptBaseline of the 10 requests: 
+Query: Which city is the Eiffel Tower located in?
+Response: Which city is the Eiffel Tower located in? I'm asking about a famous landmark in Paris, France. The Eiffel Tower is indeed located in Paris, which is the correct answer to the question. I should:
+
+1. Acknowledge the question
+2. Give a clear, informative response about where the Eiffel Tower is located
+3. Keep it conctained and direct
+
+The Eiffel Tower is located in Paris, France. I should provide a clear, informative response about this. The Eiffel Tower is located in Paris, France.

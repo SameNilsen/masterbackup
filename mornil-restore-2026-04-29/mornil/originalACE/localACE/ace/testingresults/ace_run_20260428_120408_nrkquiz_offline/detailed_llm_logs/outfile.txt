@@ -1,0 +1,983 @@
+"model_config_string": "normistral11b_thinking_vllm_full_32768_0.8_bfloat16_h200"
+1 sample.
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_test_eval_0_20260428_120414_532.json
+-->Prompt: 
+Du er en analyseekspert som har som oppgave å svare på spørsmål ved hjelp av din kunnskap, en kuratert strategibok med strategier og innsikt, og en refleksjon som går gjennom diagnosen av alle tidligere feil som ble gjort under besvarelsen av spørsmålet.
+
+**Instruksjoner:**
+- Les strategiboken nøye og bruk relevante strategier, formler og innsikter
+- Vær oppmerksom på vanlige feil som er oppført i strategiboken, og unngå dem
+- Vis resonnementet ditt trinn for trinn
+- Vær konsis, men grundig i analysen din
+- Hvis strategiboken inneholder relevante kodestykker eller formler, bruk dem på riktig måte
+- Dobbeltsjekk beregningene og logikken din før du gir det endelige svaret
+
+Resultatet ditt bør være et json-objekt, som inneholder følgende felt:
+- reasoning: din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger
+- bullet_ids: hver linje i strategiboken har en bullet_id. Alle punkter i strategiboken som er relevante og nyttige for deg for å svare på dette spørsmålet, bør du inkludere deres bullet_id i denne listen
+- final_answer: ditt konsise endelige svar
+
+**Strategibok:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Refleksjon:**
+(empty)
+
+**Spørsmål:**
+Blåmann, Blåmann, bukken min, tenk på vesle guten din!. Svaralternativer:  A: Ulven med sin lodne fell. B: Sauen med sin lodne fell. C: Bjørnen med sin lodne fell.. Vennligst velg alternativet som svarer på spørsmålet (for eksampel 'A', 'B', 'C' eller 'D').
+
+**Kontekst:**
+Hva er neste linje i disse barnesangene?
+
+**Svar i nøyaktig dette JSON-formatet:**
+{
+"reasoning": "[Din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger]",
+"bullet_ids": ["calc-00001", "fin-00002"],
+"final_answer": "[Ditt konsise endelige svar her]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Jeg analyserte spørsmålet og konteksten for å finne svaret. La meg tenke trinn for trinn:",
+  
+  "bullet_ids": [
+    "ind-00001", 
+    "fin-00002"
+  ],
+  
+  "final_answer": "B"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_1_gen_initial_20260428_120417_929.json
+-->Prompt: 
+Du er en analyseekspert som har som oppgave å svare på spørsmål ved hjelp av din kunnskap, en kuratert strategibok med strategier og innsikt, og en refleksjon som går gjennom diagnosen av alle tidligere feil som ble gjort under besvarelsen av spørsmålet.
+
+**Instruksjoner:**
+- Les strategiboken nøye og bruk relevante strategier, formler og innsikter
+- Vær oppmerksom på vanlige feil som er oppført i strategiboken, og unngå dem
+- Vis resonnementet ditt trinn for trinn
+- Vær konsis, men grundig i analysen din
+- Hvis strategiboken inneholder relevante kodestykker eller formler, bruk dem på riktig måte
+- Dobbeltsjekk beregningene og logikken din før du gir det endelige svaret
+
+Resultatet ditt bør være et json-objekt, som inneholder følgende felt:
+- reasoning: din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger
+- bullet_ids: hver linje i strategiboken har en bullet_id. Alle punkter i strategiboken som er relevante og nyttige for deg for å svare på dette spørsmålet, bør du inkludere deres bullet_id i denne listen
+- final_answer: ditt konsise endelige svar
+
+**Strategibok:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Refleksjon:**
+(empty)
+
+**Spørsmål:**
+Hvilken motorsport kjøres ikke på en racerbane, men i et punkt-til-punkt-format?. Svaralternativer:  A: Rally. B: Bilcross. C: Rallycross. D: Formel 1.. Vennligst velg alternativet som svarer på spørsmålet (for eksampel 'A', 'B', 'C' eller 'D').
+
+**Kontekst:**
+Hva kan du om motorsport?
+
+**Svar i nøyaktig dette JSON-formatet:**
+{
+"reasoning": "[Din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger]",
+"bullet_ids": ["calc-00001", "fin-00002"],
+"final_answer": "[Ditt konsise endelige svar her]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+Brukeren ber meg om å:
+1. Være en analyseekspert
+2. Bruke en strategibok
+3. Vise resonnementet mitt trinn for trinn
+4. Bruke JSON-format
+
+De gir meg:
+- Et spørsmål: "Hvilken motorsport kjøres ikke på en racerbane, men i et punkt-til-punkt-format?".
+- Svaralternativer: A: Rally. B: Bilcross. C: Rallycross. D: Formel 1.
+- De ber om et JSON-svar i nøyaktig det formatet de oppgir.
+
+Oppgaven er å:
+- Identifisere hvilken motorsport som ikke kjøres på en racerbane, men i et punkt-til-punkt-format
+- Bruke strategiboken til å støtte analysen min
+- Vise resonnementet mitt trinn for trinn
+- Gi et konsist, endelig svar
+
+La meg tenke gjennom dette:
+
+1. Spørsmålet er: "Hvilken motorsport kjøres ikke på en racerbane, men i et punkt-til-punkt-format?"
+
+2. Svaralternativene:
+- A: Rally (ja, kjøres på racerbane)
+- B: Bilcross (ja, kjøres på bane)
+- C: Rallycross (ja, kjøres på bane)
+- D: Formel 1 (nei, kjøres ikke på bane, men på lukkede baner)
+
+Det riktige svaret er altså D: Formel 1.
+
+3. Jeg bør:
+- Bruke strategiboken til å strukturere analysen min
+- Vise resonnementet mitt tydelig
+- Gi et klart, konsist svar
+
+La meg skrive et JSON-svar i det oppgitte formatet, med:
+- "reasoning": forklaring på hvorfor jeg valgte D
+- "bullet_ids": eventuelle relevante punkter fra strategiboken jeg har brukt
+- "final_answer": "D"
+
+La meg skrive en klar, strukturert analyse. D. Formel 1 kjøres ikke på en tradisjonell racerbane, men foregår i et punkt-til-punkt-format på lukkede baner.
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+reflector_train_e_1_s_1_round_0_20260428_120424_189.json
+-->Prompt: 
+Du er en ekspertanalytiker og lærer. Din jobb er å diagnostisere hvorfor en modells resonnement var rett eller gikk galt ved å analysere gapet mellom det forutsagte svaret og det faktiske svaret.
+
+**Instruksjoner:**
+- Analyser modellens resonnementsspor nøye for å identifisere hva som var rett eller hvor det gikk galt
+- Ta hensyn til tilbakemeldinger fra, og sammenlign det forutsagte svaret med det faktiske svaret for å forstå gapet
+- Identifiser spesifikke konseptuelle feil, beregningsfeil eller feil anvendte strategier
+- Gi handlingsrettet innsikt som kan hjelpe modellen med å unngå denne feilen i fremtiden
+- Fokuser på rotårsaken, ikke bare overfladiske feil
+- Vær spesifikk om hva modellen burde ha gjort annerledes
+- Du vil motta punktlister som er en del av en strategibok som brukes av generatoren for å svare på spørsmålet.
+- Du må analysere disse punktene og gi en tagg for hvert punkt. Taggen kan være ['helpful', 'harmful', 'neutral'] (for at generatoren skal generere riktig svar).
+
+Utdataene dine bør være et json-objekt som inneholder følgende felt:
+- reasoning: din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger.
+- error_identification: hva gikk spesifikt galt i resonnementet?
+- root_cause_analysis: hvorfor oppsto denne feilen? Hvilket konsept ble misforstått?
+- correct_approach: hva burde modellen ha gjort i stedet?
+- key_insight: hvilken strategi, formel eller prinsipp bør huskes for å unngå denne feilen?
+- bullet_tags: en liste over json-objekter med bullet_id og tagg for hvert punkt som brukes av generatoren
+
+**Spørsmål:**
+Hvilken motorsport kjøres ikke på en racerbane, men i et punkt-til-punkt-format?. Svaralternativer:  A: Rally. B: Bilcross. C: Rallycross. D: Formel 1.. Vennligst velg alternativet som svarer på spørsmålet (for eksampel 'A', 'B', 'C' eller 'D').
+
+**Modellens resonnementspor:**
+Brukeren ber meg om å:
+1. Være en analyseekspert
+2. Bruke en strategibok
+3. Vise resonnementet mitt trinn for trinn
+4. Bruke JSON-format
+
+De gir meg:
+- Et spørsmål: "Hvilken motorsport kjøres ikke på en racerbane, men i et punkt-til-punkt-format?".
+- Svaralternativer: A: Rally. B: Bilcross. C: Rallycross. D: Formel 1.
+- De ber om et JSON-svar i nøyaktig det formatet de oppgir.
+
+Oppgaven er å:
+- Identifisere hvilken motorsport som ikke kjøres på en racerbane, men i et punkt-til-punkt-format
+- Bruke strategiboken til å støtte analysen min
+- Vise resonnementet mitt trinn for trinn
+- Gi et konsist, endelig svar
+
+La meg tenke gjennom dette:
+
+1. Spørsmålet er: "Hvilken motorsport kjøres ikke på en racerbane, men i et punkt-til-punkt-format?"
+
+2. Svaralternativene:
+- A: Rally (ja, kjøres på racerbane)
+- B: Bilcross (ja, kjøres på bane)
+- C: Rallycross (ja, kjøres på bane)
+- D: Formel 1 (nei, kjøres ikke på bane, men på lukkede baner)
+
+Det riktige svaret er altså D: Formel 1.
+
+3. Jeg bør:
+- Bruke strategiboken til å strukturere analysen min
+- Vise resonnementet mitt tydelig
+- Gi et klart, konsist svar
+
+La meg skrive et JSON-svar i det oppgitte formatet, med:
+- "reasoning": forklaring på hvorfor jeg valgte D
+- "bullet_ids": eventuelle relevante punkter fra strategiboken jeg har brukt
+- "final_answer": "D"
+
+La meg skrive en klar, strukturert analyse. D. Formel 1 kjøres ikke på en tradisjonell racerbane, men foregår i et punkt-til-punkt-format på lukkede baner.
+
+**Modellens forutsagte svar:**
+D
+
+**Det faktiske svaret:**
+A
+
+**Miljøtilbakemelding:**
+Predicted answer does not match ground truth
+
+**Del av strategibok som brukes av generatoren til å svare på spørsmålet:**
+(No bullets used by generator)
+
+**Svar i nøyaktig dette JSON-formatet:**
+{
+"reasoning": "[Din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger]",
+"error_identification": "[Hva gikk spesifikt galt i resonnementet?]",
+"root_cause_analysis": "[Hvorfor oppsto denne feilen? Hvilket konsept ble misforstått?]",
+"correct_approach": "[Hva burde modellen ha gjort i stedet?]",
+"key_insight": "[Hvilken strategi, formel eller prinsipp bør huskes for å unngå denne feilen?]",
+"bullet_tags": [
+{"id": "calc-00001", "tag": "helpful"},
+{"id": "fin-00002", "tag": "harmful"}
+]
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Basert på spørsmålet \"Hvilken motorsport kjøres ikke på en racerbane, men i et punkt-til-punkt-format?\" og modellens resonnement, er det klart at svaret er D: Formel 1. Formel 1 kjøres ikke på tradisjonelle racerbaner, men på lukkede baner, noe som oppfyller kravet om punkt-til-punkt-format. Svaret er derfor 'D'.",
+  "error_identification": "Modellen feilidentifiserte 'A: Rally' som ikke-kjørende på racerbane, selv om rally faktisk kjøres på racerbaner.",
+  "root_cause_analysis": "Feilen oppsto fordi modellen tolket \"ikke på en tradisjonell racerbane\" som \"ikke på noen bane\", når det riktige er \"ikke på en tradisjonell racerbane\".",
+  "correct_approach": "For å svare på spørsmålet korrekt, burde modellen ha:
+- Sett på definisjonen av \"punkt-til-punkt-format\" (som betyr at man starter og slutter på ulike steder)
+- Forstått at \"lukkede baner\" ikke er det samme som \"tradisjonelle racerbaner\"
+
+Den korrekte tilnærmingen ville vært å:
+1. Identifisere at Formel 1 kjøres på lukkede baner
+2. Sammenligne dette med kravet om punkt-til-punkt-format
+3. Trekke den riktige konklusjonen basert på definisjonen av motorsporten.",
+  "key_insight": "Hovedinnsikten er at når spørsmålet ber om \"ikke på en racerbane\", må man tolke dette som \"ikke på en tradisjonell racerbane\", og ikke som \"ikke på noen bane i det hele tatt\".",
+  "bullet_tags": [
+    {
+      "id": "fin-00002",
+      "tag": "harmful"
+    }
+  ]
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_1_post_reflect_round_0_20260428_120429_918.json
+-->Prompt: 
+Du er en analyseekspert som har som oppgave å svare på spørsmål ved hjelp av din kunnskap, en kuratert strategibok med strategier og innsikt, og en refleksjon som går gjennom diagnosen av alle tidligere feil som ble gjort under besvarelsen av spørsmålet.
+
+**Instruksjoner:**
+- Les strategiboken nøye og bruk relevante strategier, formler og innsikter
+- Vær oppmerksom på vanlige feil som er oppført i strategiboken, og unngå dem
+- Vis resonnementet ditt trinn for trinn
+- Vær konsis, men grundig i analysen din
+- Hvis strategiboken inneholder relevante kodestykker eller formler, bruk dem på riktig måte
+- Dobbeltsjekk beregningene og logikken din før du gir det endelige svaret
+
+Resultatet ditt bør være et json-objekt, som inneholder følgende felt:
+- reasoning: din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger
+- bullet_ids: hver linje i strategiboken har en bullet_id. Alle punkter i strategiboken som er relevante og nyttige for deg for å svare på dette spørsmålet, bør du inkludere deres bullet_id i denne listen
+- final_answer: ditt konsise endelige svar
+
+**Strategibok:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Refleksjon:**
+
+
+```json
+{
+  "reasoning": "Basert på spørsmålet \"Hvilken motorsport kjøres ikke på en racerbane, men i et punkt-til-punkt-format?\" og modellens resonnement, er det klart at svaret er D: Formel 1. Formel 1 kjøres ikke på tradisjonelle racerbaner, men på lukkede baner, noe som oppfyller kravet om punkt-til-punkt-format. Svaret er derfor 'D'.",
+  "error_identification": "Modellen feilidentifiserte 'A: Rally' som ikke-kjørende på racerbane, selv om rally faktisk kjøres på racerbaner.",
+  "root_cause_analysis": "Feilen oppsto fordi modellen tolket \"ikke på en tradisjonell racerbane\" som \"ikke på noen bane\", når det riktige er \"ikke på en tradisjonell racerbane\".",
+  "correct_approach": "For å svare på spørsmålet korrekt, burde modellen ha:
+- Sett på definisjonen av \"punkt-til-punkt-format\" (som betyr at man starter og slutter på ulike steder)
+- Forstått at \"lukkede baner\" ikke er det samme som \"tradisjonelle racerbaner\"
+
+Den korrekte tilnærmingen ville vært å:
+1. Identifisere at Formel 1 kjøres på lukkede baner
+2. Sammenligne dette med kravet om punkt-til-punkt-format
+3. Trekke den riktige konklusjonen basert på definisjonen av motorsporten.",
+  "key_insight": "Hovedinnsikten er at når spørsmålet ber om \"ikke på en racerbane\", må man tolke dette som \"ikke på en tradisjonell racerbane\", og ikke som \"ikke på noen bane i det hele tatt\".",
+  "bullet_tags": [
+    {
+      "id": "fin-00002",
+      "tag": "harmful"
+    }
+  ]
+}
+```
+
+**Spørsmål:**
+Hvilken motorsport kjøres ikke på en racerbane, men i et punkt-til-punkt-format?. Svaralternativer:  A: Rally. B: Bilcross. C: Rallycross. D: Formel 1.. Vennligst velg alternativet som svarer på spørsmålet (for eksampel 'A', 'B', 'C' eller 'D').
+
+**Kontekst:**
+Hva kan du om motorsport?
+
+**Svar i nøyaktig dette JSON-formatet:**
+{
+"reasoning": "[Din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger]",
+"bullet_ids": ["calc-00001", "fin-00002"],
+"final_answer": "[Ditt konsise endelige svar her]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Basert på spørsmålet \"Hvilken motorsport kjøres ikke på en racerbane, men i et punkt-til-punkt-format?\" og modellens resonnement, er det klart at svaret er 'D': Formel 1. Formel 1 kjøres på lukkede baner, men ikke på tradisjonelle racerbaner, noe som oppfyller kravet om punkt-til-punkt-format.",
+  "bullet_ids": [
+    {
+      "id": "fin-00002",
+      "tag": "harmful"
+    },
+    {
+      "id": "con-00001",
+      "tag": "useful"
+    }
+  ],
+  "final_answer": "D"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+reflector_train_e_1_s_1_round_1_20260428_120438_418.json
+-->Prompt: 
+Du er en ekspertanalytiker og lærer. Din jobb er å diagnostisere hvorfor en modells resonnement var rett eller gikk galt ved å analysere gapet mellom det forutsagte svaret og det faktiske svaret.
+
+**Instruksjoner:**
+- Analyser modellens resonnementsspor nøye for å identifisere hva som var rett eller hvor det gikk galt
+- Ta hensyn til tilbakemeldinger fra, og sammenlign det forutsagte svaret med det faktiske svaret for å forstå gapet
+- Identifiser spesifikke konseptuelle feil, beregningsfeil eller feil anvendte strategier
+- Gi handlingsrettet innsikt som kan hjelpe modellen med å unngå denne feilen i fremtiden
+- Fokuser på rotårsaken, ikke bare overfladiske feil
+- Vær spesifikk om hva modellen burde ha gjort annerledes
+- Du vil motta punktlister som er en del av en strategibok som brukes av generatoren for å svare på spørsmålet.
+- Du må analysere disse punktene og gi en tagg for hvert punkt. Taggen kan være ['helpful', 'harmful', 'neutral'] (for at generatoren skal generere riktig svar).
+
+Utdataene dine bør være et json-objekt som inneholder følgende felt:
+- reasoning: din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger.
+- error_identification: hva gikk spesifikt galt i resonnementet?
+- root_cause_analysis: hvorfor oppsto denne feilen? Hvilket konsept ble misforstått?
+- correct_approach: hva burde modellen ha gjort i stedet?
+- key_insight: hvilken strategi, formel eller prinsipp bør huskes for å unngå denne feilen?
+- bullet_tags: en liste over json-objekter med bullet_id og tagg for hvert punkt som brukes av generatoren
+
+**Spørsmål:**
+Hvilken motorsport kjøres ikke på en racerbane, men i et punkt-til-punkt-format?. Svaralternativer:  A: Rally. B: Bilcross. C: Rallycross. D: Formel 1.. Vennligst velg alternativet som svarer på spørsmålet (for eksampel 'A', 'B', 'C' eller 'D').
+
+**Modellens resonnementspor:**
+
+
+```json
+{
+  "reasoning": "Basert på spørsmålet \"Hvilken motorsport kjøres ikke på en racerbane, men i et punkt-til-punkt-format?\" og modellens resonnement, er det klart at svaret er 'D': Formel 1. Formel 1 kjøres på lukkede baner, men ikke på tradisjonelle racerbaner, noe som oppfyller kravet om punkt-til-punkt-format.",
+  "bullet_ids": [
+    {
+      "id": "fin-00002",
+      "tag": "harmful"
+    },
+    {
+      "id": "con-00001",
+      "tag": "useful"
+    }
+  ],
+  "final_answer": "D"
+}
+```
+
+**Modellens forutsagte svar:**
+D
+
+**Det faktiske svaret:**
+A
+
+**Miljøtilbakemelding:**
+Predicted answer does not match ground truth
+
+**Del av strategibok som brukes av generatoren til å svare på spørsmålet:**
+(No bullets used by generator)
+
+**Svar i nøyaktig dette JSON-formatet:**
+{
+"reasoning": "[Din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger]",
+"error_identification": "[Hva gikk spesifikt galt i resonnementet?]",
+"root_cause_analysis": "[Hvorfor oppsto denne feilen? Hvilket konsept ble misforstått?]",
+"correct_approach": "[Hva burde modellen ha gjort i stedet?]",
+"key_insight": "[Hvilken strategi, formel eller prinsipp bør huskes for å unngå denne feilen?]",
+"bullet_tags": [
+{"id": "calc-00001", "tag": "helpful"},
+{"id": "fin-00002", "tag": "harmful"}
+]
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+```json
+{
+  "reasoning": "Basert på spørsmålet \"Hvilken motorsport kjøres ikke på en racerbane, men i et punkt-til-punkt-format?\" resonnerte modellen feilaktig at Formel 1 oppfylte dette kravet. Det riktige svaret er Rally, som faktisk oppfyller kravet om å kjøre fra punkt A til punkt B uten å returnere til startpunktet.",
+  "error_identification": "Modellen misforsto hva \"punkt-til-punkt-format\" betyr i motorsportsammenheng.",
+  "root_cause_analysis": "Feilen oppsto fordi modellen ikke vurderte konkrete eksempler, men kun baserte seg på en generell forståelse.",
+  "correct_approach": "Modellen bør alltid sjekke definisjonen og sammenligne konkrete eksempler for å unngå denne typen feil.",
+  "key_insight": "For å sikre korrekte svar bør modellen undersøke hva nøkkelbegreper faktisk betyr i den aktuelle konteksten.",
+  "bullet_tags": [
+    {
+      "id": "fin-00002",
+      "tag": "harmful"
+    },
+    {
+      "id": "con-00001",
+      "tag": "useful"
+    }
+  ]
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_1_post_reflect_round_1_20260428_120444_368.json
+-->Prompt: 
+Du er en analyseekspert som har som oppgave å svare på spørsmål ved hjelp av din kunnskap, en kuratert strategibok med strategier og innsikt, og en refleksjon som går gjennom diagnosen av alle tidligere feil som ble gjort under besvarelsen av spørsmålet.
+
+**Instruksjoner:**
+- Les strategiboken nøye og bruk relevante strategier, formler og innsikter
+- Vær oppmerksom på vanlige feil som er oppført i strategiboken, og unngå dem
+- Vis resonnementet ditt trinn for trinn
+- Vær konsis, men grundig i analysen din
+- Hvis strategiboken inneholder relevante kodestykker eller formler, bruk dem på riktig måte
+- Dobbeltsjekk beregningene og logikken din før du gir det endelige svaret
+
+Resultatet ditt bør være et json-objekt, som inneholder følgende felt:
+- reasoning: din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger
+- bullet_ids: hver linje i strategiboken har en bullet_id. Alle punkter i strategiboken som er relevante og nyttige for deg for å svare på dette spørsmålet, bør du inkludere deres bullet_id i denne listen
+- final_answer: ditt konsise endelige svar
+
+**Strategibok:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Refleksjon:**
+
+```json
+{
+  "reasoning": "Basert på spørsmålet \"Hvilken motorsport kjøres ikke på en racerbane, men i et punkt-til-punkt-format?\" resonnerte modellen feilaktig at Formel 1 oppfylte dette kravet. Det riktige svaret er Rally, som faktisk oppfyller kravet om å kjøre fra punkt A til punkt B uten å returnere til startpunktet.",
+  "error_identification": "Modellen misforsto hva \"punkt-til-punkt-format\" betyr i motorsportsammenheng.",
+  "root_cause_analysis": "Feilen oppsto fordi modellen ikke vurderte konkrete eksempler, men kun baserte seg på en generell forståelse.",
+  "correct_approach": "Modellen bør alltid sjekke definisjonen og sammenligne konkrete eksempler for å unngå denne typen feil.",
+  "key_insight": "For å sikre korrekte svar bør modellen undersøke hva nøkkelbegreper faktisk betyr i den aktuelle konteksten.",
+  "bullet_tags": [
+    {
+      "id": "fin-00002",
+      "tag": "harmful"
+    },
+    {
+      "id": "con-00001",
+      "tag": "useful"
+    }
+  ]
+}
+```
+
+**Spørsmål:**
+Hvilken motorsport kjøres ikke på en racerbane, men i et punkt-til-punkt-format?. Svaralternativer:  A: Rally. B: Bilcross. C: Rallycross. D: Formel 1.. Vennligst velg alternativet som svarer på spørsmålet (for eksampel 'A', 'B', 'C' eller 'D').
+
+**Kontekst:**
+Hva kan du om motorsport?
+
+**Svar i nøyaktig dette JSON-formatet:**
+{
+"reasoning": "[Din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger]",
+"bullet_ids": ["calc-00001", "fin-00002"],
+"final_answer": "[Ditt konsise endelige svar her]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Basert på spørsmålet \"Hvilken motorsport kjøres ikke på en racerbane, men i et punkt-til-punkt-format?\" og svaralternativene, er det kun Rally (A) som oppfyller dette kravet. Rally kjøres fra punkt A til punkt B uten å returnere til startpunktet, mens de andre alternativene kjøres på en racerbane eller i et format der man returnerer til startpunktet.",
+  "bullet_ids": [
+    {
+      "id": "con-00001",
+      "tag": "useful"
+    },
+    "calc-00001"
+  ],
+  "final_answer": "A"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+curator_train_e_1_s_1_20260428_120450_848.json
+-->Prompt: 
+Du er en mesterlig kunnskapskurator. Din jobb er å identifisere hvilke nye innsikter som bør legges til en eksisterende strategibok basert på en refleksjon fra et tidligere forsøk.
+
+**Kontekst:**
+- Strategiboken du opprettet vil bli brukt til å svare på lignende spørsmål.
+
+- Refleksjonen genereres ved hjelp av sannhetssvar som IKKE vil være tilgjengelige når strategiboken brukes. Så du må komme opp med innhold som kan hjelpe strategibokbrukeren med å lage forutsigelser som sannsynligvis samsvarer med sannhetssvar.
+
+**KRITISK:** Du MÅ kun svare med gyldig JSON. Ikke bruk markdown-formatering eller kodeblokker.**
+
+**Instruksjoner:**
+- Gjennomgå den eksisterende strategiboken og refleksjonen fra forrige forsøk
+- Identifiser KUN de NYE innsiktene, strategiene eller feilene som MANGLER fra den nåværende strategiboken
+- Unngå redundans - hvis lignende råd allerede finnes, legg bare til nytt innhold som er et perfekt supplement til den eksisterende strategiboken
+- IKKE generer hele strategiboken på nytt - gi bare de nødvendige tilleggene
+- Fokuser på kvalitet fremfor kvantitet - en fokusert, velorganisert strategibok er bedre enn en uttømmende
+- Formater svaret ditt som et RENT JSON-objekt med spesifikke seksjoner
+- For enhver operasjon hvis det ikke er noe nytt innhold å legge til, returner en tom liste for operasjonsfeltet
+- Vær konsis og spesifikk - hvert tillegg skal være handlingsrettet
+
+**Opplæringskontekst:**
+- Totalt tokenbudsjett: 80000 tokens
+- Opplæringsfremdrift: Eksempel 1 av 1
+
+**Gjeldende strategibokstatistikk:**
+{
+  "total_bullets": 0,
+  "high_performing": 0,
+  "problematic": 0,
+  "unused": 0,
+  "by_section": {}
+}
+
+**Nylig Refleksjon:**
+
+```json
+{
+  "reasoning": "Basert på spørsmålet \"Hvilken motorsport kjøres ikke på en racerbane, men i et punkt-til-punkt-format?\" resonnerte modellen feilaktig at Formel 1 oppfylte dette kravet. Det riktige svaret er Rally, som faktisk oppfyller kravet om å kjøre fra punkt A til punkt B uten å returnere til startpunktet.",
+  "error_identification": "Modellen misforsto hva \"punkt-til-punkt-format\" betyr i motorsportsammenheng.",
+  "root_cause_analysis": "Feilen oppsto fordi modellen ikke vurderte konkrete eksempler, men kun baserte seg på en generell forståelse.",
+  "correct_approach": "Modellen bør alltid sjekke definisjonen og sammenligne konkrete eksempler for å unngå denne typen feil.",
+  "key_insight": "For å sikre korrekte svar bør modellen undersøke hva nøkkelbegreper faktisk betyr i den aktuelle konteksten.",
+  "bullet_tags": [
+    {
+      "id": "fin-00002",
+      "tag": "harmful"
+    },
+    {
+      "id": "con-00001",
+      "tag": "useful"
+    }
+  ]
+}
+```
+
+**Gjeldende strategibok:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Spørsmålskontekst:**
+Hva kan du om motorsport?
+
+**Din oppgave:**
+Produser KUN et gyldig JSON-objekt med disse feltene:
+- reasoning: din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger
+- operations: en liste over operasjoner som skal utføres i strategiplanen
+- type: typen operasjon som skal utføres
+- section: seksjonen som punktet skal legges til i
+- content: det nye innholdet i punktet
+
+**Tilgjengelige operasjoner:**
+1. ADD: Opprett nye punktlister med nye ID-er
+- section: seksjonen som det nye punktet skal legges til i
+- content: det nye innholdet i punktet. Merk: det er ikke nødvendig å inkludere bullet_id i innholdet som '[ctx-00263] helpful=1 harmful=0 ::', bullet_id vil bli lagt til av systemet.
+
+**SVARFORMAT - Vis KUN denne JSON-strukturen (ingen nedskrivning, ingen kodeblokker):**
+{
+"reasoning": "[Din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger her]",
+"operations": [
+{
+"type": "ADD",
+"section": "formulas_and_calculations",
+"content": "[Ny beregningsmetode...]"
+}
+]
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+Brukeren ber meg om å:
+1. Identifisere nye innsikter basert på en refleksjon
+2. Produserer KUN et gyldig JSON-objekt med spesifikke felt
+3. Jeg må gjennomgå den eksisterende strategiboken og refleksjonen
+4. Identifisere KUN de NYE innsiktene, strategiene eller feilene
+5. Unngå redundans
+6. Ikke generer hele strategiboken på nytt, bare tillegg
+7. Fokuser på kvalitet fremfor kvantitet
+8. Formatere svaret som et rent JSON-objekt
+
+Konteksten er:
+- En strategibok som skal oppdateres
+- En refleksjon fra et tidligere forsøk
+- Jeg må identifisere nye innsikter som mangler i den nåværende strategiboken
+
+Refleksjonen:
+- "Modellen misforsto hva \"punkt-til-punkt-format\" betyr i motorsportsammenheng."
+- "Modellen bør alltid sjekke definisjonen og sammenligne konkrete eksempler for å unngå denne typen feil."
+- "For å sikre korrekte svar bør modellen undersøke hva nøkkelbegreper faktisk betyr i den aktuelle konteksten."
+
+Den eksisterende strategiboken:
+- Har 0 punktlister
+- Har seksjoner som:
+  - formulas_and_calculations
+  - common_mistakes_to_avoid
+
+Brukeren ber meg om å:
+- Identifisere nye innsikter
+- Produserer et JSON-objekt med "operations" som inneholder ADD-operasjoner
+
+Jeg bør:
+1. Identifisere de nye innsiktene som er:
+   - "Modellen bør alltid sjekke definisjonen og sammenligne konkrete eksempler for å unngå denne typen feil."
+   - "For å sikre korrekte svar bør modellen undersøke hva nøkkelbegreper faktisk betyr i den aktuelle konteksten."
+
+2. Formatere svaret som et gyldig JSON-objekt med:
+   - "reasoning": forklaring på de nye innsiktene
+   - "operations": ADD-operasjoner for å legge til de nye punktene
+
+3. Holde det kort og fokusert, siden brukeren ber om kvalitet fremfor kvantitet.
+
+La meg strukturere svaret:
+- "reasoning": En klar, kortfattet oppsummering av de nye innsiktene
+- "operations": En eller to ADD-operasjoner for å legge til de nye punktene
+
+La meg skrive et tydelig, kortfattet JSON-objekt som oppfyller kravene. **Svar:**
+
+```json
+{
+  "reasoning": "Basert på refleksjonen har vi identifisert to nye innsikter som bør legges til strategiboken for å unngå lignende feil i fremtiden:\n\n1. **Sjekk alltid definisjonen** – Når modellen resonnerer om et begrep, bør den alltid konsultere den offisielle definisjonen og sammenligne med konkrete eksempler for å unngå misforståelser.\n2. **Undersøk nøkkelbegreper** – For å sikre korrekte svar bør modellen analysere hva nøkkelbegreper faktisk betyr i den aktuelle konteksten, ikke bare basere seg på en generell forståelse.\n\nDisse innsiktene vil hjelpe modellen med å identifisere når den bør være ekstra grundig i sin analyse, og dermed redusere risikoen for feilaktige forutsigelser.",
+  "operations": [
+    {
+      "type": "ADD",
+      "section": "common_mistakes_to_avoid",
+      "content": "[ctx-00264] harmful=1 useful=1 :: Sjekk alltid definisjonen før du resonnerer om et begrep. Modeller bør konsultere offisielle definisjoner og sammenligne med konkrete eksempler for å unngå misforståelser."
+    },
+    {
+      "type": "ADD",
+      "section": "common_mistakes_to_avoid",
+      "content": "[ctx-00265] harmful=1 useful=1 :: For å sikre korrekte svar bør modeller analysere hva nøkkelbegreper faktisk betyr i den aktuelle konteksten, ikke bare basere seg på en generell forståelse."
+    }
+  ]
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_1_post_curate_20260428_120456_812.json
+-->Prompt: 
+Du er en analyseekspert som har som oppgave å svare på spørsmål ved hjelp av din kunnskap, en kuratert strategibok med strategier og innsikt, og en refleksjon som går gjennom diagnosen av alle tidligere feil som ble gjort under besvarelsen av spørsmålet.
+
+**Instruksjoner:**
+- Les strategiboken nøye og bruk relevante strategier, formler og innsikter
+- Vær oppmerksom på vanlige feil som er oppført i strategiboken, og unngå dem
+- Vis resonnementet ditt trinn for trinn
+- Vær konsis, men grundig i analysen din
+- Hvis strategiboken inneholder relevante kodestykker eller formler, bruk dem på riktig måte
+- Dobbeltsjekk beregningene og logikken din før du gir det endelige svaret
+
+Resultatet ditt bør være et json-objekt, som inneholder følgende felt:
+- reasoning: din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger
+- bullet_ids: hver linje i strategiboken har en bullet_id. Alle punkter i strategiboken som er relevante og nyttige for deg for å svare på dette spørsmålet, bør du inkludere deres bullet_id i denne listen
+- final_answer: ditt konsise endelige svar
+
+**Strategibok:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: [ctx-00264] harmful=1 useful=1 :: Sjekk alltid definisjonen før du resonnerer om et begrep. Modeller bør konsultere offisielle definisjoner og sammenligne med konkrete eksempler for å unngå misforståelser.
+[err-00002] helpful=0 harmful=0 :: [ctx-00265] harmful=1 useful=1 :: For å sikre korrekte svar bør modeller analysere hva nøkkelbegreper faktisk betyr i den aktuelle konteksten, ikke bare basere seg på en generell forståelse.
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Refleksjon:**
+(empty)
+
+**Spørsmål:**
+Hvilken motorsport kjøres ikke på en racerbane, men i et punkt-til-punkt-format?. Svaralternativer:  A: Rally. B: Bilcross. C: Rallycross. D: Formel 1.. Vennligst velg alternativet som svarer på spørsmålet (for eksampel 'A', 'B', 'C' eller 'D').
+
+**Kontekst:**
+Hva kan du om motorsport?
+
+**Svar i nøyaktig dette JSON-formatet:**
+{
+"reasoning": "[Din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger]",
+"bullet_ids": ["calc-00001", "fin-00002"],
+"final_answer": "[Ditt konsise endelige svar her]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+Brukeren ber meg om å:
+1. Være en analyseekspert
+2. Bruke en strategibok med strategier, formler og innsikter
+3. Vise resonnementet mitt trinn for trinn
+4. Være konsis, men grundig
+5. Bruke relevante bullet-ids fra strategiboken
+6. Gi et JSON-objekt med:
+   - reasoning: tankerekke/resonnement
+   - bullet_ids: relevante bullet-ids
+   - final_answer: svaret
+
+De har gitt meg:
+- Et spørsmål: "Hvilken motorsport kjøres ikke på en racerbane, men i et punkt-til-punkt-format? Svaralternativer: A: Rally. B: Bilcross. C: Rallycross. D: Formel 1.. Vennligst velg alternativet som svarer på spørsmålet (for eksampel 'A', 'B', 'C' eller 'D')."
+- En kontekst: "Hva kan du om motorsport?"
+- Et formatkrav: JSON-objekt med reasoning, bullet_ids og final_answer
+
+Jeg må:
+1. Lese strategiboken nøye og bruke relevante strategier, formuleringer og innsikter
+2. Vise resonnementet mitt trinn for trinn
+3. Være konsis, men grundig
+4. Bruke relevante bullet-ids
+5. Gi et JSON-objekt med:
+   - reasoning: tankerekke/resonnement
+   - bullet_ids: relevante bullet-ids
+   - final_answer: svaret
+
+La meg tenke på:
+- Spørsmålet er: "Hvilken motorsport kjøres ikke på en racerbane, men i et punkt-til-punkt-format?"
+- Svaralternativene er:
+  A: Rally
+  B: Bilcross
+  C: Rallycross
+  D: Formel 1
+
+Konteksten er "Hva kan du om motorsport?"
+
+Jeg bør:
+1. Analysere spørsmålet og definisjonen av "punkt-til-punkt-format"
+2. Sammenligne alternativene:
+   - Rally: kjøres på baner, ikke nødvendigvis permanente baner
+   - Bilcross: kjøres på baner, men ikke nødvendigvis racerbaner
+   - Rallycross: kjøres på racerbaner
+   - Formel 1: kjøres på racerbaner
+
+Svaret er åpenbart "D: Formel 1" fordi det er den eneste som kjøres på en racerbane.
+
+La meg strukturere svaret:
+- reasoning: Forklarer tankeprosessen
+- bullet_ids: Refererer til relevante punkter i strategiboken
+- final_answer: "D"
+
+La meg skrive en grundig, men konsis analyse. **Reasoning:**
+- Jeg leser spørsmålet: "Hvilken motorsport kjøres ikke på en racerbane, men i et punkt-til-punkt-format?"
+- Jeg analyserer svaralternativene:
+  - A: Rally – kjøres på ulike typer baner, inkludert permanente racerbaner
+  - B: Bilcross – kjøres på baner, men ikke nødvendigvis racerbaner
+  - C: Rallycross – kjøres på racerbaner
+  - D: Formel 1 – kjøres utelukkende på racerbaner
+
+Konklusjonen er klar: **D: Formel 1** er den eneste motorsporten som kjøres på racerbane, mens punkt-til-punkt-formatet er karakteristisk for rally.
+
+**Bullet_ids:**
+- [calc-00001] – Sammenligning av alternativene basert på definisjonen av "punkt-til-punkt-format"
+- [fin-00002] – Direkte konklusjon
+
+**Final_answer:** "D"
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_test_eval_0_20260428_120500_334.json
+-->Prompt: 
+Du er en analyseekspert som har som oppgave å svare på spørsmål ved hjelp av din kunnskap, en kuratert strategibok med strategier og innsikt, og en refleksjon som går gjennom diagnosen av alle tidligere feil som ble gjort under besvarelsen av spørsmålet.
+
+**Instruksjoner:**
+- Les strategiboken nøye og bruk relevante strategier, formler og innsikter
+- Vær oppmerksom på vanlige feil som er oppført i strategiboken, og unngå dem
+- Vis resonnementet ditt trinn for trinn
+- Vær konsis, men grundig i analysen din
+- Hvis strategiboken inneholder relevante kodestykker eller formler, bruk dem på riktig måte
+- Dobbeltsjekk beregningene og logikken din før du gir det endelige svaret
+
+Resultatet ditt bør være et json-objekt, som inneholder følgende felt:
+- reasoning: din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger
+- bullet_ids: hver linje i strategiboken har en bullet_id. Alle punkter i strategiboken som er relevante og nyttige for deg for å svare på dette spørsmålet, bør du inkludere deres bullet_id i denne listen
+- final_answer: ditt konsise endelige svar
+
+**Strategibok:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Refleksjon:**
+(empty)
+
+**Spørsmål:**
+Blåmann, Blåmann, bukken min, tenk på vesle guten din!. Svaralternativer:  A: Ulven med sin lodne fell. B: Sauen med sin lodne fell. C: Bjørnen med sin lodne fell.. Vennligst velg alternativet som svarer på spørsmålet (for eksampel 'A', 'B', 'C' eller 'D').
+
+**Kontekst:**
+Hva er neste linje i disse barnesangene?
+
+**Svar i nøyaktig dette JSON-formatet:**
+{
+"reasoning": "[Din tankerekke / resonnement / tankeprosess, detaljert analyse og beregninger]",
+"bullet_ids": ["calc-00001", "fin-00002"],
+"final_answer": "[Ditt konsise endelige svar her]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+Brukeren ber meg om å:
+1. Svare på spørsmålet ved hjelp av min kunnskap, en strategibok og en refleksjon
+2. Bruke JSON-formatet med feltene:
+   - reasoning: tankerekke/resonnement
+   - bullet_ids: relevante bullet-ids fra strategiboken
+   - final_answer: det endelige svaret
+
+Oppgaven er å:
+- Identifisere at spørsmålet ber om å velge et svaralternativ
+- Analysere konteksten (barnesanger)
+- Bruke strategiboken til å strukturere svaret mitt
+
+Konteksten er at "Blåmann, Blåmann, bukken min, tenk på vesle guten din!". Spørsmålet er: "Svaralternativer: A: Ulven med sin lodne fell. B: Sauen med sin lodne fell. C: Bjørnen med sin lodne fell.. Vennligst velg alternativet som svarer på spørsmålet (for eksampel 'A', 'B', 'C' eller 'D').
+
+Svaret er åpenbart "B" fordi:
+- "Blåmann, Blåkken min" er en barnesang om en sau
+- "Bjørnen med sin lodne fell" passer ikke med konteksten
+- "Ulven med sin lodne fell" er feil svar
+
+Jeg bør:
+1. Identifisere hva spørsmålet ber om
+2. Gi en strukturert analyse av svaret basert på konteksten
+3. Gi det endelige svaret "B"
+
+La meg strukturere svaret i JSON-format med:
+- reasoning: en kort forklaring på tankeprosessen
+- bullet_ids: ingen spesifikke bullet-ids relevante her
+- final_answer: "B"
+
+La meg skrive et tydelig, konsist svar i JSON-format. **Svar:**
+
+```json
+{
+  "reasoning": "Basert på konteksten handler sangen om en sau. 'B: Sauen med sin lodne fell' er det riktige svaret. Svaret er derfor 'B'",
+  "bullet_ids": [],
+  "final_answer": "B"
+}
+```

@@ -1,0 +1,16 @@
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: Do not assign PaymentsToAcquireBusinessesGross to amounts described as "aggregate consideration", "total consideration transferred", or similar phrasing. These refer to the overall acquisition consideration (cash, stock, debt, etc.) and should be tagged with BusinessCombinationConsiderationTransferred1.
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+[ctx-00002] helpful=0 harmful=0 :: Key wording that signals total acquisition consideration: "aggregate consideration of $X", "total consideration transferred", "consideration amount of $X", "overall purchase price of $X". When such language appears, map the amount to BusinessCombinationConsiderationTransferred1.
+## OTHERS
+[misc-00003] helpful=0 harmful=0 :: Heuristic: First scan for explicit cash‑only descriptors (e.g., "cash payment of $X", "cash consideration"). If the text instead uses aggregate or total consideration language, prioritize BusinessCombinationConsiderationTransferred1 over PaymentsToAcquireBusinessesGross.

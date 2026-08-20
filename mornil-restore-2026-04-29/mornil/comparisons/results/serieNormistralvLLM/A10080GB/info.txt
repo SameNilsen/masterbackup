@@ -1,0 +1,4 @@
+No Threading normistral vllm.
+Vanlig samplingparams, dtype=torch.bfloat16, gpu_memory_utilization=0.8, max_model_len=32768
+Interactive, 16G cpu mem, 1 GPU.
+A100 80GB.

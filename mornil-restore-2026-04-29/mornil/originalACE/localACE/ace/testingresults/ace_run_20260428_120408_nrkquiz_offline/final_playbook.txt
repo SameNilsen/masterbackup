@@ -1,0 +1,15 @@
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: [ctx-00264] harmful=1 useful=1 :: Sjekk alltid definisjonen før du resonnerer om et begrep. Modeller bør konsultere offisielle definisjoner og sammenligne med konkrete eksempler for å unngå misforståelser.
+[err-00002] helpful=0 harmful=0 :: [ctx-00265] harmful=1 useful=1 :: For å sikre korrekte svar bør modeller analysere hva nøkkelbegreper faktisk betyr i den aktuelle konteksten, ikke bare basere seg på en generell forståelse.
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS

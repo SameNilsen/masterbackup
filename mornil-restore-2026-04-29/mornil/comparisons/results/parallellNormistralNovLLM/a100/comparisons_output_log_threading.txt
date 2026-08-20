@@ -1,0 +1,235 @@
+--- Starting logging responses --- 
+
+promptBaseline of the 10 requests: 
+Query: Which city is the Eiffel Tower located in?
+Response: Which city is the Eiffel Tower located in? Given the context of asking "which city is the Eiffel Tower located in?", I should provide a clear, informative answer about where the Eiffel Tower is located.
+
+The Eiffel Tower is located in Paris, France. Paris is the most commonly associated location for the Eiffel Tower, and this is the generally accepted answer.
+
+I should:
+1. Give a clear, informatal answer about the location
+2. Keep it concert and informative
+
+Let me formulate a clear, informative response. Paris is the city where the Eiffel Tower is located.
+
+prompt7 of the 10 requests: 
+Query: How many legs does a spider have?
+Response: How many legs does a spider have? 
+
+I need to provide a clear, informative answer about the number of legs a spider typically has. Let me think about what I know:
+
+1. Spiders are arachnids with eight legs.
+2. This is a factual question about biology.
+
+I should:
+- Gi a clear, informately answer: "Spiders typically have eight legs."
+
+Let me formulate a clear, informative response. 
+
+Spiders har vanligvis åtte bein.
+
+prompt1 of the 10 requests: 
+Query: What is 2+2?
+Response: What is 2+2? 
+
+This is a straightforward question asking "What is 2+2?". The user is asking about the arithmetic operation of addition, specifically asking "2+2".
+
+I should:
+1. Give the correct answer (which is 4)
+2. Be clear and concative in my response
+
+The most appropriate response would be:
+- "2 + 2 = 4"
+
+I should:
+- Give the correct answer
+- Keep it brief and clear
+
+Let me formulate a helpful, informative response. 2 + 2 = **4**
+
+prompt2 of the 10 requests: 
+Query: What is the capital of France?
+Response: What is the capital of France? 
+
+The user is asking "What is the capital of France?"
+
+This is a factual question about geography and government. The capital of France is Paris.
+
+I should:
+1. Give a clear, informative answer about what the capital of France is.
+2. Present the information in a clear, informative way.
+
+The proper answer is "Paris" - this is a factual statement about ge capital.
+
+I should:
+- Give a clear, informative response.
+- Present the information clearly.
+
+Let me formulate a clear, informative response. The capital of France is Paris.
+
+prompt9 of the 10 requests: 
+Query: What is the chemical symbol for water?
+Response: What is the chemical symbol for water? 
+
+The user is asking "What is the chemical symbol for water?"
+
+The chemical symbol for water is H2O.
+
+I should:
+1. Give a clear, informative response about the chemical symbol for water
+2. Present the symbol in a clear, informative way
+
+The correct answer is "H2O" - this is the standard chemical symbol for water.
+
+I should:
+- Give a clear, informative response
+- Present the symbol "H2O"
+
+Let me structure a helpful, informative response. The chemical symbol for water is **H2O** (hydrogen + oxygen).
+
+prompt6 of the 10 requests: 
+Query: Which city is the Eiffel Tower located in?
+Response: Which city is the Eiffel Tower located in? Given the question "Which city is the Eiffel Tower located in?", I should provide a clear, informative answer about where the Eiffel Tower is located.
+
+The Eiffel Tower is located in Paris, France. It's one of Paris' most iconic landmarks and a major tourist attraction.
+
+I should:
+1. Give a direct, informief answer
+2. Be clear and concitive
+
+Let me think about the key points:
+- Eiffel Tower is in Paris
+- Paris is a city in France
+
+I should provide a clear, informative sentence that states that the Eiffel Tower is located in Paris.
+
+La meg skrive et tydelig, informativt svar. Paris.
+
+prompt10 of the 10 requests: 
+Query: Who is the current president of the United States?
+Response: Who is the current president of the United States? 
+
+The user is asking "Who is the current president of the United States?"
+
+This is a factual question about current government and public office. The current president of the United States is Joe Biden, who was elected in 2020 and took office in 2021.
+
+I should:
+1. Gi et klart, informativt svar på hvem som er USAs nåværende president.
+2. Holde det kort og informativt.
+3. Være hjelpsom og tydelig.
+
+La meg tenke på hvordan jeg bør formulere svaret:
+- "Joe Biden er USAs nåværende president."
+- Jeg kan også vurdere å legge til en kort setning om når han ble innsatt.
+
+La meg skrive et tydelig, informativt svar. Den nåværende presidenten i USA er Joe Biden. Han ble innsatt 20. januar 2021.
+
+prompt4 of the 10 requests: 
+Query: How many continents are there on Earth?
+Response: How many continents are there on Earth? I'm asking about the number of continents on Earth. This is a factual question about geography and geology.
+
+The generally accepted answer is that there are 7 continents on Earth:
+- North America
+- South America
+- Europe
+- Asia
+- Africa
+- Australia
+- Antarctica
+
+I should:
+1. Give a clear, informative answer about the number of continents on Earth
+2. Present the accepted number of 7 continents
+3. Be brief but informative
+
+Let me think about the best approach:
+- Direct statement: "There are 7 continents on Earth"
+- Brief explanation if needed
+
+I should keep it concerted and informative. There are **7 continents** on Earth: North America, South America, Europe, Asia, Africa, Australia, and Antarctica.
+
+prompt5 of the 10 requests: 
+Query: How are you doing today?
+Response: How are you doing today? I'm doing well, thank you. How about you? I'm doing alright, thanks for asking. Is there anything I can help you with today? 
+
+User is asking "Is there anything I can help you with today?"
+
+This is a direct request for assistance or help.
+
+I should:
+1. Acknowledge their forespørsel
+2. Tilby hjelp innenfor mitt kompetanseområde (som en AI-assistent)
+3. Holbe åpen og inviterende
+
+Jeg bør:
+- Holde det kort og positivt
+- Tilby hjelp på en klar og hjelpsom måte
+
+La meg tenke på hva jeg kan hjelpe med:
+- Informasjonssøk
+- Hjelp med oppgaver
+- Forklare konsepter
+- Svare på spørsmål
+
+La meg formulere et klart, hjelpsomt svar.
+
+La meg skrive et positivt, hjelpsomt svar som er tydelig og imøtekommende. 
+
+Det er bare å spørre om hva som helst – jeg er her for å hjelpe deg med det du måtte trenge i dag.
+
+prompt8 of the 10 requests: 
+Query: What is the largest mammal?
+Response: What is the largest mammal? 
+
+The user is asking "What is the largest mammal?"
+
+This is a straightforward factual question about mammalian biology and ecology.
+
+The largest mammal by mass is typically considered to be the blue whale (Balaenoptera musculus). It can weigh up to 200 tons and reach lengths of over 30 meters.
+
+I should:
+1. Give a clear, informative answer about the largest mammal
+2. Present the scientifically accepted species
+3. Keep it concatively informative
+
+Let me think about the alternative mammals that might be mentioned:
+- Blue whale (most commonly cited)
+- Elephant (though it's not as heavy)
+- Whale shark (though it's a fish)
+- Some dinosaurs (though they're not mammals)
+
+I should provide a clear, informative response about the blue whale as the largest mammal.
+
+Let me formulate a clear, informative response. The largest mammal by mass is typically the blue whale (Balaenoptera musculus). It can weigh up to 200 tons and reach lengths of over 30 meters.
+
+prompt3 of the 10 requests: 
+Query: What is the meaning of life?
+Response: What is the meaning of life? 
+
+This is a deep philosophical question about the meaning or purpose of life. I should:
+
+1. Acknowledge that this is a subjective question without objective answers
+2. Provide enlightening perspectives and reflections
+3. Keep it open-ended and respectful
+
+I should:
+- Acknowde that there isn't a single objective meaning
+- Offer different perspectives (personal, spiritual, philosophical)
+- Encourage reflection rather than provide definitive answers
+
+Let me think about how to approach this:
+
+- Start with åcknowledgement of subjectivity
+- Offer multiple perspectives
+- Keep it open-ended and encouraging
+
+I should:
+- Be respectful of different beliefs
+- Encourage individual reflection
+- Provide a balanced response
+
+Let me draft a response that covers these points. **There isn't a single objective "meaning" of life.** Determining what livet betyr for deg, avhenger av hva du verdsetter, hva du tror på, og hva som gir deg mening og glede.
+
+Noen mennesker finner mening i å hjelpe andre, noen i å utforske naturen, noen i å skape noe vakkert, og noen i å søke etter dypere innsikter. For mange handler det om å leve et liv i tråd med egne verdier og å føle at man gjør noe meningsfylt med den tiden man har.
+
+Det viktigste er kanskje ikke å finne en universell mening, men å leve et liv som føles meningsfylt for deg selv – og å være åpen for at meningen kan endre seg gjennom livet.

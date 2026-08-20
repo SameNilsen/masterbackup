@@ -1,0 +1,53 @@
+[
+  {
+    "epoch": 1,
+    "step": 1,
+    "target": "negativ",
+    "pre_train_result": {
+      "final_answer": "negativ",
+      "is_correct": true,
+      "playbook_num_tokens": 61,
+      "playbook_length": 184
+    },
+    "post_train_result": {
+      "final_answer": "No final answer found",
+      "is_correct": false,
+      "playbook_num_tokens": 308,
+      "playbook_length": 944
+    }
+  },
+  {
+    "epoch": 1,
+    "step": 2,
+    "target": "positiv",
+    "pre_train_result": {
+      "final_answer": "negativ",
+      "is_correct": false,
+      "playbook_num_tokens": 308,
+      "playbook_length": 944
+    },
+    "post_train_result": {
+      "final_answer": "positiv",
+      "is_correct": true,
+      "playbook_num_tokens": 479,
+      "playbook_length": 1470
+    }
+  },
+  {
+    "epoch": 1,
+    "step": 3,
+    "target": "positiv",
+    "pre_train_result": {
+      "final_answer": "positiv",
+      "is_correct": true,
+      "playbook_num_tokens": 479,
+      "playbook_length": 1470
+    },
+    "post_train_result": {
+      "final_answer": "positiv",
+      "is_correct": true,
+      "playbook_num_tokens": 479,
+      "playbook_length": 1470
+    }
+  }
+]

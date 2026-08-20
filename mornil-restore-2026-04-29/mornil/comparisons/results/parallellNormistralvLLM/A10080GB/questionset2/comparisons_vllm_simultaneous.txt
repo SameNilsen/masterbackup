@@ -1,0 +1,5 @@
+--- Starting comparisons --- 
+Initial GPU memory loaded: [65979] MiB
+Of total GPU memory: [81920] MiB
+
+In total for 10 requests: Time taken for comparisons: 4.729132642969489 seconds.

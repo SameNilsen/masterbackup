@@ -1,0 +1,87 @@
+[
+  {
+    "epoch": 1,
+    "step": 1,
+    "target": "BusinessAcquisitionEquityInterestsIssuedOrIssuableNumberOfSharesIssued,PaymentsToAcquireBusinessesGross,PaymentsToAcquireBusinessesGross,BusinessCombinationConsiderationTransferred1",
+    "pre_train_result": {
+      "final_answer": "common_stock_shares_outstanding, cash, purchase_price, aggregate_cost",
+      "is_correct": false,
+      "playbook_num_tokens": 61,
+      "playbook_length": 184
+    },
+    "post_train_result": {
+      "final_answer": "CommonStockSharesOutstanding,CashAndCashEquivalents,BusinessCombinationAcquisitionRelatedCosts,AcquisitionCosts",
+      "is_correct": false,
+      "playbook_num_tokens": 61,
+      "playbook_length": 184
+    }
+  },
+  {
+    "epoch": 1,
+    "step": 2,
+    "target": "ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsInPeriod,ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsInPeriod,StockIssuedDuringPeriodSharesNewIssues,DebtInstrumentConvertibleConversionPrice1",
+    "pre_train_result": {
+      "final_answer": "service-base,share-based,sale-of-stock,sale-of-stock",
+      "is_correct": false,
+      "playbook_num_tokens": 61,
+      "playbook_length": 184
+    },
+    "post_train_result": {
+      "final_answer": "ShareBasedCompensationArrangementByShareBasedPaymentAward,ShareBasedCompensationArrangementByShareBasedPaymentAwardNumberOfSharesAvailableForGrant,CommonStockSharesOutstanding,SaleOfStock",
+      "is_correct": false,
+      "playbook_num_tokens": 61,
+      "playbook_length": 184
+    }
+  },
+  {
+    "epoch": 1,
+    "step": 3,
+    "target": "LineOfCreditFacilityMaximumBorrowingCapacity,DebtInstrumentBasisSpreadOnVariableRate1,DebtInstrumentBasisSpreadOnVariableRate1,DebtInstrumentBasisSpreadOnVariableRate1",
+    "pre_train_result": {
+      "final_answer": "No final answer found",
+      "is_correct": false,
+      "playbook_num_tokens": 61,
+      "playbook_length": 184
+    },
+    "post_train_result": {
+      "final_answer": "No final answer found",
+      "is_correct": false,
+      "playbook_num_tokens": 61,
+      "playbook_length": 184
+    }
+  },
+  {
+    "epoch": 1,
+    "step": 4,
+    "target": "DebtInstrumentInterestRateStatedPercentage,LineOfCreditFacilityMaximumBorrowingCapacity,LineOfCreditFacilityMaximumBorrowingCapacity,LettersOfCreditOutstandingAmount",
+    "pre_train_result": {
+      "final_answer": "debtInstrumentInterestRate, creditFacility, creditFacility, letterOfCredit",
+      "is_correct": false,
+      "playbook_num_tokens": 61,
+      "playbook_length": 184
+    },
+    "post_train_result": {
+      "final_answer": "DebtInstrumentInterestRate,LineOfCreditFacilityAmount,LineOfCreditFacilityAvailability,LineOfCreditFacilityOutstanding",
+      "is_correct": false,
+      "playbook_num_tokens": 61,
+      "playbook_length": 184
+    }
+  },
+  {
+    "epoch": 1,
+    "step": 5,
+    "target": "DebtInstrumentInterestRateStatedPercentage,InterestExpenseDebt,InterestExpenseDebt,ConcentrationRiskPercentage1",
+    "pre_train_result": {
+      "final_answer": "InterestExpense, InterestExpense, InterestExpense, Revenue",
+      "is_correct": false,
+      "playbook_num_tokens": 61,
+      "playbook_length": 184
+    },
+    "post_train_result": {
+      "final_answer": "InterestRateEffectivePercentage,InterestExpense,InterestExpense,Percentage",
+      "is_correct": false,
+      "playbook_num_tokens": 61,
+      "playbook_length": 184
+    }
+  }
+]

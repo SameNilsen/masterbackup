@@ -1,0 +1,62 @@
+
+============================================================
+CURATOR FAILURE LOG
+============================================================
+Timestamp: 2026-02-13 11:10:09
+Epoch: 0
+Step: 1
+Failure Type: json_parse_error
+Error Details: Failed to extract valid JSON from curator response
+
+Raw Curator Response (first 1000 chars):
+----------------------------------------
+
+```json
+{
+  "reasoning": "**Min detaljerte analyse og beregninger:**
+
+1. Gitt:
+   - Eiendeler: 1 000 000 kr
+   - Gjeld: 500 000 kr
+
+2. Jeg beregnet: Gjeldsgrad = Gjeld / Eiendeler = 500 000 kr / 1 000 000 kr = 0,5
+
+3. Svaret: 0,5"
+
+  "operations": [
+    {
+      "type": "ADD",
+      "section": "formulas_and_calculations",
+      "content": "[Gjeldsgrad = Gjeld / Eiendeler]"
+    }
+  ]
+}
+```
+----------------------------------------
+
+Full Raw Curator Response:
+----------------------------------------
+
+```json
+{
+  "reasoning": "**Min detaljerte analyse og beregninger:**
+
+1. Gitt:
+   - Eiendeler: 1 000 000 kr
+   - Gjeld: 500 000 kr
+
+2. Jeg beregnet: Gjeldsgrad = Gjeld / Eiendeler = 500 000 kr / 1 000 000 kr = 0,5
+
+3. Svaret: 0,5"
+
+  "operations": [
+    {
+      "type": "ADD",
+      "section": "formulas_and_calculations",
+      "content": "[Gjeldsgrad = Gjeld / Eiendeler]"
+    }
+  ]
+}
+```
+----------------------------------------
+

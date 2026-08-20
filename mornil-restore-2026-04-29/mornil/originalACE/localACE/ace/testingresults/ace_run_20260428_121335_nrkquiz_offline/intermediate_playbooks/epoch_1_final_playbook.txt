@@ -1,0 +1,21 @@
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+[calc-00005] helpful=0 harmful=0 :: [Ny beregningsmetode...]
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=1 :: [ctx-00264] **Sjekk kilder** = 1 helpful=1 harmful=0 :: Vær nøye med å bruke pålitelige kilder for statistikk.
+[err-00002] helpful=0 harmful=0 :: [ctx-00265] helpful=1 harmful=0 :: **Sjekk forutsetningene** = 1 helpful=1 harmful=0 :: Vær tydelig på hva spørsmålet ber om, og sjekk at du har all nødvendig informasjon før du begynner å analysere.
+[err-00004] helpful=0 harmful=0 :: [ctx-00263] helpful=1 harmful=0 :: Vær nøye med å lese spørsmålet og vurdere alle oppgitte kriterier, ikke bare det som nevnes i teksten.
+[err-00006] helpful=0 harmful=0 :: [ctx-00263] helpful=1 harmful=0 :: Sjekk kilder = 1 helpful=1 harmful=0 :: Vær nøye med å bruke pålitelige kilder for statistikk.
+[err-00007] helpful=0 harmful=0 :: [ctx-00265] helpful=1 harmful=0 :: Sjekk forutsetninger = 1 helpful=1 harmful=0 :: Vær tydelig på hva spørsmålet ber om, og sjekk at du har all nødvendig informasjon før du begynner å analysere.
+[err-00008] helpful=0 harmful=0 :: [ctx-00263] helpful=1 harmful=0 :: Sjekk kilder = 1 helpful=1 harmful=0 :: Vær nøye med å lese spørsmålet og vurdere alle oppgitte kriterier, ikke bare det som nevnes i teksten.
+## PROBLEM-SOLVING HEURISTICS
+
+[ph-00003] helpful=0 harmful=0 :: [ctx-00266] helpful=1 harmful=0 :: **Sjekk kilder** = 1 helpful=1 harmful=0 :: Vær nøye med å bruke pålitelige kilder for statistikk.
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS

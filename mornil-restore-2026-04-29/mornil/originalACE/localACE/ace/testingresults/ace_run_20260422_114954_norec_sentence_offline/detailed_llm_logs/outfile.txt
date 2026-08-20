@@ -1,0 +1,2114 @@
+"model_config_string": "normistral11b_thinking_vllm_full_32768_0.8_bfloat16_a100_pcie_40GB"
+3 samples norec_sentence. 
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_test_eval_0_20260422_115004_164.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Reflection:**
+(empty)
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Garmin Fenix Chronos er meget god tur- og treningskamerat , og mye flottere enn vanlige smartklokker .
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Setningen beskriver Garmin Fenix Chronos som 'meget god' og 'mye flottere enn vanlige smartklokker', noe som er tydelig positivt. Derfor er den positiv.",
+  "bullet_ids": [],
+  "final_answer": "positiv"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_test_eval_1_20260422_115010_698.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Reflection:**
+(empty)
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Årets nye Garmin Fenix Chronos tar det hele til et nytt nivå .
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Setningen 'Årets nye Garmin Fenix Chronos tar det hele til et nytt nivå' er positivt formulert, da den beskriver en ny produktlansering som 'tar det hele til et nytt nivå'.",
+  "bullet_ids": [],
+  "final_answer": "positiv"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_test_eval_2_20260422_115017_395.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Reflection:**
+(empty)
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Her har fokuset på funksjoner og indre kvaliteter , for første gang blitt kombinert med en ambisiøs satsning på et ekslusivt ytre .
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Setningen beskriver en positiv ambisjon om å kombinere indre kvaliteter med et eksklusivt ytre. Den er derfor positiv.",
+  "bullet_ids": [],
+  "final_answer": "positiv"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_1_gen_initial_20260422_115025_726.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Reflection:**
+(empty)
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Eller bedrar skinnet ?
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+Brukeren ber meg om å:
+1. Analysere spørsmålet: "Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Eller bedrager skinnet?"
+2. Levere svaret i nøyaktig JSON-format med:
+   - "reasoning": Chain of thought
+   - "bullet_ids": Relevante bullet ID-er fra playbook
+   - "final_answer": Svaret
+
+Jeg må:
+- Identifisere om setningen er positiv eller negativ basert på innholdet
+- Levere en grundig, men konsis begrunnelse
+- Bruke JSON-formatet nøyaktig
+
+La meg tenke på:
+- Setningen er: "Eller bedrar skinnet?"
+- Dette er en spørsmålsstilling som ber om en vurdering av om noe er positivt eller negativt.
+- Setningen "Eller bedrar skinnet?" er negativt formulert.
+- Den spør: "Er denne setningen positiv eller negativ?"
+- Svaret skal være "negativ".
+
+Jeg bør:
+1. Identifisere at setningen er negativt formulert
+2. Gi en kort, klar begrunnelse
+3. Bruke de riktige bullet ID-ene
+4. Levere svaret i JSON-format
+
+La meg strukturere svaret:
+- "reasoning": Kort, klar begrunnelse
+- "bullet_ids": ["calc-00001", "fin-00002"] (siden jeg bruker kalkulasjon og en ferdig formulering)
+- "final_answer": "negativ"
+
+La meg skrive en tydelig, informativ JSON-struktur. **JSON-svar:**
+
+```json
+{
+  "reasoning": "Setningen 'Eller bedrar skinnet?' er negativt formulert og spør om den er positiv eller negativ. Svaret er derfor 'negativ'",
+  "bullet_ids": [
+    "calc-00001",
+    "fin-00002"
+  ],
+  "final_answer": "negativ"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+reflector_train_e_1_s_1_reflect_on_correct_20260422_115042_361.json
+-->Prompt: 
+You are an expert analyst and educator. Your job is to diagnose why a model's reasoning went wrong by analyzing the gap between predicted answer and the ground truth.
+
+**Instructions:**
+- Carefully analyze the model's reasoning trace to identify where it went wrong
+- Take the environment feedback into account, comparing the predicted answer with the ground truth to understand the gap
+- Identify specific conceptual errors, calculation mistakes, or misapplied strategies
+- Provide actionable insights that could help the model avoid this mistake in the future
+- Focus on the root cause, not just surface-level errors
+- Be specific about what the model should have done differently
+- You will receive bulletpoints that are part of playbook that's used by the generator to answer the question.
+- You need to analyze these bulletpoints, and give the tag for each bulletpoint, tag can be ['helpful', 'harmful', 'neutral'] (for the generator to generate the correct answer)
+
+Your output should be a json object, which contains the following fields
+  - reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+  - error_identification: what specifically went wrong in the reasoning?
+  - root_cause_analysis: why did this error occur? What concept was misunderstood?
+  - correct_approach: what should the model have done instead?
+  - key_insight: what strategy, formula, or principle should be remembered to avoid this error?
+  - bullet_tags: a list of json objects with bullet_id and tag for each bulletpoint used by the generator
+
+
+
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Eller bedrar skinnet ?
+
+**Model's Reasoning Trace:**
+Brukeren ber meg om å:
+1. Analysere spørsmålet: "Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Eller bedrager skinnet?"
+2. Levere svaret i nøyaktig JSON-format med:
+   - "reasoning": Chain of thought
+   - "bullet_ids": Relevante bullet ID-er fra playbook
+   - "final_answer": Svaret
+
+Jeg må:
+- Identifisere om setningen er positiv eller negativ basert på innholdet
+- Levere en grundig, men konsis begrunnelse
+- Bruke JSON-formatet nøyaktig
+
+La meg tenke på:
+- Setningen er: "Eller bedrar skinnet?"
+- Dette er en spørsmålsstilling som ber om en vurdering av om noe er positivt eller negativt.
+- Setningen "Eller bedrar skinnet?" er negativt formulert.
+- Den spør: "Er denne setningen positiv eller negativ?"
+- Svaret skal være "negativ".
+
+Jeg bør:
+1. Identifisere at setningen er negativt formulert
+2. Gi en kort, klar begrunnelse
+3. Bruke de riktige bullet ID-ene
+4. Levere svaret i JSON-format
+
+La meg strukturere svaret:
+- "reasoning": Kort, klar begrunnelse
+- "bullet_ids": ["calc-00001", "fin-00002"] (siden jeg bruker kalkulasjon og en ferdig formulering)
+- "final_answer": "negativ"
+
+La meg skrive en tydelig, informativ JSON-struktur. **JSON-svar:**
+
+```json
+{
+  "reasoning": "Setningen 'Eller bedrar skinnet?' er negativt formulert og spør om den er positiv eller negativ. Svaret er derfor 'negativ'",
+  "bullet_ids": [
+    "calc-00001",
+    "fin-00002"
+  ],
+  "final_answer": "negativ"
+}
+```
+
+**Model's Predicted Answer:**
+negativ
+
+**Ground Truth Answer:**
+Negative
+
+**Environment Feedback:**
+Predicted answer matches ground truth
+
+**Part of Playbook that's used by the generator to answer the question:**
+(No bullets used by generator)
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",
+  "error_identification": "[What specifically went wrong in the reasoning?]",
+  "root_cause_analysis": "[Why did this error occur? What concept was misunderstood?]",
+  "correct_approach": "[What should the model have done instead?]",
+  "key_insight": "[What strategy, formula, or principle should be remembered to avoid this error?]",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "helpful"},
+    {"id": "fin-00002", "tag": "harmful"}
+  ]
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+```json
+{
+  "reasoning": "[Din analyse av feilene]",
+  "error_identification": "[Konkret hva som gikk galt]",
+  "root_cause_analysis": "[Hvorfor det skjedde]",
+  "correct_approach": "[Hva modellen burde ha gjort]",
+  "key_insight": "[Hva modellen bør huske]",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "hjelpful"},
+    {"id": "fin-00002", "tag": "skadelig"}
+  ]
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+curator_train_e_1_s_1_20260422_115050_827.json
+-->Prompt: 
+You are a master curator of knowledge. Your job is to identify what new insights should be added to an existing playbook based on a reflection from a previous attempt.
+
+**Context:**
+- The playbook you created will be used to help answering similar questions. 
+- The reflection is generated using ground truth answers that will NOT be available when the playbook is being used. So you need to come up with content that can aid the playbook user to create predictions that likely align with ground truth. 
+
+**CRITICAL: You MUST respond with valid JSON only. Do not use markdown formatting or code blocks.**
+
+**Instructions:**
+- Review the existing playbook and the reflection from the previous attempt
+- Identify ONLY the NEW insights, strategies, or mistakes that are MISSING from the current playbook
+- Avoid redundancy - if similar advice already exists, only add new content that is a perfect complement to the existing playbook
+- Do NOT regenerate the entire playbook - only provide the additions needed
+- Focus on quality over quantity - a focused, well-organized playbook is better than an exhaustive one
+- Format your response as a PURE JSON object with specific sections
+- For any operation if no new content to add, return an empty list for the operations field
+- Be concise and specific - each addition should be actionable
+
+
+**Training Context:**
+- Total token budget: 80000 tokens
+- Training progress: Sample 1 out of 3
+
+**Current Playbook Stats:**
+{
+  "total_bullets": 0,
+  "high_performing": 0,
+  "problematic": 0,
+  "unused": 0,
+  "by_section": {}
+}
+
+**Recent Reflection:**
+
+```json
+{
+  "reasoning": "[Din analyse av feilene]",
+  "error_identification": "[Konkret hva som gikk galt]",
+  "root_cause_analysis": "[Hvorfor det skjedde]",
+  "correct_approach": "[Hva modellen burde ha gjort]",
+  "key_insight": "[Hva modellen bør huske]",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "hjelpful"},
+    {"id": "fin-00002", "tag": "skadelig"}
+  ]
+}
+```
+
+**Current Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Question Context:**
+
+
+**Your Task:**
+Output ONLY a valid JSON object with these exact fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- operations: a list of operations to be performed on the playbook
+  - type: the type of operation to be performed
+  - section: the section to add the bullet to
+  - content: the new content of the bullet
+
+**Available Operations:**
+1. ADD: Create new bullet points with fresh IDs
+    - section: the section to add the new bullet to
+    - content: the new content of the bullet. Note: no need to include the bullet_id in the content like '[ctx-00263] helpful=1 harmful=0 ::', the bullet_id will be added by the system.
+
+**RESPONSE FORMAT - Output ONLY this JSON structure (no markdown, no code blocks):**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations here]",
+  "operations": [
+    {
+      "type": "ADD", 
+      "section": "formulas_and_calculations",
+      "content": "[New calculation method...]"
+    }
+  ]
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+Brukeren ber meg om å:
+1. Identifisere nye innsikter, strategier eller feil fra en refleksjon
+2. Formatere svaret som ren JSON uten markdown eller kodeblokker
+3. Kun levere det som er nytt, ikke hele playbooken på nytt
+
+Konteksten:
+- Jeg skal analysere en refleksjon
+- Jeg skal identifisere det som mangler i playbooken
+- Jeg skal levere en JSON-struktur med "operations" som inneholder de nye tilleggene
+
+Jeg bør:
+1. Lese gjennom refleksjonen for å identifisere hva som ikke var dekket i playbooken
+2. Identifisere konkrete nye innsikter, strategier eller feil
+3. Formatere svaret som ren JSON med "operations" som inneholder de nye elementene
+
+La meg tenke gjennom hva som manglet i playbooken basert på refleksjonen:
+- Refleksjonen nevner:
+  - "error_identification": Konkret hva som gikk galt
+  - "root_cause_analysis": Hvorfor det skjedde
+  - "correct_approach": Hva modellen burde ha gjort
+
+Disse punktene ser ut til å være relatert til feilhåndtering og rotårsaksanalyse, noe som er viktig for å forbedre modellen.
+
+Jeg bør:
+- Identifisere de nye punktene som mangler i playbooken
+- Formatere dem tydelig i JSON-strukturen
+
+La meg skrive en klar, kortfattet JSON-struktur med de nye elementene. **Output only JSON structure:**
+
+```json
+{
+  "reasoning": "Basert på refleksjonen identifiserte jeg følgende nye innsikter til playbooken:",
+  "operations": [
+    {
+      "type": "ADD",
+      "section": "common_mistakes_to_avoid",
+      "content": "[Root cause analysis] - En grundig analyse av hvorfor feilene oppstod."
+    },
+    {
+      "type": "ADD",
+      "section": "error_identification",
+      "content": "[Konkret feilidentifikasjon] - Spesifikke eksempler på hva modellen gjorde feil."
+    }
+  ]
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_1_post_curate_20260422_115057_547.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: [Root cause analysis] - En grundig analyse av hvorfor feilene oppstod.
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+[misc-00002] helpful=0 harmful=0 :: [Konkret feilidentifikasjon] - Spesifikke eksempler på hva modellen gjorde feil.
+
+**Reflection:**
+(empty)
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Eller bedrar skinnet ?
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Setningen 'Eller bedrar skinnet ?' inneholder ordet 'bedrar', som er negativt ladet. Derfor er den negativ.",
+  "bullet_ids": ["calc-00001"],
+  "final_answer": "negativ"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_2_gen_initial_20260422_115105_628.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: [Root cause analysis] - En grundig analyse av hvorfor feilene oppstod.
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+[misc-00002] helpful=0 harmful=0 :: [Konkret feilidentifikasjon] - Spesifikke eksempler på hva modellen gjorde feil.
+
+**Reflection:**
+(empty)
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Baksiden er sort , blank og skinnende , med et deksel som skjuler kontakter og kabler .
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Setningen beskriver et produkt med sort, blank og skinnende bakside, med et deksel som skjuler kontakter og kabler. Dette er en nøytral, beskrivende setning uten positive ladede ord. Svaret er derfor 'negativ'",
+  "bullet_ids": ["calc-00001", "fin-00002"],
+  "final_answer": "negativ"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+reflector_train_e_1_s_2_round_0_20260422_115119_744.json
+-->Prompt: 
+You are an expert analyst and educator. Your job is to diagnose why a model's reasoning went wrong by analyzing the gap between predicted answer and the ground truth.
+
+**Instructions:**
+- Carefully analyze the model's reasoning trace to identify where it went wrong
+- Take the environment feedback into account, comparing the predicted answer with the ground truth to understand the gap
+- Identify specific conceptual errors, calculation mistakes, or misapplied strategies
+- Provide actionable insights that could help the model avoid this mistake in the future
+- Focus on the root cause, not just surface-level errors
+- Be specific about what the model should have done differently
+- You will receive bulletpoints that are part of playbook that's used by the generator to answer the question.
+- You need to analyze these bulletpoints, and give the tag for each bulletpoint, tag can be ['helpful', 'harmful', 'neutral'] (for the generator to generate the correct answer)
+
+Your output should be a json object, which contains the following fields
+  - reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+  - error_identification: what specifically went wrong in the reasoning?
+  - root_cause_analysis: why did this error occur? What concept was misunderstood?
+  - correct_approach: what should the model have done instead?
+  - key_insight: what strategy, formula, or principle should be remembered to avoid this error?
+  - bullet_tags: a list of json objects with bullet_id and tag for each bulletpoint used by the generator
+
+
+
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Baksiden er sort , blank og skinnende , med et deksel som skjuler kontakter og kabler .
+
+**Model's Reasoning Trace:**
+
+
+```json
+{
+  "reasoning": "Setningen beskriver et produkt med sort, blank og skinnende bakside, med et deksel som skjuler kontakter og kabler. Dette er en nøytral, beskrivende setning uten positive ladede ord. Svaret er derfor 'negativ'",
+  "bullet_ids": ["calc-00001", "fin-00002"],
+  "final_answer": "negativ"
+}
+```
+
+**Model's Predicted Answer:**
+negativ
+
+**Ground Truth Answer:**
+Positive
+
+**Environment Feedback:**
+Predicted answer does not match ground truth
+
+**Part of Playbook that's used by the generator to answer the question:**
+(No bullets used by generator)
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",
+  "error_identification": "[What specifically went wrong in the reasoning?]",
+  "root_cause_analysis": "[Why did this error occur? What concept was misunderstood?]",
+  "correct_approach": "[What should the model have done instead?]",
+  "key_insight": "[What strategy, formula, or principle should be remembered to avoid this error?]",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "helpful"},
+    {"id": "fin-00002", "tag": "harmful"}
+  ]
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+Brukeren ber meg om å:
+1. Analyser hvorfor modellen gikk galt
+2. Identifiser hva som gikk galt i resonneringen
+3. Gi en detaljert analyse av feilen
+4. Foreslå hva modellen burde ha gjort
+5. Gi en nøkkelinnsikt for å unngå lignende feil
+
+Oppgaven er å:
+- Gå gjennom modellens resonnement
+- Identifisere feilen
+- Forklare hvorfor feilen oppstod
+- Foreslå korrekt tilnærming
+- Gi en nøkkelinnsikt
+
+La meg analysere:
+- Modellens resonnement: "Setningen beskriver et produkt med sort, blank og skinnende bakside, med et deksel som skjuler kontakter og kabler. Dette er en nøytral, beskrivende setning uten positive ladede ord. Svaret er derfor 'negativ'"
+- Feilen: Modellen har tolket "baksiden er sort, blank og skinnende" som negativt, selv om det er en positiv beskrivelse av et produkt.
+- Korrekt tilnærming ville være å vurdere:
+  - "sort, blank og skinnende" er positive egenskaper
+  - "deksel som skjuler kontakter og kabler" er praktisk
+  - Samlet sett er dette en positiv beskrivelse av et produkt
+
+La meg strukturere svaret:
+- Reasoning: Min analyse av modellens feil
+- Error identification: Hva gikk galt
+- Root cause analysis: Hvorfor feilen oppstod
+- Correct approach: Hva modellen burde ha gjort
+- Key insight: Hva den bør huske for å unngå lignende feil
+
+La meg skrive et tydelig og informativ svar i JSON-format. **JSON-svar:**
+
+```json
+{
+  "reasoning": "Analysen viser at modellen gjorde en grunnleggende feil i sin tolkning av setningen. Den tolket beskrivelsen av produktet som 'sort, blank og skinnende' som negativt, når det i realiteten er positive egenskaper ved et produkt. La meg forklare hvorfor dette gikk galt og hva modellen bør gjøre annerledes."
+
+"error_identification": "Modellen misforstod at 'sort, blank og skinnende' er positive egenskaper ved et produkt, og tolket derfor setningen som negativ basert på fravær av positive ord. Den overså de positive aspektene ved et deksel som skjuler kontakter og kabler."
+
+"root_cause_analysis": "Feilen oppstod fordi modellen tolket setningen ut fra en snever definisjon av 'positiv' som utelukkende basert på tilstedeværelsen av positive ord, uten å vurdere den faktiske betydningen av de beskrevne egenskapene. Den manglet en helhetlig vurdering av setningens innhold."
+
+"correct_approach": "I stedet for å fokusere på fraværet av positive ord, burde modellen ha:
+- Vurdert de positive egenskapene (sort, blank, skinnende)
+- Sett på setningen som en beskrivelse av et produkt
+- Konkludert med at setningen beskriver et positivt produkt"
+
+"key_insight": "Modellen bør huske at:
+- 'Sort, blank og skinnende' er positive, tiltalende egenskaper ved et produkt
+- En setning kan være positiv selv om den ikke inneholder eksplisitt positive ord
+- Det er helheten og konteksten som avgjør om en setning er positiv eller negativ"
+
+"bullet_tags": [
+  {
+    "id": "calc-00001",
+    "tag": "harmful"
+  },
+  {
+    "id": "fin-00002",
+    "tag": "helpful"
+  }
+]
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_2_post_reflect_round_0_20260422_115134_785.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: [Root cause analysis] - En grundig analyse av hvorfor feilene oppstod.
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+[misc-00002] helpful=0 harmful=0 :: [Konkret feilidentifikasjon] - Spesifikke eksempler på hva modellen gjorde feil.
+
+**Reflection:**
+Brukeren ber meg om å:
+1. Analyser hvorfor modellen gikk galt
+2. Identifiser hva som gikk galt i resonneringen
+3. Gi en detaljert analyse av feilen
+4. Foreslå hva modellen burde ha gjort
+5. Gi en nøkkelinnsikt for å unngå lignende feil
+
+Oppgaven er å:
+- Gå gjennom modellens resonnement
+- Identifisere feilen
+- Forklare hvorfor feilen oppstod
+- Foreslå korrekt tilnærming
+- Gi en nøkkelinnsikt
+
+La meg analysere:
+- Modellens resonnement: "Setningen beskriver et produkt med sort, blank og skinnende bakside, med et deksel som skjuler kontakter og kabler. Dette er en nøytral, beskrivende setning uten positive ladede ord. Svaret er derfor 'negativ'"
+- Feilen: Modellen har tolket "baksiden er sort, blank og skinnende" som negativt, selv om det er en positiv beskrivelse av et produkt.
+- Korrekt tilnærming ville være å vurdere:
+  - "sort, blank og skinnende" er positive egenskaper
+  - "deksel som skjuler kontakter og kabler" er praktisk
+  - Samlet sett er dette en positiv beskrivelse av et produkt
+
+La meg strukturere svaret:
+- Reasoning: Min analyse av modellens feil
+- Error identification: Hva gikk galt
+- Root cause analysis: Hvorfor feilen oppstod
+- Correct approach: Hva modellen burde ha gjort
+- Key insight: Hva den bør huske for å unngå lignende feil
+
+La meg skrive et tydelig og informativ svar i JSON-format. **JSON-svar:**
+
+```json
+{
+  "reasoning": "Analysen viser at modellen gjorde en grunnleggende feil i sin tolkning av setningen. Den tolket beskrivelsen av produktet som 'sort, blank og skinnende' som negativt, når det i realiteten er positive egenskaper ved et produkt. La meg forklare hvorfor dette gikk galt og hva modellen bør gjøre annerledes."
+
+"error_identification": "Modellen misforstod at 'sort, blank og skinnende' er positive egenskaper ved et produkt, og tolket derfor setningen som negativ basert på fravær av positive ord. Den overså de positive aspektene ved et deksel som skjuler kontakter og kabler."
+
+"root_cause_analysis": "Feilen oppstod fordi modellen tolket setningen ut fra en snever definisjon av 'positiv' som utelukkende basert på tilstedeværelsen av positive ord, uten å vurdere den faktiske betydningen av de beskrevne egenskapene. Den manglet en helhetlig vurdering av setningens innhold."
+
+"correct_approach": "I stedet for å fokusere på fraværet av positive ord, burde modellen ha:
+- Vurdert de positive egenskapene (sort, blank, skinnende)
+- Sett på setningen som en beskrivelse av et produkt
+- Konkludert med at setningen beskriver et positivt produkt"
+
+"key_insight": "Modellen bør huske at:
+- 'Sort, blank og skinnende' er positive, tiltalende egenskaper ved et produkt
+- En setning kan være positiv selv om den ikke inneholder eksplisitt positive ord
+- Det er helheten og konteksten som avgjør om en setning er positiv eller negativ"
+
+"bullet_tags": [
+  {
+    "id": "calc-00001",
+    "tag": "harmful"
+  },
+  {
+    "id": "fin-00002",
+    "tag": "helpful"
+  }
+]
+}
+```
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Baksiden er sort , blank og skinnende , med et deksel som skjuler kontakter og kabler .
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+Brukeren ber meg om å:
+1. Analysere hvorfor modellen gikk galt
+2. Identifisere hva som gikk galt i resonneringen
+3. Gi en detaljert analyse av feilen
+4. Foreslå hva modellen burde ha gjort
+5. Gi en nøkkelinnsikt
+
+Oppgaven er å:
+- Gå gjennom modellens resonnement
+- Identifisere feilen
+- Forklare hvorfor feilen oppstod
+- Foreslå korrekt tilnærming
+- Gi en nøkkelinnsikt
+
+La meg analysere:
+- Modellens resonnement: "Setningen beskriver et produkt med sort, blank og skinnende bakside, med et deksel som skjuler kontakter og kabler. Dette er en nøytral, beskrivende setning uten positive ladede ord. Svaret er derfor 'negativ'"
+- Feilen: Modellen har tolket "baksiden er sort, blank og skinnende" som negativt, selv om det er en positiv beskrivelse av et produkt.
+- Korrekt tilnærming ville være å vurdere:
+  - "sort, blank og skinnende" er positive egenskaper
+  - "deksel som skjuler kontakter og kabler" er praktisk
+  - Samlet sett er dette en positiv beskrivelse av et produkt
+
+La meg strukturere svaret:
+- Reasoning: Min analyse av modellens feil
+- Error identification: Hva gikk galt
+- Root cause analysis: Hvorfor feilen oppstod
+- Correct approach: Hva modellen burde ha gjort
+- Key insight: Hva den bør huske for å unngå lignende feil
+
+La meg skrive et tydelig og informativ svar i JSON-format. **JSON-svar:**
+
+```json
+{
+  "reasoning": "Analysen viser at modellen gjorde en grunnleggende feil i sin tolkning av setningen. Den tolket beskrivelsen av produktet som 'sort, blank og skinnende' som negativt, når det i realiteten er positive egenskaper ved et produkt. La meg forklare hvorfor dette gikk galt og hva modellen bør gjøre annerledes."
+
+"error_identification": "Modellen misforstod at 'sort, blank og skinnende' er positive egenskaper ved et produkt, og tolket derfor setningen som negativ basert på fravær av positive ord. Den overså de positive aspektene ved et deksel som skjuler kontakter og kabler."
+
+"root_cause_analysis": "Feilen oppstod fordi modellen tolket setningen ut fra en snever definisjon av 'positiv' som utelukkende basert på tilstedeværelsen av positive ord, uten å vurdere den faktiske betydningen av de beskrevne egenskapene. Den manglet en helhetlig vurdering av setningens innhold."
+
+"correct_approach": "I stedet for å fokusere på fraværet av positive ord, burde modellen ha:
+- Vurdert de positive egenskapene (sort, blank, skinnende)
+- Sett på setningen som en beskrivelse av et produkt
+- Konkludert med at setningen beskriver et positivt produkt"
+
+"key_insight": "Modellen bør huske at:
+- 'Sort, blank og skinnende' er positive, tiltalende egenskaper ved et produkt
+- En setning kan være positiv selv om den ikke inneholder eksplisitt positive ord
+- Det er helheten og konteksten som avgjør om en setning er positiv eller negativ"
+
+"bullet_tags": [
+  {
+    "id": "calc-00001",
+    "tag": "harmful"
+  },
+  {
+    "id": "fin-00002",
+    "tag": "helpful"
+  }
+]
+}
+
+"final_answer": "positiv"
+```
+
+**Konklusjon:** Setningen er positiv fordi den beskriver et produkt med positive egenskaper som "sort, blank og skinnende" og et praktisk deksel som skjuler kontakter og kabler.
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+curator_train_e_1_s_2_20260422_115145_494.json
+-->Prompt: 
+You are a master curator of knowledge. Your job is to identify what new insights should be added to an existing playbook based on a reflection from a previous attempt.
+
+**Context:**
+- The playbook you created will be used to help answering similar questions. 
+- The reflection is generated using ground truth answers that will NOT be available when the playbook is being used. So you need to come up with content that can aid the playbook user to create predictions that likely align with ground truth. 
+
+**CRITICAL: You MUST respond with valid JSON only. Do not use markdown formatting or code blocks.**
+
+**Instructions:**
+- Review the existing playbook and the reflection from the previous attempt
+- Identify ONLY the NEW insights, strategies, or mistakes that are MISSING from the current playbook
+- Avoid redundancy - if similar advice already exists, only add new content that is a perfect complement to the existing playbook
+- Do NOT regenerate the entire playbook - only provide the additions needed
+- Focus on quality over quantity - a focused, well-organized playbook is better than an exhaustive one
+- Format your response as a PURE JSON object with specific sections
+- For any operation if no new content to add, return an empty list for the operations field
+- Be concise and specific - each addition should be actionable
+
+
+**Training Context:**
+- Total token budget: 80000 tokens
+- Training progress: Sample 2 out of 3
+
+**Current Playbook Stats:**
+{
+  "total_bullets": 2,
+  "high_performing": 0,
+  "problematic": 0,
+  "unused": 2,
+  "by_section": {
+    "COMMON MISTAKES TO AVOID": {
+      "count": 1,
+      "helpful": 0,
+      "harmful": 0
+    },
+    "OTHERS": {
+      "count": 1,
+      "helpful": 0,
+      "harmful": 0
+    }
+  }
+}
+
+**Recent Reflection:**
+Brukeren ber meg om å:
+1. Analyser hvorfor modellen gikk galt
+2. Identifiser hva som gikk galt i resonneringen
+3. Gi en detaljert analyse av feilen
+4. Foreslå hva modellen burde ha gjort
+5. Gi en nøkkelinnsikt for å unngå lignende feil
+
+Oppgaven er å:
+- Gå gjennom modellens resonnement
+- Identifisere feilen
+- Forklare hvorfor feilen oppstod
+- Foreslå korrekt tilnærming
+- Gi en nøkkelinnsikt
+
+La meg analysere:
+- Modellens resonnement: "Setningen beskriver et produkt med sort, blank og skinnende bakside, med et deksel som skjuler kontakter og kabler. Dette er en nøytral, beskrivende setning uten positive ladede ord. Svaret er derfor 'negativ'"
+- Feilen: Modellen har tolket "baksiden er sort, blank og skinnende" som negativt, selv om det er en positiv beskrivelse av et produkt.
+- Korrekt tilnærming ville være å vurdere:
+  - "sort, blank og skinnende" er positive egenskaper
+  - "deksel som skjuler kontakter og kabler" er praktisk
+  - Samlet sett er dette en positiv beskrivelse av et produkt
+
+La meg strukturere svaret:
+- Reasoning: Min analyse av modellens feil
+- Error identification: Hva gikk galt
+- Root cause analysis: Hvorfor feilen oppstod
+- Correct approach: Hva modellen burde ha gjort
+- Key insight: Hva den bør huske for å unngå lignende feil
+
+La meg skrive et tydelig og informativ svar i JSON-format. **JSON-svar:**
+
+```json
+{
+  "reasoning": "Analysen viser at modellen gjorde en grunnleggende feil i sin tolkning av setningen. Den tolket beskrivelsen av produktet som 'sort, blank og skinnende' som negativt, når det i realiteten er positive egenskaper ved et produkt. La meg forklare hvorfor dette gikk galt og hva modellen bør gjøre annerledes."
+
+"error_identification": "Modellen misforstod at 'sort, blank og skinnende' er positive egenskaper ved et produkt, og tolket derfor setningen som negativ basert på fravær av positive ord. Den overså de positive aspektene ved et deksel som skjuler kontakter og kabler."
+
+"root_cause_analysis": "Feilen oppstod fordi modellen tolket setningen ut fra en snever definisjon av 'positiv' som utelukkende basert på tilstedeværelsen av positive ord, uten å vurdere den faktiske betydningen av de beskrevne egenskapene. Den manglet en helhetlig vurdering av setningens innhold."
+
+"correct_approach": "I stedet for å fokusere på fraværet av positive ord, burde modellen ha:
+- Vurdert de positive egenskapene (sort, blank, skinnende)
+- Sett på setningen som en beskrivelse av et produkt
+- Konkludert med at setningen beskriver et positivt produkt"
+
+"key_insight": "Modellen bør huske at:
+- 'Sort, blank og skinnende' er positive, tiltalende egenskaper ved et produkt
+- En setning kan være positiv selv om den ikke inneholder eksplisitt positive ord
+- Det er helheten og konteksten som avgjør om en setning er positiv eller negativ"
+
+"bullet_tags": [
+  {
+    "id": "calc-00001",
+    "tag": "harmful"
+  },
+  {
+    "id": "fin-00002",
+    "tag": "helpful"
+  }
+]
+}
+```
+
+**Current Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: [Root cause analysis] - En grundig analyse av hvorfor feilene oppstod.
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+[misc-00002] helpful=0 harmful=0 :: [Konkret feilidentifikasjon] - Spesifikke eksempler på hva modellen gjorde feil.
+
+**Question Context:**
+
+
+**Your Task:**
+Output ONLY a valid JSON object with these exact fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- operations: a list of operations to be performed on the playbook
+  - type: the type of operation to be performed
+  - section: the section to add the bullet to
+  - content: the new content of the bullet
+
+**Available Operations:**
+1. ADD: Create new bullet points with fresh IDs
+    - section: the section to add the new bullet to
+    - content: the new content of the bullet. Note: no need to include the bullet_id in the content like '[ctx-00263] helpful=1 harmful=0 ::', the bullet_id will be added by the system.
+
+**RESPONSE FORMAT - Output ONLY this JSON structure (no markdown, no code blocks):**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations here]",
+  "operations": [
+    {
+      "type": "ADD", 
+      "section": "formulas_and_calculations",
+      "content": "[New calculation method...]"
+    }
+  ]
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+Brukeren ber meg om å:
+1. Identifisere nye innsikter basert på en refleksjon
+2. Formatere svaret som ren JSON uten markdown eller kodeblokker
+
+Oppgaven er å:
+- Analysere hvorfor modellen gikk galt
+- Identifisere feilen
+- Foreslå hva modellen burde ha gjort
+- Gi en nøkkelinnsikt
+
+La meg analysere refleksjon:
+- Modellen tolket "sort, blank og skinnende" som negativt
+- Dette var en feil tolkning av positive egenskaper ved et produkt
+- Den manglet en helhetlig vurdering av setningens innhold
+
+La meg strukturere svaret:
+- Reasoning: Min analyse av modellens feil
+- Error identification: Hva gikk galt
+- Root cause analysis: Hvorfor feilen oppstod
+- Correct approach: Hva modellen burde ha gjort
+- Key insight: Hva den bør huske for å unngå lignende feil
+
+La meg skrive en tydelig og informativ JSON-struktur. **JSON-svar:**
+
+```json
+{
+  "reasoning": "Analysen viser at modellen gjorde en grunnleggende feil i sin tolkning av setningen. Den tolket beskrivelsen av produktet som 'sort, blank og skinnende' som negativt, når det i realiteten er positive egenskaper ved et produkt. La meg forklare hvorfor dette gikk galt og hva modellen bør gjøre annerledes."
+
+"error_identification": "Modellen misforstod at 'sort, blank og skinnende' er positive egenskaper ved et produkt, og tolket derfor setningen som negativ basert på fravær av positive ord. Den overså de positive aspektene ved et deksel som skjuler kontakter og kabler."
+
+"root_cause_analysis": "Feilen oppstod fordi modellen tolket setningen ut fra en snever definisjon av 'positiv' som utelukkende basert på tilstedeværelsen av positive ord, uten å vurdere den faktiske betydningen av de beskrevne egenskapene. Den manglet en helhetlig vurdering av setningens innhold."
+
+"correct_approach": "I stedet for å fokusere på fraværet av positive ord, burde modellen ha:
+- Vurdert de positive egenskapene (sort, blank, skinnende)
+- Sett på setningen som en beskrivelse av et produkt
+- Konkludert med at setningen beskriver et positivt produkt"
+
+"key_insight": "Modellen bør huske at:
+- 'Sort, blank og skinnende' er positive, tiltalende egenskaper ved et produkt
+- En setning kan være positiv selv om den ikke inneholder eksplisitt positive ord
+- Det er helheten og konteksten som avgjør om en setning er positiv eller negativ"
+
+"operations": []
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_2_post_curate_20260422_115152_993.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: [Root cause analysis] - En grundig analyse av hvorfor feilene oppstod.
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+[misc-00002] helpful=0 harmful=0 :: [Konkret feilidentifikasjon] - Spesifikke eksempler på hva modellen gjorde feil.
+
+**Reflection:**
+(empty)
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Baksiden er sort , blank og skinnende , med et deksel som skjuler kontakter og kabler .
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Setningen er nøytral. Den beskriver en gjenstand uten å direkte påstå at den er positiv eller negativ. 'Sort, blank og skinnende' er objektive beskrivelser, ikke positive påstander.",
+  "bullet_ids": ["calc-00001"],
+  "final_answer": "negativ"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_3_gen_initial_20260422_115158_669.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: [Root cause analysis] - En grundig analyse av hvorfor feilene oppstod.
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+[misc-00002] helpful=0 harmful=0 :: [Konkret feilidentifikasjon] - Spesifikke eksempler på hva modellen gjorde feil.
+
+**Reflection:**
+(empty)
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: God betjening
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Setningen 'God betjening' er positiv fordi den er en anerkjennelse av god service.",
+  "bullet_ids": ["fin-00002"],
+  "final_answer": "positiv"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+reflector_train_e_1_s_3_reflect_on_correct_20260422_115215_932.json
+-->Prompt: 
+You are an expert analyst and educator. Your job is to diagnose why a model's reasoning went wrong by analyzing the gap between predicted answer and the ground truth.
+
+**Instructions:**
+- Carefully analyze the model's reasoning trace to identify where it went wrong
+- Take the environment feedback into account, comparing the predicted answer with the ground truth to understand the gap
+- Identify specific conceptual errors, calculation mistakes, or misapplied strategies
+- Provide actionable insights that could help the model avoid this mistake in the future
+- Focus on the root cause, not just surface-level errors
+- Be specific about what the model should have done differently
+- You will receive bulletpoints that are part of playbook that's used by the generator to answer the question.
+- You need to analyze these bulletpoints, and give the tag for each bulletpoint, tag can be ['helpful', 'harmful', 'neutral'] (for the generator to generate the correct answer)
+
+Your output should be a json object, which contains the following fields
+  - reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+  - error_identification: what specifically went wrong in the reasoning?
+  - root_cause_analysis: why did this error occur? What concept was misunderstood?
+  - correct_approach: what should the model have done instead?
+  - key_insight: what strategy, formula, or principle should be remembered to avoid this error?
+  - bullet_tags: a list of json objects with bullet_id and tag for each bulletpoint used by the generator
+
+
+
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: God betjening
+
+**Model's Reasoning Trace:**
+
+
+```json
+{
+  "reasoning": "Setningen 'God betjening' er positiv fordi den er en anerkjennelse av god service.",
+  "bullet_ids": ["fin-00002"],
+  "final_answer": "positiv"
+}
+```
+
+**Model's Predicted Answer:**
+positiv
+
+**Ground Truth Answer:**
+Positive
+
+**Environment Feedback:**
+Predicted answer matches ground truth
+
+**Part of Playbook that's used by the generator to answer the question:**
+(No bullets used by generator)
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",
+  "error_identification": "[What specifically went wrong in the reasoning?]",
+  "root_cause_analysis": "[Why did this error occur? What concept was misunderstood?]",
+  "correct_approach": "[What should the model have done instead?]",
+  "key_insight": "[What strategy, formula, or principle should be remembered to avoid this error?]",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "helpful"},
+    {"id": "fin-00002", "tag": "harmful"}
+  ]
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+Brukeren ber meg om å:
+1. Diagnostisere hvorfor en modells resonnering gikk galt
+2. Analysere gapet mellom predikert svar og ground truth
+3. Identifisere spesifikke konseptuelle feil, beregningsfeil eller misbrukte strategier
+4. Gi handlingsrettede innsikter som kan hjelpe modellen til å unngå denne feilen i fremtiden
+5. Gi en JSON-struktur med de nødvendige feltene
+
+De har gitt meg:
+- En setning: "Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: God betjening"
+- En modells resonneringsspor:
+  - "Setningen 'God betjening' er positiv fordi den er en anerkjennelse av god service."
+- En predikert svar: "positiv"
+- En ground truth: "Positive"
+- En miljøtilbakemelding: "Predicted answer matches ground truth"
+- En playbook som ikke ble brukt av generatoren
+
+Brukeren ber meg om å:
+- Gi en detaljert analyse av resonneringsprosessen
+- Identifisere hva som gikk galt
+- Analysere rotårsaken
+- Foreslå riktig tilnærming
+- Gi en nøkkelinnsikt
+
+Jeg bør:
+1. Identifisere feilen: Modellen tolket "God betjening" som positiv uten å vurdere konteksten eller definisjonen av positiv.
+2. Analysere rotårsaken: Modellen manglet en klar definisjon av "positiv" og baserte seg på en generell, positiv tolkning uten å vurdere den spesifikke konteksten.
+3. Foreslå riktig tilnærming: En mer presis definisjon av positiv basert på intensjon og kontekst.
+4. Gi en nøkkelinnsikt: Viktigheten av å definere begreper tydelig og vurdere kontekst.
+
+La meg strukturere svaret i JSON-format med de nødvendige feltene:
+
+```json
+{
+  "reasoning": "Min analyse av modellens resonnering",
+  "error_identification": "Modellen tolket 'God betjening' som positiv uten å vurdere konteksten",
+  "root_cause_analysis": "Manglende klar definisjon av 'positiv' og generell positiv tolkning",
+  "correct_approach": "Vurdere intensjonen og konteksten før tolkning",
+  "key_insight": "Definer begreper tydelig og vurder kontekst",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "helpful"}, 
+    {"id": "fin-00002", "tag": "harmful"}
+  ]
+}
+```
+
+La meg skrive en klar og informativ analyse. **JSON-svar:**
+
+```json
+{
+  "reasoning": "Analyse av modellens resonnering",
+  "error_identification": "Feiltolkning av begrepet 'positiv'",
+  "root_cause_analysis": "Manglende kontekstforståelse",
+  "correct_approach": "Vurdere intensjonen og konteksten",
+  "key_insight": "Definer begreper tydelig",
+  "bullet_tags": [
+    {
+      "id": "calc-00001",
+      "tag": "helpful"
+    },
+    {
+      "id": "fin-00002",
+      "tag": "harmful"
+    }
+  ]
+}
+```
+
+**Diagnose:**
+Modellen tolket "God betjening" som positiv basert på en generell, positiv tolkning uten å vurdere konteksten. Dette er en feilaktig tolkning av begrepet "positiv".
+
+**Roten til problemet:**
+Manglende klar definisjon av begrepet "positiv" og en for generell tilnærming. Modellen antok at "god" alltid er positivt, uten å vurdere om det var en anerkjennelse, en vurdering, eller om det var negativt formulert.
+
+**Korrekt tilnærming:**
+- Vurdere intensjonen bak setningen
+- Se på konteksten (i dette tilfellet var det en vurdering av service)
+- Definere "positiv" tydelig basert på om det uttrykker anerkjennelse, glede, eller tilfredshet
+
+**Kjerneinnsikt:**
+Definer alltid begreper tydelig, og vurder konteksten før du tolker setninger som positive eller negative.
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+curator_train_e_1_s_3_20260422_115233_801.json
+-->Prompt: 
+You are a master curator of knowledge. Your job is to identify what new insights should be added to an existing playbook based on a reflection from a previous attempt.
+
+**Context:**
+- The playbook you created will be used to help answering similar questions. 
+- The reflection is generated using ground truth answers that will NOT be available when the playbook is being used. So you need to come up with content that can aid the playbook user to create predictions that likely align with ground truth. 
+
+**CRITICAL: You MUST respond with valid JSON only. Do not use markdown formatting or code blocks.**
+
+**Instructions:**
+- Review the existing playbook and the reflection from the previous attempt
+- Identify ONLY the NEW insights, strategies, or mistakes that are MISSING from the current playbook
+- Avoid redundancy - if similar advice already exists, only add new content that is a perfect complement to the existing playbook
+- Do NOT regenerate the entire playbook - only provide the additions needed
+- Focus on quality over quantity - a focused, well-organized playbook is better than an exhaustive one
+- Format your response as a PURE JSON object with specific sections
+- For any operation if no new content to add, return an empty list for the operations field
+- Be concise and specific - each addition should be actionable
+
+
+**Training Context:**
+- Total token budget: 80000 tokens
+- Training progress: Sample 3 out of 3
+
+**Current Playbook Stats:**
+{
+  "total_bullets": 2,
+  "high_performing": 0,
+  "problematic": 0,
+  "unused": 2,
+  "by_section": {
+    "COMMON MISTAKES TO AVOID": {
+      "count": 1,
+      "helpful": 0,
+      "harmful": 0
+    },
+    "OTHERS": {
+      "count": 1,
+      "helpful": 0,
+      "harmful": 0
+    }
+  }
+}
+
+**Recent Reflection:**
+Brukeren ber meg om å:
+1. Diagnostisere hvorfor en modells resonnering gikk galt
+2. Analysere gapet mellom predikert svar og ground truth
+3. Identifisere spesifikke konseptuelle feil, beregningsfeil eller misbrukte strategier
+4. Gi handlingsrettede innsikter som kan hjelpe modellen til å unngå denne feilen i fremtiden
+5. Gi en JSON-struktur med de nødvendige feltene
+
+De har gitt meg:
+- En setning: "Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: God betjening"
+- En modells resonneringsspor:
+  - "Setningen 'God betjening' er positiv fordi den er en anerkjennelse av god service."
+- En predikert svar: "positiv"
+- En ground truth: "Positive"
+- En miljøtilbakemelding: "Predicted answer matches ground truth"
+- En playbook som ikke ble brukt av generatoren
+
+Brukeren ber meg om å:
+- Gi en detaljert analyse av resonneringsprosessen
+- Identifisere hva som gikk galt
+- Analysere rotårsaken
+- Foreslå riktig tilnærming
+- Gi en nøkkelinnsikt
+
+Jeg bør:
+1. Identifisere feilen: Modellen tolket "God betjening" som positiv uten å vurdere konteksten eller definisjonen av positiv.
+2. Analysere rotårsaken: Modellen manglet en klar definisjon av "positiv" og baserte seg på en generell, positiv tolkning uten å vurdere den spesifikke konteksten.
+3. Foreslå riktig tilnærming: En mer presis definisjon av positiv basert på intensjon og kontekst.
+4. Gi en nøkkelinnsikt: Viktigheten av å definere begreper tydelig og vurdere kontekst.
+
+La meg strukturere svaret i JSON-format med de nødvendige feltene:
+
+```json
+{
+  "reasoning": "Min analyse av modellens resonnering",
+  "error_identification": "Modellen tolket 'God betjening' som positiv uten å vurdere konteksten",
+  "root_cause_analysis": "Manglende klar definisjon av 'positiv' og generell positiv tolkning",
+  "correct_approach": "Vurdere intensjonen og konteksten før tolkning",
+  "key_insight": "Definer begreper tydelig og vurder kontekst",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "helpful"}, 
+    {"id": "fin-00002", "tag": "harmful"}
+  ]
+}
+```
+
+La meg skrive en klar og informativ analyse. **JSON-svar:**
+
+```json
+{
+  "reasoning": "Analyse av modellens resonnering",
+  "error_identification": "Feiltolkning av begrepet 'positiv'",
+  "root_cause_analysis": "Manglende kontekstforståelse",
+  "correct_approach": "Vurdere intensjonen og konteksten",
+  "key_insight": "Definer begreper tydelig",
+  "bullet_tags": [
+    {
+      "id": "calc-00001",
+      "tag": "helpful"
+    },
+    {
+      "id": "fin-00002",
+      "tag": "harmful"
+    }
+  ]
+}
+```
+
+**Diagnose:**
+Modellen tolket "God betjening" som positiv basert på en generell, positiv tolkning uten å vurdere konteksten. Dette er en feilaktig tolkning av begrepet "positiv".
+
+**Roten til problemet:**
+Manglende klar definisjon av begrepet "positiv" og en for generell tilnærming. Modellen antok at "god" alltid er positivt, uten å vurdere om det var en anerkjennelse, en vurdering, eller om det var negativt formulert.
+
+**Korrekt tilnærming:**
+- Vurdere intensjonen bak setningen
+- Se på konteksten (i dette tilfellet var det en vurdering av service)
+- Definere "positiv" tydelig basert på om det uttrykker anerkjennelse, glede, eller tilfredshet
+
+**Kjerneinnsikt:**
+Definer alltid begreper tydelig, og vurder konteksten før du tolker setninger som positive eller negative.
+
+**Current Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: [Root cause analysis] - En grundig analyse av hvorfor feilene oppstod.
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+[misc-00002] helpful=0 harmful=0 :: [Konkret feilidentifikasjon] - Spesifikke eksempler på hva modellen gjorde feil.
+
+**Question Context:**
+
+
+**Your Task:**
+Output ONLY a valid JSON object with these exact fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- operations: a list of operations to be performed on the playbook
+  - type: the type of operation to be performed
+  - section: the section to add the bullet to
+  - content: the new content of the bullet
+
+**Available Operations:**
+1. ADD: Create new bullet points with fresh IDs
+    - section: the section to add the new bullet to
+    - content: the new content of the bullet. Note: no need to include the bullet_id in the content like '[ctx-00263] helpful=1 harmful=0 ::', the bullet_id will be added by the system.
+
+**RESPONSE FORMAT - Output ONLY this JSON structure (no markdown, no code blocks):**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations here]",
+  "operations": [
+    {
+      "type": "ADD", 
+      "section": "formulas_and_calculations",
+      "content": "[New calculation method...]"
+    }
+  ]
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+Brukeren ber meg om å:
+1. Identifisere hva som gikk galt i modellens resonnering
+2. Analysere rotårsaken
+3. Foreslå riktig tilnærming
+4. Gi en nøkkelinnsikt
+5. Formatere svaret som ren JSON
+
+De har gitt meg:
+- En setning: "Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: God betjening"
+- En modells resonneringsspor:
+  - "Setningen 'God betjening' er positiv fordi den er en anerkjennelse av god service."
+- En predikert svar: "positiv"
+- En ground truth: "Positive"
+- En miljøtilbakemelding: "Predicted answer matches ground truth"
+
+Min analyse:
+- Modellen tolket "God betjening" som positiv uten å vurdere konteksten (at det var en anerkjennelse, ikke nødvendigvis generelt positivt).
+- Rotårsaken var manglende klar definisjon av "positiv" og en for generell tilnærming.
+- Riktig tilnærming ville være å vurdere intensjonen og konteksten før tolkning.
+- Nøkkelinnsikten er viktigheten av å definere begreper tydelig og vurdere kontekst.
+
+Jeg bør:
+1. Gi en klar og tydelig analyse av hva som gikk galt
+2. Identifisere rotårsaken
+3. Foreslå en korrekt tilnærming
+4. Gi en klar nøkkelinnsikt
+
+La meg strukturere svaret i JSON-format med de nødvendige feltene:
+
+```json
+{
+  "reasoning": "Min analyse av modellens resonnering",
+  "error_identification": "Modellen tolket 'God betjening' som positiv uten å vurdere konteksten",
+  "root_cause_analysis": "Manglende klar definisjon av 'positiv' og generell positiv tolkning",
+  "correct_approach": "Vurdere intensjonen og konteksten",
+  "key_insight": "Definer begreper tydelig",
+  "bullet_tags": [
+    {"id": "calc-00001", "tag": "helpful"}, 
+    {"id": "fin-00002", "tag": "harmful"}
+  ]
+}
+```
+
+La meg skrive et tydelig og informativt svar. **JSON-svar:**
+
+```json
+{
+  "reasoning": "Analyse av modellens resonnering",
+  "error_identification": "Feiltolkning av begrepet 'positiv'",
+  "root_cause_analysis": "Manglende kontekstforståelse",
+  "correct_approach": "Vurdere intensjonen og konteksten",
+  "key_insight": "Definer begreper tydelig",
+  "bullet_tags": [
+    {
+      "id": "calc-00001",
+      "tag": "helpful"
+    },
+    {
+      "id": "fin-00002",
+      "tag": "harmful"
+    }
+  ]
+}
+```
+
+**Diagnose:**
+Modellen tolket "God betjening" som positiv basert på en generell, positiv tolkning uten å vurdere konteksten. Dette er en feilaktig tolkning av begrepet "positiv".
+
+**Roten til problemet:**
+Manglende klar definisjon av begrepet "positiv" og en for generell tilnærming. Modellen antok at "god" alltid er positivt, uten å vurdere om det var en anerkjennelse, en vurdering, eller om det var negativt formulert.
+
+**Korrekt tilnærming:**
+- Vurdere intensjonen bak setningen
+- Se på konteksten (i dette tilfellet var det en vurdering av service)
+- Definere "positiv" tydelig basert på om det uttrykker anerkjennelse, glede, eller tilfredshet
+
+**Kjerneinnsikt:**
+Definer alltid begreper tydelig, og vurder konteksten før du tolker setninger som positive eller negative.
+
+**Operasjoner:**
+```json
+[
+  {
+    "type": "ADD",
+    "section": "common_mistakes_to_avoid",
+    "content": "[ctx-00003] helpful=1 harmful=0 :: Unngå feiltolkninger ved å vurdere kontekst og intensjon før du klassifiserer noe som positivt."
+  }
+]
+```
+
+*NB: Ingen endringer i eksisterende seksjoner nødvendig.*
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_train_e_1_s_3_post_curate_20260422_115241_283.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: [Root cause analysis] - En grundig analyse av hvorfor feilene oppstod.
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+[misc-00002] helpful=0 harmful=0 :: [Konkret feilidentifikasjon] - Spesifikke eksempler på hva modellen gjorde feil.
+
+**Reflection:**
+(empty)
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: God betjening
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Setningen 'God betjening' er positiv fordi det er en positiv vurdering av en tjeneste eller handling.",
+  "bullet_ids": ["calc-00001", "fin-00002"],
+  "final_answer": "positiv"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_test_eval_0_20260422_115250_294.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Reflection:**
+(empty)
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Garmin Fenix Chronos er meget god tur- og treningskamerat , og mye flottere enn vanlige smartklokker .
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Setningen omtaler Garmin Fenix Chronos som \"meget god\" og \"mye flottere\" enn vanlige smartklokker. Dette er positive vurderinger, så setningen er positiv.",
+  "bullet_ids": ["fin-00002"],
+  "final_answer": "positiv"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_test_eval_1_20260422_115258_120.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Reflection:**
+(empty)
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Årets nye Garmin Fenix Chronos tar det hele til et nytt nivå .
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+Brukeren ber meg om å:
+1. Analysere spørsmålet: "Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Årets nye Garmin Fenix Chronos tar det hele til et nytt nivå."
+2. Levere svaret i nøyaktig JSON-format med:
+   - "reasoning": Chain of thought
+   - "bullet_ids": Identifikatorer for relevante punkter i playbooken
+   - "final_answer": Svaret
+
+Jeg må:
+- Identifisere om setningen er positiv eller negativ basert på konteksten
+- Levere svaret i JSON-format
+
+La meg analysere setningen:
+- "Årets nye Garmin Fenix Chronos tar det hele til et nytt nivå" er en positiv formulering
+- Den beskriver noe som er nytt, positivt og bra
+- Det er ingen negative ord eller uttrykk i setningen
+
+Så svaret er "positiv".
+
+Jeg bør:
+1. Gi en klar og tydelig begrunnelse for hvorfor jeg anser setningen som positiv
+2. Identifisere de relevante punktene i playbooken
+3. Levere svaret i nøyaktig JSON-format
+
+La meg strukturere svaret:
+- "reasoning": En kort, men tydelig forklaring på vurderingen
+- "bullet_ids": Jeg kan referere til "fin-00002" (fra playbooken) siden det handler om å vurdere sentiment
+- "final_answer": "positiv"
+
+La meg skrive et tydelig og korrekt JSON-svar. **Svar i nøyaktig JSON-format:**
+
+```json
+{
+  "reasoning": "Setningen 'Årets nye Garmin Fenix Chronos tar det hele til et nytt nivå' er positiv fordi den beskriver noe nytt og positivt, uten negative ord eller uttrykk.",
+  "bullet_ids": ["fin-00002"],
+  "final_answer": "positiv"
+}
+```
+
+
+ ------------------------------------------------------------------------------------------------------------------------ 
+
+generator_test_eval_2_20260422_115305_419.json
+-->Prompt: 
+You are an analysis expert tasked with answering questions using your knowledge, a curated playbook of strategies and insights and a reflection that goes over the diagnosis of all previous mistakes made while answering the question.
+
+**Instructions:**
+- Read the playbook carefully and apply relevant strategies, formulas, and insights
+- Pay attention to common mistakes listed in the playbook and avoid them
+- Show your reasoning step-by-step
+- Be concise but thorough in your analysis
+- If the playbook contains relevant code snippets or formulas, use them appropriately
+- Double-check your calculations and logic before providing the final answer
+
+Your output should be a json object, which contains the following fields:
+- reasoning: your chain of thought / reasoning / thinking process, detailed analysis and calculations
+- bullet_ids: each line in the playbook has a bullet_id. all bulletpoints in the playbook that's relevant, helpful for you to answer this question, you should include their bullet_id in this list
+- final_answer: your concise final answer
+
+
+**Playbook:**
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+
+**Reflection:**
+(empty)
+
+**Question:**
+Er denne setningen 'positiv' eller 'negativ'? [svaralternativer: positiv/negativ]: Her har fokuset på funksjoner og indre kvaliteter , for første gang blitt kombinert med en ambisiøs satsning på et ekslusivt ytre .
+
+**Context:**
+
+
+**Answer in this exact JSON format:**
+{
+  "reasoning": "[Your chain of thought / reasoning / thinking process, detailed analysis and calculations]",  
+  "bullet_ids": ["calc-00001", "fin-00002"],  
+  "final_answer": "[Your concise final answer here]"
+}
+
+---
+
+
+ ------------------------------------ 
+
+-->Response:
+
+
+```json
+{
+  "reasoning": "Setningen beskriver en positiv utvikling og bruker positive ord som 'ambisiøs' og 'ekslusivt'. Den har en positiv tone, og jeg vurderer den derfor som positiv.",
+  "bullet_ids": [],
+  "final_answer": "positiv"
+}
+```

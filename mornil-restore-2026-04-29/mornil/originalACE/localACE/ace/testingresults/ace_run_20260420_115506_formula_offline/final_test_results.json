@@ -1,0 +1,28 @@
+{
+  "test_results": {
+    "accuracy": 0.4,
+    "correct": 2,
+    "total": 5,
+    "no_answer": 0
+  },
+  "error_log": {
+    "accuracy": 0.4,
+    "errors": [
+      {
+        "index": 1,
+        "prediction": "35,87",
+        "ground_truth": "40.0"
+      },
+      {
+        "index": 2,
+        "prediction": "5.0",
+        "ground_truth": "0.05"
+      },
+      {
+        "index": 3,
+        "prediction": "16,97",
+        "ground_truth": "18.45"
+      }
+    ]
+  }
+}

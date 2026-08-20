@@ -1,0 +1,2 @@
+{"timestamp": "2026-04-20T11:32:15.970901", "operation_type": "ADD", "reason": "", "section": "common_mistakes_to_avoid", "content": "[Mistake 1] Unngå å anta at alle brukere har samme kontekst", "content_length": 59, "call_id": "train_e_1_s_3"}
+{"timestamp": "2026-04-20T11:32:15.971626", "operation_type": "ADD", "reason": "", "section": "context_clues_and_indicators", "content": "[Ny indikator] Sjekk om det finnes historiske data for lignende situasjoner", "content_length": 75, "call_id": "train_e_1_s_3"}

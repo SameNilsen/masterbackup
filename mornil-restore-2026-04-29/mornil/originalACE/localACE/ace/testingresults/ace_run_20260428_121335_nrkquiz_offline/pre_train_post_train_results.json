@@ -1,0 +1,172 @@
+[
+  {
+    "epoch": 1,
+    "step": 1,
+    "target": "A",
+    "pre_train_result": {
+      "final_answer": "A",
+      "is_correct": true,
+      "playbook_num_tokens": 61,
+      "playbook_length": 184
+    },
+    "post_train_result": {
+      "final_answer": "B",
+      "is_correct": false,
+      "playbook_num_tokens": 61,
+      "playbook_length": 184
+    }
+  },
+  {
+    "epoch": 1,
+    "step": 2,
+    "target": "A",
+    "pre_train_result": {
+      "final_answer": "D",
+      "is_correct": false,
+      "playbook_num_tokens": 61,
+      "playbook_length": 184
+    },
+    "post_train_result": {
+      "final_answer": "D",
+      "is_correct": false,
+      "playbook_num_tokens": 61,
+      "playbook_length": 184
+    }
+  },
+  {
+    "epoch": 1,
+    "step": 3,
+    "target": "D",
+    "pre_train_result": {
+      "final_answer": "D",
+      "is_correct": true,
+      "playbook_num_tokens": 61,
+      "playbook_length": 184
+    },
+    "post_train_result": {
+      "final_answer": "D",
+      "is_correct": true,
+      "playbook_num_tokens": 61,
+      "playbook_length": 184
+    }
+  },
+  {
+    "epoch": 1,
+    "step": 4,
+    "target": "A",
+    "pre_train_result": {
+      "final_answer": "B",
+      "is_correct": false,
+      "playbook_num_tokens": 61,
+      "playbook_length": 184
+    },
+    "post_train_result": {
+      "final_answer": "D",
+      "is_correct": false,
+      "playbook_num_tokens": 115,
+      "playbook_length": 330
+    }
+  },
+  {
+    "epoch": 1,
+    "step": 5,
+    "target": "B",
+    "pre_train_result": {
+      "final_answer": "C",
+      "is_correct": false,
+      "playbook_num_tokens": 115,
+      "playbook_length": 330
+    },
+    "post_train_result": {
+      "final_answer": "C",
+      "is_correct": false,
+      "playbook_num_tokens": 261,
+      "playbook_length": 733
+    }
+  },
+  {
+    "epoch": 1,
+    "step": 6,
+    "target": "A",
+    "pre_train_result": {
+      "final_answer": "[Ditt konsise endelige svar her]",
+      "is_correct": false,
+      "playbook_num_tokens": 261,
+      "playbook_length": 733
+    },
+    "post_train_result": {
+      "final_answer": "A",
+      "is_correct": true,
+      "playbook_num_tokens": 261,
+      "playbook_length": 733
+    }
+  },
+  {
+    "epoch": 1,
+    "step": 7,
+    "target": "A",
+    "pre_train_result": {
+      "final_answer": "A",
+      "is_correct": true,
+      "playbook_num_tokens": 261,
+      "playbook_length": 733
+    },
+    "post_train_result": {
+      "final_answer": "A",
+      "is_correct": true,
+      "playbook_num_tokens": 261,
+      "playbook_length": 733
+    }
+  },
+  {
+    "epoch": 1,
+    "step": 8,
+    "target": "B",
+    "pre_train_result": {
+      "final_answer": "D",
+      "is_correct": false,
+      "playbook_num_tokens": 261,
+      "playbook_length": 733
+    },
+    "post_train_result": {
+      "final_answer": "D",
+      "is_correct": false,
+      "playbook_num_tokens": 323,
+      "playbook_length": 906
+    }
+  },
+  {
+    "epoch": 1,
+    "step": 9,
+    "target": "A",
+    "pre_train_result": {
+      "final_answer": "B",
+      "is_correct": false,
+      "playbook_num_tokens": 323,
+      "playbook_length": 906
+    },
+    "post_train_result": {
+      "final_answer": "B",
+      "is_correct": false,
+      "playbook_num_tokens": 345,
+      "playbook_length": 967
+    }
+  },
+  {
+    "epoch": 1,
+    "step": 10,
+    "target": "A",
+    "pre_train_result": {
+      "final_answer": "B",
+      "is_correct": false,
+      "playbook_num_tokens": 345,
+      "playbook_length": 967
+    },
+    "post_train_result": {
+      "final_answer": "A",
+      "is_correct": true,
+      "playbook_num_tokens": 564,
+      "playbook_length": 1575
+    }
+  }
+]

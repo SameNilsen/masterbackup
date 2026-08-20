@@ -1,0 +1,2 @@
+{"timestamp": "2026-04-22T11:50:50.876797", "operation_type": "ADD", "reason": "", "section": "common_mistakes_to_avoid", "content": "[Root cause analysis] - En grundig analyse av hvorfor feilene oppstod.", "content_length": 70, "call_id": "train_e_1_s_1"}
+{"timestamp": "2026-04-22T11:50:50.924504", "operation_type": "ADD", "reason": "", "section": "error_identification", "content": "[Konkret feilidentifikasjon] - Spesifikke eksempler på hva modellen gjorde feil.", "content_length": 80, "call_id": "train_e_1_s_1"}

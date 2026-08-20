@@ -1,0 +1,19 @@
+[
+  {
+    "epoch": 1,
+    "step": 1,
+    "target": "2.0",
+    "pre_train_result": {
+      "final_answer": "2.0",
+      "is_correct": true,
+      "playbook_num_tokens": 61,
+      "playbook_length": 184
+    },
+    "post_train_result": {
+      "final_answer": "2.0",
+      "is_correct": true,
+      "playbook_num_tokens": 159,
+      "playbook_length": 616
+    }
+  }
+]

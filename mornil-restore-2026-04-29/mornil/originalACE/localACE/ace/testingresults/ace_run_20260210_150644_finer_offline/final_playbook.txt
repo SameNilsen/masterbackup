@@ -1,0 +1,17 @@
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+## PROBLEM-SOLVING HEURISTICS
+
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+[misc-00001] helpful=0 harmful=0 :: [ctx-00263] neutral ::
+[misc-00002] helpful=0 harmful=0 :: [ctx-00264] neutral ::
+[misc-00003] helpful=0 harmful=0 :: [ctx-00265] BusinessCombinationAcquisitionRelatedCosts ::
+[misc-00004] helpful=0 harmful=0 :: [ctx-00266] PaymentsToAcquireBusinessesGross ::
