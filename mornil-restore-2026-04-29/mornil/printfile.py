@@ -3,6 +3,7 @@ from os import walk
 
 f = []
 original_path = "/fp/projects01/ec12/mornil/originalACE/localACE/ace/testingresults/ace_run_20260428_121335_nrkquiz_offline/detailed_llm_logs/"
+original_path = "/fp/projects01/ec12/mornil/mornil-restore-2026-04-29/mornil/originalACE/localACE/ace/testingresults/ace_run_20260826_134018_nrkquiz_offline/detailed_llm_logs/"
 for (dirpath, dirnames, filenames) in walk(original_path):
     print(dirpath)
     liste = []

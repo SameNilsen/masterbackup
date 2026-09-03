@@ -1,0 +1,174 @@
+
+============================================================
+CURATOR FAILURE LOG
+============================================================
+Timestamp: 2026-08-26 13:42:49
+Epoch: 0
+Step: 1
+Failure Type: json_parse_error
+Error Details: Failed to extract valid JSON from curator response
+
+Raw Curator Response (first 1000 chars):
+----------------------------------------
+**Svar:**
+
+```json
+{
+  "reasoning": "Basert på refleksjonen ser vi at det mangler to viktige innsikter i strategiboken:
+
+1. **Sjekk alltid definisjoner grundig** – Når spørsmålet ikke gir en klar definisjon, må modellen vurdere alle alternativene nøye og ikke trekke forhastede konklusjoner basert på antakelser.
+
+2. **Vurder alle alternativer likeverdig** – Når det ikke er et åpenbart svar, bør modellen systematisk utforske alle relevante alternativer og ikke bare de første som virker sannsynlige.
+
+Disse innsiktene bør legges til i strategiboken for å hjelpe brukere med å unngå lignende feil i fremtiden."
+
+  "operations": [
+    {
+      "type": "ADD",
+      "section": "common_mistakes_to_avoid",
+      "content": "[ctx-00264] helpful=1 harmful=0 :: Sjekk alltid definisjonen av nøkkelbegreper grundig før du resonnerer, spesielt når spørsmålet ikke gir en klar definisjon."
+    },
+    {
+      "type": "ADD",
+      "section": "problem-solving_heuristics",
+      "content": "[ctx-00265] helpful=
+----------------------------------------
+
+Full Raw Curator Response:
+----------------------------------------
+**Svar:**
+
+```json
+{
+  "reasoning": "Basert på refleksjonen ser vi at det mangler to viktige innsikter i strategiboken:
+
+1. **Sjekk alltid definisjoner grundig** – Når spørsmålet ikke gir en klar definisjon, må modellen vurdere alle alternativene nøye og ikke trekke forhastede konklusjoner basert på antakelser.
+
+2. **Vurder alle alternativer likeverdig** – Når det ikke er et åpenbart svar, bør modellen systematisk utforske alle relevante alternativer og ikke bare de første som virker sannsynlige.
+
+Disse innsiktene bør legges til i strategiboken for å hjelpe brukere med å unngå lignende feil i fremtiden."
+
+  "operations": [
+    {
+      "type": "ADD",
+      "section": "common_mistakes_to_avoid",
+      "content": "[ctx-00264] helpful=1 harmful=0 :: Sjekk alltid definisjonen av nøkkelbegreper grundig før du resonnerer, spesielt når spørsmålet ikke gir en klar definisjon."
+    },
+    {
+      "type": "ADD",
+      "section": "problem-solving_heuristics",
+      "content": "[ctx-00265] helpful=1 harmful=0 :: Når det ikke er et åpenbart svar, vurder alle alternativer likeverdig, og ikke trekk konklusjoner basert på antakelser."
+    }
+  ]
+}
+```
+----------------------------------------
+
+
+============================================================
+CURATOR FAILURE LOG
+============================================================
+Timestamp: 2026-08-26 13:44:28
+Epoch: 0
+Step: 2
+Failure Type: json_parse_error
+Error Details: Failed to extract valid JSON from curator response
+
+Raw Curator Response (first 1000 chars):
+----------------------------------------
+**Svar:**
+
+```json
+{
+  "reasoning": "Basert på refleksjonen identifiserte jeg to nye innsikter som bør legges til strategiboken for å hjelpe brukere med å unngå lignende feil i fremtiden. ",
+  "operations": [
+    {
+      "type": "ADD",
+      "section": "common_mistakes_to_avoid",
+      "content": "[ctx-00264] helpful=1 harmful=0 :: Tolke spørsmålets intensjon: Når et spørsmål bruker ordet 'er', bør du vurdere om det spør om eksistens eller egenskaper. Å tolke 'er' som 'eksisterer som' er ofte den riktige tilnærmingen, spesielt i spørsmål om hva noe er kjent for, ikke størrelsen på det.]"
+    },
+    {
+      "type": "ADD",
+      "section": "common_mistakes_to_avoid",
+      "content": "[ctx-00265] helpful=1 harmful=0 :: Lese spørsmålet grundigere: Når du er usikker på hvordan et spørsmål skal tolkes, les det nøye og tenk gjennom hva det egentlig spør om, ikke hva det ser ut til å spørre om.]
+    }
+  ]
+}
+```
+----------------------------------------
+
+Full Raw Curator Response:
+----------------------------------------
+**Svar:**
+
+```json
+{
+  "reasoning": "Basert på refleksjonen identifiserte jeg to nye innsikter som bør legges til strategiboken for å hjelpe brukere med å unngå lignende feil i fremtiden. ",
+  "operations": [
+    {
+      "type": "ADD",
+      "section": "common_mistakes_to_avoid",
+      "content": "[ctx-00264] helpful=1 harmful=0 :: Tolke spørsmålets intensjon: Når et spørsmål bruker ordet 'er', bør du vurdere om det spør om eksistens eller egenskaper. Å tolke 'er' som 'eksisterer som' er ofte den riktige tilnærmingen, spesielt i spørsmål om hva noe er kjent for, ikke størrelsen på det.]"
+    },
+    {
+      "type": "ADD",
+      "section": "common_mistakes_to_avoid",
+      "content": "[ctx-00265] helpful=1 harmful=0 :: Lese spørsmålet grundigere: Når du er usikker på hvordan et spørsmål skal tolkes, les det nøye og tenk gjennom hva det egentlig spør om, ikke hva det ser ut til å spørre om.]
+    }
+  ]
+}
+```
+----------------------------------------
+
+
+============================================================
+CURATOR FAILURE LOG
+============================================================
+Timestamp: 2026-08-26 13:50:54
+Epoch: 0
+Step: 8
+Failure Type: json_parse_error
+Error Details: Failed to extract valid JSON from curator response
+
+Raw Curator Response (first 1000 chars):
+----------------------------------------
+**SVAR:**
+
+```json
+{
+  "reasoning": "Refleksjonen peker på en viktig innsikt om usikkerhetshåndtering. Når modellen er usikker, bør den gå tilbake til spørsmålet og sjekke den opprinnelige konteksten direkte, i stedet for å stole på forhåndsprogrammerte strategier.
+
+Dette er en ny innsikt som ikke er dekket i den eksisterende strategiboken."
+
+  "operations": [
+    {
+      "type": "ADD",
+      "section": "PROBLEM-SOLVING HEURISTICS",
+      "content": "[D: Når modellen er usikker, gå alltid tilbake til spørsmålet og sjekk den opprinnelige konteksten.]"
+    }
+  ]
+}
+```
+----------------------------------------
+
+Full Raw Curator Response:
+----------------------------------------
+**SVAR:**
+
+```json
+{
+  "reasoning": "Refleksjonen peker på en viktig innsikt om usikkerhetshåndtering. Når modellen er usikker, bør den gå tilbake til spørsmålet og sjekke den opprinnelige konteksten direkte, i stedet for å stole på forhåndsprogrammerte strategier.
+
+Dette er en ny innsikt som ikke er dekket i den eksisterende strategiboken."
+
+  "operations": [
+    {
+      "type": "ADD",
+      "section": "PROBLEM-SOLVING HEURISTICS",
+      "content": "[D: Når modellen er usikker, gå alltid tilbake til spørsmålet og sjekk den opprinnelige konteksten.]"
+    }
+  ]
+}
+```
+----------------------------------------
+

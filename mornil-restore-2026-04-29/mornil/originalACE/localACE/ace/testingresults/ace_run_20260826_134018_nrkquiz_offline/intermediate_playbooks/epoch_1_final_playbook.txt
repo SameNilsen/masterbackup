@@ -1,0 +1,25 @@
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+[calc-00004] helpful=0 harmful=0 :: [C: Sjekk alltid oppdaterte kilder når du bruker statistikk.]
+## CODE SNIPPETS & TEMPLATES
+
+## COMMON MISTAKES TO AVOID
+
+[err-00002] helpful=0 harmful=0 :: [C: Når du bruker statistikk, sjekk alltid oppdaterte kilder.]
+[err-00003] helpful=0 harmful=0 :: [C: Les alltid spørsmålet nøye før du svarer.]
+[err-00005] helpful=0 harmful=0 :: [C: Når du bruker statistikk, sjekk alltid oppdaterte kilder.]
+[err-00007] helpful=0 harmful=0 :: [C: Når du bruker statistikk, sjekk alltid oppdaterte kilder.]
+[err-00008] helpful=0 harmful=0 :: [C: Les alltid spørsmålet nøye før du svarer.]
+## PROBLEM-SOLVING HEURISTICS
+
+[ph-00001] helpful=0 harmful=1 :: [D: Når modellen er usikker, sørg alltid for å gi et klart og tydelig svar.]
+[D: Vurder etablerte svar i konteksten før du finner på noe nytt.]
+[ph-00006] helpful=0 harmful=0 :: [D: Når modellen er usikker, sørg alltid for å gi et klart og tydelig svar.]
+[ph-00009] helpful=0 harmful=0 :: [D: Når modellen er usikker, sørg alltid for å gi et klart og tydelig svar.]
+[ph-00010] helpful=0 harmful=0 :: [D: Når modellen er usikker, sørg alltid for å lese spørsmålet nøye og sammenligne alternativene direkte.]
+[ph-00011] helpful=0 harmful=0 :: [ph-00011] helpful=0 harmful=0 :: Når modellen er usikker, gi alltid et klart og tydelig svar.
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
