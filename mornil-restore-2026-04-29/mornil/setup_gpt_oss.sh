@@ -9,13 +9,13 @@ echo "Contents of current directory:"
 ls
 
 echo "Setting HF_HOME var:"
-export HF_HOME=/fp/projects01/ec12/mornil/hf_cache
+export HF_HOME=/fp/projects01/ec12/mornil/mornil-restore-2026-04-29/mornil/hf_cache
 echo "HF_HOME set to $HF_HOME"
 echo "Setting VLLM_CACHE_ROOT var:"
-export VLLM_CACHE_ROOT=/fp/projects01/ec12/mornil/vllm_cache
+export VLLM_CACHE_ROOT=/fp/projects01/ec12/mornil/mornil-restore-2026-04-29/mornil/vllm_cache
 echo "VLLM_CACHE_ROOT set to $VLLM_CACHE_ROOT"
 echo "Setting TRITON_CACHE_DIR var:"
-export TRITON_CACHE_DIR=/fp/projects01/ec12/mornil/triton_cache
+export TRITON_CACHE_DIR=/fp/projects01/ec12/mornil/mornil-restore-2026-04-29/mornil/triton_cache
 echo "TRITON_CACHE_DIR set to $TRITON_CACHE_DIR"
 
 echo "Loading Python module..."

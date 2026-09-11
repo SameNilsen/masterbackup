@@ -9,10 +9,10 @@ echo "Contents of current directory:"
 ls
 
 echo "Setting HF_HOME var:"
-export HF_HOME=/fp/projects01/ec12/mornil/hf_cache
+export HF_HOME=/fp/projects01/ec12/mornil/mornil-restore-2026-04-29/mornil/hf_cache
 echo "HF_HOME set to $HF_HOME"
 echo "Setting VLLM_CACHE_ROOT var:"
-export VLLM_CACHE_ROOT=/fp/projects01/ec12/mornil/vllm_cache
+export VLLM_CACHE_ROOT=/fp/projects01/ec12/mornil/mornil-restore-2026-04-29/mornil/vllm_cache
 echo "VLLM_CACHE_ROOT set to $VLLM_CACHE_ROOT"
 
 echo "Loading Python module..."
