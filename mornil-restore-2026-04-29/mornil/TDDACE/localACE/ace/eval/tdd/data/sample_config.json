@@ -1,0 +1,17 @@
+{
+    "norec_sentence": {
+        "train_data": "./eval/noreval/data/norecsentence_train_subset_3894.jsonl",
+        "val_data": "./eval/noreval/data/norecsentence_dev_subset_701.jsonl",
+        "test_data": "./eval/noreval/data/norecsentence_test_subset_583.jsonl"
+    },
+    "nrkquiz": {
+        "train_data": "./eval/noreval/data/NRKQuiz_train_subset_2160.jsonl",
+        "val_data": "./eval/noreval/data/NRKQuiz_val_subset_720.jsonl",
+        "test_data": "./eval/noreval/data/NRKQuiz_test_subset_720.jsonl"
+    },
+    "humaneval": {
+        "train_data": "./eval/tdd/data/humaneval_train_subset.jsonl",
+        "val_data": "./eval/tdd/data/humaneval_val_subset.jsonl",
+        "test_data": "./eval/tdd/data/humaneval_test_subset.jsonl"
+    }
+}
