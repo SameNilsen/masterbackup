@@ -188,7 +188,7 @@ class ACE:
             Dictionary with results depending on the mode
         """
         # Validate inputs
-        if mode not in ['offline', 'online', 'eval_only']:
+        if mode not in ['offline', 'online', 'eval_only', 'tdd_training']:
             raise ValueError(f"Invalid mode: {mode}. Must be 'offline', 'online', or 'eval_only'")
         
         if mode == 'offline' and (train_samples is None or val_samples is None):
@@ -275,7 +275,8 @@ class ACE:
                 save_path=save_path,
                 usage_log_path=usage_log_path,
                 playbook_dir=playbook_dir,
-                log_dir=log_dir
+                log_dir=log_dir,
+                mode="offline"
             )
             results['training_results'] = training_results
             
@@ -329,6 +330,24 @@ class ACE:
             )
             results['online_test_results'] = online_results
         
+        elif mode == 'tdd_training':
+            # 2. Run offline training
+            print(f"\n{'='*60}")
+            print(f"STARTING OFFLINE TRAINING")
+            print(f"{'='*60}\n")
+            training_results = self._offline_train(
+                train_samples=train_samples,
+                val_samples=val_samples,
+                data_processor=data_processor,
+                config=config,
+                save_path=save_path,
+                usage_log_path=usage_log_path,
+                playbook_dir=playbook_dir,
+                log_dir=log_dir,
+                mode="tdd_training"
+            )
+            results['training_results'] = training_results
+        
         else:  # eval_only
             # EVAL ONLY MODE WORKFLOW
             print(f"\n{'='*60}")
@@ -363,6 +382,11 @@ class ACE:
         elif mode == 'online':
             print(f"Initial Test Accuracy: {results['initial_test_results']['accuracy']:.3f}")
             print(f"Final Test Accuracy: {results['online_test_results']['accuracy']:.3f}")
+        elif mode == 'tdd_training':
+            print(f"Best Validation Accuracy: {results['training_results']['best_validation_accuracy']:.3f}")
+            if test_samples:
+                print(f"Initial Test Accuracy: {results['initial_test_results']['accuracy']:.3f}")
+                print(f"Final Test Accuracy: {results['final_test_results']['accuracy']:.3f}")
         else:  # eval_only
             print(f"Test Accuracy: {results['test_results']['accuracy']:.3f}")
         print(f"Results saved to: {save_path}")
@@ -629,6 +653,408 @@ class ACE:
         }
         
         return pre_train_answer, post_train_answer, tracking_dict
+
+    def _save_test_or_function(self, mode, predicted):
+        predicted = predicted.strip("\n").strip("}")
+        print("THIS IS FUNCTION: -->", predicted, "<--")
+        # import re
+        # matches = re.findall(r'def\s*([^(]*)', predicted) 
+        filename = "./workspace/tests/test_15.py"
+        # if matches:
+        #     filename = matches[-1]
+        #     filename = "./workspace/tests/" + filename.split(" ")[-1] + ".py"
+        filename = "./workspace/tests/" + predicted.split("ACEFILENAME")[0]  + ".py"
+        predicted = predicted.split("ACEFILENAME")[1]
+        print("SAVING TEST TO .PY FILE: ", filename)
+        # First save predicted answer/test in a folder workspace/test.py
+        predicted = bytes(predicted, "utf-8").decode("unicode_escape")
+        if (mode == "test"):
+            with open(filename, "w", encoding="utf-8") as file:
+                file.write(predicted)
+        elif (mode == "function"):
+            with open(filename, "a", encoding="utf-8") as file:
+                file.write(predicted)
+        
+        return predicted
+
+    def _train_single_sample_tdd(
+        self,
+        task_dict: Dict[str, Any],
+        data_processor,
+        step_id: str,
+        epoch: int,
+        step: int,
+        usage_log_path: str,
+        log_dir: str,
+        config_params: Dict[str, Any],
+        total_samples: int
+    ) -> Tuple[str, str, Dict[str, Any]]:
+        """
+        Train on a single sample with reflection and curation.
+        
+        Args:
+            task_dict: Sample dictionary with question, context, target
+            data_processor: Data processor for evaluation
+            step_id: Identifier string for this step (e.g., "train_e_1_s_10" or "online_train_w_1_s_5")
+            epoch: Current epoch number
+            step: Current step number
+            usage_log_path: Path for bullet usage logging
+            log_dir: Path for logging directory
+            config_params: Configuration parameters dictionary
+            total_samples: Total number of samples in dataset
+            
+        Returns:
+            Tuple of (pre_train_answer, post_train_answer, tracking_dict)
+        """
+        print("\nYou have reached _train_single_sample_tdd!\n")
+        # Extract configuration
+        max_num_rounds = config_params['max_num_rounds']
+        curator_frequency = config_params['curator_frequency']
+        token_budget = config_params['token_budget']
+        use_json_mode = config_params['use_json_mode']
+        no_ground_truth = config_params['no_ground_truth']
+        
+        # Extract sample data
+        question = task_dict.get("question", "")
+        context = task_dict.get("context", "")
+        target = task_dict.get("target", "")
+        
+        # STEP 1: Initial generation (pre-train)
+        print("Generating initial answer...")
+        print("Context: ", context, "Question: ", question)
+        question_name = ""
+        import re
+        matches = re.findall(r'def\s*([^(]*)', question) 
+        if matches:
+            question_name = matches[0]
+            question_name = question_name.split(" ")[-1]
+        question_name = "test_"+question_name + "ACEFILENAME"
+        print("ACEFILENAME")
+        gen_response, bullet_ids, call_info = self.generator.generate(
+            question=question,
+            playbook=self.playbook,
+            context=context,
+            reflection="(empty)",
+            use_json_mode=use_json_mode,
+            call_id=f"{step_id}_gen_initial",
+            log_dir=log_dir
+        )
+        
+        # Extract answer and check correctness
+        final_answer = extract_answer(gen_response)
+        final_answer = self._save_test_or_function("test", question_name+final_answer)
+        is_correct = data_processor.answer_is_correct(final_answer, target)
+        pre_train_answer = final_answer
+        
+        print(f"Correct: {is_correct}")
+        
+        # Log bullet usage
+        log_bullet_usage(usage_log_path, epoch, step, task_dict, bullet_ids,
+                       playbook=self.playbook, is_correct=is_correct)
+        
+        # Track pre-train result
+        tracking_dict = {
+            "pre_train_result": {
+                "final_answer": final_answer,
+                "is_correct": is_correct,
+                "playbook_num_tokens": count_tokens(self.playbook),
+                "playbook_length": len(self.playbook)
+            }
+        }
+        
+        reflection_content = "(empty)"
+
+        # If answer was correct (all tests passed) then TDD is wrong, so should redirect to
+        #  reflector and then back to generator, to make tests that doesnt pass.
+        #  Feedback must include that the TDD requires tests to fail first time.
+        if is_correct:
+            is_correct = False
+        else:
+            is_correct = True # A bit confusing, but if tests fail, thats correct.
+        # If fail on first (failure, not error) then proceed to generator and ask it to generate
+        #  implementation of function.
+        context = "GENERATE_FUNCTION"+pre_train_answer
+        
+        # STEP 2: Reflection and regeneration
+        if not is_correct:
+            # For incorrect answers - iterate reflection rounds
+            for round_num in range(max_num_rounds):
+                print(f"Test implementation failed, Reflection round {round_num + 1}/{max_num_rounds}")
+
+                # Must rename prev attempt at test implementation.
+                filename = "./workspace/tests/test_" + question_name  + ".py"
+                from shutil import copyfileobj
+                with open("failed_"+round_num+"_"+filename, 'wb') as output, open(filename, 'rb') as input:
+                    copyfileobj(input, output)
+
+                # Get bullets for reflector
+                playbook_bullets = extract_playbook_bullets(
+                    self.playbook, bullet_ids
+                )
+                
+                # Reflect on error
+                reflection_content, bullet_tags, _ = self.reflector.reflect(
+                    question=question,
+                    reasoning_trace=gen_response,
+                    predicted_answer=final_answer,
+                    ground_truth=target if not no_ground_truth else None,
+                    environment_feedback="Predicted answer does not match ground truth",
+                    bullets_used=playbook_bullets,
+                    use_ground_truth=not no_ground_truth,
+                    use_json_mode=use_json_mode,
+                    call_id=f"{step_id}_round_{round_num}",
+                    log_dir=log_dir
+                )
+                
+                # Update bullet counts
+                if bullet_tags:
+                    self.playbook = update_bullet_counts(
+                        self.playbook, bullet_tags
+                    )
+                
+                context = ""
+                # Regenerate with reflection
+                gen_response, bullet_ids, _ = self.generator.generate(
+                    question=question,
+                    playbook=self.playbook,
+                    context=context,
+                    reflection=reflection_content,
+                    use_json_mode=use_json_mode,
+                    call_id=f"{step_id}_post_reflect_round_{round_num}",
+                    log_dir=log_dir
+                )
+                
+                final_answer = extract_answer(gen_response)
+                final_answer = self._save_test_or_function("test", question_name+final_answer)
+                is_correct = data_processor.answer_is_correct(final_answer, target)
+
+                if is_correct:
+                    is_correct = False
+                else:
+                    is_correct = True # A bit confusing, but if tests fail, thats correct.
+                
+                if is_correct:
+                    print(f"Corrected after reflection round {round_num + 1}!")
+                    is_correct = True
+                    context = "GENERATE_FUNCTION"+pre_train_answer
+                    break
+        
+        else:
+            print("Okay, tests are made, time for function implementation now.")
+            playbook_bullets = extract_playbook_bullets(
+                self.playbook, bullet_ids
+            )
+            
+            
+            # Regenerate with reflection
+            gen_response, bullet_ids, _ = self.generator.generate(
+                question=question,
+                playbook=self.playbook,
+                context=context,
+                reflection=reflection_content,
+                use_json_mode=use_json_mode,
+                call_id=f"{step_id}_post_initial_passed_round_{1}",
+                log_dir=log_dir
+            )
+            
+            final_answer = extract_answer(gen_response)
+            # This might be where we should insert the function into the testerfile...
+            final_answer = self._save_test_or_function("function", question_name+final_answer)
+            
+            
+            if data_processor.answer_is_correct(final_answer, target):
+                print(f"Corrected after reflection round {round_num + 1}!")
+                is_correct = True
+                # break
+            else:
+                is_correct = False
+    
+            print(f"Correct: {is_correct}, \n\n --- Test creation done, first attempt at function implemention done... --- \n\n")
+
+            # Log with reflection
+            log_bullet_usage(usage_log_path, epoch, step, task_dict, bullet_ids,
+                           playbook=self.playbook, 
+                           reflection_content=reflection_content,
+                           is_correct=is_correct)
+
+            # Next step is pass response to reflector, and if tests fail then back to generator, but if pass then pass reflector response to curator. And then next task.
+
+            if not is_correct: # TESTS FAIL AFTER IMPLEMENTING FUNCTION.
+                # For incorrect answers - iterate reflection rounds
+                for round_num in range(max_num_rounds):
+                    print(f"Function implementation not done correctly, reflection - generator dance initiated, round {round_num}... \n\n")
+                    print(f"Reflection round {round_num + 1}/{max_num_rounds}")
+
+                    # Must rename prev attempt at test implementation.
+                    filename = "./workspace/tests/test_" + question_name  + ".py"
+                    from shutil import copyfileobj
+                    with open("failed_func_"+round_num+"_"+filename, 'wb') as output, open(filename, 'rb') as input:
+                        copyfileobj(input, output)
+                    
+                    # Get bullets for reflector
+                    playbook_bullets = extract_playbook_bullets(
+                        self.playbook, bullet_ids
+                    )
+                    
+                    # Reflect on error
+                    reflection_content, bullet_tags, _ = self.reflector.reflect(
+                        question=question,
+                        reasoning_trace=gen_response,
+                        predicted_answer=final_answer,
+                        ground_truth=target if not no_ground_truth else None,
+                        environment_feedback="Function not implemented correctly. Tests failed.",
+                        bullets_used=playbook_bullets,
+                        use_ground_truth=not no_ground_truth,
+                        use_json_mode=use_json_mode,
+                        call_id=f"{step_id}_round_{round_num}",
+                        log_dir=log_dir
+                    )
+                    
+                    # Update bullet counts
+                    if bullet_tags:
+                        self.playbook = update_bullet_counts(
+                            self.playbook, bullet_tags
+                        )
+                    
+                    # Regenerate with reflection
+                    gen_response, bullet_ids, _ = self.generator.generate(
+                        question=question,
+                        playbook=self.playbook,
+                        context=context,
+                        reflection=reflection_content,
+                        use_json_mode=use_json_mode,
+                        call_id=f"{step_id}_post_reflect_func_round_{round_num}",
+                        log_dir=log_dir
+                    )
+                    
+                    final_answer = extract_answer(gen_response)
+                    final_answer = self._save_test_or_function("function", question_name+final_answer)
+                    
+                    if data_processor.answer_is_correct(final_answer, target):
+                        print(f"Corrected after reflection round {round_num + 1}!")
+                        is_correct = True
+                        break
+            else:
+                print("Function implemented correctly. Letting reflector reflect...\n\n")
+                # For correct answers - still run reflector to tag helpful bullets
+                playbook_bullets = extract_playbook_bullets(
+                    self.playbook, bullet_ids
+                )
+                
+                reflection_content, bullet_tags, _ = self.reflector.reflect(
+                    question=question,
+                    reasoning_trace=gen_response,
+                    predicted_answer=final_answer,
+                    ground_truth=target if not no_ground_truth else None,
+                    environment_feedback="Function implemented correctly. Reflect on what went right.",
+                    bullets_used=playbook_bullets,
+                    use_ground_truth=not no_ground_truth,
+                    use_json_mode=use_json_mode,
+                    call_id=f"{step_id}_reflect_on_correct",
+                    log_dir=log_dir
+                )
+                
+                # Update bullet counts
+                if bullet_tags:
+                    self.playbook = update_bullet_counts(
+                        self.playbook, bullet_tags
+                    )
+                
+                # Log with reflection
+                log_bullet_usage(usage_log_path, epoch, step, task_dict, bullet_ids,
+                            playbook=self.playbook, 
+                            reflection_content=reflection_content,
+                            is_correct=is_correct)
+            
+        
+        # STEP 3: Curator - Periodically update playbook
+        if step % curator_frequency == 0:
+            print(f"\n\n--- Running Curator at step {step} ---\n")
+            
+            stats = get_playbook_stats(self.playbook)
+            
+            self.playbook, self.next_global_id, operations, _ = self.curator.curate(
+                current_playbook=self.playbook,
+                recent_reflection=reflection_content,
+                question_context=context,
+                current_step=step,
+                total_samples=total_samples,
+                token_budget=token_budget,
+                playbook_stats=stats,
+                use_ground_truth=not no_ground_truth,
+                use_json_mode=use_json_mode,
+                call_id=step_id,
+                log_dir=log_dir,
+                next_global_id=self.next_global_id
+            )
+            
+            # Run bulletpoint analyzer if enabled
+            if self.use_bulletpoint_analyzer and self.bulletpoint_analyzer:
+                print(f"  Running BulletpointAnalyzer (threshold={self.bulletpoint_analyzer_threshold})...")
+                self.playbook = self.bulletpoint_analyzer.analyze(
+                    playbook=self.playbook,
+                    threshold=self.bulletpoint_analyzer_threshold,
+                    merge=True
+                )
+        
+        # STEP 4: Post-curator generation
+        # First tests implementation
+        print("\n\n Post curator, creating tests...")
+        question_name = "test_2_"+question_name + "ACEFILENAME"
+        print("ACEFILENAME")
+        gen_response, bullet_ids, call_info = self.generator.generate(
+            question=question,
+            playbook=self.playbook,
+            context=context,
+            reflection="(empty)",
+            use_json_mode=use_json_mode,
+            call_id=f"{step_id}_gen_post",
+            log_dir=log_dir
+        )
+        
+        # Extract answer and check correctness
+        final_answer = extract_answer(gen_response)
+        final_answer = self._save_test_or_function("test", question_name+final_answer)
+        is_correct = data_processor.answer_is_correct(final_answer, target)
+        pre_train_answer = final_answer
+        
+        print(f"Correct: {is_correct}")
+
+        reflection_content = "(empty)"
+
+        if is_correct:
+            is_correct = False
+        else:
+            is_correct = True # A bit confusing, but if tests fail, thats correct.
+ 
+        context = "GENERATE_FUNCTION"+pre_train_answer
+        # Then function implementation
+        print("\n\n Now creating function.")
+        gen_response, _, _ = self.generator.generate(
+            question=question,
+            playbook=self.playbook,
+            context=context,
+            reflection="(empty)",
+            use_json_mode=use_json_mode,
+            call_id=f"{step_id}_post_curate_function",
+            log_dir=log_dir
+        )
+        
+        final_answer = extract_answer(gen_response)
+        final_answer = self._save_test_or_function("function", question_name+final_answer)
+        post_train_answer = final_answer
+        
+        post_train_is_correct = data_processor.answer_is_correct(final_answer, target)
+        tracking_dict["post_train_result"] = {
+            "final_answer": final_answer,
+            "is_correct": post_train_is_correct,
+            "playbook_num_tokens": count_tokens(self.playbook),
+            "playbook_length": len(self.playbook)
+        }
+
+        print("\n\n\n --- Done with this question --- \n\n\n")
+        
+        return pre_train_answer, post_train_answer, tracking_dict
     
     def _offline_train(
         self,
@@ -639,7 +1065,8 @@ class ACE:
         save_path: str,
         usage_log_path: str,
         playbook_dir: str,
-        log_dir: str
+        log_dir: str,
+        mode: str = "offline"
     ) -> Dict[str, Any]:
         """
         Run offline training
@@ -697,18 +1124,32 @@ class ACE:
                 
                 target = task_dict.get("target", "")
                 
-                # Use helper method for training single sample
-                pre_train_answer, post_train_answer, tracking_dict = self._train_single_sample(
-                    task_dict=task_dict,
-                    data_processor=data_processor,
-                    step_id=f"train_e_{epoch}_s_{step}",
-                    epoch=epoch,
-                    step=step,
-                    usage_log_path=usage_log_path,
-                    log_dir=log_dir,
-                    config_params=config_params,
-                    total_samples=len(train_samples)
-                )
+                if mode=="offline":
+                    # Use helper method for training single sample
+                    pre_train_answer, post_train_answer, tracking_dict = self._train_single_sample(
+                        task_dict=task_dict,
+                        data_processor=data_processor,
+                        step_id=f"train_e_{epoch}_s_{step}",
+                        epoch=epoch,
+                        step=step,
+                        usage_log_path=usage_log_path,
+                        log_dir=log_dir,
+                        config_params=config_params,
+                        total_samples=len(train_samples)
+                    )
+                elif mode=="tdd_training":
+                    # Use helper method for training single sample
+                    pre_train_answer, post_train_answer, tracking_dict = self._train_single_sample_tdd(
+                        task_dict=task_dict,
+                        data_processor=data_processor,
+                        step_id=f"train_e_{epoch}_s_{step}",
+                        epoch=epoch,
+                        step=step,
+                        usage_log_path=usage_log_path,
+                        log_dir=log_dir,
+                        config_params=config_params,
+                        total_samples=len(train_samples)
+                    )
                 
                 # Collect answers for accuracy calculation
                 epoch_answers_pre_train.append(pre_train_answer)

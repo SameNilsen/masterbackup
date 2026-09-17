@@ -6,7 +6,7 @@ Generates answers to questions using playbook and reflection.
 import json
 import re
 from typing import Dict, List, Tuple, Optional, Any
-from ..prompts.generator_en import GENERATOR_PROMPT
+from ..prompts.generator_en import GENERATOR_PROMPT, GENERATOR_PROMPT_FUNCTION
 from llm import timed_llm_call
 
 class Generator:
@@ -61,7 +61,13 @@ class Generator:
             Tuple of (full_response, bullet_ids_used, call_info)
         """
         # Format the prompt
-        prompt = GENERATOR_PROMPT.format(playbook, reflection, question, context)
+        if context.startswith("GENERATE_FUNCTION"):
+            print("BRUKER GENERATOR_PROMPT_FUNCTION")
+            context = context.split("GENERATE_FUNCTION")[1]
+            prompt = GENERATOR_PROMPT_FUNCTION.format(playbook, reflection, question, context)
+        else:
+            print("BRUKER VANLIG GENERATOR_PROMPT")
+            prompt = GENERATOR_PROMPT.format(playbook, reflection, question, context)
         print(41)
         response, call_info = timed_llm_call(
             self.api_client,

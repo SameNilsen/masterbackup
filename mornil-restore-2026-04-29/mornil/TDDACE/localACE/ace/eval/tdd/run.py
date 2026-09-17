@@ -27,7 +27,7 @@ def parse_args():
     parser.add_argument("--initial_playbook_path", type=str, default=None,
                         help="Path to initial playbook (optional)")
     parser.add_argument("--mode", type=str, default="offline",
-                        choices=["offline", "online", "eval_only"],
+                        choices=["offline", "online", "eval_only", "tdd_training"],
                         help="Run mode: 'offline' for offline training with validation, "
                              "'online' for online training and testing on test split, "
                              "'eval_only' for testing only with provided playbook")

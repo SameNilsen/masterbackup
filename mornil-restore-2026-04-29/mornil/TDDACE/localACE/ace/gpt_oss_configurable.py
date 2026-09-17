@@ -26,8 +26,8 @@ def setupLLM(model="openai/gpt-oss-20b"):
 
 def askLLM(tokenizer, model, prompt):
     # print(model.hf_device_map)
-    # print("Got prompt: ")
-    # print(prompt)
+    print("Got prompt: ")
+    print("-->", prompt, "<--")
     messages = [
         {"role": "user", "content": prompt},
     ]
@@ -39,9 +39,18 @@ def askLLM(tokenizer, model, prompt):
         return_dict=True,
     ).to(model.device)
 
+    input_length = inputs["input_ids"].shape[-1]
+    print("Model max length:", tokenizer.model_max_length)
+
     # Can add "reasoning_effort="high"" after return_dict.
 
-    generated = model.generate(**inputs, max_new_tokens=2000)
+    generated = model.generate(**inputs, max_new_tokens=4000)
+    output_length = generated.shape[-1]
+    new_tokens = output_length - input_length
+
+    print(f"Input tokens: {input_length}")
+    print(f"Generated tokens: {new_tokens}")
+    print(f"Hit max_new_tokens: {new_tokens >= 4000}")
     result = tokenizer.decode(generated[0][inputs["input_ids"].shape[-1]:])
     # print(tokenizer.decode(generated[0][inputs["input_ids"].shape[-1]:]))
 

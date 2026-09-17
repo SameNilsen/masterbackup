@@ -263,18 +263,21 @@ class DataProcessor:
         """humaneval dataset specific answer correctness check
          THIS MIGHT BE WHERE WE RUN THE APPTAINER + PYTEST STUFF
         """
-        print("THIS IS FUNCTION: -->", predicted, "<--")
-        import re
-        matches = re.findall(r'def\s*([^(]*)', predicted) 
-        filename = "./workspace/tests/test_15.py"
-        if matches:
-            filename = matches[-1]
-            filename = "./workspace/tests/" + filename.split(" ")[-1] + ".py"
-        print("SAVING TEST TO .PY FILE: ", filename)
-        # First save predicted answer/test in a folder workspace/test.py
-        predicted = bytes(predicted, "utf-8").decode("unicode_escape")
-        with open(filename, "w", encoding="utf-8") as file:
-            file.write(predicted)
+        # predicted = predicted.strip("\n").strip("}")
+        # print("THIS IS FUNCTION: -->", predicted, "<--")
+        # import re
+        # matches = re.findall(r'def\s*([^(]*)', predicted) 
+        # filename = "./workspace/tests/test_15.py"
+        # # if matches:
+        # #     filename = matches[-1]
+        # #     filename = "./workspace/tests/" + filename.split(" ")[-1] + ".py"
+        # filename = "./workspace/tests/" + predicted.split("ACEFILENAME")[0]  + ".py"
+        # predicted = predicted.split("ACEFILENAME")[1]
+        # print("SAVING TEST TO .PY FILE: ", filename)
+        # # First save predicted answer/test in a folder workspace/test.py
+        # predicted = bytes(predicted, "utf-8").decode("unicode_escape")
+        # with open(filename, "w", encoding="utf-8") as file:
+        #     file.write(predicted)
         # Must run or have run "apptainer build python-testing.sif python-testing.def", but maybe we assume thats been done.
         # Then run "python codechecker.py" and capture outputs
         print("RUNNING CODECHECKER")
@@ -290,6 +293,15 @@ class DataProcessor:
             timeout=30
         )
         print("DONE, WE SHOULD GET OUTPUT HERE: ", result)
+        result = str(result)
+        print("--->", result.split("=========================")[-2], "<---")
+        # if ("failed" in result.split("=========================")[-2]):
+        if (any(x in string.split("=========================")[-2] for x in ["failed", "errors"])):
+            print("FAIL")
+            return False
+        else: # NEED OPTION FOR IF ERROR IN RESULT.
+            print("PASS")
+            return True
 
         # When we open datasets we use "./eval/tdd/data/sample_config.json", so maybe put container and workspace in localACE/ace/.
         try:
