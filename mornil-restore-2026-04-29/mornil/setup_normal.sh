@@ -22,6 +22,6 @@ echo "Starting virtual environment..."
 source mastertestenv/bin/activate
 
 echo "Checking installed packages..."
-pip list | grep -e transformers -e torch -e langchain -e nest-asyncio -e bitsandbytes -e accelerate -e tiktoken -e dotenv -e faiss-cpu -e sentence-transformers -e vllm
+pip list | grep -e transformers -e torch -e langchain -e nest-asyncio -e bitsandbytes -e accelerate -e tiktoken -e dotenv -e faiss-cpu -e sentence-transformers -e vllm -e triton
 
 echo "Ready to go."

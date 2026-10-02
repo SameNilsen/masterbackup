@@ -280,6 +280,11 @@ class DataProcessor:
         #     file.write(predicted)
         # Must run or have run "apptainer build python-testing.sif python-testing.def", but maybe we assume thats been done.
         # Then run "python codechecker.py" and capture outputs
+        test = False
+        if (predicted.startswith("THISISTEST")):
+            print("IN THE TEST PHASE")
+            predicted = predicted.split("THISISTEST")[1]
+            test = True
         print("RUNNING CODECHECKER")
         import subprocess
 
@@ -294,14 +299,29 @@ class DataProcessor:
         )
         print("DONE, WE SHOULD GET OUTPUT HERE: ", result)
         result = str(result)
-        print("--->", result.split("=========================")[-2], "<---")
+        import re
+        match = re.findall(r'==+\s*(.*?)\s*==+\s*', result.strip())
+        resultcode = "error"
+        # print("--->", result.split("=========================")[-2], "<---")
+        if len(match)!=0:
+            print("->", match[-1])
+            resultcode = match[-1]
+        print("--->", resultcode, "<---")
         # if ("failed" in result.split("=========================")[-2]):
-        if (any(x in string.split("=========================")[-2] for x in ["failed", "errors"])):
-            print("FAIL")
-            return False
-        else: # NEED OPTION FOR IF ERROR IN RESULT.
-            print("PASS")
-            return True
+        if test:
+            if ("failed" in resultcode):
+                print("FAIL")
+                return False, ""
+            else: # NEED OPTION FOR IF ERROR IN RESULT.
+                print("PASS")
+                return True, result
+        else:
+            if (any(x in resultcode for x in ["failed", "errors", "error"])):
+                print("FAIL")
+                return False, result
+            else: # NEED OPTION FOR IF ERROR IN RESULT.
+                print("PASS")
+                return True, ""
 
         # When we open datasets we use "./eval/tdd/data/sample_config.json", so maybe put container and workspace in localACE/ace/.
         try:
@@ -424,7 +444,7 @@ class DataProcessor:
         correct_count = 0
 
         for predicted, ground_truth in zip(out, target):
-            if self._humaneval_answer_is_correct(predicted, ground_truth):
+            if self._humaneval_answer_is_correct(predicted, ground_truth)[0]:
                 is_correct = True
                 correct_count += 1
             else:

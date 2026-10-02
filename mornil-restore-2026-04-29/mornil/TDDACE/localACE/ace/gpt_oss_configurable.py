@@ -43,14 +43,21 @@ def askLLM(tokenizer, model, prompt):
     print("Model max length:", tokenizer.model_max_length)
 
     # Can add "reasoning_effort="high"" after return_dict.
+    accepted_answer_length = False
+    while accepted_answer_length is False:
+        print("->Attempting to generate answer.")
+        generated = model.generate(**inputs, max_new_tokens=4000)
+        output_length = generated.shape[-1]
+        new_tokens = output_length - input_length
 
-    generated = model.generate(**inputs, max_new_tokens=4000)
-    output_length = generated.shape[-1]
-    new_tokens = output_length - input_length
-
-    print(f"Input tokens: {input_length}")
-    print(f"Generated tokens: {new_tokens}")
-    print(f"Hit max_new_tokens: {new_tokens >= 4000}")
+        print(f"Input tokens: {input_length}")
+        print(f"Generated tokens: {new_tokens}")
+        print(f"Hit max_new_tokens: {new_tokens >= 4000}")
+        if (new_tokens >= 4000):
+            accepted_answer_length = False
+        else:
+            accepted_answer_length = True
+    print("->Generated answer length accepted...")
     result = tokenizer.decode(generated[0][inputs["input_ids"].shape[-1]:])
     # print(tokenizer.decode(generated[0][inputs["input_ids"].shape[-1]:]))
 

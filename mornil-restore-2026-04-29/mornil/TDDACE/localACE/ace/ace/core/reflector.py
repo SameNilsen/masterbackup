@@ -5,7 +5,7 @@ Analyzes generator outputs and provides feedback on bullet usage.
 
 import json
 from typing import Dict, List, Tuple, Optional, Any
-from ..prompts.reflector_en import REFLECTOR_PROMPT, REFLECTOR_PROMPT_NO_GT
+from ..prompts.reflector_en import REFLECTOR_PROMPT, REFLECTOR_PROMPT_CORRECT, REFLECTOR_PROMPT_NO_GT
 from llm import timed_llm_call
 
 
@@ -84,7 +84,39 @@ class Reflector:
                 environment_feedback,
                 bullets_used
             )
-        
+        # Format the prompt
+        if question.startswith("ACEWRONG"):
+            print("BRUKER REFLECTOR_PROMPT")
+            question = question.split("ACEWRONG")[1]
+            prompt = REFLECTOR_PROMPT.format(
+                question,
+                reasoning_trace,
+                predicted_answer,
+                ground_truth,
+                environment_feedback,
+                bullets_used
+            )
+        elif question.startswith("ACECORRECT"):
+            print("BRUKER REFLECTOR_PROMPT_CORRECT")
+            question = question.split("ACECORRECT")[1]
+            prompt = REFLECTOR_PROMPT_CORRECT.format(
+                question,
+                reasoning_trace,
+                predicted_answer,
+                ground_truth,
+                environment_feedback,
+                bullets_used
+            )
+        else:
+            print("BRUKER REFLECTOR_PROMPT")
+            prompt = REFLECTOR_PROMPT.format(
+                question,
+                reasoning_trace,
+                predicted_answer,
+                ground_truth,
+                environment_feedback,
+                bullets_used
+            )
         response, call_info = timed_llm_call(
             self.api_client,
             self.api_provider,

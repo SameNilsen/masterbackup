@@ -666,6 +666,7 @@ class ACE:
         filename = "./workspace/tests/" + predicted.split("ACEFILENAME")[0]  + ".py"
         predicted = predicted.split("ACEFILENAME")[1]
         print("SAVING TEST TO .PY FILE: ", filename)
+        predicted+="\n\n"
         # First save predicted answer/test in a folder workspace/test.py
         predicted = bytes(predicted, "utf-8").decode("unicode_escape")
         if (mode == "test"):
@@ -721,13 +722,14 @@ class ACE:
         
         # STEP 1: Initial generation (pre-train)
         print("Generating initial answer...")
-        print("Context: ", context, "Question: ", question)
+        print("Context: ", context, "Question: ", question, " \nTarget: ", target)
         question_name = ""
         import re
         matches = re.findall(r'def\s*([^(]*)', question) 
         if matches:
             question_name = matches[0]
             question_name = question_name.split(" ")[-1]
+        question_name_pure = question_name
         question_name = "test_"+question_name + "ACEFILENAME"
         print("ACEFILENAME")
         gen_response, bullet_ids, call_info = self.generator.generate(
@@ -743,7 +745,8 @@ class ACE:
         # Extract answer and check correctness
         final_answer = extract_answer(gen_response)
         final_answer = self._save_test_or_function("test", question_name+final_answer)
-        is_correct = data_processor.answer_is_correct(final_answer, target)
+        # SHOULD CHECK FOR CORRECTNESS AGAINST REFERENCE FUNCTION.
+        is_correct, feedback = data_processor.answer_is_correct("THISISTEST"+final_answer, target)
         pre_train_answer = final_answer
         
         print(f"Correct: {is_correct}")
@@ -782,9 +785,10 @@ class ACE:
                 print(f"Test implementation failed, Reflection round {round_num + 1}/{max_num_rounds}")
 
                 # Must rename prev attempt at test implementation.
-                filename = "./workspace/tests/test_" + question_name  + ".py"
+                oldfilename = "./workspace/tests/" + question_name.split("ACEFILENAME")[0]  + ".py"
+                newfilename = "./workspace/tests/failed_test_"+str(round_num)+"_" + question_name.split("ACEFILENAME")[0]  + ".py"
                 from shutil import copyfileobj
-                with open("failed_"+round_num+"_"+filename, 'wb') as output, open(filename, 'rb') as input:
+                with open(newfilename, 'wb') as output, open(oldfilename, 'rb') as input:
                     copyfileobj(input, output)
 
                 # Get bullets for reflector
@@ -794,11 +798,11 @@ class ACE:
                 
                 # Reflect on error
                 reflection_content, bullet_tags, _ = self.reflector.reflect(
-                    question=question,
+                    question="ACEWRONG"+question,
                     reasoning_trace=gen_response,
                     predicted_answer=final_answer,
                     ground_truth=target if not no_ground_truth else None,
-                    environment_feedback="Predicted answer does not match ground truth",
+                    environment_feedback="Tests not implemented correctly. Feedback from PyTest: "+feedback,
                     bullets_used=playbook_bullets,
                     use_ground_truth=not no_ground_truth,
                     use_json_mode=use_json_mode,
@@ -826,7 +830,7 @@ class ACE:
                 
                 final_answer = extract_answer(gen_response)
                 final_answer = self._save_test_or_function("test", question_name+final_answer)
-                is_correct = data_processor.answer_is_correct(final_answer, target)
+                is_correct, feedback = data_processor.answer_is_correct("THISISTEST"+final_answer, target)
 
                 if is_correct:
                     is_correct = False
@@ -862,11 +866,24 @@ class ACE:
             final_answer = self._save_test_or_function("function", question_name+final_answer)
             
             
-            if data_processor.answer_is_correct(final_answer, target):
-                print(f"Corrected after reflection round {round_num + 1}!")
+            if data_processor.answer_is_correct(final_answer, target)[0]:
+                print(f"Correctly implemented function as well!")
                 is_correct = True
                 # break
             else:
+                is_correct = False
+
+            # Cheking function against reference tests:
+            print("Adding reference tests... for: ", question_name_pure)
+            reference_tests_answer = self._save_test_or_function("function", question_name+("".join(target[1:]).replace("def ", "def test_", 1).replace("(candidate)", "()").replace("candidate", question_name_pure))+"\n\n")
+            
+            is_correct, feedback = data_processor.answer_is_correct(reference_tests_answer, target)
+            if is_correct:
+                print(f"Correctly implemented function according to reference functions as well!")
+                is_correct = True
+                # break
+            else:
+                print("Reference tests failed...")
                 is_correct = False
     
             print(f"Correct: {is_correct}, \n\n --- Test creation done, first attempt at function implemention done... --- \n\n")
@@ -886,10 +903,25 @@ class ACE:
                     print(f"Reflection round {round_num + 1}/{max_num_rounds}")
 
                     # Must rename prev attempt at test implementation.
-                    filename = "./workspace/tests/test_" + question_name  + ".py"
+                    oldfilename = "./workspace/tests/" + question_name.split("ACEFILENAME")[0]  + ".py"
+                    newfilename = "./workspace/tests/failed_func_"+str(round_num)+"_" + question_name.split("ACEFILENAME")[0]  + ".py"
                     from shutil import copyfileobj
-                    with open("failed_func_"+round_num+"_"+filename, 'wb') as output, open(filename, 'rb') as input:
+                    with open(newfilename, 'wb') as output, open(oldfilename, 'rb') as input:
                         copyfileobj(input, output)
+
+                    # Must delete old function in original file.
+                    text = open(oldfilename, 'rt').read()
+
+                    # split it at the first empty line ("\n\n")
+                    first, rest = text.split('def '+question_name_pure,1)
+                    rest = "def"+rest.split("def", 1)[1]
+
+                    # print(rest)
+
+                    newcontent = first+rest
+
+                    # make a new file and write the rest
+                    open(oldfilename, 'wt').write(newcontent)
                     
                     # Get bullets for reflector
                     playbook_bullets = extract_playbook_bullets(
@@ -898,11 +930,11 @@ class ACE:
                     
                     # Reflect on error
                     reflection_content, bullet_tags, _ = self.reflector.reflect(
-                        question=question,
+                        question="ACEWRONG"+question,
                         reasoning_trace=gen_response,
                         predicted_answer=final_answer,
                         ground_truth=target if not no_ground_truth else None,
-                        environment_feedback="Function not implemented correctly. Tests failed.",
+                        environment_feedback="Function not implemented correctly. Tests failed. Feedback from PyTest: " + feedback,
                         bullets_used=playbook_bullets,
                         use_ground_truth=not no_ground_truth,
                         use_json_mode=use_json_mode,
@@ -929,8 +961,8 @@ class ACE:
                     
                     final_answer = extract_answer(gen_response)
                     final_answer = self._save_test_or_function("function", question_name+final_answer)
-                    
-                    if data_processor.answer_is_correct(final_answer, target):
+                    is_correct, feedback = data_processor.answer_is_correct(final_answer, target)
+                    if is_correct:
                         print(f"Corrected after reflection round {round_num + 1}!")
                         is_correct = True
                         break
@@ -942,7 +974,7 @@ class ACE:
                 )
                 
                 reflection_content, bullet_tags, _ = self.reflector.reflect(
-                    question=question,
+                    question="ACECORRECT"+question,
                     reasoning_trace=gen_response,
                     predicted_answer=final_answer,
                     ground_truth=target if not no_ground_truth else None,
@@ -1000,7 +1032,8 @@ class ACE:
         # STEP 4: Post-curator generation
         # First tests implementation
         print("\n\n Post curator, creating tests...")
-        question_name = "test_2_"+question_name + "ACEFILENAME"
+        question_name = "test_2_"+question_name
+        context = ""
         print("ACEFILENAME")
         gen_response, bullet_ids, call_info = self.generator.generate(
             question=question,
@@ -1015,8 +1048,8 @@ class ACE:
         # Extract answer and check correctness
         final_answer = extract_answer(gen_response)
         final_answer = self._save_test_or_function("test", question_name+final_answer)
-        is_correct = data_processor.answer_is_correct(final_answer, target)
-        pre_train_answer = final_answer
+        is_correct, feedback = data_processor.answer_is_correct(final_answer, target)
+        pre_train_post_curator_answer = final_answer
         
         print(f"Correct: {is_correct}")
 
@@ -1027,7 +1060,7 @@ class ACE:
         else:
             is_correct = True # A bit confusing, but if tests fail, thats correct.
  
-        context = "GENERATE_FUNCTION"+pre_train_answer
+        context = "GENERATE_FUNCTION"+pre_train_post_curator_answer
         # Then function implementation
         print("\n\n Now creating function.")
         gen_response, _, _ = self.generator.generate(
@@ -1044,7 +1077,19 @@ class ACE:
         final_answer = self._save_test_or_function("function", question_name+final_answer)
         post_train_answer = final_answer
         
-        post_train_is_correct = data_processor.answer_is_correct(final_answer, target)
+        post_train_is_correct, feedback = data_processor.answer_is_correct(final_answer, target)
+
+        # Cheking function against reference tests:
+        reference_tests_answer = self._save_test_or_function("function", question_name+("".join(target[1:]).replace("def ", "def test_", 1).replace("(candidate)", "()").replace("candidate", question_name_pure))+"\n\n")
+
+        if data_processor.answer_is_correct(reference_tests_answer, target)[0]:
+            print(f"Correctly implemented function according to reference functions as well!")
+            is_correct = True
+            # break
+        else:
+            print("Reference tests failed...")
+            is_correct = False
+
         tracking_dict["post_train_result"] = {
             "final_answer": final_answer,
             "is_correct": post_train_is_correct,
@@ -1053,6 +1098,8 @@ class ACE:
         }
 
         print("\n\n\n --- Done with this question --- \n\n\n")
+
+        exit()
         
         return pre_train_answer, post_train_answer, tracking_dict
     
