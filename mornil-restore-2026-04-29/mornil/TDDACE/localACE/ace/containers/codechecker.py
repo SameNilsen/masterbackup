@@ -15,7 +15,7 @@ result = subprocess.run(
     ],
     capture_output=True,
     text=True,
-    timeout=30
+    timeout=60
 )
 
 print("Exit code:", result.returncode)

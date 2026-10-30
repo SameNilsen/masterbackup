@@ -1,0 +1,20 @@
+
+============================================================
+CURATOR FAILURE LOG
+============================================================
+Timestamp: 2026-10-20 11:08:35
+Epoch: 0
+Step: 1
+Failure Type: json_parse_error
+Error Details: Failed to extract valid JSON from curator response
+
+Raw Curator Response (first 1000 chars):
+----------------------------------------
+ JSON}
+----------------------------------------
+
+Full Raw Curator Response:
+----------------------------------------
+ JSON}
+----------------------------------------
+

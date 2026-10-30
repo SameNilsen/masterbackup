@@ -1,0 +1,45 @@
+{
+  "test_results": {
+    "accuracy": 0.6,
+    "correct": 6,
+    "total": 10,
+    "no_answer": 0
+  },
+  "error_log": {
+    "accuracy": 0.6,
+    "errors": [
+      {
+        "index": 1,
+        "prediction": "def max_fill(grid, capacity):\n    \"\"\"Return the total number of bucket lowers required to empty all wells.\n\n    A grid represents wells where each row is a well and each 1 in the row is\n    one unit of water.  A bucket of the given capacity can be lowered onto a\n    well repeatedly, drawing at most *capacity* units each time.\n\n    The function sums, for every well, the number of bucket lowers needed:\n    ceil(count_of_ones_in_row / capacity).\n    \"\"\"\n    total = 0\n    for row in grid:\n        ones = sum(row)\n        # Ceil division: (ones + capacity - 1) // capacity\n        total += (ones + capacity - 1) // capacity\n    return total\n\n",
+        "ground_truth": [
+          "    return sum([math.ceil(sum(arr)/capacity) for arr in grid])\n",
+          "def check(candidate):\n\n\n    # Check some simple cases\n    assert True, \"This prints if this assert fails 1 (good for debugging!)\"\n    assert candidate([[0,0,1,0], [0,1,0,0], [1,1,1,1]], 1) == 6, \"Error\"\n    assert candidate([[0,0,1,1], [0,0,0,0], [1,1,1,1], [0,1,1,1]], 2) == 5, \"Error\"\n    assert candidate([[0,0,0], [0,0,0]], 5) == 0, \"Error\"\n\n    # Check some edge cases that are easy to work out by hand.\n    assert True, \"This prints if this assert fails 2 (also good for debugging!)\"\n    assert candidate([[1,1,1,1], [1,1,1,1]], 2) == 4, \"Error\"\n    assert candidate([[1,1,1,1], [1,1,1,1]], 9) == 2, \"Error\"\n\n"
+        ]
+      },
+      {
+        "index": 5,
+        "prediction": "def filter_by_prefix(strings: List[str], prefix: str) -> List[str]:\n    return [s for s in strings if s.startswith(prefix)]\n\n",
+        "ground_truth": [
+          "    return [x for x in strings if x.startswith(prefix)]\n",
+          "\n\nMETADATA = {\n    'author': 'jt',\n    'dataset': 'test'\n}\n\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n"
+        ]
+      },
+      {
+        "index": 7,
+        "prediction": "def remove_vowels(text):\n    \"\"\"Return *text* with all vowels (a, e, i, o, u) removed.\n\n    The comparison is case\u00e2\u0080\u0091insensitive, and all non\u00e2\u0080\u0091vowel characters,\n    including whitespace, digits, punctuation, and Unicode characters,\n    are preserved.\n    \"\"\"\n    vowels = set('aeiou')\n    return ''.join(ch for ch in text if ch.lower() not in vowels)\n\n",
+        "ground_truth": [
+          "    return \"\".join([s for s in text if s.lower() not in [\"a\", \"e\", \"i\", \"o\", \"u\"]])\n",
+          "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate(\"abcdef\\nghijklm\") == 'bcdf\\nghjklm'\n    assert candidate('fedcba') == 'fdcb'\n    assert candidate('eeeee') == ''\n    assert candidate('acBAA') == 'cB'\n    assert candidate('EcBOO') == 'cB'\n    assert candidate('ybcd') == 'ybcd'\n\n"
+        ]
+      },
+      {
+        "index": 9,
+        "prediction": "def order_by_points(nums):\n    \"\"\"Return a new list sorted by the sum of digits of each integer.\n\n    *Ties* are resolved by the original order because the sort is stable.\n    Handles negative integers by summing the digits of their absolute value.\n    \"\"\"\n    def _digit_sum(n: int) -> int:\n        return sum(int(ch) for ch in str(abs(n)))\n    return sorted(nums, key=_digit_sum)\n\n",
+        "ground_truth": [
+          "    def digits_sum(n):\n        neg = 1\n        if n < 0: n, neg = -1 * n, -1 \n        n = [int(i) for i in str(n)]\n        n[0] = n[0] * neg\n        return sum(n)\n    return sorted(nums, key=digits_sum)\n",
+          "def check(candidate):\n\n    # Check some simple cases\n    assert candidate([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]\n    assert candidate([1234,423,463,145,2,423,423,53,6,37,3457,3,56,0,46]) == [0, 2, 3, 6, 53, 423, 423, 423, 1234, 145, 37, 46, 56, 463, 3457]\n    assert candidate([]) == []\n    assert candidate([1, -11, -32, 43, 54, -98, 2, -3]) == [-3, -32, -98, -11, 1, 2, 43, 54]\n    assert candidate([1,2,3,4,5,6,7,8,9,10,11]) == [1, 10, 2, 11, 3, 4, 5, 6, 7, 8, 9]\n    assert candidate([0,6,6,-76,-21,23,4]) == [-76, -21, 0, 4, 23, 6, 6]\n\n    # Check some edge cases that are easy to work out by hand.\n    assert True, \"This prints if this assert fails 2 (also good for debugging!)\"\n\n"
+        ]
+      }
+    ]
+  }
+}

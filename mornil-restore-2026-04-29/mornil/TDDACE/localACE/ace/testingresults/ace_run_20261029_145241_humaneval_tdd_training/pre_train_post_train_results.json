@@ -1,0 +1,202 @@
+[
+  {
+    "epoch": 1,
+    "step": 1,
+    "target": [
+      "    result =[]\n    for i in range(len(lst)):\n        if i %3 == 0:\n            result.append(lst[i]**2)\n        elif i % 4 == 0 and i%3 != 0:\n            result.append(lst[i]**3)\n        else:\n            result.append(lst[i])\n    return sum(result)\n",
+      "def check(candidate):\n\n    # Check some simple cases\n    \n    assert candidate([1,2,3]) == 6\n    assert candidate([1,4,9]) == 14\n    assert candidate([]) == 0\n    assert candidate([1,1,1,1,1,1,1,1,1]) == 9\n    assert candidate([-1,-1,-1,-1,-1,-1,-1,-1,-1]) == -3\n    assert candidate([0]) == 0\n    assert candidate([-1,-5,2,-1,-5]) == -126\n    assert candidate([-56,-99,1,0,-2]) == 3030\n    assert candidate([-1,0,0,0,0,0,0,0,-1]) == 0\n    assert candidate([-16, -9, -2, 36, 36, 26, -20, 25, -40, 20, -4, 12, -26, 35, 37]) == -14196\n    assert candidate([-1, -3, 17, -1, -15, 13, -1, 14, -14, -12, -5, 14, -14, 6, 13, 11, 16, 16, 4, 10]) == -1448\n    \n    \n    # Don't remove this line:\n"
+    ],
+    "pre_train_result": {
+      "final_answer": "def sum_squares(lst: list[int]) -> int:\n    total = 0\n    for i, val in enumerate(lst):\n        if i % 3 == 0:\n            total += val * val\n        elif i % 4 == 0:\n            total += val * val * val\n        else:\n            total += val\n    return total\n\n",
+      "is_correct": true,
+      "playbook_num_tokens": 61,
+      "playbook_length": 184
+    },
+    "post_train_result": {
+      "final_answer": "\"def sum_squares(lst: list[int]) -> int:\n    \"\"\"Return the sum of `lst` after applying index\u00e2\u0080\u0091based transformations.\n\n    For each element:\n        \u00e2\u0080\u00a2 If its index `i` is a multiple of 3, square the element.\n        \u00e2\u0080\u00a2 Else, if `i` is a multiple of 4, cube the element.\n        \u00e2\u0080\u00a2 Otherwise, keep the element unchanged.\n\n    The input list is not modified.\n    \"\"\"\n    total = 0\n    for i, val in enumerate(lst):\n        if i % 3 == 0:\n            val = val ** 2\n        elif i % 4 == 0:\n            val = val ** 3\n        total += val\n    return total\n\"\n\n",
+      "is_correct": false,
+      "playbook_num_tokens": 645,
+      "playbook_length": 2543
+    }
+  },
+  {
+    "epoch": 1,
+    "step": 2,
+    "target": [
+      "    return x + y\n",
+      "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    import random\n\n    assert candidate(0, 1) == 1\n    assert candidate(1, 0) == 1\n    assert candidate(2, 3) == 5\n    assert candidate(5, 7) == 12\n    assert candidate(7, 5) == 12\n\n    for i in range(100):\n        x, y = random.randint(0, 1000), random.randint(0, 1000)\n        assert candidate(x, y) == x + y\n\n"
+    ],
+    "pre_train_result": {
+      "final_answer": "def add(x: int, y: int):\n    \"\"\"Add two numbers x and y\n    >>> add(2, 3)\n    5\n    >>> add(5, 7)\n    12\n    \"\"\"\n    if not isinstance(x, int) or not isinstance(y, int):\n        raise TypeError(\"Both operands must be integers\")\n    return x + y\n\n",
+      "is_correct": true,
+      "playbook_num_tokens": 645,
+      "playbook_length": 2543
+    },
+    "post_train_result": {
+      "final_answer": "def add(x: int, y: int):\n    \"\"\"Add two numbers x and y\n    >>> add(2, 3)\n    5\n    >>> add(5, 7)\n    12\n    \"\"\"\n    if not isinstance(x, int) or not isinstance(y, int):\n        raise TypeError(\"Both arguments must be integers\")\n    return x + y\n\n",
+      "is_correct": true,
+      "playbook_num_tokens": 810,
+      "playbook_length": 3371
+    }
+  },
+  {
+    "epoch": 1,
+    "step": 3,
+    "target": [
+      "    l = len(b)\n    pat = b + b\n    for i in range(len(a) - l + 1):\n        for j in range(l + 1):\n            if a[i:i+l] == pat[j:j+l]:\n                return True\n    return False\n",
+      "def check(candidate):\n\n    # Check some simple cases\n    #assert True, \"This prints if this assert fails 1 (good for debugging!)\"\n\n    # Check some edge cases that are easy to work out by hand.\n    #assert True, \"This prints if this assert fails 2 (also good for debugging!)\"\n    assert  candidate(\"xyzw\",\"xyw\") == False , \"test #0\"\n    assert  candidate(\"yello\",\"ell\") == True , \"test #1\"\n    assert  candidate(\"whattup\",\"ptut\") == False , \"test #2\"\n    assert  candidate(\"efef\",\"fee\") == True , \"test #3\"\n    assert  candidate(\"abab\",\"aabb\") == False , \"test #4\"\n    assert  candidate(\"winemtt\",\"tinem\") == True , \"test #5\"\n\n"
+    ],
+    "pre_train_result": {
+      "final_answer": "def cycpattern_check(a: str, b: str) -> bool:\n    \"\"\"Return True if *any* rotation of *b* is a substring of *a*.\n\n    An empty *b* is always considered a substring.  The function raises a\n    ``TypeError`` if either argument is not a string.  The algorithm\n    iterates over all rotations of *b* and checks each against *a*.\n    \"\"\"\n\n    if not isinstance(a, str) or not isinstance(b, str):\n        raise TypeError(\"Both arguments must be strings\")\n\n    # An empty second string always matches.\n    if b == \"\":\n        return True\n\n    n = len(b)\n    for i in range(n):\n        rot = b[i:] + b[:i]\n        if rot in a:\n            return True\n    return False\n\n",
+      "is_correct": true,
+      "playbook_num_tokens": 810,
+      "playbook_length": 3371
+    },
+    "post_train_result": {
+      "final_answer": "def cycpattern_check(a, b):\n    \"\"\"Return True if any rotation of ``b`` is a substring of ``a``,\n    otherwise False.\n\n    Parameters\n    ----------\n    a : str\n        The string to search inside.\n    b : str\n        The string whose rotations we want to test.\n\n    Raises\n    ------\n    TypeError\n        If either ``a`` or ``b`` is not a string.\n\n    Notes\n    -----\n    An empty ``b`` is considered a substring of any string, according\n    to the specification.\n    \"\"\"\n    # Type validation\n    if not isinstance(a, str) or not isinstance(b, str):\n        raise TypeError(\"Both arguments must be strings\")\n\n    # Empty ``b`` is always a match\n    if len(b) == 0:\n        return True\n\n    # Check each rotation of ``b``\n    n = len(b)\n    for i in range(n):\n        rotation = b[i:] + b[:i]\n        if rotation in a:\n            return True\n    return False\n\n",
+      "is_correct": true,
+      "playbook_num_tokens": 1007,
+      "playbook_length": 4149
+    }
+  },
+  {
+    "epoch": 1,
+    "step": 4,
+    "target": [
+      "    num = [1, 4, 5, 9, 10, 40, 50, 90,  \n           100, 400, 500, 900, 1000] \n    sym = [\"I\", \"IV\", \"V\", \"IX\", \"X\", \"XL\",  \n           \"L\", \"XC\", \"C\", \"CD\", \"D\", \"CM\", \"M\"] \n    i = 12\n    res = ''\n    while number: \n        div = number // num[i] \n        number %= num[i] \n        while div: \n            res += sym[i] \n            div -= 1\n        i -= 1\n    return res.lower()\n",
+      "def check(candidate):\n\n    # Check some simple cases\n    assert candidate(19) == 'xix'\n    assert candidate(152) == 'clii'\n    assert candidate(251) == 'ccli'\n    assert candidate(426) == 'cdxxvi'\n    assert candidate(500) == 'd'\n    assert candidate(1) == 'i'\n    assert candidate(4) == 'iv'\n    assert candidate(43) == 'xliii'\n    assert candidate(90) == 'xc'\n    assert candidate(94) == 'xciv'\n    assert candidate(532) == 'dxxxii'\n    assert candidate(900) == 'cm'\n    assert candidate(994) == 'cmxciv'\n    assert candidate(1000) == 'm'\n\n    # Check some edge cases that are easy to work out by hand.\n    assert True\n\n"
+    ],
+    "pre_train_result": {
+      "final_answer": "import pytest\n\n\ndef _expected_roman(num):\n    mapping = [\n        (1000, 'm'), (900, 'cm'), (500, 'd'), (400, 'cd'),\n        (100, 'c'), (90, 'xc'), (50, 'l'), (40, 'xl'),\n        (10, 'x'), (9, 'ix'), (5, 'v'), (4, 'iv'), (1, 'i')\n    ]\n    result = []\n    for val, sym in mapping:\n        while num >= val:\n            result.append(sym)\n            num -= val\n    return ''.join(result)\n\n\n@pytest.mark.parametrize(\"num,expected\", [\n    (1, 'i'), (4, 'iv'), (5, 'v'), (9, 'ix'), (14, 'xiv'), (19, 'xix'),\n    (40, 'xl'), (44, 'xliv'), (49, 'xlix'), (50, 'l'), (90, 'xc'),\n    (99, 'xcix'), (400, 'cd'), (499, 'cdxcix'), (500, 'd'), (600, 'dc'),\n    (750, 'dcl'), (777, 'dcclxxvii'), (900, 'cm'), (999, 'cmxcix'), (1000, 'm')\n])\ndef test_int_to_mini_roman_basic(num, expected):\n    assert int_to_mini_roman(num) == expected\n\n\n@pytest.mark.parametrize(\"value\", [None, 1.5, \"10\", [10], (10,), {10:10}])\ndef test_int_to_mini_roman_type_error(value):\n    with pytest.raises(TypeError):\n        int_to_mini_roman(value)\n\n\n@pytest.mark.parametrize(\"value\", [0, -1, 1001, 2000])\ndef test_int_to_mini_roman_value_error(value):\n    with pytest.raises(ValueError):\n        int_to_mini_roman(value)\n\n\ndef test_int_to_mini_roman_consistency():\n    for n in range(1, 1001):\n        assert int_to_mini_roman(n) == _expected_roman(n)\n\n",
+      "is_correct": false,
+      "playbook_num_tokens": 1007,
+      "playbook_length": 4149
+    },
+    "post_train_result": {
+      "final_answer": "def int_to_mini_roman(number):\\n    \"\"\"\\n    Convert a positive integer (1 <= number <= 1000) into its Roman numeral representation in lowercase.\n\\n    Parameters:\\n    -----------\\n    number : int\\n        The integer to convert. Must be between 1 and 1000 inclusive.\n\\n    Returns:\\n    --------\\n    str\\n        The Roman numeral representation in lowercase letters.\n\\n    Raises:\\n    -------\\n    TypeError\\n        If *number* is not an instance of ``int``.\n    ValueError\\n        If *number* is outside the inclusive range [1, 1000].\\n    \"\"\"\n    # Type validation \u00e2\u0080\u0093 per playbook guidelines.\n    if not isinstance(number, int):\n        raise TypeError(\"Number must be an integer\")\n\n    # Range check.\n    if number < 1 or number > 1000:\n        raise ValueError(\"Number must be in the inclusive range 1 to 1000\")\n\n    # Map of Roman numeral symbols to their integer values, sorted in descending order.\n    # Using the correct subtractive pairs.\n    roman_pairs = [\n        (1000, 'M'),\n        (900,  'CM'),\n        (500,  'D'),\n        (400,  'CD'),\n        (100,  'C'),\n        (90,   'XC'),\n        (50,   'L'),\n        (40,   'XL'),\n        (10,   'X'),\n        (9,    'IX'),\n        (5,    'V'),\n        (4,    'IV'),\n        (1,    'I')\n    ]\n\n    result = []\n    remainder = number\n\n    for value, symbol in roman_pairs:\n        if remainder == 0:\n            break\n        count = remainder // value\n        if count:\n            result.append(symbol * count)\n            remainder -= value * count\n\n    return ''.join(result).lower()\n\n",
+      "is_correct": false,
+      "playbook_num_tokens": 1115,
+      "playbook_length": 4649
+    }
+  },
+  {
+    "epoch": 1,
+    "step": 5,
+    "target": [
+      "    count_digit = dict([(i, 0) for i in lst])\n    for i in lst:\n        count_digit[i]+=1 \n    if any(count_digit[i] > 2 for i in lst):\n        return False\n    if all(lst[i-1] <= lst[i] for i in range(1, len(lst))):\n        return True\n    else:\n        return False\n    \n    \n",
+      "def check(candidate):\n\n    # Check some simple cases\n    assert candidate([5]) == True\n    assert candidate([1, 2, 3, 4, 5]) == True\n    assert candidate([1, 3, 2, 4, 5]) == False\n    assert candidate([1, 2, 3, 4, 5, 6]) == True\n    assert candidate([1, 2, 3, 4, 5, 6, 7]) == True\n    assert candidate([1, 3, 2, 4, 5, 6, 7]) == False, \"This prints if this assert fails 1 (good for debugging!)\"\n    assert candidate([]) == True, \"This prints if this assert fails 2 (good for debugging!)\"\n    assert candidate([1]) == True, \"This prints if this assert fails 3 (good for debugging!)\"\n    assert candidate([3, 2, 1]) == False, \"This prints if this assert fails 4 (good for debugging!)\"\n    \n    # Check some edge cases that are easy to work out by hand.\n    assert candidate([1, 2, 2, 2, 3, 4]) == False, \"This prints if this assert fails 5 (good for debugging!)\"\n    assert candidate([1, 2, 3, 3, 3, 4]) == False, \"This prints if this assert fails 6 (good for debugging!)\"\n    assert candidate([1, 2, 2, 3, 3, 4]) == True, \"This prints if this assert fails 7 (good for debugging!)\"\n    assert candidate([1, 2, 3, 4]) == True, \"This prints if this assert fails 8 (good for debugging!)\"\n\n"
+    ],
+    "pre_train_result": {
+      "final_answer": "def is_sorted(lst):\n    \"\"\"Return True if *lst* is sorted in ascending order and\n    each distinct number appears at most twice.\n\n    Parameters\n    ----------\n    lst : list[int]\n        List of non\u00e2\u0080\u0091negative integers.\n\n    Returns\n    -------\n    bool\n        True if the list meets both conditions, otherwise False.\n\n    Raises\n    ------\n    TypeError\n        If *lst* is not a list.\n    \"\"\"\n    if not isinstance(lst, list):\n        raise TypeError(\"is_sorted expects a list\")\n    freq = {}\n    prev = None\n    for x in lst:\n        # duplicate count\n        freq[x] = freq.get(x, 0) + 1\n        if freq[x] > 2:\n            return False\n        # order check\n        if prev is not None and x < prev:\n            return False\n        prev = x\n    return True\n\n",
+      "is_correct": true,
+      "playbook_num_tokens": 1115,
+      "playbook_length": 4649
+    },
+    "post_train_result": {
+      "final_answer": "def is_sorted(lst: list[int]) -> bool:\n    \"\"\"Return True if *lst* is sorted in ascending order and contains\n    at most two copies of any value.\n    \"\"\"\n    # Count occurrences while checking for overruns.\n    counts: dict[int, int] = {}\n    for val in lst:\n        counts[val] = counts.get(val, 0) + 1\n        if counts[val] > 2:\n            return False\n    # Check non\u00e2\u0080\u0091decreasing order.\n    for i in range(1, len(lst)):\n        if lst[i] < lst[i - 1]:\n            return False\n    return True\n\n",
+      "is_correct": false,
+      "playbook_num_tokens": 1115,
+      "playbook_length": 4649
+    }
+  },
+  {
+    "epoch": 1,
+    "step": 6,
+    "target": [
+      "    results = [0, 0, 2, 0]\n    if n < 4:\n        return results[n]\n\n    for _ in range(4, n + 1):\n        results.append(results[-1] + results[-2] + results[-3] + results[-4])\n        results.pop(0)\n\n    return results[-1]\n",
+      "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(5) == 4\n    assert candidate(8) == 28\n    assert candidate(10) == 104\n    assert candidate(12) == 386\n\n"
+    ],
+    "pre_train_result": {
+      "final_answer": "def fib4(n: int):\n    \"\"\"Return the n-th element of the fib4 sequence.\n    The sequence is defined by:\n    fib4(0) = 0\n    fib4(1) = 0\n    fib4(2) = 2\n    fib4(3) = 0\n    fib4(n) = fib4(n-1) + fib4(n-2) + fib4(n-3) + fib4(n-4)  for n >= 4\n    Parameters\n    ----------\n    n : int\n        Non\u00e2\u0080\u0091negative integer indexing the sequence.\n    Returns\n    -------\n    int\n        The n\u00e2\u0080\u0091th fib4 value.\n    \"\"\"\n    if not isinstance(n, int):\n        raise TypeError(\"n must be an integer\")\n    if n < 0:\n        raise ValueError(\"n must be non\u00e2\u0080\u0091negative\")\n\n    # Base values for n = 0..3\n    base = [0, 0, 2, 0]\n    if n < 4:\n        return base[n]\n\n    # Sliding window for the last four values\n    a, b, c, d = base  # a = F(n-4), b = F(n-3), c = F(n-2), d = F(n-1)\n    for _ in range(4, n + 1):\n        e = a + b + c + d\n        a, b, c, d = b, c, d, e\n    return d\n\n",
+      "is_correct": true,
+      "playbook_num_tokens": 1115,
+      "playbook_length": 4649
+    },
+    "post_train_result": {
+      "final_answer": "def fib4(n: int) -> int:\n    \"\"\"Return the n-th element of the fib4 sequence.\n\n    Sequence definition:\n    fib4(0) = 0\n    fib4(1) = 0\n    fib4(2) = 2\n    fib4(3) = 0\n    fib4(n) = fib4(n-1) + fib4(n-2) + fib4(n-3) + fib4(n-4)      (n >= 4)\n\n    Parameters\n    ----------\n    n : int\n        Non\u00e2\u0080\u0091negative index to compute; must be an integer.\n\n    Returns\n    -------\n    int\n        The n\u00e2\u0080\u0091th fib4 value.\n\n    Raises\n    ------\n    TypeError\n        If ``n`` is not an :class:`int`.\n    ValueError\n        If ``n`` is negative.\n    \"\"\"\n\n    if not isinstance(n, int):\n        raise TypeError(\"n must be an integer\")\n    if n < 0:\n        raise ValueError(\"n must be non\u00e2\u0080\u0091negative\")\n\n    # Base values\n    if n < 4:\n        base = [0, 0, 2, 0]\n        return base[n]\n\n    # Use a sliding window for efficient calculation\n    a, b, c, d = 0, 0, 2, 0\n    for _ in range(4, n + 1):\n        a, b, c, d = b, c, d, a + b + c + d\n    return d\n\n",
+      "is_correct": true,
+      "playbook_num_tokens": 1396,
+      "playbook_length": 5742
+    }
+  },
+  {
+    "epoch": 1,
+    "step": 7,
+    "target": [
+      "    return string.swapcase()\n",
+      "\n\nMETADATA = {\n    'author': 'jt',\n    'dataset': 'test'\n}\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n"
+    ],
+    "pre_train_result": {
+      "final_answer": "import pytest\nfrom __main__ import flip_case\n\n\ndef expected_flip_case(s):\n    return ''.join([c.lower() if c.isupper() else c.upper() for c in s])\n\n\ndef test_flip_case_basic():\n    assert flip_case('Hello') == 'hELLO'\n    assert flip_case('') == ''\n\n\ndef test_flip_case_mixed_and_numbers():\n    s = 'HeLLo world! 123'\n    assert flip_case(s) == expected_flip_case(s)\n\n\ndef test_flip_case_whitespace_and_punctuation():\n    s = '  ABC-123 '\n    assert flip_case(s) == expected_flip_case(s)\n\n\ndef test_flip_case_unicode():\n    s = 'Stra\u00c3\u009fe'\n    assert flip_case(s) == expected_flip_case(s)\n\n\ndef test_flip_case_non_string():\n    with pytest.raises(AttributeError):\n        flip_case(123)\n    with pytest.raises(AttributeError):\n        flip_case(['a', 'b'])\n\n\ndef test_flip_case_new_string_object():\n    s = 'Test'\n    result = flip_case(s)\n    assert result is not s\n    assert result != s\n\n",
+      "is_correct": false,
+      "playbook_num_tokens": 1396,
+      "playbook_length": 5742
+    },
+    "post_train_result": {
+      "final_answer": "def flip_case(string: str) -> str:\n    \"\"\"For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n\n    >>> flip_case('Hello')\n    'hELLO'\n    \"\"\"\n    if not isinstance(string, str):\n        raise TypeError(\"input must be a string\")\n    return \"\".join(\n        ch.upper() if ch.islower() else ch.lower() if ch.isupper() else ch\n        for ch in string\n    )\n\n",
+      "is_correct": true,
+      "playbook_num_tokens": 1761,
+      "playbook_length": 7304
+    }
+  },
+  {
+    "epoch": 1,
+    "step": 8,
+    "target": [
+      "    max_sum = 0\n    s = 0\n    for num in nums:\n        s += -num\n        if (s < 0):\n            s = 0\n        max_sum = max(s, max_sum)\n    if max_sum == 0:\n        max_sum = max(-i for i in nums)\n    min_sum = -max_sum\n    return min_sum\n",
+      "def check(candidate):\n\n    # Check some simple cases\n    assert candidate([2, 3, 4, 1, 2, 4]) == 1, \"This prints if this assert fails 1 (good for debugging!)\"\n    assert candidate([-1, -2, -3]) == -6\n    assert candidate([-1, -2, -3, 2, -10]) == -14\n    assert candidate([-9999999999999999]) == -9999999999999999\n    assert candidate([0, 10, 20, 1000000]) == 0\n    assert candidate([-1, -2, -3, 10, -5]) == -6\n    assert candidate([100, -1, -2, -3, 10, -5]) == -6\n    assert candidate([10, 11, 13, 8, 3, 4]) == 3\n    assert candidate([100, -33, 32, -1, 0, -2]) == -33\n\n    # Check some edge cases that are easy to work out by hand.\n    assert candidate([-10]) == -10, \"This prints if this assert fails 2 (also good for debugging!)\"\n    assert candidate([7]) == 7\n    assert candidate([1, -1]) == -1\n"
+    ],
+    "pre_train_result": {
+      "final_answer": "def minSubArraySum(nums):\n    \"\"\"\n    Return the minimum sum of any non\u00e2\u0080\u0091empty sub\u00e2\u0080\u0091array of nums.\n\n    Parameters\n    ----------\n    nums : list[int]\n        List of integers; must be non\u00e2\u0080\u0091empty.\n\n    Returns\n    -------\n    int\n        Minimum sub\u00e2\u0080\u0091array sum.\n\n    Raises\n    ------\n    TypeError\n        If ``nums`` is not an instance of ``list`` (or any sequence).\n    ValueError\n        If ``nums`` is empty.\n    \"\"\"\n    # Input validation \u00e2\u0080\u0093 see playbook bullet *sai\u00e2\u0080\u009100008* and *err\u00e2\u0080\u009100009*\n    if not isinstance(nums, list):\n        raise TypeError(\"nums must be a list of integers\")\n    if not nums:\n        raise ValueError(\"nums must contain at least one element\")\n\n    # Kadane's algorithm for minimum sub\u00e2\u0080\u0091array sum\n    min_ending_here = nums[0]\n    min_so_far = nums[0]\n    for num in nums[1:]:\n        # Choose whether to start a new sub\u00e2\u0080\u0091array (num) or extend the previous one\n        min_ending_here = min(num, min_ending_here + num)\n        # Update global minimum\n        if min_ending_here < min_so_far:\n            min_so_far = min_ending_here\n    return min_so_far\n\n",
+      "is_correct": true,
+      "playbook_num_tokens": 1761,
+      "playbook_length": 7304
+    },
+    "post_train_result": {
+      "final_answer": "def minSubArraySum(nums):\n    if not isinstance(nums, list):\n        raise TypeError(\"nums must be a list\")\n    if len(nums) == 0:\n        raise ValueError(\"input list must be non-empty\")\n    min_ending_here = min_so_far = nums[0]\n    for num in nums[1:]:\n        min_ending_here = min(num, min_ending_here + num)\n        min_so_far = min(min_so_far, min_ending_here)\n    return min_so_far\n\n",
+      "is_correct": true,
+      "playbook_num_tokens": 2002,
+      "playbook_length": 8311
+    }
+  },
+  {
+    "epoch": 1,
+    "step": 9,
+    "target": [
+      "    return [n + 2*i for i in range(n)]\n",
+      "def check(candidate):\n\n    # Check some simple cases\n    assert candidate(3) == [3, 5, 7], \"Test 3\"\n    assert candidate(4) == [4,6,8,10], \"Test 4\"\n    assert candidate(5) == [5, 7, 9, 11, 13]\n    assert candidate(6) == [6, 8, 10, 12, 14, 16]\n    assert candidate(8) == [8, 10, 12, 14, 16, 18, 20, 22]\n\n    # Check some edge cases that are easy to work out by hand.\n    assert True, \"This prints if this assert fails 2 (also good for debugging!)\"\n\n"
+    ],
+    "pre_train_result": {
+      "final_answer": "def make_a_pile(n):\n    \"\"\"Return a list of the number of stones in each of the n pile levels.\n\n    The first level contains ``n`` stones.  Every subsequent level contains\n    the next odd number (if ``n`` is odd) or the next even number (if ``n`` is\n    even).  This sequence is an arithmetic progression with step ``2``, so the\n    element at index ``i`` equals ``n + 2*i``.\n\n    Parameters\n    ----------\n    n : int\n        Positive integer specifying the number of levels.\n\n    Returns\n    -------\n    list[int]\n        List of length ``n`` containing the stone counts for each level.\n\n    Raises\n    ------\n    TypeError\n        If ``n`` is not an instance of ``int``.\n    ValueError\n        If ``n`` is less than 1.\n    \"\"\"\n    if not isinstance(n, int):\n        raise TypeError(\"n must be an integer\")\n    if n <= 0:\n        raise ValueError(\"n must be positive\")\n    # Arithmetic progression: start=n, step=2\n    return [n + 2 * i for i in range(n)]\n\n",
+      "is_correct": true,
+      "playbook_num_tokens": 2002,
+      "playbook_length": 8311
+    },
+    "post_train_result": {
+      "final_answer": "def make_a_pile(n):\n    \"\"\"Return a list of stone counts for each level in a pile.\n\n    The pile has `n` levels.  Level *i* (0\u00e2\u0080\u0091based) starts with `n`\n    stones and each subsequent level increases the count by 2.\n    This produces a sequence of consecutive odd numbers if `n` is odd\n    and consecutive even numbers if `n` is even.\n\n    Parameters\n    ----------\n    n: int\n        Positive integer indicating the number of levels.  Must be\n        greater than 0.\n\n    Returns\n    -------\n    list[int]\n        List of length `n` where element i is the number of stones in\n        level i+1.\n\n    Raises\n    ------\n    TypeError\n        If `n` is not an integer.\n    ValueError\n        If `n` is not positive.\n    \"\"\"\n    if not isinstance(n, int):\n        raise TypeError(\"n must be an integer\")\n    if n <= 0:\n        raise ValueError(\"n must be a positive integer\")\n\n    return [n + 2 * i for i in range(n)]\n\n",
+      "is_correct": true,
+      "playbook_num_tokens": 2097,
+      "playbook_length": 8755
+    }
+  },
+  {
+    "epoch": 1,
+    "step": 10,
+    "target": [
+      "    if sum(q) > w:\n        return False\n\n    i, j = 0, len(q)-1\n    while i<j:\n        if q[i] != q[j]:\n            return False\n        i+=1\n        j-=1\n    return True\n",
+      "def check(candidate):\n\n    # Check some simple cases\n    assert candidate([3, 2, 3], 9) is True\n    assert candidate([1, 2], 5) is False\n    assert candidate([3], 5) is True\n    assert candidate([3, 2, 3], 1) is False\n\n\n    # Check some edge cases that are easy to work out by hand.\n    assert candidate([1, 2, 3], 6) is False\n    assert candidate([5], 5) is True\n\n"
+    ],
+    "pre_train_result": {
+      "final_answer": "def will_it_fly(q, w):\n    \"\"\"Return True if q is a palindrome and its sum is <= w.\n\n    Parameters\n    ----------\n    q : list[int]\n        List of numerical weights.\n    w : int | float\n        Maximum allowable weight.\n    \"\"\"\n    return q == q[::-1] and sum(q) <= w\n\n",
+      "is_correct": true,
+      "playbook_num_tokens": 2097,
+      "playbook_length": 8755
+    },
+    "post_train_result": {
+      "final_answer": "def will_it_fly(q, w):\n    \"\"\"Return True iff *q* is a palindrome and its elements sum to <= *w*.\n\n    Parameters\n    ----------\n    q : list[int]\n        The list to test.  Must be a list instance.\n    w : int | float\n        The maximum allowable weight.  Must be numeric.\n\n    Returns\n    -------\n    bool\n        True when *q* is palindromic and ``sum(q) <= w``; otherwise False.\n\n    Raises\n    ------\n    TypeError\n        If *q* is not a list or *w* is not a number.\n    \"\"\"\n    if not isinstance(q, list):\n        raise TypeError(\"q must be a list\")\n    if not isinstance(w, (int, float)):\n        raise TypeError(\"w must be numeric\")\n\n    return (q == q[::-1]) and (sum(q) <= w)\n\n",
+      "is_correct": true,
+      "playbook_num_tokens": 2252,
+      "playbook_length": 9415
+    }
+  }
+]

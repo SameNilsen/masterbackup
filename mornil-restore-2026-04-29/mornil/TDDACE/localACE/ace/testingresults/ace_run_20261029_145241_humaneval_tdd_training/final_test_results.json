@@ -1,0 +1,77 @@
+{
+  "test_results": {
+    "accuracy": 0.2,
+    "correct": 2,
+    "total": 10,
+    "no_answer": 0
+  },
+  "error_log": {
+    "accuracy": 0.2,
+    "errors": [
+      {
+        "index": 0,
+        "prediction": "\"\"\"\ndef can_arrange(arr):\n    \"\"\"Return the largest index i such that arr[i] < arr[i-1].\n\n    Parameters:\n        arr (list): List of unique comparable elements.\n\n    Returns:\n        int: The greatest index where a descent occurs, or -1 if the list is\n        strictly ascending (or empty/single\u00e2\u0080\u0091element).\n    \"\"\"\n    # Iterate from the end toward the start to find the latest inversion.\n    for i in range(len(arr) - 1, 0, -1):\n        if arr[i] < arr[i - 1]:\n            return i\n    return -1\n\"\"\"\n\n\n",
+        "ground_truth": [
+          "    ind=-1\n    i=1\n    while i<len(arr):\n      if arr[i]<arr[i-1]:\n        ind=i\n      i+=1\n    return ind\n",
+          "def check(candidate):\n\n    # Check some simple cases\n    assert candidate([1,2,4,3,5])==3\n    assert candidate([1,2,4,5])==-1\n    assert candidate([1,4,2,5,6,7,8,9,10])==2\n    assert candidate([4,8,5,7,3])==4\n\n    # Check some edge cases that are easy to work out by hand.\n    assert candidate([])==-1\n\n"
+        ]
+      },
+      {
+        "index": 1,
+        "prediction": "def max_fill(grid, capacity):\n    \"\"\"\n    Return the total number of times a bucket needs to be lowered to empty all wells.\n\n    Parameters\n    ----------\n    grid : list[list[int]]\n        Each inner list represents a row/hole. Each element is 0 or 1.\n    capacity : int\n        Capacity of each bucket.\n\n    Returns\n    -------\n    int\n        Total bucket lowers required.\n    \"\"\"\n    # Type and value validation\n    if not isinstance(grid, list) or not all(isinstance(r, list) for r in grid):\n        raise TypeError(\"grid must be a list of lists\")\n    if not isinstance(capacity, int):\n        raise TypeError(\"capacity must be an integer\")\n    if capacity < 1 or capacity > 10:\n        raise ValueError(\"capacity must be in range 1..10\")\n\n    # Optional: check that all rows have the same length\n    row_lengths = {len(r) for r in grid}\n    if len(row_lengths) > 1:\n        raise ValueError(\"all rows in the grid must have the same length\")\n\n    total_lowers = 0\n    for row in grid:\n        if any(cell not in (0, 1) for cell in row):\n            raise ValueError(\"grid should contain only 0 or 1 values\")\n        ones = sum(row)\n        if ones:\n            # ceil division: (ones + capacity - 1) // capacity\n            total_lowers += (ones + capacity - 1) // capacity\n    return total_lowers\n\n",
+        "ground_truth": [
+          "    return sum([math.ceil(sum(arr)/capacity) for arr in grid])\n",
+          "def check(candidate):\n\n\n    # Check some simple cases\n    assert True, \"This prints if this assert fails 1 (good for debugging!)\"\n    assert candidate([[0,0,1,0], [0,1,0,0], [1,1,1,1]], 1) == 6, \"Error\"\n    assert candidate([[0,0,1,1], [0,0,0,0], [1,1,1,1], [0,1,1,1]], 2) == 5, \"Error\"\n    assert candidate([[0,0,0], [0,0,0]], 5) == 0, \"Error\"\n\n    # Check some edge cases that are easy to work out by hand.\n    assert True, \"This prints if this assert fails 2 (also good for debugging!)\"\n    assert candidate([[1,1,1,1], [1,1,1,1]], 2) == 4, \"Error\"\n    assert candidate([[1,1,1,1], [1,1,1,1]], 9) == 2, \"Error\"\n\n"
+        ]
+      },
+      {
+        "index": 2,
+        "prediction": "def digits(n):\n    \"\"\"Return the product of all odd digits of a positive integer.\n\n    Parameters\n    ----------\n    n : int\n        A positive integer.\n\n    Returns\n    -------\n    int\n        The product of all odd digits.  If there are no odd digits, returns 0.\n\n    Raises\n    ------\n    TypeError\n        If ``n`` is not an ``int``.\n    \"\"\"\n    if not isinstance(n, int):\n        raise TypeError(\"n must be an integer\")\n\n    product = 1\n    has_odd = False\n    for ch in str(n):\n        digit = int(ch)\n        if digit % 2:\n            product *= digit\n            has_odd = True\n    return product if has_odd else 0\n\n",
+        "ground_truth": [
+          "    product = 1\n    odd_count = 0\n    for digit in str(n):\n        int_digit = int(digit)\n        if int_digit%2 == 1:\n            product= product*int_digit\n            odd_count+=1\n    if odd_count ==0:\n        return 0\n    else:\n        return product\n",
+          "def check(candidate):\n\n    # Check some simple cases\n    assert candidate(5) == 5\n    assert candidate(54) == 5\n    assert candidate(120) ==1\n    assert candidate(5014) == 5\n    assert candidate(98765) == 315\n    assert candidate(5576543) == 2625\n\n    # Check some edge cases that are easy to work out by hand.\n    assert candidate(2468) == 0\n\n"
+        ]
+      },
+      {
+        "index": 3,
+        "prediction": "def fib(n: int) -> int:\n    \"\"\"\n    Return n-th Fibonacci number using an iterative approach.\n    Raises TypeError if n is not an int.\n    Raises ValueError if n is negative.\n    \"\"\"\n    if not isinstance(n, int):\n        raise TypeError(\"n must be an integer\")\n    if n < 0:\n        raise ValueError(\"n must be non-negative\")\n    a, b = 0, 1\n    for _ in range(n):\n        a, b = b, a + b\n    return a\n\n",
+        "ground_truth": [
+          "    if n == 0:\n        return 0\n    if n == 1:\n        return 1\n    return fib(n - 1) + fib(n - 2)\n",
+          "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\n"
+        ]
+      },
+      {
+        "index": 4,
+        "prediction": "def check_dict_case(d: dict) -> bool:\n    \"\"\"Return True if all keys are strings of the same case (all lower or all upper).\n    The result is False for an empty dictionary, for non\u00e2\u0080\u0091string keys, or for mixed case.\n    \"\"\"\n    if not d:\n        return False\n    keys = d.keys()\n    # Check type of every key\n    for k in keys:\n        if not isinstance(k, str):\n            return False\n    # Get the case of the first key\n    first = next(iter(keys))\n    if first.islower():\n        # All must be lower\n        return all(k.islower() for k in keys)\n    if first.isupper():\n        # All must be upper\n        return all(k.isupper() for k in keys)\n    return False\n\n",
+        "ground_truth": [
+          "    if len(dict.keys()) == 0:\n        return False\n    else:\n        state = \"start\"\n        for key in dict.keys():\n\n            if isinstance(key, str) == False:\n                state = \"mixed\"\n                break\n            if state == \"start\":\n                if key.isupper():\n                    state = \"upper\"\n                elif key.islower():\n                    state = \"lower\"\n                else:\n                    break\n            elif (state == \"upper\" and not key.isupper()) or (state == \"lower\" and not key.islower()):\n                    state = \"mixed\"\n                    break\n            else:\n                break\n        return state == \"upper\" or state == \"lower\" \n",
+          "def check(candidate):\n\n    # Check some simple cases\n    assert candidate({\"p\":\"pineapple\", \"b\":\"banana\"}) == True, \"First test error: \" + str(candidate({\"p\":\"pineapple\", \"b\":\"banana\"}))\n    assert candidate({\"p\":\"pineapple\", \"A\":\"banana\", \"B\":\"banana\"}) == False, \"Second test error: \" + str(candidate({\"p\":\"pineapple\", \"A\":\"banana\", \"B\":\"banana\"}))\n    assert candidate({\"p\":\"pineapple\", 5:\"banana\", \"a\":\"apple\"}) == False, \"Third test error: \" + str(candidate({\"p\":\"pineapple\", 5:\"banana\", \"a\":\"apple\"}))\n    assert candidate({\"Name\":\"John\", \"Age\":\"36\", \"City\":\"Houston\"}) == False, \"Fourth test error: \" + str(candidate({\"Name\":\"John\", \"Age\":\"36\", \"City\":\"Houston\"}))\n    assert candidate({\"STATE\":\"NC\", \"ZIP\":\"12345\" }) == True, \"Fifth test error: \" + str(candidate({\"STATE\":\"NC\", \"ZIP\":\"12345\" }))      \n    assert candidate({\"fruit\":\"Orange\", \"taste\":\"Sweet\" }) == True, \"Fourth test error: \" + str(candidate({\"fruit\":\"Orange\", \"taste\":\"Sweet\" }))      \n\n\n    # Check some edge cases that are easy to work out by hand.\n    assert candidate({}) == False, \"1st edge test error: \" + str(candidate({}))\n\n"
+        ]
+      },
+      {
+        "index": 7,
+        "prediction": "def remove_vowels(text):\n    \"\"\"Return *text* with all vowels removed.\n\n    Parameters\n    ----------\n    text : str\n        Input string.\n\n    Raises\n    ------\n    TypeError\n        If *text* is not a string.\n\n    Examples\n    --------\n    >>> remove_vowels('')\n    ''\n    >>> remove_vowels('abcdef\\nghijklm')\n    'bcdf\\nghjklm'\n    >>> remove_vowels('aaBAA')\n    'B'\n    \"\"\"\n    if not isinstance(text, str):\n        raise TypeError(\"text must be a string\")\n    return ''.join(ch for ch in text if ch.lower() not in 'aeiou')\n\n",
+        "ground_truth": [
+          "    return \"\".join([s for s in text if s.lower() not in [\"a\", \"e\", \"i\", \"o\", \"u\"]])\n",
+          "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate(\"abcdef\\nghijklm\") == 'bcdf\\nghjklm'\n    assert candidate('fedcba') == 'fdcb'\n    assert candidate('eeeee') == ''\n    assert candidate('acBAA') == 'cB'\n    assert candidate('EcBOO') == 'cB'\n    assert candidate('ybcd') == 'ybcd'\n\n"
+        ]
+      },
+      {
+        "index": 8,
+        "prediction": "import re\\n\\n\\n def words_string(s):\\n    \\\"\\\"\\\"Split a string into words using commas or whitespace separators.\\n\\n    Parameters:\\n    s (str): The input string containing words separated by commas or whitespace.\\n\\n    Returns:\\n    list[str]: A list of non\u00e2\u0080\u0091empty words.\\n\\n    Raises:\\n    TypeError: If the input is not a string.\\n    \\\"\\\"\\\"\\n    if not isinstance(s, str):\\n        raise TypeError(\"s must be a string\")\\n    # Split on one or more commas or whitespace characters and filter out empties\\n    return [w for w in re.split(r\"[\\,\\s]+\", s) if w]\"\n\n\n",
+        "ground_truth": [
+          "    if not s:\n        return []\n\n    s_list = []\n\n    for letter in s:\n        if letter == ',':\n            s_list.append(' ')\n        else:\n            s_list.append(letter)\n\n    s_list = \"\".join(s_list)\n    return s_list.split()\n",
+          "def check(candidate):\n\n    # Check some simple cases\n    assert True, \"This prints if this assert fails 1 (good for debugging!)\"\n    assert candidate(\"Hi, my name is John\") == [\"Hi\", \"my\", \"name\", \"is\", \"John\"]\n    assert candidate(\"One, two, three, four, five, six\") == [\"One\", \"two\", \"three\", \"four\", \"five\", \"six\"]\n    assert candidate(\"Hi, my name\") == [\"Hi\", \"my\", \"name\"]\n    assert candidate(\"One,, two, three, four, five, six,\") == [\"One\", \"two\", \"three\", \"four\", \"five\", \"six\"]\n\n    # Check some edge cases that are easy to work out by hand.\n    assert True, \"This prints if this assert fails 2 (also good for debugging!)\"\n    assert candidate(\"\") == []\n    assert candidate(\"ahmed     , gamal\") == [\"ahmed\", \"gamal\"]\n\n"
+        ]
+      },
+      {
+        "index": 9,
+        "prediction": "def order_by_points(nums):\n    \"\"\"\n    Sorts the given list of integers in ascending order based on the sum\n    of their decimal digits. When multiple integers have the same digit\n    sum, the original index order is preserved (stable sort).\n\n    Parameters\n    ----------\n    nums : list[int]\n        A list of integers to be sorted.\n\n    Returns\n    -------\n    list[int]\n        A new list containing the integers sorted according to the rules.\n    \"\"\"\n    if not isinstance(nums, list):\n        raise TypeError(\"nums must be a list\")\n    return sorted(nums, key=lambda n: sum(int(d) for d in str(abs(n))))\n\n",
+        "ground_truth": [
+          "    def digits_sum(n):\n        neg = 1\n        if n < 0: n, neg = -1 * n, -1 \n        n = [int(i) for i in str(n)]\n        n[0] = n[0] * neg\n        return sum(n)\n    return sorted(nums, key=digits_sum)\n",
+          "def check(candidate):\n\n    # Check some simple cases\n    assert candidate([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]\n    assert candidate([1234,423,463,145,2,423,423,53,6,37,3457,3,56,0,46]) == [0, 2, 3, 6, 53, 423, 423, 423, 1234, 145, 37, 46, 56, 463, 3457]\n    assert candidate([]) == []\n    assert candidate([1, -11, -32, 43, 54, -98, 2, -3]) == [-3, -32, -98, -11, 1, 2, 43, 54]\n    assert candidate([1,2,3,4,5,6,7,8,9,10,11]) == [1, 10, 2, 11, 3, 4, 5, 6, 7, 8, 9]\n    assert candidate([0,6,6,-76,-21,23,4]) == [-76, -21, 0, 4, 23, 6, 6]\n\n    # Check some edge cases that are easy to work out by hand.\n    assert True, \"This prints if this assert fails 2 (also good for debugging!)\"\n\n"
+        ]
+      }
+    ]
+  }
+}

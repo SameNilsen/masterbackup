@@ -1,0 +1,2 @@
+INITIAL CODE QUALITY SCORE FOR can_arrange: 6.11/10
+FINAL CODE QUALITY SCORE FOR can_arrange: Not found

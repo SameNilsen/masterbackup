@@ -1,0 +1,40 @@
+
+============================================================
+CURATOR FAILURE LOG
+============================================================
+Timestamp: 2026-10-29 13:25:37
+Epoch: 0
+Step: 1
+Failure Type: json_parse_error
+Error Details: Failed to extract valid JSON from curator response
+
+Raw Curator Response (first 1000 chars):
+----------------------------------------
+ JSON"]}
+----------------------------------------
+
+Full Raw Curator Response:
+----------------------------------------
+ JSON"]}
+----------------------------------------
+
+
+============================================================
+CURATOR FAILURE LOG
+============================================================
+Timestamp: 2026-10-29 13:30:26
+Epoch: 0
+Step: 5
+Failure Type: json_parse_error
+Error Details: Failed to extract valid JSON from curator response
+
+Raw Curator Response (first 1000 chars):
+----------------------------------------
+":"{\"reasoning\":\"I examined the reflection and compared it with the existing playbook entries.  The reflection highlights two main issues that are not covered in the current playbook: 1) a test‑import error caused by a mis‑named or misplaced solution module, and 2) the misuse of duplicate rules in the problem statement.  The current playbook already contains general notes on placeholder code, correct implementation order, and simple implementation techniques, but it lacks specific guidance on import‑time validation and how to shadow the legacy duplicate‑rule misunderstanding.  I therefore added three new bullet points: one in the *Common Mistakes to Avoid* section to warn users about validating import paths before test collection; one in the *Code Snippets & Templates* section that shows a concrete test harness adding the repository root to ``sys.path``; and one in the *Problem‑Solving Heuristics* section to remind users to suspect import path problems before debugging logic.  Addit
+----------------------------------------
+
+Full Raw Curator Response:
+----------------------------------------
+":"{\"reasoning\":\"I examined the reflection and compared it with the existing playbook entries.  The reflection highlights two main issues that are not covered in the current playbook: 1) a test‑import error caused by a mis‑named or misplaced solution module, and 2) the misuse of duplicate rules in the problem statement.  The current playbook already contains general notes on placeholder code, correct implementation order, and simple implementation techniques, but it lacks specific guidance on import‑time validation and how to shadow the legacy duplicate‑rule misunderstanding.  I therefore added three new bullet points: one in the *Common Mistakes to Avoid* section to warn users about validating import paths before test collection; one in the *Code Snippets & Templates* section that shows a concrete test harness adding the repository root to ``sys.path``; and one in the *Problem‑Solving Heuristics* section to remind users to suspect import path problems before debugging logic.  Additionally, to promote code‑quality and performance, I added a bullet in the *Formulas & Calculations* section that explains the linear‑time, single‑pass algorithm used in the sample implementation.  All additions are concise, actionable, and complementary to the existing content.\",\"operations\":[{\"type\":\"ADD\",\"section\":\"COMMON MISTAKES TO AVOID\",\"content\":\"Fail to confirm the import path: if a test suite imports a module that does not exist in the runner’s PYTHONPATH, all tests will abort with a ModuleNotFoundError. Verify that the file name and location match the import statement before running tests.\"},{\"type\":\"ADD\",\"section\":\"CODE SNIPPETS & TEMPLATES\",\"content\":\"When writing a test harness that imports a solution module, add the repository root to ``sys.path`` to avoid import errors. Example:\\n\\n```python\\nimport os, sys\\nsys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))\nfrom solution import is_sorted\\n```\"},{\"type\":\"ADD\",\"section\":\"PROBLEM‑SOLVING HEURISTICS\",\"content\":\"If tests fail to run because of import errors, suspect a misnamed or misplaced module before inspecting logic bugs. Validating import paths early saves time and prevents misleading failure reports.\"},{\"type\":\"ADD\",\"section\":\"FORMULAS & CALCULATIONS\",\"content\":\"The `is_sorted` implementation runs in O(n) time and O(n) space: a single pass counts occurrences and checks non‑decreasing order. This early‑exit strategy both optimizes performance and keeps the code concise.*\"}]}"}
+----------------------------------------
+

@@ -1,0 +1,42 @@
+
+========= RESULTS =========
+
+=== can_arrange ===
+Code quality score: 7.27/10
+Function passed tests: True
+
+=== max_fill ===
+Code quality score: Not found
+Function passed tests: False
+
+=== digits ===
+Code quality score: 7.78/10
+Function passed tests: True
+
+=== fib ===
+Code quality score: 8.12/10
+Function passed tests: True
+
+=== check_dict_case ===
+Code quality score: 0.00/10
+Function passed tests: True
+
+=== filter_by_prefix ===
+Code quality score: 0.00/10
+Function passed tests: False
+
+=== right_angle_triangle ===
+Code quality score: Not found
+Function passed tests: False
+
+=== remove_vowels ===
+Code quality score: 7.50/10
+Function passed tests: True
+
+=== words_string ===
+Code quality score: 4.17/10
+Function passed tests: True
+
+=== order_by_points ===
+Code quality score: Not found
+Function passed tests: False

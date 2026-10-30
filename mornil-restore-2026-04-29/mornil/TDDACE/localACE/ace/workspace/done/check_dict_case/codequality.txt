@@ -1,0 +1,2 @@
+INITIAL CODE QUALITY SCORE FOR check_dict_case: 1.82/10
+FINAL CODE QUALITY SCORE FOR check_dict_case: 4.19/10

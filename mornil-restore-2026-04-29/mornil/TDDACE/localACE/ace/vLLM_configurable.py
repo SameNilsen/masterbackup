@@ -105,6 +105,8 @@ def callvLLM(prompt, llm, sampling_params):
 
   prompt_json = prompt
 
+  print("This is prompt: -->", prompt, "<--")
+
   accepted_answer_length = False
   while accepted_answer_length is False:
       print("->Attempting to generate answer.")
@@ -145,11 +147,13 @@ def callvLLM(prompt, llm, sampling_params):
 
   # separate the actual response that follows after the </think> token
   response = output_str.split("</think>")[-1].rstrip("</s>").strip()
-
-  try:
-    response = response.split("---", 1)[1]
-  except:
-    print("Not able to split on ---, returning full result")
+  print("\n\n-----------------------HALF OF ENTIRE RESPONSE-----------------------")
+  print(response[int(-len(response)/2):])
+  print("\n\n-----------------------      END    -----------------------")
+  # try:
+  #   response = response.split("---", 1)[1] # mostly for normistral i believe.
+  # except:
+  #   print("Not able to split on ---, returning full result")
   # Return only JSON part of the response:
   try:
     if (response.find("assistantfinal") != -1):

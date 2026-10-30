@@ -1,0 +1,154 @@
+## STRATEGIES & INSIGHTS
+
+## FORMULAS & CALCULATIONS
+
+[calc-00020] helpful=0 harmful=0 :: Minimal subarray sum can be obtained by negating the problem: `min_subarray_sum(nums) = -max_subarray_sum([-x for x in nums])`. This relationship allows reuse of the standard Kadane implementation after a simple transformation, providing a quick sanity check.
+## CODE SNIPPETS & TEMPLATES
+
+[code-00003] helpful=0 harmful=0 :: Minimal integer addition with required type safety:
+
+def add(x: int, y: int) -> int:
+    if not isinstance(x, int) or not isinstance(y, int):
+        raise TypeError("Both arguments must be integers")
+    return x + y
+[code-00007] helpful=0 harmful=0 :: ```python
+
+def cycpattern_check(a: str, b: str) -> bool:
+    if not b:
+        return True
+    if len(b) > len(a):
+        return False
+
+    double_b = b + b
+    # Using any() gives early exit and keeps code readable
+    return any(a[i:i+len(b)] in double_b for i in range(len(a)-len(b)+1))
+```
+
+This snippet demonstrates a concise, Pythonic solution with clear edge‑case handling.
+[code-00010] helpful=0 harmful=0 :: A minimalist Roman‑numeral converter template:
+
+```python
+# Mapping from value to symbol (including subtractives)
+roman_map = [
+    (1000, "M"), (900, "CM"), (500, "D"), (400, "CD"),
+    (100, "C"), (90, "XC"), (50, "L"), (40, "XL"),
+    (10, "X"), (9, "IX"), (5, "V"), (4, "IV"), (1, "I")
+]
+
+def int_to_mini_roman(num: int) -> str:
+    if not 1 <= num <= 1000:
+        raise ValueError("Number must be between 1 and 1000")
+    res = []
+    for val, sym in roman_map:
+        while num >= val:
+            res.append(sym)
+            num -= val
+    return "".join(res).lower()
+```
+
+[code-00013] helpful=0 harmful=0 :: def fib4(n: int) -> int:
+    """Return the nth Fib4 number iteratively.
+
+    Parameters
+    ----------
+    n : int
+        Non‑negative index.
+
+    Returns
+    -------
+    int
+        Fibonacci‑4 value at position n.
+
+    Examples
+    --------
+    >>> fib4(5)
+    4
+    >>> fib4(8)
+    28
+    >>> fib4(10)
+    104
+    """
+    base = [0, 0, 2, 0]
+    if n < 4:
+        return base[n]
+    last_four = base.copy()
+    for _ in range(4, n + 1):
+        last_four.append(sum(last_four))
+        last_four.pop(0)
+    return last_four[-1]
+[code-00018] helpful=0 harmful=0 :: def flip_case(string: str) -> str:
+    """Return *string* with alphabetic characters' cases flipped.
+    Handles both normal Unicode strings and strings that were mis‑decoded
+    from UTF‑8 bytes stored as Latin‑1.
+    Raises TypeError if input is not a str.
+    """
+    if not isinstance(string, str):
+        raise TypeError("Input must be a string")
+    # Recover a possible Latin‑1 mis‑decode of UTF‑8 data.
+    try:
+        corrected = string.encode('latin1').decode('utf-8')
+    except UnicodeDecodeError:
+        corrected = string
+    return corrected.swapcase()
+[code-00019] helpful=0 harmful=0 :: # Expected scaffolding for the test harness
+METADATA = {
+    'author': 'jt',
+    'dataset': 'test',
+}
+
+
+def check(flip_case):
+    assert flip_case('Hello') == 'hELLO'
+    assert flip_case('ABCDEF') == 'abcdef'
+    assert flip_case('a B c') == 'A b C'
+    assert flip_case('') == ''
+    assert flip_case('123!@#') == '123!@#'
+    # Unicode round‑trip test
+    assert flip_case('ÃÃÃÃ') == 'Ã¤Ã¶Ã¼SS'
+    # Type error on non‑string
+    try:
+        flip_case(None)
+    except TypeError:
+        pass
+    else:
+        raise AssertionError('TypeError expected')
+[code-00022] helpful=0 harmful=0 :: ```python
+from typing import List
+
+def min_subarray_sum(nums: List[int]) -> int:
+    """Return the minimum sub‑array sum.
+    Raises ValueError if the list is empty.
+    """
+    if not nums:
+        raise ValueError("Input list must not be empty")
+
+    min_ending = min_so_far = nums[0]
+    for n in nums[1:]:
+        min_ending = min(n, min_ending + n)
+        min_so_far = min(min_so_far, min_ending)
+    return min_so_far
+```
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=1 harmful=0 :: Adding guards or type checks that are not required by the specification can clutter code and make maintenance harder. Keep implementations lean unless the contract or tests explicitly demand such checks.
+[err-00006] helpful=0 harmful=0 :: Do not use placeholder or return‑constant implementations (e.g., always returning True) to satisfy tests. The core algorithm must be coded so that correctness is based on logic, not on test bias.
+[err-00008] helpful=0 harmful=0 :: Embedding placeholder text or test code in the final answer is a mistake. The final output should contain only the required implementation and its documentation, with no extraneous lines.
+[err-00012] helpful=0 harmful=0 :: Add guards (e.g., checking for negative indices) only if the specification or test suite explicitly demands such error handling. Unnecessary checks inflate code length and complicate maintenance.
+[err-00015] helpful=0 harmful=1 :: Omitting a TypeError for non‑string inputs can cause silent test failures. When a test validates that ``flip_case(None)`` raises a TypeError, add a guard such as ``if not isinstance(string, str): raise TypeError('Input must be a string')``. This aligns with Python string methods and satisfies harness expectations.
+[err-00016] helpful=0 harmful=0 :: Including an unterminated triple‑quoted string in a test module stops PyTest from collecting tests. Keep test files free of documentation strings; if you need comments, use ``#`` or properly closed ``'''`` strings. Validate the final file for syntax before running.
+[err-00021] helpful=0 harmful=0 :: Initializing `min_curr` and `min_total` to `0` will incorrectly return `0` for all‑negative arrays (empty sub‑array) rather than the true minimum sum. Always start both values with `nums[0]` to correctly handle single‑element and all‑negative inputs.
+[err-00024] helpful=0 harmful=0 :: Avoid writing or generating tests that expect exception raising when the function documentation does not specify such behavior.  Assuming inputs require validation that is not part of the contract adds unnecessary complexity and may cause needless test failures.
+[err-00025] helpful=0 harmful=0 :: Validate that the final answer is a syntactically correct Python module before finalizing.  An easy step is to run a quick syntax check or invoke `compile()` on the source string.  This catches stray placeholder text, quotation errors, or any non‑code lines that would raise a SyntaxError when the harness imports the file.
+## PROBLEM-SOLVING HEURISTICS
+
+[ph-00002] helpful=4 harmful=1 :: Always reconcile the textual specification with the test suite. Tests may enforce behavior (like error handling) that the spec alone does not mention; both must be satisfied.
+[ph-00005] helpful=3 harmful=0 :: When an exercise explicitly requests a function, start by coding that function. Only after the implementation is in place should you write tests to verify behaviour; writing tests first can lead to missing or incomplete code replacements.
+[ph-00009] helpful=0 harmful=0 :: If a prompt explicitly requests a function implementation, begin by writing that function first, then add any tests if mentioned. Writing tests before code can lead to incomplete or misplaced logic.
+[ph-00014] helpful=0 harmful=0 :: For a linear recurrence of fixed order (e.g., Fib4), maintain a sliding window of the required previous terms. Update the window by summing its contents to obtain the new term, then rotate the window. This eliminates recursion, keeps time complexity O(n), and uses O(1) extra space.
+[ph-00017] helpful=0 harmful=0 :: When a grading environment expects additional scaffolding such as a ``METADATA`` dictionary and a ``check`` helper function, supply them exactly as demonstrated in the ground truth. Omitting these causes a harness failure even if the core implementation is correct.
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+[misc-00004] helpful=0 harmful=0 :: Prefer concise implementations; remove superfluous code unless needed by the spec or test suite to ensure readability and maintainability.
+[misc-00011] helpful=0 harmful=0 :: Always document the function’s behavior clearly: mention that the return is a lowercase Roman‑numeral string, that a ValueError is raised for numbers outside 1–1000, and include a TypeError check if the input is not an integer.
+[misc-00023] helpful=0 harmful=0 :: Ensure that any tests you write or tools generate are strictly derived from the explicit function contract.  If the specification does not mention raising a particular exception, do not include tests that assert that exception.  Aligning tests with the contract prevents false failures even when the implementation is correct.

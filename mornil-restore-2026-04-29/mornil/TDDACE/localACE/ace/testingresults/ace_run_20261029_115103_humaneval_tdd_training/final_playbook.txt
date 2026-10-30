@@ -1,0 +1,133 @@
+## STRATEGIES & INSIGHTS
+
+[sai-00034] helpful=0 harmful=0 :: Verify source file encoding and avoid mis‑encoded literals by using Unicode escape sequences; keep tests separate to avoid stray docstrings.
+## FORMULAS & CALCULATIONS
+
+[calc-00006] helpful=0 harmful=0 :: Generic formula: \n\[\displaystyle \text{Total} = \sum_{i=0}^{n-1} f(i),\]\nwhere \(f(i) = \begin{cases}\n\text{val}\times\text{val} & \text{if } i\bmod 3 = 0,\\\n\text{val}\times\text{val}\times\text{val} & \text{if } i\bmod 4 = 0 \text{ and } i\bmod 3 \neq 0,\\\n\text{val} & \text{otherwise}. \n\end{cases}\)
+## CODE SNIPPETS & TEMPLATES
+
+[code-00004] helpful=1 harmful=1 :: Example helper for test expectations:\n\ndef expected_sum(lst):\n    return sum(v**2 if i%3==0 else v**3 if i%4==0 and i%3!=0 else v for i,v in enumerate(lst))\nUse this to validate edge cases such as negative numbers or very long sequences.
+[code-00008] helpful=0 harmful=0 :: Skeleton for an integer addition function:
+
+```
+def add(x: int, y: int) -> int:
+    """Return the sum of two integers."""
+    return x + y
+```
+[code-00014] helpful=0 harmful=0 :: Write a clear docstring explaining behavior, rules, and returned values. Keep function minimal: no extraneous validation beyond what's required. Use type hints and comments for readability.
+[code-00015] helpful=0 harmful=0 :: ```
+def cycpattern_check(a: str, b: str) -> bool:
+    """Return True if any rotation of `b` appears as a substring of `a`.
+
+    Rules:
+    * If `b` is longer than `a`, return False.
+    * An empty `b` is considered present and returns True.
+    * Generate all unique rotations of `b` and check each against `a`.
+    * Return True on the first successful match; otherwise False.
+    """
+    if len(b) > len(a):
+        return False
+    if not b:
+        return True
+    rotations = {b[i:] + b[:i] for i in range(len(b))}
+    for rot in rotations:
+        if rot in a:
+            return True
+    return False
+```
+[code-00018] helpful=0 harmful=0 :: def int_to_mini_roman(n: int) -> str:
+    """Convert an integer (1‑1000) to a lowercase Roman numeral.
+
+    The algorithm walks a descending list of numeral pairs, subtracting when possible and
+    appending the corresponding symbol.  The final string is lower‑cased so the tests
+    and specification are satisfied.
+    """
+    if not 1 <= n <= 1000:
+        raise ValueError("n must be between 1 and 1000 inclusive")
+    values = [
+        (1000, "M"), (900, "CM"), (500, "D"), (400, "CD"),
+        (100, "C"), (90, "XC"), (50, "L"), (40, "XL"),
+        (10, "X"), (9, "IX"), (5, "V"), (4, "IV"), (1, "I")
+    ]
+    result = ""
+    for val, sym in values:
+        while n >= val:
+            result += sym
+            n -= val
+    return result.lower()
+[code-00023] helpful=0 harmful=0 :: def is_sorted(lst: list[int]) -> bool:
+    '''Return True if lst is sorted in non-decreasing order and no integer appears more than twice.'''
+    if len(lst) <= 1:
+        return True
+    counts = {lst[0]: 1}
+    prev = lst[0]
+    for val in lst[1:]:
+        if val < prev:
+            return False
+        cnt = counts.get(val, 0) + 1
+        if cnt > 2:
+            return False
+        counts[val] = cnt
+        prev = val
+    return True
+[code-00030] helpful=0 harmful=0 :: Example minimal implementation skeleton:
+
+```python
+from collections import deque
+
+def fib4(n: int) -> int:
+    """Return the n‑th element of the Fib4 sequence.
+    Raises ValueError if n is negative.
+    """
+    if n < 0:
+        raise ValueError("n must be non-negative")
+    base = [0, 0, 2, 0]
+    if n < 4:
+        return base[n]
+    window = deque(base, maxlen=4)
+    for _ in range(4, n + 1):
+        window.append(sum(window))
+    return window[-1]
+```
+This snippet includes correct docstring formatting, type hints, error handling, and efficient iterative computation.
+[code-00032] helpful=0 harmful=0 :: def flip_case(s: str) -> str:\n    '''Return a new string with case flipped, mapping German ß to 'SS'.\n\n    Uses str.swapcase for most characters, and then replaces any remaining 'ß' with 'SS'.'''\n    return s.swapcase().replace('ß', 'SS')
+[code-00036] helpful=0 harmful=0 :: Example helper for test expectations:
+
+def expected_sequence(start: int, n: int) -> list[int]:
+    '''Return the expected sequence for `make_a_pile`.
+    Each level adds 2 stones to the previous one.''' 
+    return [start + 2*i for i in range(n)]
+## COMMON MISTAKES TO AVOID
+
+[err-00001] helpful=0 harmful=0 :: Always evaluate the multiple‑of‑3 rule before the multiple‑of‑4 rule; any index that satisfies both (e.g., index 0) should be squared. Checking the stricter condition first guarantees correct precedence.
+[err-00002] helpful=0 harmful=0 :: When writing test modules programmatically, emit real newlines rather than escaped '\\n' sequences. Using '\\n' inside a file makes Python interpret them literally and can produce SyntaxError: unexpected character after line continuation character.
+[err-00005] helpful=0 harmful=0 :: Remember that squaring a negative number yields a positive result, whereas cubing preserves its sign. This nuance can flip the sign of large contributions in the sum if omitted.
+[err-00007] helpful=0 harmful=1 :: Failing to preserve the return type. If you return a string or float for a function expected to produce an int, type mismatches will cause test failures.
+[err-00016] helpful=0 harmful=0 :: Skipping the initial length comparison (`len(b) > len(a)`) or not handling an empty `b` can lead to unnecessary computation, memory usage, or incorrect results.
+[err-00019] helpful=0 harmful=0 :: Hard‑coding expected Roman numeral strings for test cases that use subtractive notation (4, 9, 40, 90, 400, 900, 944, etc.) often introduces wrong expectations and so causes false failures.  Generate the expected value using a reliable algorithm or a trusted reference that is identical to the implementation under test.
+[err-00022] helpful=0 harmful=0 :: Using list.count() in a loop or sorting the list before checking duplicates leads to O(n^2) time complexity and may disrupt the original order requirement. Instead, perform a single linear scan while tracking counts with a dictionary and comparing each element to the previous one.
+[err-00025] helpful=0 harmful=0 :: Defining more than one function with the same name in a module leads to the later definition overriding the former. Ensure a single, definitive implementation of the requested function; otherwise, the evaluation environment may execute the wrong logic.
+[err-00026] helpful=0 harmful=0 :: Hard‑coding import paths that may not exist (e.g., "import fib4_module") causes collection errors. Scripts should import the function directly from its defining module or use a relative import when part of a package.
+[err-00027] helpful=0 harmful=0 :: Embedding non‑UTF‑8 characters in error messages (e.g., "n must be nonânegative") will raise a UnicodeDecodeError in the test runner. Always type the message literally using standard ASCII or specify the encoding.
+[err-00031] helpful=0 harmful=0 :: Providing only a test suite instead of the requested function leads to evaluation failures; always submit the implementation.
+[err-00037] helpful=0 harmful=0 :: Neglecting to validate `n`'s type (e.g., a float or string) can cause subtle bugs; explicitly check `isinstance(n, int)` before processing and raise a ValueError or TypeError when the input is invalid.
+[err-00038] helpful=0 harmful=0 :: When using test‑driven development, guarantee that the module under test is importable before running tests. If the real implementation is not yet available, add a minimal stub in the same module or create a temporary placeholder that raises NotImplementedError. This prevents PyTest from aborting with a ModuleNotFoundError during the collection phase and allows the test suite to execute.
+## PROBLEM-SOLVING HEURISTICS
+
+[ph-00003] helpful=1 harmful=0 :: For difficult test cases, recompute the expected result with a small helper function that applies the same logic: expected = sum(v**2 if i%3==0 else v**3 if i%4==0 and i%3!=0 else v for i,v in enumerate(lst)). This reduces manual calculation errors.
+[ph-00009] helpful=1 harmful=0 :: For low‑level arithmetic helpers, keep the implementation minimal and avoid adding extra logic such as input validation unless explicitly required by the specification.
+[ph-00028] helpful=0 harmful=0 :: When confronted with a programming prompt, first locate verbs that indicate the expected output (e.g., "implement", "write a function", "return..." versus "create tests"). If the prompt explicitly requests a function, do not provide a test suite unless requested.
+[ph-00029] helpful=0 harmful=0 :: After writing the implementation, run a quick manual check of the import path: execute \`import fib4\` in the same directory. If this fails, the solution will be unusable by the evaluation environment.
+[ph-00033] helpful=0 harmful=0 :: Before coding, analyze test expectations; if mapping differs from swapcase (e.g., ß → 'SS'), design a custom mapping or post‑process the result.
+[ph-00035] helpful=0 harmful=0 :: Create a tiny helper for test expectations: `def expected_sequence(start, n): return [start + 2*i for i in range(n)]`. Use this helper in assertions so you can quickly verify that the produced list matches the arithmetic progression before writing the function.
+## CONTEXT CLUES & INDICATORS
+
+## OTHERS
+[misc-00010] helpful=0 harmful=0 :: Check if len(b) > len(a) before any work; return False immediately. This saves unnecessary rotation generation for impossible cases.
+[misc-00011] helpful=0 harmful=0 :: Treat an empty rotation string as automatically present in any text (return True). This matches typical definition of substring and prevents index errors.
+[misc-00012] helpful=0 harmful=0 :: Use a set comprehension `{b[i:] + b[:i] for i in range(len(b))}` to get all unique rotations. This eliminates duplicate checks, especially for strings like 'aaa', and keeps the search simple.
+[misc-00013] helpful=0 harmful=0 :: Iterate over the set of rotations and return True as soon as a rotation `rot` is found in `a`. This prevents extra unnecessary checks after a positive match.
+[misc-00017] helpful=0 harmful=0 :: Use the built‑in `in` operator for substring checks; it is implemented in C and quicker than custom search loops.
+[misc-00020] helpful=0 harmful=0 :: When creating expected outputs for Roman‑numeral tests, write a small helper function that performs the same conversion as the production code.  Comparing test results against this helper for a broad range of inputs immediately filters out manual errors in the expected strings.
+[misc-00021] helpful=0 harmful=0 :: Verify that the function’s return value is lowercase, e.g. assert int_to_mini_roman(5).islower(). Ensuring the implementation calls .lower() or uses lowercase symbols prevents subtle mismatches with tests that expect lower‑case output.
+[misc-00024] helpful=0 harmful=0 :: Apply a single-pass technique that tracks the previous element and a dictionary of counts. This guarantees O(n) runtime and early exit on violation, avoiding extra passes or sorting. It also ensures correctness for non-decreasing order and duplicate limits.

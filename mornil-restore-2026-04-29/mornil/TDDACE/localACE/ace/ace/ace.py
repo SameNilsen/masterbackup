@@ -331,6 +331,29 @@ class ACE:
             results['online_test_results'] = online_results
         
         elif mode == 'tdd_training':
+            with open("./workspace/done/metrics.txt", "w", encoding="utf-8") as file:
+                file.write("========= METRICS AND RESULTS =========\n")
+            # 1. Run initial test if test_samples provided
+            if test_samples:
+                print(f"\n{'='*60}")
+                print(f"INITIAL TEST (before training)")
+                print(f"{'='*60}\n")
+                initial_test_results = self._run_test(
+                    test_samples=test_samples,
+                    data_processor=data_processor,
+                    playbook=self.playbook,
+                    config=config,
+                    log_dir=log_dir,
+                    save_path=save_path,
+                    prefix="initial"
+                )
+                results['initial_test_results'] = initial_test_results
+                print(f"Initial Test Accuracy: {initial_test_results['accuracy']:.3f}\n")
+                with open("./workspace/done/metrics.txt", "a", encoding="utf-8") as file:
+                    file.write(f"\n\n===== Initial Test Accuracy =====\n")
+                    file.write(f"Accuracy: {initial_test_results['accuracy']:.3f} \n")
+                    file.write(f"=================================")
+
             # 2. Run offline training
             print(f"\n{'='*60}")
             print(f"STARTING OFFLINE TRAINING")
@@ -347,6 +370,36 @@ class ACE:
                 mode="tdd_training"
             )
             results['training_results'] = training_results
+
+            # 3. Run final test if test_samples provided
+            relevant_playbook = self.best_playbook
+            if (self.best_playbook.__contains__("[")):
+                # is polulated.
+                print("Using the best playbook.")
+                relevant_playbook=self.best_playbook
+            else:
+                # the best playbook hasnt been set.
+                print("Using the standard playbook.")
+                relevant_playbook = self.playbook
+            if test_samples:
+                print(f"\n{'='*60}")
+                print(f"FINAL TEST (with best playbook)")
+                print(f"{'='*60}\n")
+                final_test_results = self._run_test(
+                    test_samples=test_samples,
+                    data_processor=data_processor,
+                    playbook=relevant_playbook,
+                    config=config,
+                    log_dir=log_dir,
+                    save_path=save_path,
+                    prefix="final"
+                )
+                results['final_test_results'] = final_test_results
+                print(f"Final Test Accuracy: {final_test_results['accuracy']:.3f}\n")
+                with open("./workspace/done/metrics.txt", "a", encoding="utf-8") as file:
+                    file.write(f"\n\n===== Final Test Accuracy =====\n")
+                    file.write(f"Accuracy: {final_test_results['accuracy']:.3f}\n")
+                    file.write(f"===============================\n\n")
         
         else:  # eval_only
             # EVAL ONLY MODE WORKFLOW
@@ -391,7 +444,82 @@ class ACE:
             print(f"Test Accuracy: {results['test_results']['accuracy']:.3f}")
         print(f"Results saved to: {save_path}")
         print(f"{'='*60}\n")
-        
+
+        num_improve = 0
+        avg_init = 0
+        avg_fin = 0
+        total = 0
+        total_init = 0
+        total_fin = 0
+        num_passed_init = 0
+        num_passed_fin = 0
+        num_improved_passed = 0
+        num_worse_passed = 0
+        with open("./workspace/done/metrics.txt", "r", encoding="utf-8") as file:
+            content = file.readlines()
+            for c in content:
+                if ("code quality" in c):
+                    print(c)
+                    total+=1
+                    if ("Not found" in c.split(":")[1].split("F")[0]):
+                        if ("Not found" in c.split(":")[2]):
+                            print("No valid results")
+                        else:
+                            print("Results for final, at least better than nothing")
+                            final = float(c.split(":")[2].split("/")[0])
+                            print(final)
+                            avg_fin+=final
+                            total_fin += 1
+                    else: # Initial is valid:
+                        initial = float(c.split(":")[1].split("F")[0].split("/")[0])
+                        print(initial)
+                        total_init += 1
+                        avg_init+=initial
+                        if ("Not found" in c.split(":")[2]):
+                            print("Initial good, final bad.")
+                        else:
+                            print("Results for both.")
+                            final = float(c.split(":")[2].split("/")[0])
+                            print(final)
+                            total_fin += 1
+                            if final>initial:
+                                num_improve+=1
+                            avg_fin+=final
+                    # Passed:
+                    print(c.split(":")[3].split("Fi")[0], bool("False"))
+                    passed_init = c.split(":")[3].split("Fi")[0].strip()
+                    if (passed_init=="True"): num_passed_init +=1
+                    passed_fin = c.split(":")[-1].strip()
+                    if (passed_fin=="True"): num_passed_fin +=1
+                    print(passed_init, passed_fin)
+                    if (passed_init=="False" and passed_fin=="True"): num_improved_passed += 1
+                    if (passed_init=="True" and passed_fin=="False"): num_worse_passed += 1
+                    # if ("Not found" not in c):
+                    #     initial = float(c.split(":")[1].split("F")[0].split("/")[0])
+                    #     print(initial)
+                    #     final = float(c.split(":")[2].split("/")[0])
+                    #     print(final)
+                    #     if final>initial:
+                    #         num_improve+=1
+                    #     avg_init+=initial
+                    #     avg_fin+=final
+                    #     total+=1
+        avg_init = avg_init/total
+        avg_fin = avg_fin/total
+        print(f"num improve quality: {num_improve}, total: {total}, init total: {total_init}, fin total: {total_fin}, average initial: {avg_init}, average final: {avg_fin}, Number that passed intially: {num_passed_init}, Number that passed finally: {num_passed_fin}, Number that improved passing: {num_improved_passed}, Number that got worse: {num_worse_passed}")
+        with open("./workspace/done/metrics.txt", "a", encoding="utf-8") as file:
+            file.write(f"\n\n======= FINAL RESULTS =======\n")
+            # file.write(f"Number of improved: {num_improve}, total: {total}, average initial: {avg_init}, average final: {avg_fin} \n\n")
+            file.write(f"Number of improved: {num_improve}")
+            file.write(f"Total samples: {total}")
+            file.write(f"Average code quality initially: {avg_init}")
+            file.write(f"Average code quality finally: {avg_fin}")
+            file.write(f"Number that passed intially: {num_passed_init}")
+            file.write(f"Number that passed finally: {num_passed_fin}")
+            file.write(f"Number that improved passing: {num_improved_passed}")
+            file.write(f"Number that got worse: {num_worse_passed}")
+            file.write(f"=============================\n")
+
         return results
     
     def _run_test(
@@ -655,7 +783,8 @@ class ACE:
         return pre_train_answer, post_train_answer, tracking_dict
 
     def _save_test_or_function(self, mode, predicted):
-        predicted = predicted.strip("\n").strip("}")
+        # predicted = predicted.strip("\n").strip("}")
+        predicted = predicted.strip("}").strip("\\n").strip("}")
         print("THIS IS FUNCTION: -->", predicted, "<--")
         # import re
         # matches = re.findall(r'def\s*([^(]*)', predicted) 
@@ -729,9 +858,16 @@ class ACE:
         if matches:
             question_name = matches[0]
             question_name = question_name.split(" ")[-1]
+        imports = ""
+        if question.split("def", 1)[0].__contains__("import"):
+            imports = question.split("def", 1)[0].strip()
+        print("Imports: ", imports)
         question_name_pure = question_name
+        question_name_with_param = question_name + question.split(question_name)[1].split("):")[0] + "):"
         question_name = "test_"+question_name + "ACEFILENAME"
-        print("ACEFILENAME")
+        print("ACEFILENAME ", question_name, question_name_pure, question_name_with_param)
+        # if (question_name_pure == "simplify"):
+        #     exit()
         gen_response, bullet_ids, call_info = self.generator.generate(
             question=question,
             playbook=self.playbook,
@@ -745,28 +881,10 @@ class ACE:
         # Extract answer and check correctness
         final_answer = extract_answer(gen_response)
         final_answer = self._save_test_or_function("test", question_name+final_answer)
-        # SHOULD CHECK FOR CORRECTNESS AGAINST REFERENCE FUNCTION.
         is_correct, feedback = data_processor.answer_is_correct("THISISTEST"+final_answer, target)
         pre_train_answer = final_answer
         
-        print(f"Correct: {is_correct}")
-        
-        # Log bullet usage
-        log_bullet_usage(usage_log_path, epoch, step, task_dict, bullet_ids,
-                       playbook=self.playbook, is_correct=is_correct)
-        
-        # Track pre-train result
-        tracking_dict = {
-            "pre_train_result": {
-                "final_answer": final_answer,
-                "is_correct": is_correct,
-                "playbook_num_tokens": count_tokens(self.playbook),
-                "playbook_length": len(self.playbook)
-            }
-        }
-        
-        reflection_content = "(empty)"
-
+        print(f"Correct: {is_correct}, tests okay for now.")
         # If answer was correct (all tests passed) then TDD is wrong, so should redirect to
         #  reflector and then back to generator, to make tests that doesnt pass.
         #  Feedback must include that the TDD requires tests to fail first time.
@@ -776,12 +894,42 @@ class ACE:
             is_correct = True # A bit confusing, but if tests fail, thats correct.
         # If fail on first (failure, not error) then proceed to generator and ask it to generate
         #  implementation of function.
+
+        # SHOULD CHECK FOR CORRECTNESS AGAINST REFERENCE FUNCTION.
+        # So, first add reference function, then run tests, then delete function.
+        print("Adding reference function... for: ", question_name_pure)
+        reference_function = self._save_test_or_function("function", question_name+"def "+question_name_with_param+"\n"+target[0])
+        is_correct, feedback = data_processor.answer_is_correct(reference_function, target)
+        print(f"Correct: {is_correct}, tests okay with reference function.")
+
+        oldfilename = "./workspace/tests/" + question_name.split("ACEFILENAME")[0]  + ".py"
+        # Must delete reference function in file.
+        text = open(oldfilename, 'rt').read()
+
+        # split it at the first empty line ("\n\n")
+        first, rest = text.split('def '+question_name_pure,1)
+
+        # make a new file and write the rest
+        open(oldfilename, 'wt').write(first)
+
+        
+        # Log bullet usage
+        log_bullet_usage(usage_log_path, epoch, step, task_dict, bullet_ids,
+                       playbook=self.playbook, is_correct=is_correct)
+        
+        
+        
+        reflection_content = "(empty)"
+        list_of_reflections = []
+        num_of_attempts = 1 # Or reflection rounds.
+
         context = "GENERATE_FUNCTION"+pre_train_answer
         
         # STEP 2: Reflection and regeneration
         if not is_correct:
             # For incorrect answers - iterate reflection rounds
             for round_num in range(max_num_rounds):
+                num_of_attempts += 1 # One more try -> something was wrong -> better bullet points.
                 print(f"Test implementation failed, Reflection round {round_num + 1}/{max_num_rounds}")
 
                 # Must rename prev attempt at test implementation.
@@ -809,6 +957,7 @@ class ACE:
                     call_id=f"{step_id}_round_{round_num}",
                     log_dir=log_dir
                 )
+                list_of_reflections.append(reflection_content)
                 
                 # Update bullet counts
                 if bullet_tags:
@@ -836,6 +985,23 @@ class ACE:
                     is_correct = False
                 else:
                     is_correct = True # A bit confusing, but if tests fail, thats correct.
+
+                # SHOULD CHECK FOR CORRECTNESS AGAINST REFERENCE FUNCTION.
+                # So, first add reference function, then run tests, then delete function.
+                print("Adding reference function... for: ", question_name_pure)
+                reference_function = self._save_test_or_function("function", question_name+"def "+question_name_with_param+"\n"+target[0])
+                is_correct, feedback = data_processor.answer_is_correct(reference_function, target)
+                print(f"Correct: {is_correct}, tests okay with reference function.")
+
+                oldfilename = "./workspace/tests/" + question_name.split("ACEFILENAME")[0]  + ".py"
+                # Must delete reference function in file.
+                text = open(oldfilename, 'rt').read()
+
+                # split it at the first empty line ("\n\n")
+                first, rest = text.split('def '+question_name_pure,1)
+
+                # make a new file and write the rest
+                open(oldfilename, 'wt').write(first)
                 
                 if is_correct:
                     print(f"Corrected after reflection round {round_num + 1}!")
@@ -843,148 +1009,134 @@ class ACE:
                     context = "GENERATE_FUNCTION"+pre_train_answer
                     break
         
+        # else:
+        final_tests = final_answer
+        print("Okay, tests are made, time for function implementation now.")
+        playbook_bullets = extract_playbook_bullets(
+            self.playbook, bullet_ids
+        )
+        
+        
+        # Regenerate with reflection
+        gen_response, bullet_ids, _ = self.generator.generate(
+            question=question,
+            playbook=self.playbook,
+            context=context,
+            reflection=reflection_content,
+            use_json_mode=use_json_mode,
+            call_id=f"{step_id}_post_initial_passed_round_{1}",
+            log_dir=log_dir
+        )
+        
+        final_answer = extract_answer(gen_response)
+        if imports != "":
+            final_answer = imports+"\n"+final_answer
+        # This might be where we should insert the function into the testerfile...
+        final_answer = self._save_test_or_function("function", question_name+final_answer)
+        pre_train_answer = final_answer
+        
+        
+        if data_processor.answer_is_correct(final_answer, target)[0]:
+            print(f"Correctly implemented function as well!")
+            is_correct = True
+            # break
         else:
-            print("Okay, tests are made, time for function implementation now.")
-            playbook_bullets = extract_playbook_bullets(
-                self.playbook, bullet_ids
-            )
-            
-            
-            # Regenerate with reflection
-            gen_response, bullet_ids, _ = self.generator.generate(
-                question=question,
-                playbook=self.playbook,
-                context=context,
-                reflection=reflection_content,
-                use_json_mode=use_json_mode,
-                call_id=f"{step_id}_post_initial_passed_round_{1}",
-                log_dir=log_dir
-            )
-            
-            final_answer = extract_answer(gen_response)
-            # This might be where we should insert the function into the testerfile...
-            final_answer = self._save_test_or_function("function", question_name+final_answer)
-            
-            
-            if data_processor.answer_is_correct(final_answer, target)[0]:
-                print(f"Correctly implemented function as well!")
-                is_correct = True
-                # break
-            else:
-                is_correct = False
+            is_correct = False
 
-            # Cheking function against reference tests:
-            print("Adding reference tests... for: ", question_name_pure)
-            reference_tests_answer = self._save_test_or_function("function", question_name+("".join(target[1:]).replace("def ", "def test_", 1).replace("(candidate)", "()").replace("candidate", question_name_pure))+"\n\n")
-            
-            is_correct, feedback = data_processor.answer_is_correct(reference_tests_answer, target)
-            if is_correct:
-                print(f"Correctly implemented function according to reference functions as well!")
-                is_correct = True
-                # break
-            else:
-                print("Reference tests failed...")
-                is_correct = False
-    
-            print(f"Correct: {is_correct}, \n\n --- Test creation done, first attempt at function implemention done... --- \n\n")
+        filename_qualityscore = "./workspace/tests/test_"+question_name_pure+".py"
+        print(f"filename_qualityscore: {filename_qualityscore}")
+        pre_train_code_quality_score, code_quality_report = data_processor.check_code_quality(filename_qualityscore)
+        print(f"PRE TRAIN CODE QUALITY SCORE FOR {question_name_pure}: {pre_train_code_quality_score}")
 
-            # Log with reflection
-            log_bullet_usage(usage_log_path, epoch, step, task_dict, bullet_ids,
-                           playbook=self.playbook, 
-                           reflection_content=reflection_content,
-                           is_correct=is_correct)
+        # Cheking function against reference tests:
+        print("Adding reference tests... for: ", question_name_pure)
+        reference_tests_answer = self._save_test_or_function("function", question_name+("".join(target[1:]).replace("def ", "def test_", 1).replace("(candidate)", "()").replace("candidate", question_name_pure))+"\n\n")
+        
+        is_correct, feedback = data_processor.answer_is_correct(reference_tests_answer, target)
+        if is_correct:
+            print(f"Correctly implemented function according to reference functions as well!")
+            is_correct = True
+            # break
+        else:
+            print("Reference tests failed...")
+            is_correct = False
 
-            # Next step is pass response to reflector, and if tests fail then back to generator, but if pass then pass reflector response to curator. And then next task.
+        # Track pre-train result
+        tracking_dict = {
+            "pre_train_result": {
+                "final_answer": final_answer,
+                "is_correct": is_correct,
+                "playbook_num_tokens": count_tokens(self.playbook),
+                "playbook_length": len(self.playbook)
+            }
+        }
 
-            if not is_correct: # TESTS FAIL AFTER IMPLEMENTING FUNCTION.
-                # For incorrect answers - iterate reflection rounds
-                for round_num in range(max_num_rounds):
-                    print(f"Function implementation not done correctly, reflection - generator dance initiated, round {round_num}... \n\n")
-                    print(f"Reflection round {round_num + 1}/{max_num_rounds}")
+        print(f"Correct: {is_correct}, \n\n --- Test creation done, first attempt at function implemention done... --- \n\n")
 
-                    # Must rename prev attempt at test implementation.
-                    oldfilename = "./workspace/tests/" + question_name.split("ACEFILENAME")[0]  + ".py"
-                    newfilename = "./workspace/tests/failed_func_"+str(round_num)+"_" + question_name.split("ACEFILENAME")[0]  + ".py"
-                    from shutil import copyfileobj
-                    with open(newfilename, 'wb') as output, open(oldfilename, 'rb') as input:
-                        copyfileobj(input, output)
+        # Log with reflection
+        log_bullet_usage(usage_log_path, epoch, step, task_dict, bullet_ids,
+                        playbook=self.playbook, 
+                        reflection_content=reflection_content,
+                        is_correct=is_correct)
 
-                    # Must delete old function in original file.
-                    text = open(oldfilename, 'rt').read()
+        # Next step is pass response to reflector, and if tests fail then back to generator, but if pass then pass reflector response to curator. And then next task.
 
-                    # split it at the first empty line ("\n\n")
+        if not is_correct: # TESTS FAIL AFTER IMPLEMENTING FUNCTION.
+            # For incorrect answers - iterate reflection rounds
+            for round_num in range(max_num_rounds):
+                num_of_attempts += 1 # One more try -> something was wrong -> better bullet points.
+                print(f"Function implementation not done correctly, reflection - generator dance initiated, round {round_num}... \n\n")
+                print(f"Reflection round {round_num + 1}/{max_num_rounds}")
+
+                # Must rename prev attempt at test implementation.
+                oldfilename = "./workspace/tests/" + question_name.split("ACEFILENAME")[0]  + ".py"
+                newfilename = "./workspace/tests/failed_func_"+str(round_num)+"_" + question_name.split("ACEFILENAME")[0]  + ".py"
+                from shutil import copyfileobj
+                with open(newfilename, 'wb') as output, open(oldfilename, 'rb') as input:
+                    copyfileobj(input, output)
+
+                # Must delete old function in original file.
+                text = open(oldfilename, 'rt').read()
+
+                # split it at the first empty line ("\n\n")
+                newcontent = text
+                try:
                     first, rest = text.split('def '+question_name_pure,1)
-                    rest = "def"+rest.split("def", 1)[1]
+                    try:
+                        rest = "def"+rest.split("def", 1)[1]
+                        newcontent = first+rest
+                    except:
+                        newcontent = first
+                except:
+                    print("No function in file.")
+                    if (text.find("No final answer found") != -1):
+                        print(text.find("No final answer found"))
+                        newcontent = text.replace("No final answer found", "")
+                # print(rest)
 
-                    # print(rest)
 
-                    newcontent = first+rest
-
-                    # make a new file and write the rest
-                    open(oldfilename, 'wt').write(newcontent)
-                    
-                    # Get bullets for reflector
-                    playbook_bullets = extract_playbook_bullets(
-                        self.playbook, bullet_ids
-                    )
-                    
-                    # Reflect on error
-                    reflection_content, bullet_tags, _ = self.reflector.reflect(
-                        question="ACEWRONG"+question,
-                        reasoning_trace=gen_response,
-                        predicted_answer=final_answer,
-                        ground_truth=target if not no_ground_truth else None,
-                        environment_feedback="Function not implemented correctly. Tests failed. Feedback from PyTest: " + feedback,
-                        bullets_used=playbook_bullets,
-                        use_ground_truth=not no_ground_truth,
-                        use_json_mode=use_json_mode,
-                        call_id=f"{step_id}_round_{round_num}",
-                        log_dir=log_dir
-                    )
-                    
-                    # Update bullet counts
-                    if bullet_tags:
-                        self.playbook = update_bullet_counts(
-                            self.playbook, bullet_tags
-                        )
-                    
-                    # Regenerate with reflection
-                    gen_response, bullet_ids, _ = self.generator.generate(
-                        question=question,
-                        playbook=self.playbook,
-                        context=context,
-                        reflection=reflection_content,
-                        use_json_mode=use_json_mode,
-                        call_id=f"{step_id}_post_reflect_func_round_{round_num}",
-                        log_dir=log_dir
-                    )
-                    
-                    final_answer = extract_answer(gen_response)
-                    final_answer = self._save_test_or_function("function", question_name+final_answer)
-                    is_correct, feedback = data_processor.answer_is_correct(final_answer, target)
-                    if is_correct:
-                        print(f"Corrected after reflection round {round_num + 1}!")
-                        is_correct = True
-                        break
-            else:
-                print("Function implemented correctly. Letting reflector reflect...\n\n")
-                # For correct answers - still run reflector to tag helpful bullets
+                # make a new file and write the rest
+                open(oldfilename, 'wt').write(newcontent)
+                
+                # Get bullets for reflector
                 playbook_bullets = extract_playbook_bullets(
                     self.playbook, bullet_ids
                 )
                 
+                # Reflect on error
                 reflection_content, bullet_tags, _ = self.reflector.reflect(
-                    question="ACECORRECT"+question,
+                    question="ACEWRONG"+question,
                     reasoning_trace=gen_response,
                     predicted_answer=final_answer,
                     ground_truth=target if not no_ground_truth else None,
-                    environment_feedback="Function implemented correctly. Reflect on what went right.",
+                    environment_feedback="Function not implemented correctly. Tests failed. Feedback from PyTest: " + feedback+"\n Code quality feedback: " + str(code_quality_report),
                     bullets_used=playbook_bullets,
                     use_ground_truth=not no_ground_truth,
                     use_json_mode=use_json_mode,
-                    call_id=f"{step_id}_reflect_on_correct",
+                    call_id=f"{step_id}_round_{round_num}",
                     log_dir=log_dir
                 )
+                list_of_reflections.append(reflection_content)
                 
                 # Update bullet counts
                 if bullet_tags:
@@ -992,22 +1144,76 @@ class ACE:
                         self.playbook, bullet_tags
                     )
                 
-                # Log with reflection
-                log_bullet_usage(usage_log_path, epoch, step, task_dict, bullet_ids,
-                            playbook=self.playbook, 
-                            reflection_content=reflection_content,
-                            is_correct=is_correct)
+                # Regenerate with reflection
+                gen_response, bullet_ids, _ = self.generator.generate(
+                    question=question,
+                    playbook=self.playbook,
+                    context=context,
+                    reflection=reflection_content,
+                    use_json_mode=use_json_mode,
+                    call_id=f"{step_id}_post_reflect_func_round_{round_num}",
+                    log_dir=log_dir
+                )
+                
+                final_answer = extract_answer(gen_response)
+                if imports != "":
+                    final_answer = imports+"\n"+final_answer
+                final_answer = self._save_test_or_function("function", question_name+final_answer)
+                is_correct, feedback = data_processor.answer_is_correct(final_answer, target)
+                if is_correct:
+                    print(f"Corrected after reflection round {round_num + 1}!")
+                    is_correct = True
+                    break
+        else:
+            print("Function implemented correctly. Letting reflector reflect...\n\n")
+            # For correct answers - still run reflector to tag helpful bullets
+            playbook_bullets = extract_playbook_bullets(
+                self.playbook, bullet_ids
+            )
             
+            reflection_content, bullet_tags, _ = self.reflector.reflect(
+                question="ACECORRECT"+question,
+                reasoning_trace=gen_response,
+                predicted_answer=final_answer,
+                ground_truth=target if not no_ground_truth else None,
+                environment_feedback="Function implemented correctly. Reflect on what went right."+"\n Code quality feedback: " + str(code_quality_report),
+                bullets_used=playbook_bullets,
+                use_ground_truth=not no_ground_truth,
+                use_json_mode=use_json_mode,
+                call_id=f"{step_id}_reflect_on_correct",
+                log_dir=log_dir
+            )
+            list_of_reflections.append(reflection_content)
+            
+            # Update bullet counts
+            if bullet_tags:
+                self.playbook = update_bullet_counts(
+                    self.playbook, bullet_tags
+                )
+            
+            # Log with reflection
+            log_bullet_usage(usage_log_path, epoch, step, task_dict, bullet_ids,
+                        playbook=self.playbook, 
+                        reflection_content=reflection_content,
+                        is_correct=is_correct)
+        
+        filename_qualityscore = "./workspace/tests/test_"+question_name_pure+".py"
+        print(f"filename_qualityscore: {filename_qualityscore}")
+        post_train_code_quality_score, code_quality_report = data_processor.check_code_quality(filename_qualityscore)
+        print(f"POST TRAIN CODE QUALITY SCORE FOR {question_name_pure}: {post_train_code_quality_score}")
         
         # STEP 3: Curator - Periodically update playbook
+        print(f"Number of rounds/loops/attempts: {num_of_attempts}")
+        # if step % curator_frequency == 0 and (num_of_attempts>1): # This is where we can ensure curation only when wrong at least n times.
         if step % curator_frequency == 0:
             print(f"\n\n--- Running Curator at step {step} ---\n")
             
             stats = get_playbook_stats(self.playbook)
             
+            context = "Final testset and function implementation:\n" + final_tests + "\n" + final_answer
             self.playbook, self.next_global_id, operations, _ = self.curator.curate(
                 current_playbook=self.playbook,
-                recent_reflection=reflection_content,
+                recent_reflection="\n\n".join(list_of_reflections),
                 question_context=context,
                 current_step=step,
                 total_samples=total_samples,
@@ -1031,6 +1237,20 @@ class ACE:
         
         # STEP 4: Post-curator generation
         # First tests implementation
+        print("Moving files:")
+        basepath = "./workspace/tests/"
+        newpath = "./workspace/done/"+question_name_pure+"/train"
+        print(basepath, newpath)
+        from shutil import move
+        import os
+        if not os.path.exists(newpath):
+            os.makedirs(newpath)
+        file_names = os.listdir(basepath)
+            
+        for file_name in file_names:
+            if (file_name.endswith(".py")):
+                print(file_name)
+                move(basepath+file_name, newpath+"/"+file_name)
         print("\n\n Post curator, creating tests...")
         question_name = "test_2_"+question_name
         context = ""
@@ -1074,10 +1294,17 @@ class ACE:
         )
         
         final_answer = extract_answer(gen_response)
+        if imports != "":
+            final_answer = imports+"\n"+final_answer
         final_answer = self._save_test_or_function("function", question_name+final_answer)
         post_train_answer = final_answer
         
         post_train_is_correct, feedback = data_processor.answer_is_correct(final_answer, target)
+
+        filename_qualityscore = "./workspace/tests/test_2_test_"+question_name_pure+".py"
+        print(f"filename_qualityscore: {filename_qualityscore}")
+        post_curator_code_quality_score, code_quality_report = data_processor.check_code_quality(filename_qualityscore)
+        print(f"POST CURATOR CODE QUALITY SCORE FOR {"test_2_test_"+question_name_pure}: {post_curator_code_quality_score}")
 
         # Cheking function against reference tests:
         reference_tests_answer = self._save_test_or_function("function", question_name+("".join(target[1:]).replace("def ", "def test_", 1).replace("(candidate)", "()").replace("candidate", question_name_pure))+"\n\n")
@@ -1097,9 +1324,30 @@ class ACE:
             "playbook_length": len(self.playbook)
         }
 
+        print("Moving files:")
+        basepath = "./workspace/tests/"
+        newpath = "./workspace/done/"+question_name_pure+"/train"
+        print(basepath, newpath)
+        from shutil import move
+        import os
+        if not os.path.exists(newpath):
+            os.makedirs(newpath)
+        file_names = os.listdir(basepath)
+            
+        for file_name in file_names:
+            if (file_name.endswith(".py")):
+                print(file_name)
+                move(basepath+file_name, newpath+"/"+file_name)
+
+        with open("./workspace/done/"+question_name_pure+"/train/codequality.txt", "a", encoding="utf-8") as file:
+            file.write(f"PRE TRAIN CODE QUALITY SCORE FOR {question_name_pure}: {pre_train_code_quality_score}\n")
+            file.write(f"POST TRAIN CODE QUALITY SCORE FOR {question_name_pure}: {post_train_code_quality_score}\n")
+            file.write(f"POST CURATOR CODE QUALITY SCORE FOR {question_name_pure}: {post_curator_code_quality_score}\n")
+            
+
         print("\n\n\n --- Done with this question --- \n\n\n")
 
-        exit()
+        # exit()
         
         return pre_train_answer, post_train_answer, tracking_dict
     

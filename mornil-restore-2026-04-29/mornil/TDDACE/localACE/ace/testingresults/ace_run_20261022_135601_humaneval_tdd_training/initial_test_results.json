@@ -1,0 +1,61 @@
+{
+  "test_results": {
+    "accuracy": 0.4,
+    "correct": 4,
+    "total": 10,
+    "no_answer": 0
+  },
+  "error_log": {
+    "accuracy": 0.4,
+    "errors": [
+      {
+        "index": 1,
+        "prediction": "def max_fill(grid, capacity):\n    \"\"\"\n    Return the total number of bucket lowers required to empty all wells in `grid`.\n\n    Each row of `grid` represents a well; a value of ``1`` indicates a unit of water.\n    A bucket can hold up to ``capacity`` units per lowering.  The number of lowers\n    for a single well is ``ceil(ones / capacity)``, which can be computed with\n    integer arithmetic as ``(ones + capacity - 1) // capacity``.\n\n    Parameters\n    ----------\n    grid : list[list[int]]\n        2\u00e2\u0080\u0091D grid of ``0``s and ``1``s.\n    capacity : int\n        Bucket capacity (must be positive; the function assumes the problem\n        constraints and will raise ``ValueError`` if a non\u00e2\u0080\u0091positive capacity is\n        supplied).\n\n    Returns\n    -------\n    int\n        Total number of times the bucket must be lowered.\n    \"\"\"\n    if capacity <= 0:\n        raise ValueError(\"capacity must be a positive integer\")\n\n    total = 0\n    for row in grid:\n        ones = sum(row)\n        if ones:\n            total += (ones + capacity - 1) // capacity\n    return total\n\n",
+        "ground_truth": [
+          "    return sum([math.ceil(sum(arr)/capacity) for arr in grid])\n",
+          "def check(candidate):\n\n\n    # Check some simple cases\n    assert True, \"This prints if this assert fails 1 (good for debugging!)\"\n    assert candidate([[0,0,1,0], [0,1,0,0], [1,1,1,1]], 1) == 6, \"Error\"\n    assert candidate([[0,0,1,1], [0,0,0,0], [1,1,1,1], [0,1,1,1]], 2) == 5, \"Error\"\n    assert candidate([[0,0,0], [0,0,0]], 5) == 0, \"Error\"\n\n    # Check some edge cases that are easy to work out by hand.\n    assert True, \"This prints if this assert fails 2 (also good for debugging!)\"\n    assert candidate([[1,1,1,1], [1,1,1,1]], 2) == 4, \"Error\"\n    assert candidate([[1,1,1,1], [1,1,1,1]], 9) == 2, \"Error\"\n\n"
+        ]
+      },
+      {
+        "index": 4,
+        "prediction": "def check_dict_case(d):\n    \"\"\"Return True if all dict keys are strings and are either all lower or all upper case.\n\n    Parameters\n    ----------\n    d : dict\n        The dictionary to check.\n\n    Returns\n    -------\n    bool\n        ``True`` if non\u00e2\u0080\u0091empty, all keys are strings, and either all are lower case\n        or all are upper case; otherwise ``False``.\n    \"\"\"\n    if not isinstance(d, dict) or not d:\n        return False\n\n    # Reject if any key is not a string\n    for key in d.keys():\n        if not isinstance(key, str):\n            return False\n\n    all_lower = all(key.islower() for key in d.keys())\n    all_upper = all(key.isupper() for key in d.keys())\n    return all_lower or all_upper\n\n\n",
+        "ground_truth": [
+          "    if len(dict.keys()) == 0:\n        return False\n    else:\n        state = \"start\"\n        for key in dict.keys():\n\n            if isinstance(key, str) == False:\n                state = \"mixed\"\n                break\n            if state == \"start\":\n                if key.isupper():\n                    state = \"upper\"\n                elif key.islower():\n                    state = \"lower\"\n                else:\n                    break\n            elif (state == \"upper\" and not key.isupper()) or (state == \"lower\" and not key.islower()):\n                    state = \"mixed\"\n                    break\n            else:\n                break\n        return state == \"upper\" or state == \"lower\" \n",
+          "def check(candidate):\n\n    # Check some simple cases\n    assert candidate({\"p\":\"pineapple\", \"b\":\"banana\"}) == True, \"First test error: \" + str(candidate({\"p\":\"pineapple\", \"b\":\"banana\"}))\n    assert candidate({\"p\":\"pineapple\", \"A\":\"banana\", \"B\":\"banana\"}) == False, \"Second test error: \" + str(candidate({\"p\":\"pineapple\", \"A\":\"banana\", \"B\":\"banana\"}))\n    assert candidate({\"p\":\"pineapple\", 5:\"banana\", \"a\":\"apple\"}) == False, \"Third test error: \" + str(candidate({\"p\":\"pineapple\", 5:\"banana\", \"a\":\"apple\"}))\n    assert candidate({\"Name\":\"John\", \"Age\":\"36\", \"City\":\"Houston\"}) == False, \"Fourth test error: \" + str(candidate({\"Name\":\"John\", \"Age\":\"36\", \"City\":\"Houston\"}))\n    assert candidate({\"STATE\":\"NC\", \"ZIP\":\"12345\" }) == True, \"Fifth test error: \" + str(candidate({\"STATE\":\"NC\", \"ZIP\":\"12345\" }))      \n    assert candidate({\"fruit\":\"Orange\", \"taste\":\"Sweet\" }) == True, \"Fourth test error: \" + str(candidate({\"fruit\":\"Orange\", \"taste\":\"Sweet\" }))      \n\n\n    # Check some edge cases that are easy to work out by hand.\n    assert candidate({}) == False, \"1st edge test error: \" + str(candidate({}))\n\n"
+        ]
+      },
+      {
+        "index": 5,
+        "prediction": "def filter_by_prefix(strings: List[str], prefix: str) -> List[str]:\n    \"\"\"Return a new list containing only strings from *strings* that start with *prefix*.\n\n    The comparison is case sensitive and preserves the original order of matching elements.\n\n    Examples\n    --------\n    >>> filter_by_prefix([], \"a\")\n    []\n    >>> filter_by_prefix([\"abc\", \"bcd\", \"cde\", \"array\"], \"a\")\n    ['abc', 'array']\n\n    Parameters\n    ----------\n    strings : List[str]\n        The input list of strings to filter.\n    prefix : str\n        The prefix to match at the start of each string.\n\n    Returns\n    -------\n    List[str]\n        A new list of strings that start with *prefix*.\n    \"\"\"\n    return [s for s in strings if s.startswith(prefix)]\n\n",
+        "ground_truth": [
+          "    return [x for x in strings if x.startswith(prefix)]\n",
+          "\n\nMETADATA = {\n    'author': 'jt',\n    'dataset': 'test'\n}\n\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n"
+        ]
+      },
+      {
+        "index": 6,
+        "prediction": "No final answer found\n\n",
+        "ground_truth": [
+          "    return a*a == b*b + c*c or b*b == a*a + c*c or c*c == a*a + b*b\n",
+          "def check(candidate):\n\n    # Check some simple cases\n    assert candidate(3, 4, 5) == True, \"This prints if this assert fails 1 (good for debugging!)\"\n    assert candidate(1, 2, 3) == False\n    assert candidate(10, 6, 8) == True\n    assert candidate(2, 2, 2) == False\n    assert candidate(7, 24, 25) == True\n    assert candidate(10, 5, 7) == False\n    assert candidate(5, 12, 13) == True\n    assert candidate(15, 8, 17) == True\n    assert candidate(48, 55, 73) == True\n\n    # Check some edge cases that are easy to work out by hand.\n    assert candidate(1, 1, 1) == False, \"This prints if this assert fails 2 (also good for debugging!)\"\n    assert candidate(2, 2, 10) == False\n\n"
+        ]
+      },
+      {
+        "index": 7,
+        "prediction": "def remove_vowels(text):\n    \"\"\"Return ``text`` with all vowels removed.\n\n    Vowels are the characters ``AEIOUaeiou``.  The function is\n    case\u00e2\u0080\u0091insensitive and preserves all other characters, including\n    whitespace, punctuation, and numbers.\n\n    Examples\n    --------\n    >>> remove_vowels('')\n    ''\n    >>> remove_vowels('abcdef\nghijklm')\n    'bcdf\nghjklm'\n    >>> remove_vowels('aaBAA')\n    'B'\n    \"\"\"\n    vowels = set(\"AEIOUaeiou\")\n    return ''.join(ch for ch in text if ch not in vowels)\n\n",
+        "ground_truth": [
+          "    return \"\".join([s for s in text if s.lower() not in [\"a\", \"e\", \"i\", \"o\", \"u\"]])\n",
+          "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate(\"abcdef\\nghijklm\") == 'bcdf\\nghjklm'\n    assert candidate('fedcba') == 'fdcb'\n    assert candidate('eeeee') == ''\n    assert candidate('acBAA') == 'cB'\n    assert candidate('EcBOO') == 'cB'\n    assert candidate('ybcd') == 'ybcd'\n\n"
+        ]
+      },
+      {
+        "index": 9,
+        "prediction": "def order_by_points(nums):\n    \"\"\"Return list sorted by sum of digits, stable on ties.\n\n    Args:\n        nums (list[int]): List of integers.\n\n    Returns:\n        list[int]: List sorted as required.\n    \"\"\"\n    def digit_sum(x: int) -> int:\n        \"\"\"Return the sum of decimal digits of |x|.\"\"\"\n        return sum(int(ch) for ch in str(abs(x)))\n\n    # Enumerate to preserve original index for stable ordering on equal digit sums\n    enumerated = list(enumerate(nums))\n    enumerated.sort(key=lambda pair: (digit_sum(pair[1]), pair[0]))\n    return [value for _, value in enumerated]\n\n\n",
+        "ground_truth": [
+          "    def digits_sum(n):\n        neg = 1\n        if n < 0: n, neg = -1 * n, -1 \n        n = [int(i) for i in str(n)]\n        n[0] = n[0] * neg\n        return sum(n)\n    return sorted(nums, key=digits_sum)\n",
+          "def check(candidate):\n\n    # Check some simple cases\n    assert candidate([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]\n    assert candidate([1234,423,463,145,2,423,423,53,6,37,3457,3,56,0,46]) == [0, 2, 3, 6, 53, 423, 423, 423, 1234, 145, 37, 46, 56, 463, 3457]\n    assert candidate([]) == []\n    assert candidate([1, -11, -32, 43, 54, -98, 2, -3]) == [-3, -32, -98, -11, 1, 2, 43, 54]\n    assert candidate([1,2,3,4,5,6,7,8,9,10,11]) == [1, 10, 2, 11, 3, 4, 5, 6, 7, 8, 9]\n    assert candidate([0,6,6,-76,-21,23,4]) == [-76, -21, 0, 4, 23, 6, 6]\n\n    # Check some edge cases that are easy to work out by hand.\n    assert True, \"This prints if this assert fails 2 (also good for debugging!)\"\n\n"
+        ]
+      }
+    ]
+  }
+}

@@ -139,6 +139,8 @@ def extract_boxed_content(text):
 
 def extract_answer(response):
     """Extract final answer from model response"""
+    response = str(response)
+    # print("ANSWER TO BE PARSED: ", response)
     try:
         # First try JSON parsing
         parsed = json.loads(response)
@@ -171,12 +173,37 @@ def extract_answer(response):
             return answer
         
         # Handle JSON format without quotes (for simple expressions)
-        matches = re.findall(r'[\'"]final_answer[\'"]\s*:\s*([^,}]+)', response)
+        matches = re.findall(r'[\'"]final_answer[\'"]\s*:\s*"([^}]+)"', response)
         if matches:
             answer = matches[-1].strip()
             # Clean up trailing characters
             answer = re.sub(r'[,}]*$', '', answer)
             print("FINAL ANSWER 5")
+            return answer
+        matches = re.findall(r'final_answer\\":\s*\\"(.*?)\\"\}', response) # New regex, to capture entire function.
+        if matches:
+            answer = matches[-1]
+            print("FINAL ANSWER 8")
+            # print(answer)
+            return answer
+        matches = re.findall(r'final_answer\\":\s*\\"(.*?)"\}', response) # New regex, to capture entire function.
+        if matches:
+            answer = matches[-1]
+            print("FINAL ANSWER 9")
+            # print(answer)
+            return answer
+        matches = re.findall(r'final_answer\\":\s*\\"((?:\\\\.|(?!"\})[\s\S])*)"\}', response) # New regex, to capture entire function.
+        if matches:
+            answer = matches[-1]
+            print("FINAL ANSWER 10")
+            # print(answer)
+            return answer
+        # Try to capture "final_answer\:"
+        matches = re.findall(r'"final_answer\\":\s*\\"((?:\\\\.|[^"\\])*)\\"', response)
+        if matches:
+            answer = matches[-1]
+            print("FINAL ANSWER 11")
+            # print(answer)
             return answer
         
         # Fallback for "The final answer is: X" pattern with boxed
@@ -208,6 +235,26 @@ def count_tokens(prompt: str) -> int:
    return len(enc.encode(prompt))
 
 
+def _save_test_or_function(mode, predicted):
+    predicted = predicted.strip("\n").strip("}")
+    print("THIS IS FUNCTION: -->", predicted, "<--")
+    filename = "./workspace/tests/test_15.py"
+    filename = "./workspace/tests/" + predicted.split("ACEFILENAME")[0]  + ".py"
+    predicted = predicted.split("ACEFILENAME")[1]
+    print("SAVING TEST TO .PY FILE: ", filename)
+    predicted+="\n\n"
+    # First save predicted answer/test in a folder workspace/test.py
+    predicted = bytes(predicted, "utf-8").decode("unicode_escape")
+    if (mode == "test"):
+        with open(filename, "w", encoding="utf-8") as file:
+            file.write(predicted)
+    elif (mode == "function"):
+        with open(filename, "a", encoding="utf-8") as file:
+            file.write(predicted)
+    
+    return predicted
+
+
 def evaluate_single_test_sample(args_tuple, data_processor) -> Tuple[Dict, str]:
     """
     Evaluate a single test sample - task-agnostic implementation.
@@ -222,6 +269,53 @@ def evaluate_single_test_sample(args_tuple, data_processor) -> Tuple[Dict, str]:
         question = task_dict["question"]
         target = task_dict["target"]
         print(31)
+        # gen_response, bullet_ids, call_info = generator.generate(
+        #     question=question,
+        #     playbook=playbook,
+        #     context=context,
+        #     reflection="(empty)",
+        #     use_json_mode=use_json_mode,
+        #     call_id=f"test_eval_{i}",
+        #     log_dir=log_dir
+        # )
+        # print(32)
+        # final_answer = extract_answer(gen_response)
+        # is_correct = data_processor.answer_is_correct(final_answer, target)
+
+        print("\n - EVAL SINGLE TEST SAMPLE - \n")
+        print("Context: ", context, "Question: ", question, " \nTarget: ", target)
+        question_name = ""
+        import re
+        matches = re.findall(r'def\s*([^(]*)', question) 
+        if matches:
+            question_name = matches[0]
+            question_name = question_name.split(" ")[-1]
+        imports = ""
+        if question.split("def", 1)[0].__contains__("import"):
+            imports = question.split("def", 1)[0].strip()
+        print("Imports: ", imports)
+        question_name_pure = question_name
+        question_name_with_param = question_name + question.split(question_name)[1].split("):")[0] + "):"
+        question_name = "test_"+question_name + "ACEFILENAME"
+        print("ACEFILENAME ", question_name, question_name_pure, question_name_with_param)
+        # print("Moving files:")
+        basepath = "./workspace/tests/"
+        newpath = "./workspace/done/"+question_name_pure
+        print(basepath, newpath)
+        from shutil import move
+        import os
+        # if not os.path.exists(newpath):
+        #     os.mkdir(newpath)
+        # file_names = os.listdir(basepath)
+            
+        # for file_name in file_names:
+        #     if (file_name.endswith(".py")):
+        #         print(file_name)
+        #         move(basepath+file_name, newpath+"/"+file_name)
+        print("\n\n Still in initial testing, creating tests...")
+        question_name = "test_initial_"+question_name
+        context = ""
+        print("ACEFILENAME")
         gen_response, bullet_ids, call_info = generator.generate(
             question=question,
             playbook=playbook,
@@ -231,9 +325,99 @@ def evaluate_single_test_sample(args_tuple, data_processor) -> Tuple[Dict, str]:
             call_id=f"test_eval_{i}",
             log_dir=log_dir
         )
-        print(32)
+        
+        # Extract answer and check correctness
         final_answer = extract_answer(gen_response)
-        is_correct = data_processor.answer_is_correct(final_answer, target)
+        final_answer = _save_test_or_function("test", question_name+final_answer)
+        is_correct, feedback = data_processor.answer_is_correct(final_answer, target)
+        pre_train_post_curator_answer = final_answer
+        
+        print(f"Correct: {is_correct}")
+
+        reflection_content = "(empty)"
+
+        if is_correct:
+            is_correct = False
+        else:
+            is_correct = True # A bit confusing, but if tests fail, thats correct.
+ 
+        context = "GENERATE_FUNCTION"+pre_train_post_curator_answer
+        # Then function implementation
+        print("\n\n Now creating function.")
+        gen_response, _, _ = generator.generate(
+            question=question,
+            playbook=playbook,
+            context=context,
+            reflection="(empty)",
+            use_json_mode=use_json_mode,
+            call_id=f"test_eval_{i}_post_curate_function",
+            log_dir=log_dir
+        )
+        
+        final_answer = extract_answer(gen_response)
+        if imports != "":
+            final_answer = imports+"\n"+final_answer
+        final_answer = _save_test_or_function("function", question_name+final_answer)
+        post_train_answer = final_answer
+        
+        post_train_is_correct, feedback = data_processor.answer_is_correct(final_answer, target)
+
+        print("Now checking code quality:")
+        filename_qualityscore = "./workspace/tests/test_initial_test_"+question_name_pure+".py"
+        print(f"filename_qualityscore: {filename_qualityscore}")
+        code_quality_score, code_quality_report = data_processor.check_code_quality(filename_qualityscore)
+        print(f"CODE QUALITY SCORE FOR {question_name_pure}: {code_quality_score}")
+        code_quality_report = str(code_quality_report)
+
+        # Cheking function against reference tests:
+        reference_tests_answer = _save_test_or_function("function", question_name+("".join(target[1:]).replace("def ", "def test_", 1).replace("(candidate)", "()").replace("candidate", question_name_pure))+"\n\n")
+
+        if data_processor.answer_is_correct(reference_tests_answer, target)[0]:
+            print(f"Correctly implemented function according to reference functions as well!")
+            is_correct = True
+            # break
+        else:
+            print("Reference tests failed...")
+            is_correct = False
+
+        print("Moving files:")
+        basepath = "./workspace/tests/"
+        newpath = "./workspace/done/"+question_name_pure+"/initial"
+        print(basepath, newpath)
+        from shutil import move
+        import os
+        if not os.path.exists(newpath):
+            os.makedirs(newpath)
+        else:
+            newpath = "./workspace/done/"+question_name_pure+"/final"
+            os.makedirs(newpath)
+        file_names = os.listdir(basepath)
+            
+        for file_name in file_names:
+            if (file_name.endswith(".py")):
+                print(file_name)
+                move(basepath+file_name, newpath+"/"+file_name)
+        
+        with open("./workspace/done/"+question_name_pure+"/codequality.txt", "a", encoding="utf-8") as file:
+            if (newpath.endswith("initial")):
+                file.write(f"INITIAL CODE QUALITY SCORE FOR {question_name_pure}: {code_quality_score} | Passed test: {is_correct}")
+            else:
+                with open("./workspace/done/"+question_name_pure+"/codequality.txt", "r", encoding="utf-8") as file2:
+                    prev = file2.read()
+                init_passed = prev.split(":")[-1].strip()
+                if ("Not found" in prev):
+                    # prev = "0.0/10"
+                    print("prev not found i")
+                else:
+                    # prev = float(prev.split(":")[-1].split("/")[0])
+                    prev = prev.split(":")[1].split("|")[0].strip()
+                with open("./workspace/done/metrics.txt", "a", encoding="utf-8") as metricsfile:
+                    if ("Not found" in code_quality_score):
+                        # code_quality_score = "0.0/10"
+                        print("prev not found f")
+                    metricsfile.write(f"\n=== {question_name_pure} ===\n")
+                    metricsfile.write(f"Initial code quality: {prev} Final code quality: {code_quality_score} | Initially passed test: {init_passed} Finally passed test: {is_correct}\n")
+                file.write(f"\nFINAL CODE QUALITY SCORE FOR {question_name_pure}: {code_quality_score} | Passed test: {is_correct}\n")
 
         return {
             "index": i,
@@ -319,8 +503,12 @@ def evaluate_test_set(data_processor, generator, playbook, test_samples,
                 print(f"Progress: {i}/{len(args_list)}, Accuracy: {curr_acc:.3f}")
     
     if results["answers"] and results["targets"]:
-        accuracy = data_processor.evaluate_accuracy(results["answers"], results["targets"])
-        
+        #accuracy = data_processor.evaluate_accuracy(results["answers"], results["targets"])
+        try:
+            accuracy = results['correct']/results['total'] if results["total"] > 0 else 0
+        except:
+            accuracy = 0.0
+        print("ACCURACY=", accuracy)
         final_results = {
             "accuracy": accuracy,
             "correct": results["correct"],
@@ -332,7 +520,7 @@ def evaluate_test_set(data_processor, generator, playbook, test_samples,
             "accuracy": accuracy,
             "errors": results["errors"]
         }
-        
+        print("final results: ", final_results)
         print(f"\n📊 Final Accuracy: {accuracy:.3f} ({results['correct']}/{results['total']})")
     else:
         results = {"accuracy": 0.0, "correct": 0, "total": 0}

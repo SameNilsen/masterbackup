@@ -295,17 +295,24 @@ class DataProcessor:
             ],
             capture_output=True,
             text=True,
-            timeout=30
+            timeout=60
         )
-        print("DONE, WE SHOULD GET OUTPUT HERE: ", result)
         result = str(result)
+        print("DONE, WE SHOULD GET OUTPUT HERE: ", result)
         import re
-        match = re.findall(r'==+\s*(.*?)\s*==+\s*', result.strip())
+        match = re.findall(r'==*\s*(.*?)\s*==\s*', result.strip())
         resultcode = "error"
         # print("--->", result.split("=========================")[-2], "<---")
         if len(match)!=0:
-            print("->", match[-1])
-            resultcode = match[-1]
+            print("->", match)
+            index = -1
+            for i in range(len(match)-1, 0, -1):
+                print(match[i])
+                if (match[i]!=""):
+                    index = i
+                    break
+            print("-->", match[index])
+            resultcode = match[index]
         print("--->", resultcode, "<---")
         # if ("failed" in result.split("=========================")[-2]):
         if test:
@@ -356,6 +363,43 @@ class DataProcessor:
             return self._humaneval_answer_is_correct(predicted, ground_truth)
         else:
             raise ValueError(f"Unknown task: {self.task_name}")
+
+    def check_code_quality(self, filename):
+        print("Checking code quality for: ", filename)
+        import subprocess
+
+        result = subprocess.run(
+            [
+                "pylint",
+                filename,
+                "-v"
+            ],
+            capture_output=True,
+            text=True,
+            timeout=60
+        )
+
+        print("=========== CODE QUALITY ==========")
+        print(result)
+        print("=========== END ==========")
+
+        # print("Exit code:", result.returncode)
+        # print("STDOUT:")
+        # print(result.stdout)
+        # print("STDERR:")
+        # print(result.stderr)
+
+        import re
+        match = re.findall(r'Your code has been rated at (\d+(?:\.\d+)?/\d+)', str(result))
+        resultcode = "error"
+        # print("--->", result.split("=========================")[-2], "<---")
+        resultscore = "Not found"
+        if len(match)!=0:
+            print("->", match)
+            print("->", match[-1])
+            resultscore = match[-1]
+        return resultscore, result
+
     
     def _evaluate_finer_accuracy(self, out: List[str], target: List[str]) -> tuple:
         """FINER dataset specific accuracy evaluation"""

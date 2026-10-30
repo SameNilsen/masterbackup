@@ -1,0 +1,2 @@
+INITIAL CODE QUALITY SCORE FOR words_string: 6.67/10
+FINAL CODE QUALITY SCORE FOR words_string: Not found

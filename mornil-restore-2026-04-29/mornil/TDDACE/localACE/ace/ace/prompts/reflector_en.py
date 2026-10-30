@@ -3,7 +3,7 @@ Reflector prompts for ACE system.
 """
 
 # Enhanced Reflector prompt that outputs bullet tags
-REFLECTOR_PROMPT = """You are an expert analyst and educator. Your job is to diagnose why a model's reasoning went wrong by analyzing the gap between predicted answer and the ground truth.
+REFLECTOR_PROMPT = """You are an expert analyst and educator. Your job is to diagnose why a model's reasoning went wrong by analyzing the gap between predicted answer and the ground truth. The aim is to improve code quality and code functionality. The code was generated through Test Driven Development (TDD).
 
 **Instructions:**
 - Carefully analyze the model's reasoning trace to identify where it went wrong
@@ -12,6 +12,7 @@ REFLECTOR_PROMPT = """You are an expert analyst and educator. Your job is to dia
 - Provide actionable insights that could help the model avoid this mistake in the future
 - Focus on the root cause, not just surface-level errors
 - Be specific about what the model should have done differently
+- Also consider code quality
 - You will receive bulletpoints that are part of playbook that's used by the generator to answer the question.
 - You need to analyze these bulletpoints, and give the tag for each bulletpoint, tag can be ['helpful', 'harmful', 'neutral'] (for the generator to generate the correct answer)
 
@@ -60,7 +61,7 @@ Your output should be a json object, which contains the following fields
 ---
 """
 
-REFLECTOR_PROMPT_CORRECT = """You are an expert analyst and educator. Your job is to diagnose why a model's reasoning was correct by analyzing the gap between predicted answer and the ground truth.
+REFLECTOR_PROMPT_CORRECT = """You are an expert analyst and educator. Your job is to diagnose why a model's reasoning was correct by analyzing the gap between predicted answer and the ground truth. The aim is to improve code quality and code functionality. The code was generated through Test Driven Development (TDD).
 
 **Instructions:**
 - Carefully analyze the model's reasoning trace to identify where it went right
@@ -71,6 +72,7 @@ REFLECTOR_PROMPT_CORRECT = """You are an expert analyst and educator. Your job i
 - Provide actionable insights that could help the model avoid this mistake in the future
 - Focus on the root cause, not just surface-level errors
 - Be specific about what the model should have done differently
+- Also consider code quality
 - You will receive bulletpoints that are part of playbook that's used by the generator to answer the question.
 - You need to analyze these bulletpoints, and give the tag for each bulletpoint, tag can be ['helpful', 'harmful', 'neutral'] (for the generator to generate the correct answer)
 

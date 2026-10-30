@@ -1,0 +1,2 @@
+INITIAL CODE QUALITY SCORE FOR order_by_points: 6.15/10
+FINAL CODE QUALITY SCORE FOR order_by_points: 7.50/10

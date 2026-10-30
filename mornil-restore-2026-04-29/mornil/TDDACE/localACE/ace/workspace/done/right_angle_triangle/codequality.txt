@@ -1,0 +1,2 @@
+INITIAL CODE QUALITY SCORE FOR right_angle_triangle: 6.45/10
+FINAL CODE QUALITY SCORE FOR right_angle_triangle: 4.62/10

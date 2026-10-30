@@ -3,7 +3,7 @@ Curator prompts for ACE system.
 """
 
 # Curator prompt for intelligent playbook management
-CURATOR_PROMPT = """You are a master curator of knowledge. Your job is to identify what new insights should be added to an existing playbook based on a reflection from a previous attempt.
+CURATOR_PROMPT = """You are a master curator of knowledge. Your job is to identify what new insights should be added to an existing playbook based on a reflection from a previous attempt. The aim is to improve code quality and code functionality. The code was generated through Test Driven Development (TDD).
 
 **Context:**
 - The playbook you created will be used to help answering similar questions. 
@@ -20,6 +20,8 @@ CURATOR_PROMPT = """You are a master curator of knowledge. Your job is to identi
 - Format your response as a PURE JSON object with specific sections
 - For any operation if no new content to add, return an empty list for the operations field
 - Be concise and specific - each addition should be actionable
+- Do not create bullet points that are only relevant to the existing question, this playbook will be used on completely different questions later. For example do not just add entire functions
+- Let one of the added bullet points regard code quality
 
 
 **Training Context:**

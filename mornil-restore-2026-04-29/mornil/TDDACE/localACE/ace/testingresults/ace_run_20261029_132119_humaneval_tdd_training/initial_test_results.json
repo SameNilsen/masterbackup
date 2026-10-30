@@ -1,0 +1,45 @@
+{
+  "test_results": {
+    "accuracy": 0.6,
+    "correct": 6,
+    "total": 10,
+    "no_answer": 0
+  },
+  "error_log": {
+    "accuracy": 0.6,
+    "errors": [
+      {
+        "index": 0,
+        "prediction": "def can_arrange(arr):\n    \"\"\"Return the largest index of an element that is not greater than its\n    predecessor (i.e., arr[i] <= arr[i-1]). Return -1 if no such element\n    exists.\n    \"\"\"\n    max_index = -1\n    for i in range(1, len(arr)):\n        if arr[i] <= arr[i - 1]:\n            max_index = i\n    return max_index\n\n\n",
+        "ground_truth": [
+          "    ind=-1\n    i=1\n    while i<len(arr):\n      if arr[i]<arr[i-1]:\n        ind=i\n      i+=1\n    return ind\n",
+          "def check(candidate):\n\n    # Check some simple cases\n    assert candidate([1,2,4,3,5])==3\n    assert candidate([1,2,4,5])==-1\n    assert candidate([1,4,2,5,6,7,8,9,10])==2\n    assert candidate([4,8,5,7,3])==4\n\n    # Check some edge cases that are easy to work out by hand.\n    assert candidate([])==-1\n\n"
+        ]
+      },
+      {
+        "index": 4,
+        "prediction": "def check_dict_case(d):\\n    \\\"\\\"\\\"Return True if all keys are strings and either all are lower case or all are upper case.\\\"\\\"\\\"\\n    if not d:\\n        return False\\n    try:\\n        first_key = next(iter(d))\\n    except StopIteration:\\n        return False\\n    if not isinstance(first_key, str):\\n        return False\\n    if first_key.islower():\\n        target_upper = False\\n    elif first_key.isupper():\\n        target_upper = True\\n    else:\\n        return False\\n    for key in d:\\n        if not isinstance(key, str):\\n            return False\\n        if target_upper:\\n            if not key.isupper():\\n                return False\\n        else:\\n            if not key.islower():\\n                return False\\n    return True\n\n",
+        "ground_truth": [
+          "    if len(dict.keys()) == 0:\n        return False\n    else:\n        state = \"start\"\n        for key in dict.keys():\n\n            if isinstance(key, str) == False:\n                state = \"mixed\"\n                break\n            if state == \"start\":\n                if key.isupper():\n                    state = \"upper\"\n                elif key.islower():\n                    state = \"lower\"\n                else:\n                    break\n            elif (state == \"upper\" and not key.isupper()) or (state == \"lower\" and not key.islower()):\n                    state = \"mixed\"\n                    break\n            else:\n                break\n        return state == \"upper\" or state == \"lower\" \n",
+          "def check(candidate):\n\n    # Check some simple cases\n    assert candidate({\"p\":\"pineapple\", \"b\":\"banana\"}) == True, \"First test error: \" + str(candidate({\"p\":\"pineapple\", \"b\":\"banana\"}))\n    assert candidate({\"p\":\"pineapple\", \"A\":\"banana\", \"B\":\"banana\"}) == False, \"Second test error: \" + str(candidate({\"p\":\"pineapple\", \"A\":\"banana\", \"B\":\"banana\"}))\n    assert candidate({\"p\":\"pineapple\", 5:\"banana\", \"a\":\"apple\"}) == False, \"Third test error: \" + str(candidate({\"p\":\"pineapple\", 5:\"banana\", \"a\":\"apple\"}))\n    assert candidate({\"Name\":\"John\", \"Age\":\"36\", \"City\":\"Houston\"}) == False, \"Fourth test error: \" + str(candidate({\"Name\":\"John\", \"Age\":\"36\", \"City\":\"Houston\"}))\n    assert candidate({\"STATE\":\"NC\", \"ZIP\":\"12345\" }) == True, \"Fifth test error: \" + str(candidate({\"STATE\":\"NC\", \"ZIP\":\"12345\" }))      \n    assert candidate({\"fruit\":\"Orange\", \"taste\":\"Sweet\" }) == True, \"Fourth test error: \" + str(candidate({\"fruit\":\"Orange\", \"taste\":\"Sweet\" }))      \n\n\n    # Check some edge cases that are easy to work out by hand.\n    assert candidate({}) == False, \"1st edge test error: \" + str(candidate({}))\n\n"
+        ]
+      },
+      {
+        "index": 7,
+        "prediction": "def remove_vowels(text):\n    \"\"\"Remove vowels from a string. Vowels are a, e, i, o, u (case\u00e2\u0080\u0091insensitive). ```\n    >>> remove_vowels('')\n    ''\n    >>> remove_vowels('abcdef\\nghijklm')\n    'bcdf\\nghjklm'\n    >>> remove_vowels('abcdef')\n    'bcdf'\n    >>> remove_vowels('aaaaa')\n    ''\n    >>> remove_vowels('aaBAA')\n    'B'\n    >>> remove_vowels('zbcd')\n    'zbcd'\n    ```\n    \"\"\"\n    vowels = set('aeiou')\n    return ''.join(ch for ch in text if ch.lower() not in vowels)\n\n\n",
+        "ground_truth": [
+          "    return \"\".join([s for s in text if s.lower() not in [\"a\", \"e\", \"i\", \"o\", \"u\"]])\n",
+          "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate(\"abcdef\\nghijklm\") == 'bcdf\\nghjklm'\n    assert candidate('fedcba') == 'fdcb'\n    assert candidate('eeeee') == ''\n    assert candidate('acBAA') == 'cB'\n    assert candidate('EcBOO') == 'cB'\n    assert candidate('ybcd') == 'ybcd'\n\n"
+        ]
+      },
+      {
+        "index": 9,
+        "prediction": "def order_by_points(nums):\n    \"\"\"\n    Sort a list of integers ascending based on the sum of the digits of each integer.\n    If multiple integers have the same digit sum, they are ordered by descending original index.\n\n    Parameters:\n    nums (list[int]): The list of integers to sort.\n\n    Returns:\n    list[int]: A new list containing the sorted integers.\n    \"\"\"\n    # Helper to compute sum of digits of an integer's absolute value\n    def _digit_sum(n: int) -> int:\n        return sum(int(d) for d in str(abs(n)))\n\n    # Enumerate to keep original indices for tie-breaking\n    indexed = list(enumerate(nums))  # [(index, value), ...]\n\n    # Sort by digit sum ascending, then by descending index\n    sorted_indexed = sorted(indexed, key=lambda iv: (_digit_sum(iv[1]), -iv[0]))\n\n    # Extract the values in sorted order\n    return [value for _, value in sorted_indexed]\n\n\n",
+        "ground_truth": [
+          "    def digits_sum(n):\n        neg = 1\n        if n < 0: n, neg = -1 * n, -1 \n        n = [int(i) for i in str(n)]\n        n[0] = n[0] * neg\n        return sum(n)\n    return sorted(nums, key=digits_sum)\n",
+          "def check(candidate):\n\n    # Check some simple cases\n    assert candidate([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]\n    assert candidate([1234,423,463,145,2,423,423,53,6,37,3457,3,56,0,46]) == [0, 2, 3, 6, 53, 423, 423, 423, 1234, 145, 37, 46, 56, 463, 3457]\n    assert candidate([]) == []\n    assert candidate([1, -11, -32, 43, 54, -98, 2, -3]) == [-3, -32, -98, -11, 1, 2, 43, 54]\n    assert candidate([1,2,3,4,5,6,7,8,9,10,11]) == [1, 10, 2, 11, 3, 4, 5, 6, 7, 8, 9]\n    assert candidate([0,6,6,-76,-21,23,4]) == [-76, -21, 0, 4, 23, 6, 6]\n\n    # Check some edge cases that are easy to work out by hand.\n    assert True, \"This prints if this assert fails 2 (also good for debugging!)\"\n\n"
+        ]
+      }
+    ]
+  }
+}

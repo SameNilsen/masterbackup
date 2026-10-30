@@ -1,0 +1,69 @@
+{
+  "test_results": {
+    "accuracy": 0.3,
+    "correct": 3,
+    "total": 10,
+    "no_answer": 0
+  },
+  "error_log": {
+    "accuracy": 0.3,
+    "errors": [
+      {
+        "index": 2,
+        "prediction": "def digits(n):\n    \"\"\"Return the product of the odd digits in `n`.\n\n    Parameters\n    ----------\n    n : int\n        A positive integer.\n\n    Returns\n    -------\n    int\n        The product of all odd digits of `n`.  If `n` has no odd\n        digits, ``0`` is returned.\n\n    Raises\n    ------\n    TypeError\n        If *n* is not an ``int``.\n    \"\"\"\n    if not isinstance(n, int):\n        raise TypeError(\"Input must be an integer\")\n\n    product = 1\n    odd_found = False\n\n    for ch in str(n):\n        digit = int(ch)\n        if digit % 2 == 1:\n            product *= digit\n            odd_found = True\n\n    return product if odd_found else 0\n\n",
+        "ground_truth": [
+          "    product = 1\n    odd_count = 0\n    for digit in str(n):\n        int_digit = int(digit)\n        if int_digit%2 == 1:\n            product= product*int_digit\n            odd_count+=1\n    if odd_count ==0:\n        return 0\n    else:\n        return product\n",
+          "def check(candidate):\n\n    # Check some simple cases\n    assert candidate(5) == 5\n    assert candidate(54) == 5\n    assert candidate(120) ==1\n    assert candidate(5014) == 5\n    assert candidate(98765) == 315\n    assert candidate(5576543) == 2625\n\n    # Check some edge cases that are easy to work out by hand.\n    assert candidate(2468) == 0\n\n"
+        ]
+      },
+      {
+        "index": 3,
+        "prediction": "def fib(n: int):\n    \"\"\"Return the n-th Fibonacci number, where the sequence is defined as\n    F(1)=1, F(2)=1, and F(k)=F(k-1)+F(k-2) for k>2.\n\n    Parameters\n    ----------\n    n : int\n        The position in the Fibonacci sequence (must be a positive integer).\n\n    Returns\n    -------\n    int\n        The n-th Fibonacci number.\n\n    Raises\n    ------\n    TypeError\n        If ``n`` is not an integer.\n    ValueError\n        If ``n`` is zero or negative.\n    \"\"\"\n    if not isinstance(n, int):\n        raise TypeError(\"n must be an integer\")\n    if n <= 0:\n        raise ValueError(\"n must be a positive integer\")\n\n    if n <= 2:\n        return 1\n\n    a, b = 1, 1\n    for _ in range(3, n + 1):\n        a, b = b, a + b\n    return b\n\n",
+        "ground_truth": [
+          "    if n == 0:\n        return 0\n    if n == 1:\n        return 1\n    return fib(n - 1) + fib(n - 2)\n",
+          "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10) == 55\n    assert candidate(1) == 1\n    assert candidate(8) == 21\n    assert candidate(11) == 89\n    assert candidate(12) == 144\n\n"
+        ]
+      },
+      {
+        "index": 5,
+        "prediction": "def filter_by_prefix(strings: List[str], prefix: str) -> List[str]:\n    \"\"\"Return a new list containing only those strings that start with `prefix`.\n\n    This function preserves the original order, treats the prefix match\n    case\u00e2\u0080\u0091sensitive, and does not mutate the input list.\n    \"\"\"\n    # List comprehensions are concise, preserve order, and return a new list.\n    return [s for s in strings if s.startswith(prefix)]\n\n",
+        "ground_truth": [
+          "    return [x for x in strings if x.startswith(prefix)]\n",
+          "\n\nMETADATA = {\n    'author': 'jt',\n    'dataset': 'test'\n}\n\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n"
+        ]
+      },
+      {
+        "index": 6,
+        "prediction": "def right_angle_triangle(a, b, c):\n    \"\"\"Return True if the sides a, b, c can form a right\u00e2\u0080\u0091angled triangle.\n\n    The function checks for positive lengths, the triangle inequality,\n    and the Pythagorean theorem with a tolerance to handle floating\u00e2\u0080\u0091point\n    precision issues.\n    \"\"\"\n    # Validate numeric inputs and positivity\n    try:\n        sides = [float(a), float(b), float(c)]\n    except (TypeError, ValueError):\n        return False\n\n    # All sides must be greater than zero\n    if any(side <= 0 for side in sides):\n        return False\n\n    # Sort to identify hypotenuse as the largest side\n    a_s, b_s, c_s = sorted(sides)\n\n    # Triangle inequality: sum of two shorter sides must be greater than the longest\n    if a_s + b_s <= c_s:\n        return False\n\n    # Use a tolerance for floating point comparison\n    left = a_s * a_s + b_s * b_s\n    right = c_s * c_s\n    tolerance = 1e-9 * max(right, 1.0)\n    return abs(left - right) <= tolerance\n\n",
+        "ground_truth": [
+          "    return a*a == b*b + c*c or b*b == a*a + c*c or c*c == a*a + b*b\n",
+          "def check(candidate):\n\n    # Check some simple cases\n    assert candidate(3, 4, 5) == True, \"This prints if this assert fails 1 (good for debugging!)\"\n    assert candidate(1, 2, 3) == False\n    assert candidate(10, 6, 8) == True\n    assert candidate(2, 2, 2) == False\n    assert candidate(7, 24, 25) == True\n    assert candidate(10, 5, 7) == False\n    assert candidate(5, 12, 13) == True\n    assert candidate(15, 8, 17) == True\n    assert candidate(48, 55, 73) == True\n\n    # Check some edge cases that are easy to work out by hand.\n    assert candidate(1, 1, 1) == False, \"This prints if this assert fails 2 (also good for debugging!)\"\n    assert candidate(2, 2, 10) == False\n\n"
+        ]
+      },
+      {
+        "index": 7,
+        "prediction": "def remove_vowels(text):\n    vowels = set('aeiouAEIOU')\n    return ''.join(ch for ch in text if ch not in vowels)\n\n",
+        "ground_truth": [
+          "    return \"\".join([s for s in text if s.lower() not in [\"a\", \"e\", \"i\", \"o\", \"u\"]])\n",
+          "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate(\"abcdef\\nghijklm\") == 'bcdf\\nghjklm'\n    assert candidate('fedcba') == 'fdcb'\n    assert candidate('eeeee') == ''\n    assert candidate('acBAA') == 'cB'\n    assert candidate('EcBOO') == 'cB'\n    assert candidate('ybcd') == 'ybcd'\n\n"
+        ]
+      },
+      {
+        "index": 8,
+        "prediction": "import re\n\ndef words_string(s: str):\n    \"\"\"Split a string of words separated by commas or spaces into a list.\n\n    Parameters\n    ----------\n    s: str\n        Input string containing words separated by commas or any whitespace.\n\n    Returns\n    -------\n    list[str]\n        List of words, excluding any empty tokens.\n    \"\"\"\n    if not s:\n        return []\n    # Split on commas or any whitespace characters, treating consecutive delimiters as a single separator.\n    return [word for word in re.split(r'[,\\s]+', s.strip()) if word]\n\n",
+        "ground_truth": [
+          "    if not s:\n        return []\n\n    s_list = []\n\n    for letter in s:\n        if letter == ',':\n            s_list.append(' ')\n        else:\n            s_list.append(letter)\n\n    s_list = \"\".join(s_list)\n    return s_list.split()\n",
+          "def check(candidate):\n\n    # Check some simple cases\n    assert True, \"This prints if this assert fails 1 (good for debugging!)\"\n    assert candidate(\"Hi, my name is John\") == [\"Hi\", \"my\", \"name\", \"is\", \"John\"]\n    assert candidate(\"One, two, three, four, five, six\") == [\"One\", \"two\", \"three\", \"four\", \"five\", \"six\"]\n    assert candidate(\"Hi, my name\") == [\"Hi\", \"my\", \"name\"]\n    assert candidate(\"One,, two, three, four, five, six,\") == [\"One\", \"two\", \"three\", \"four\", \"five\", \"six\"]\n\n    # Check some edge cases that are easy to work out by hand.\n    assert True, \"This prints if this assert fails 2 (also good for debugging!)\"\n    assert candidate(\"\") == []\n    assert candidate(\"ahmed     , gamal\") == [\"ahmed\", \"gamal\"]\n\n"
+        ]
+      },
+      {
+        "index": 9,
+        "prediction": "def order_by_points(nums):\n    \"\"\"Return a list sorted by ascending digit sum, preserving order of ties.\n\n    Parameters\n    ----------\n    nums : list[int]\n        List of integers to sort.\n\n    Returns\n    -------\n    list[int]\n        New list sorted by digit sums, stable w.r.t original order.\n    \"\"\"\n    def digit_sum(n: int) -> int:\n        return sum(int(ch) for ch in str(abs(n)))\n\n    return sorted(nums, key=digit_sum)\n\n",
+        "ground_truth": [
+          "    def digits_sum(n):\n        neg = 1\n        if n < 0: n, neg = -1 * n, -1 \n        n = [int(i) for i in str(n)]\n        n[0] = n[0] * neg\n        return sum(n)\n    return sorted(nums, key=digits_sum)\n",
+          "def check(candidate):\n\n    # Check some simple cases\n    assert candidate([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]\n    assert candidate([1234,423,463,145,2,423,423,53,6,37,3457,3,56,0,46]) == [0, 2, 3, 6, 53, 423, 423, 423, 1234, 145, 37, 46, 56, 463, 3457]\n    assert candidate([]) == []\n    assert candidate([1, -11, -32, 43, 54, -98, 2, -3]) == [-3, -32, -98, -11, 1, 2, 43, 54]\n    assert candidate([1,2,3,4,5,6,7,8,9,10,11]) == [1, 10, 2, 11, 3, 4, 5, 6, 7, 8, 9]\n    assert candidate([0,6,6,-76,-21,23,4]) == [-76, -21, 0, 4, 23, 6, 6]\n\n    # Check some edge cases that are easy to work out by hand.\n    assert True, \"This prints if this assert fails 2 (also good for debugging!)\"\n\n"
+        ]
+      }
+    ]
+  }
+}

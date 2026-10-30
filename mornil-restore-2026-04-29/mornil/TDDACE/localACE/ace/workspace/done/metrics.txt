@@ -1,0 +1,46 @@
+========= METRICS AND RESULTS =========
+
+
+===== Initial Test Accuracy =====
+Accuracy: 0.700 
+=================================
+=== can_arrange ===
+Initial code quality: 0.0/10 Final code quality: Not found 
+
+=== max_fill ===
+Initial code quality: 0.0/10 Final code quality: Not found 
+
+=== digits ===
+Initial code quality:  7.50/10
+ Final code quality: 9.47/10 
+
+=== fib ===
+Initial code quality: 0.0/10 Final code quality: Not found 
+
+=== check_dict_case ===
+Initial code quality:  1.82/10
+ Final code quality: 4.19/10 
+
+=== filter_by_prefix ===
+Initial code quality:  5.60/10
+ Final code quality: 7.14/10 
+
+=== right_angle_triangle ===
+Initial code quality:  6.45/10
+ Final code quality: 4.62/10 
+
+=== remove_vowels ===
+Initial code quality: 0.0/10 Final code quality: Not found 
+
+=== words_string ===
+Initial code quality: 0.0/10 Final code quality: Not found 
+
+=== order_by_points ===
+Initial code quality:  6.15/10
+ Final code quality: 7.50/10 
+
+
+===== Final Test Accuracy =====
+Accuracy: 0.200
+===============================
+
